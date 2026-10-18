@@ -16,6 +16,8 @@ export const SPARK_COUNT = 110;
 export const SPLASH_COUNT = 220;
 /** Default lift nozzle anchors (car-local, +X forward), used when the car GLB has no NozzleAnchor_n nodes. */
 export const DEFAULT_NOZZLES: readonly [number, number, number][] = [[1.05, 0.14, -0.55], [1.05, 0.14, 0.55], [-1.05, 0.14, -0.55], [-1.05, 0.14, 0.55]];
+/** Side (yaw) thrusters at the front bumper corners, firing straight out sideways: [front-left, front-right]. */
+export const SIDE_NOZZLES: readonly [number, number, number][] = [[2.04, 0.40, -1.02], [2.04, 0.40, 1.02]];
 
 const JET_VERTEX = /* glsl */ `
   varying vec2 vUv; varying vec3 vWorld; varying vec3 vNormalW;
@@ -130,7 +132,15 @@ export function createThrusters(): Group {
     const center = new Mesh(coreGeometry, core); center.name = 'JetCore'; center.renderOrder = 23; jet.add(center);
     jet.visible = false; root.add(jet);
   });
-  const glows = createGlowSprites('NozzleGlows', [0, 1, 2, 3].map(() => ({ position: new Vector3(), size: 0, color: [0.6, 0.8, 1.0] as const, streak: 0.05 })));
+  // Side thrusters: thinner, shorter jets than the floor nozzles (2.5-4 m visible in the close replay).
+  const sideCoreGeometry = jetGeometry(0.045, 0.08), sidePlumeGeometry = jetGeometry(0.055, 0.22);
+  SIDE_NOZZLES.forEach(([x, y, z], i) => {
+    const jet = new Group(); jet.name = `SideJet_${i + 1}`; jet.position.set(x, y, z);
+    const shell = new Mesh(sidePlumeGeometry, plume); shell.name = 'JetPlume'; shell.renderOrder = 21; jet.add(shell);
+    const center = new Mesh(sideCoreGeometry, core); center.name = 'JetCore'; center.renderOrder = 23; jet.add(center);
+    jet.visible = false; root.add(jet);
+  });
+  const glows = createGlowSprites('NozzleGlows', [0, 1, 2, 3, 4, 5].map(() => ({ position: new Vector3(), size: 0, color: [0.6, 0.8, 1.0] as const, streak: 0.05 })));
   root.add(glows);
   return root;
 }

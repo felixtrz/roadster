@@ -7,6 +7,7 @@ import { PHASES, ReplayControls } from './replay-controls.js';
 import { AUTOMATION } from './automation.js';
 import { ReplayCamera } from './replay-camera.js';
 import { CinematicRenderer } from './cinematic-renderer.js';
+import { createMountRig, disposeMountRig } from './mount-rig.js';
 import type { ShellFrame } from './shell.js';
 import { FX_TIME, FX_XR } from './scene-assets/lib/fx-materials.js';
 import { SITE_OFFSET } from './scene-assets/lib/site-layout.js';
@@ -24,6 +25,7 @@ export class RoadsterSystem extends createSystem({ cars: { required: [RoadsterRe
   private cinematic: CinematicRenderer | null = null;
   private readonly wheels: Object3D[] = [];
   private readonly carShadowMeshes: Mesh[] = [];
+  private readonly mountRig = createMountRig();
   private carCastsShadow = false;
   private readonly wheelRest: Quaternion[] = [];
   private readonly wheelSpin = new Quaternion();
@@ -52,6 +54,8 @@ export class RoadsterSystem extends createSystem({ cars: { required: [RoadsterRe
       const wheel = car.getObjectByName(name);
       if (wheel) { this.wheels.push(wheel); this.wheelRest.push(wheel.quaternion.clone()); }
     }
+    car.add(this.mountRig);
+    this.cleanupFuncs.push(() => { this.mountRig.removeFromParent(); disposeMountRig(this.mountRig); });
     this.bakeTrack();
     const lights = {
       lift: this.makeLight(0x9cc8ff, 30),
@@ -162,19 +166,22 @@ export class RoadsterSystem extends createSystem({ cars: { required: [RoadsterRe
       const frameIndex = Math.min(this.distance.length - 1, Math.floor(time * 60));
       this.wheelSpin.setFromAxisAngle(WHEEL_AXIS, this.distance[frameIndex] / data.car.wheelRadius);
       for (let i = 0; i < this.wheels.length; i++) this.wheels[i].quaternion.copy(this.wheelRest[i]).multiply(this.wheelSpin);
-      this.effects.forceClear = browser && this.controls.viewMode === 2;
+      // the close views (Mounted, Drone) keep the vapor from swallowing the lens on landing
+      this.effects.forceClear = browser && this.controls.viewMode !== 0;
       this.effects.update(time, car, this.world.camera);
       // Broadcast key light that rides with the car in the air so the white body pops against the sky.
       // In the air it keys from the camera side; on the drive-away it moves ahead of the car as a soft front key.
       const air = Math.min(1, Math.max(0, (car.position.y - 1.5) / 4));
       const drive = Math.min(1, Math.max(0, (time - 11.9) / 0.6));
       if (drive > 0) this.carKey.position.set(car.position.x + OFFSET.x - 7, 3.2, car.position.z + OFFSET.z + 6);
-      else if (this.controls.viewMode === 2) {
-        // Car view: a cool kicker from the far side/below so the dark underside keeps a readable silhouette.
+      else if (this.controls.viewMode !== 0) {
+        // Mounted and Drone views: a cool kicker from the far side/below so the dark underside keeps a readable silhouette.
         this.carKey.position.set(car.position.x + OFFSET.x - 5, car.position.y - 2.5, car.position.z + OFFSET.z - 6);
-      } else this.carKey.position.set(car.position.x + OFFSET.x + 9, car.position.y - 2, car.position.z + OFFSET.z + 10); // flip shot: camera side, low
-      const airKey = this.controls.viewMode === 2 ? 340 : 260;
+      } else this.carKey.position.set(car.position.x + OFFSET.x + 9, car.position.y - 2, car.position.z + OFFSET.z + 10); // Ground view: camera side, low
+      const airKey = this.controls.viewMode !== 0 ? 340 : 260;
       this.carKey.intensity = airKey * air * air * (3 - 2 * air) + 130 * drive * drive * (3 - 2 * drive);
+      // the camera rig on the car's rear deck exists only for the Mounted view
+      this.mountRig.visible = browser && this.controls.viewMode === 1 && !this.controls.introActive;
       if (browser) this.director.update(this.world.camera, this.controls.viewMode, time, this.clock, car.position, this.effects.impact, this.controls.introActive);
       let shellFrame: ShellFrame | null = null;
       if (browser) {

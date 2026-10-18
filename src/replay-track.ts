@@ -6,7 +6,7 @@ import thrustData from './data/thrusters.json';
  * roll about the long axis, timed from the broadcast) and normalised thrust for the four canted
  * corner nozzles, solved by inverse dynamics from the track. Same 1/60 s grid as the track.
  */
-const THRUST = thrustData as { dt: number; t0: number; quaternions: number[][]; thrust: number[][] };
+const THRUST = thrustData as { dt: number; t0: number; quaternions: number[][]; thrust: number[][]; side_thrust: number[][] };
 
 export interface TrackSample {
   time: number;
@@ -32,6 +32,8 @@ export class TrackPlayer {
   lift = 0;
   /** Thrust per corner nozzle, 0..1 (front-left, front-right, rear-left, rear-right). */
   readonly nozzle = new Float32Array(4);
+  /** Side (yaw) thrusters at the front corners, 0..1: [front-left, front-right]. */
+  readonly side = new Float32Array(2);
   private readonly thrustQuaternion = new Quaternion();
   private cursor = 0;
 
@@ -67,6 +69,8 @@ export class TrackPlayer {
     let sum = 0;
     for (let i = 0; i < 4; i++) { this.nozzle[i] = ta[i] + (tb[i] - ta[i]) * u; sum += this.nozzle[i]; }
     this.lift = sum / 4;
+    const sa = THRUST.side_thrust[k], sb = THRUST.side_thrust[k + 1];
+    for (let i = 0; i < 2; i++) this.side[i] = sa[i] + (sb[i] - sa[i]) * u;
     this.attitude = 0;
     return this;
   }

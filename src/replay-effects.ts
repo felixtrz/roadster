@@ -5,7 +5,7 @@ import {
 import { TrackPlayer, type ReconstructionTrack } from './replay-track.js';
 import { FX_TIME, FX_XR } from './scene-assets/lib/fx-materials.js';
 import thrustData from './data/thrusters.json';
-import { DEFAULT_NOZZLES, SPARK_COUNT, SPLASH_COUNT, TIRE_SMOKE_COUNT, VAPOR_COUNT } from './scene-assets/effects.scene-asset.js';
+import { DEFAULT_NOZZLES, SIDE_NOZZLES, SPARK_COUNT, SPLASH_COUNT, TIRE_SMOKE_COUNT, VAPOR_COUNT } from './scene-assets/effects.scene-asset.js';
 
 function smooth(e0: number, e1: number, v: number): number { const t = Math.min(1, Math.max(0, (v - e0) / (e1 - e0))); return t * t * (3 - 2 * t); }
 const random = (i: number): number => { const v = Math.sin(i * 127.1 + 311.7) * 43758.5453; return v - Math.floor(v); };
@@ -71,6 +71,11 @@ export class ReplayEffects {
   private readonly temp = new Vector3();
   private readonly carDown = new Vector3();
   private readonly nozzles: Vector3[] = DEFAULT_NOZZLES.map(([x, y, z]) => new Vector3(x, y, z));
+  private readonly sideNozzles: Vector3[] = SIDE_NOZZLES.map(([x, y, z]) => new Vector3(x, y, z));
+  private readonly sideExhaust: Vector3[] = (thrustData as { side_exhaust_dirs: number[][] }).side_exhaust_dirs.map(([x, y, z]) => new Vector3(x, y, z));
+  private readonly sideJets: Object3D[];
+  private readonly sidePlumes: ShaderMaterial[] = [];
+  private readonly sideCores: ShaderMaterial[] = [];
   private quality = 1;
   thrust = 0;
   /** Close camera views (Car view) keep the sight line to the car fully clear of vapor. */
@@ -94,6 +99,7 @@ export class ReplayEffects {
     this.opacityAttr = this.vapor.geometry.getAttribute('cloudOpacity') as InstancedBufferAttribute;
     this.lightAttr = this.vapor.geometry.getAttribute('cloudLight') as InstancedBufferAttribute;
     this.liftJets = thrusters.children.filter((child) => child.name.startsWith('LiftJet_'));
+    this.sideJets = thrusters.children.filter((child) => child.name.startsWith('SideJet_'));
     const cloneOn = (name: string): ShaderMaterial => {
       const source = (thrusters.getObjectByName(name) as Mesh).material as ShaderMaterial;
       const clone = source.clone();
@@ -112,6 +118,14 @@ export class ReplayEffects {
       this.jetPlumes.push(plume); this.jetCores.push(core);
       // the jet meshes exhaust along their local -Y: point that along the canted nozzle axis
       jet.quaternion.setFromUnitVectors(down, this.exhaust[i]);
+    });
+    this.sideJets.forEach((jet, i) => {
+      const plume = this.plumeMaterial.clone(); plume.uniforms.time = FX_TIME;
+      const core = this.coreMaterial.clone(); core.uniforms.time = FX_TIME;
+      (jet.getObjectByName('JetPlume') as Mesh).material = plume; (jet.getObjectByName('JetCore') as Mesh).material = core;
+      plume.uniforms.flare.value = 0; plume.uniforms.free.value = 1;
+      this.sidePlumes.push(plume); this.sideCores.push(core);
+      jet.quaternion.setFromUnitVectors(down, this.sideExhaust[i]);
     });
     const sparks = vaporRoot.getObjectByName('Sparks') as InstancedMesh;
     const splash = vaporRoot.getObjectByName('JetSplash') as InstancedMesh;
@@ -280,10 +294,27 @@ export class ReplayEffects {
       this.jetCores[i].uniforms.length.value = 1.6;
     }
     const touches = Math.min(1, touchesAll / Math.max(1e-3, lift * 4));
-    // Nozzle glows, sized by each nozzle's thrust.
-    for (let i = 0; i < 4; i++) {
-      const k = car.nozzle[i];
-      this.position.copy(this.nozzles[i]).addScaledVector(this.exhaust[i], 0.12);
+    // Side (yaw) thrusters: short sharp pulses straight out of the front corners, always free jets.
+    for (let i = 0; i < this.sideJets.length; i++) {
+      const jet = this.sideJets[i];
+      const t = car.side[i];
+      jet.visible = t > 0.02;
+      if (!jet.visible) continue;
+      const length = (2.4 + 1.4 * t) * (0.95 + 0.05 * Math.sin(time * 4.3 + i * 2.1));
+      jet.scale.set(0.7 + 0.2 * t, 1, 0.7 + 0.2 * t);
+      (jet.children[0] as Object3D).scale.set(1, length, 1);
+      (jet.children[1] as Object3D).scale.set(1, Math.min(length, 0.5 + 0.6 * t), 1);
+      this.sidePlumes[i].uniforms.intensity.value = t * flicker * 1.1;
+      this.sidePlumes[i].uniforms.length.value = length;
+      this.sideCores[i].uniforms.intensity.value = t * flicker * 0.18;
+      this.sideCores[i].uniforms.length.value = 0.9;
+    }
+    // Nozzle glows, sized by each nozzle's thrust (four floor nozzles, then the two side nozzles).
+    for (let i = 0; i < 6; i++) {
+      const side = i >= 4;
+      const k = side ? car.side[i - 4] * 0.7 : car.nozzle[i];
+      if (side) this.position.copy(this.sideNozzles[i - 4]).addScaledVector(this.sideExhaust[i - 4], 0.08);
+      else this.position.copy(this.nozzles[i]).addScaledVector(this.exhaust[i], 0.12);
       this.matrix.compose(this.position, this.identity, this.scale.setScalar(k > 0.01 ? (0.25 + k * 0.35) * flicker : 0));
       this.nozzleGlows.setMatrixAt(i, this.matrix);
     }
@@ -415,6 +446,6 @@ export class ReplayEffects {
   dispose(): void {
     this.vapor.geometry.dispose(); this.vaporMaterial.dispose();
     for (const geometry of this.ownedGeometries) geometry.dispose();
-    for (const material of [this.coreMaterial, this.plumeMaterial, this.sparkMaterial, this.splashMaterial, this.splashGlowMaterial, ...this.jetPlumes, ...this.jetCores]) material.dispose();
+    for (const material of [this.coreMaterial, this.plumeMaterial, this.sparkMaterial, this.splashMaterial, this.splashGlowMaterial, ...this.jetPlumes, ...this.jetCores, ...this.sidePlumes, ...this.sideCores]) material.dispose();
   }
 }

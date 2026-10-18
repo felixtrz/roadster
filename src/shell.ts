@@ -5,6 +5,8 @@
  * which writes the RoadsterReplay component.
  */
 
+import { VIEW_NAMES } from './replay-camera.js';
+
 export interface ShellHost {
   duration: number;
   phases: readonly { id: string; label: string; time: number }[];
@@ -23,7 +25,7 @@ export interface ShellFrame {
   altitudeFt: number; g: number; pitchDeg: number; inverted: boolean; rollScale: number; impact: number;
 }
 
-const VIEW_LABELS = ['Show', 'Wide', 'Car', 'Top'];
+const VIEW_LABELS: readonly string[] = VIEW_NAMES;
 const ICONS = {
   play: '<svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>',
   pause: '<svg viewBox="0 0 24 24"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z" fill="currentColor"/></svg>',

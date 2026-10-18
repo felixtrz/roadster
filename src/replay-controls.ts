@@ -83,7 +83,7 @@ export class ReplayControls {
       if (event.code === 'KeyR') this.restart();
       if (event.code.startsWith('Digit')) {
         const mode = Number(event.code.slice(-1)) - 1;
-        if (mode >= 0 && mode <= 3) this.setView(mode);
+        if (mode >= 0 && mode < VIEW_NAMES.length) this.setView(mode);
       }
       if (event.code === 'ArrowLeft' || event.code === 'ArrowRight') {
         event.preventDefault();
@@ -132,7 +132,7 @@ export class ReplayControls {
 
   setView(mode: number): void {
     if (!Number.isFinite(mode)) return;
-    this.viewMode = Math.max(0, Math.min(3, Math.floor(mode)));
+    this.viewMode = Math.max(0, Math.min(VIEW_NAMES.length - 1, Math.floor(mode)));
     this.viewLabel.setProperties({ text: `${VIEW_NAMES[this.viewMode]} view` });
   }
 

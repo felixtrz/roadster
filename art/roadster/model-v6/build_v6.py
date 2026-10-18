@@ -554,8 +554,11 @@ def side_intakes(skin, mats, parent):
     marker in it (press side photos); projected onto the skin along -x/+x and lifted 2 mm."""
     from mathutils.bvhtree import BVHTree
     bvh = BVHTree.FromObject(skin, bpy.context.evaluated_depsgraph_get())
-    shapes = {'SideIntake': ([(-1.232, 0.660), (-1.085, 0.700), (-1.085, 0.742), (-1.250, 0.745)], 'black')}
-    lift = {'SideIntake': 0.002}
+    shapes = {'SideIntake': ([(-1.232, 0.660), (-1.085, 0.700), (-1.085, 0.742), (-1.250, 0.745)], 'black'),
+              # side (yaw) thruster outlet on each front bumper corner, ahead of the arch (close replay 92.6-97.1 s)
+              'SideThrusterRim': ([(-2.115, 0.362), (-2.005, 0.362), (-2.005, 0.438), (-2.115, 0.438)], 'brass'),
+              'SideThrusterPort': ([(-2.100, 0.374), (-2.020, 0.374), (-2.020, 0.426), (-2.100, 0.426)], 'throat')}
+    lift = {'SideIntake': 0.002, 'SideThrusterRim': 0.002, 'SideThrusterPort': 0.0035}
     for s in (1, -1):
         for name, (poly, m) in shapes.items():
             bm = bmesh.new()

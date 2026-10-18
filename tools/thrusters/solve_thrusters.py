@@ -11,6 +11,11 @@ replay angle and Tesla's overhead edit):
     (overhead d033-d041, the long plume on the other side). Then all four fire together to arrest
     the fall and hover into the vapour cloud.
   * Broadcast timing: lip about 8.25 s, rolled 90 deg about 8.75 s, upright about 9.45 s.
+  * Two side thrusters at the front bumper corners fire straight out sideways, alternately, in short
+    bang-bang pulses through the flip and the descent (close replay 92.6-97.1 s, main angle
+    f0010-f0095, overhead o0072-o0090; Tesla presentation: "attitude control thrusters"; press: two
+    front nozzles for yaw). The floor nozzles cannot yaw the car (their thrust lines are parallel to
+    the yaw axis), so heading is the side pair's job.
 
 Model: rigid car, m = 1900 kg, box inertia (4.6 x 2.0 x 1.2 m). The roll is a constant-torque
 bang-bang manoeuvre over [8.25, 9.45] s. For every 1/60 s sample the required body wrench (force
@@ -45,6 +50,14 @@ EXHAUST /= np.linalg.norm(EXHAUST, axis=1, keepdims=True)
 THRUST_DIR = -EXHAUST                       # force on the car per newton of thrust (car frame)
 ARM = NOZZLES - CG
 WRENCH = np.vstack([THRUST_DIR.T, np.cross(ARM, THRUST_DIR).T])   # 6 x 4
+
+# Side (yaw) thrusters at the front bumper corners, firing straight out of the side panels.
+SIDE_NOZZLES = np.array([[2.04, 0.40, -1.02], [2.04, 0.40, 1.02]])          # front-left, front-right
+SIDE_EXHAUST = np.array([[0.0, 0.0, -1.0], [0.0, 0.0, 1.0]])
+SIDE_TMAX = 1500.0           # footage-consistent range 1.5-4 kN (low confidence); the low end keeps heading within a few degrees
+# Pulses read from the footage (main-clip seconds; nozzle 0 = FL, 1 = FR); full thrust, 40 ms valve ramps.
+SIDE_PULSES = [(0, 8.21, 8.48), (1, 8.51, 8.64), (1, 9.09, 9.51), (0, 9.53, 9.88), (1, 9.89, 10.38), (0, 10.40, 10.84), (1, 10.84, 11.00)]
+YAW_WINDOW = (8.20, 11.50)    # leaves the lip with a residual yaw rate; heading back to zero by touchdown
 
 T0, T1 = 8.25, 9.45           # roll burn window (broadcast timing)
 AIR = (8.0, 11.55)            # release to touchdown
@@ -115,6 +128,37 @@ for i in range(1, len(qs)):
     if np.dot(qs[i], qs[i - 1]) < 0: qs[i] = -qs[i]
 
 
+dt = ts[1] - ts[0]
+side = np.zeros((len(ts), 2))
+for k, a, b in SIDE_PULSES:
+    ramp = np.clip((ts - a) / 0.04, 0, 1) * np.clip((b - ts) / 0.04, 0, 1)
+    side[:, k] = np.maximum(side[:, k], ramp * SIDE_TMAX)
+SIDE_ARM = SIDE_NOZZLES - CG
+SIDE_DIR = -SIDE_EXHAUST                                   # force on the car per newton
+side_tau = np.array([np.cross(SIDE_ARM[k], SIDE_DIR[k]) for k in range(2)])   # torque per newton (car frame)
+yaw_torque = side @ side_tau[:, 1]                          # about the car's up axis
+# Yaw response: I_yaw * psi'' = side torque + a steady disturbance (floor-nozzle misalignment, flow near
+# the ground), with the residual yaw rate the car carries off the lip. Disturbance and initial rate are
+# solved so heading and yaw rate are back to zero at touchdown: the pulses are the controller's work.
+w0, w1 = YAW_WINDOW
+win = (ts >= w0) & (ts <= w1)
+tw = ts[win] - w0
+S = np.cumsum(yaw_torque[win]) * dt                         # integral of side torque
+SS = np.cumsum(S) * dt
+Iy, D = I[1, 1], tw[-1]
+A = np.array([[1.0, D / Iy], [D, D * D / (2 * Iy)]])
+rhs = -np.array([S[-1] / Iy, SS[-1] / Iy])
+omega0, tau_d = np.linalg.solve(A, rhs)
+psi = np.zeros(len(ts))
+psi[win] = omega0 * tw + (SS + tau_d * tw * tw / 2) / Iy
+for i in np.where(win)[0]:
+    qs[i] = qmul(qs[i], qaxis((0, 1, 0), psi[i]))
+for i in range(1, len(qs)):
+    if np.dot(qs[i], qs[i - 1]) < 0: qs[i] = -qs[i]
+print('yaw: residual rate off the lip %.1f deg/s, disturbance %.0f N m, heading within %.1f..%.1f deg'
+      % (math.degrees(omega0), tau_d, math.degrees(psi.min()), math.degrees(psi.max())))
+
+
 def gsmooth(a, sigma):
     r = int(3 * sigma); k = np.exp(-0.5 * (np.arange(-r, r + 1) / sigma) ** 2); k /= k.sum()
     pad = np.pad(a, [(r, r)] + [(0, 0)] * (a.ndim - 1), mode='edge')
@@ -160,6 +204,9 @@ for i, t in enumerate(ts):
     F_world = M * (acc[i] - G)
     F_body = R.T @ F_world
     tau = I @ alpha[i] + np.cross(omega[i], I @ omega[i])
+    # the side pair's force and torque are prescribed (the pulses); the floor nozzles carry the rest
+    F_body = F_body - side[i] @ SIDE_DIR
+    tau = tau - side[i] @ side_tau
     # the roll torque is what the footage shows; force matters most once the car is upright
     upright = max(0.0, float(qrot(qs[i], np.array([0, 1, 0]))[1]))
     wF = np.array([0.3, 1.0, 0.3]) * (0.15 + upright) / (M * 9.81)
@@ -179,12 +226,14 @@ thrust = gsmooth(thrust, 2.4)
 thrust[thrust < 250] = 0
 for r in report: print(r)
 out = {
-    'model': 'bang-bang roll about the long axis over [8.25, 9.45] s; four canted corner nozzles; bounded least-squares allocation',
+    'model': 'bang-bang roll about the long axis over [8.25, 9.45] s; four floor-perpendicular corner nozzles by bounded least-squares allocation; two front side (yaw) nozzles pulsing as in the footage, with the yaw response integrated into the attitude',
     'mass_kg': M, 'inertia_kgm2': np.diag(I).round(1).tolist(), 'max_thrust_N': TMAX,
     'nozzles': NOZZLES.tolist(), 'exhaust_dirs': EXHAUST.round(5).tolist(),
     'dt': dt, 't0': float(ts[0]),
     'quaternions': [[round(float(v), 6) for v in q] for q in qs],
     'thrust': [[round(float(v) / TMAX, 4) for v in T] for T in thrust],
+    'side_nozzles': SIDE_NOZZLES.tolist(), 'side_exhaust_dirs': SIDE_EXHAUST.tolist(), 'side_max_thrust_N': SIDE_TMAX,
+    'side_thrust': [[round(float(v) / SIDE_TMAX, 4) for v in T] for T in side],
 }
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
 json.dump(out, open(OUT, 'w'))

@@ -44,7 +44,7 @@ Other commands:
 | Space | Play / pause |
 | R | Restart |
 | S | Toggle 1x / 0.25x speed |
-| 1–4 | Camera: Show, Wide, Car, Top |
+| 1–3 | Camera: Ground (a fixed vantage beside the lane that follows the run, like the broadcast), Mounted (a rig fixed behind the car that rolls with it), Drone (a loose follow from the air) |
 | Left / Right arrows | Step back / forward half a second |
 | Timeline | Drag to scrub |
 | **Enter XR** | Start an immersive VR session |
@@ -57,7 +57,7 @@ In XR, the control panel stays in the world, your head controls the camera, and 
 
 **The car.** `public/models/roadster.glb` is modelled from scratch in Blender by Python scripts. The body is defined by its character lines, then cut into real panels with gaps (hood, fenders, doors, quarters, canopy and side glass, fascia, tail, diffuser, nozzles, wheels and lamps). The wheels and nozzle anchors are separate nodes. See [art/roadster/model-v6/README.md](art/roadster/model-v6/README.md). `art/roadster/model/` and `art/roadster/model-v5/` are earlier attempts, kept for their scripts.
 
-**Thrusters.** A frame-by-frame study of the broadcast, its replay angle and the overhead edit shows the car leaving the lip inverted and rolling about its long axis. Four corner nozzles fire one side to start the roll and the other to stop it, then all four arrest the fall. `tools/thrusters/solve_thrusters.py` turns this into per-nozzle thrust with an inverse-dynamics solve and writes `src/data/thrusters.json`. See [tools/thrusters/README.md](tools/thrusters/README.md).
+**Thrusters.** A frame-by-frame study of the broadcast, its replay angle and the overhead edit shows the car leaving the lip inverted and rolling about its long axis. Four floor nozzles fire one side to start the roll and the other to stop it, then all four arrest the fall, while two side thrusters at the front bumper corners pulse alternately to hold the car's heading. `tools/thrusters/solve_thrusters.py` turns this into per-nozzle thrust with an inverse-dynamics solve and writes `src/data/thrusters.json`. See [tools/thrusters/README.md](tools/thrusters/README.md).
 
 **Film.** `tools/film/` renders a 1080p30 film, all at real time. It opens with one continuous shot and no cuts: an orbit around the parked car, a crane out to a fixed vantage point, then the whole run from there with a smooth pan and zoom (`make_plans.py` drives the app's camera through `window.roadsterFilmCamera`). Next come a few seconds of the broadcast with the reconstruction reprojected over it frame by frame (`annotate_cv.py`): SIFT/RANSAC camera registration, the fitted ramp, the solved car path, and the posed car box with its body axes, rolling through the flip with the physics-solved attitude, plus the firing nozzles, a roll dial and per-nozzle thrust. It ends with a first-person VR walk-up in which the car passes a few metres away. Frame capture (`capture-frames.mjs`, `capture-all.sh`) steps the replay clock exactly and recovers on its own from browser failures; `assemble.sh` does the edit and needs ffmpeg. The film is not in the repository because its middle segment shows Tesla footage. `annotate_cv.py` needs the local footage excerpt, and `assemble.sh` skips that segment without it.
 

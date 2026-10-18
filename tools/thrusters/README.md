@@ -1,6 +1,6 @@
 # Thruster firing: footage study and physics model
 
-`solve_thrusters.py` produces `src/data/thrusters.json`. That file holds the car's air-phase attitude and the thrust of each of its four corner nozzles, sampled every 1/60 s. `TrackPlayer` plays it back, and `ReplayEffects` gives each nozzle its own plume, fixed to the car body.
+`solve_thrusters.py` produces `src/data/thrusters.json`. That file holds the car's air-phase attitude, the thrust of each of its four floor nozzles and of its two side (yaw) nozzles, sampled every 1/60 s. `TrackPlayer` plays it back, and `ReplayEffects` gives each nozzle its own plume, fixed to the car body.
 
 ## What the footage shows
 
@@ -8,16 +8,18 @@ Frames were sampled at full rate: every 1/30 s from the broadcast clip and its c
 
 1. **The car leaves the overhang lip upside down.** While it is still inverted, cyan jets stream from nozzles on one side toward the sky (overhead frames d001–d007; replay r063–r090).
 2. **It rolls about its long axis to wheels-down.** The heading never changes: the overhead edit sees the belly, then the side, then the roof (d009–d033), and the front-on replay sees the car turn in the image plane (r101–r146).
-3. **There are no side thrusters.** The four corner nozzles point down, perpendicular to the floor pan. A jet that looks sideways or splayed (d033–d051) is one of these nozzles, seen while the car is still banked.
-4. **The roll is a two-sided burn.** The nozzles on one side start it. Upside down, they push that side toward the ground. The opposite side then fires to stop the roll (d033–d041 show a long plume on the far side). After that, all four fire together to arrest the fall and hover into the cloud (B09–B11, d043–d081).
-5. **Broadcast timing:** the car is at the lip at about 8.25 s, rolled 90° at about 8.75 s, and upright at about 9.45 s.
+3. **The four floor nozzles point straight down,** perpendicular to the floor pan. A splayed-looking floor jet (d033–d051) is one of these nozzles seen while the car is still banked.
+4. **Two side thrusters at the front bumper corners fire straight out sideways,** alternately, in short bang-bang pulses of 0.35–0.5 s. They are clearest in the close replay, which shows horizontal jets from the bumper corners: right at 92.6–94.5 and 95.07–95.94 s, left at 94.54–95.14 and 96.07–97.08 s. The main angle shows the same alternation: right at f0037–f0049, f0061–f0075 and f0089–f0095; left at f0050–f0060. Projecting candidate directions through the fitted cameras matches a sideways jet and rules out fore and aft ones. Tesla's presentation mentions attitude control thrusters, press coverage lists two front nozzles for yaw, and Tesla's top-down photo of the descent shows a jet coming straight out of the front fender. No other jets are visible: the rear brass diffuser nozzles stay off.
+5. **The roll is a two-sided burn.** The nozzles on one side start it. Upside down, they push that side toward the ground. The opposite side then fires to stop the roll (d033–d041 show a long plume on the far side). After that, all four fire together to arrest the fall and hover into the cloud (B09–B11, d043–d081).
+6. **Broadcast timing:** the car is at the lip at about 8.25 s, rolled 90° at about 8.75 s, and upright at about 9.45 s.
 
 ## Model
 
 - **Rigid car.** Mass is 1,900 kg. The inertias come from a 4.6 × 2.0 × 1.2 m box: about 870 kg·m² in roll, 4,000 in yaw and 3,600 in pitch.
 - **Nozzles.** They sit under the floor, inboard of the wheels, at (±1.05, 0.14, ±0.55) m in the car frame. They point straight down, perpendicular to the floor pan, and each produces up to 15 kN. The roll torque comes from the sideways offset of each side's pair from the centre of mass.
 - **Attitude.** The roll is a constant-torque bang-bang burn over [8.25, 9.45] s, about 8.7 rad/s². That needs about 7.6 kN·m of torque, roughly 14 kN on one side at a 0.55 m lever arm.
-- **Thrust allocation.** For every sample, the required body wrench is computed. The force is m(a − g) from the track. The torque is Iα + ω × Iω from the attitude. The wrench is then split across the four nozzles by bounded least squares, solved exactly by active-set enumeration.
+- **Side (yaw) nozzles.** One at each front bumper corner, at (2.04, 0.40, ±1.02) m, exhausting straight out of the side panels, at up to 1.5 kN each. The footage suggests 1.5–4 kN; the low end keeps heading within a few degrees. The floor nozzles cannot yaw the car, because their thrust lines are parallel to the yaw axis, so heading is the side pair's job. The pulses follow the footage timeline. The yaw response is integrated into the attitude: the car leaves the lip with a small residual yaw rate and sees a steady disturbance (floor-nozzle misalignment, flow near the ground), and both are solved so that the pulses bring heading and yaw rate back to zero by touchdown. Heading stays within −6.5° to +0.4°.
+- **Thrust allocation.** For every sample, the required body wrench is computed. The force is m(a − g) from the track. The torque is Iα + ω × Iω from the attitude. The side pair's force and torque are subtracted, and the rest is split across the four floor nozzles by bounded least squares, solved exactly by active-set enumeration.
 
 ## Result
 
