@@ -111,3 +111,6 @@ art/**/runtime-captures/
 
 # Per-machine MCP server config written by the IWSDK CLI (absolute local paths)
 .cursor/mcp.json
+
+# Generated film soundtrack (tools/film/soundtrack.py)
+artifacts/**/*.wav
