@@ -1,0 +1,24 @@
+{
+  "reconstructionSha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3",
+  "allPassed": true,
+  "checks": {
+    "1081_samples": true,
+    "60hz_timestamps": true,
+    "finite_pose_velocity_acceleration": true,
+    "unit_quaternions": true,
+    "no_quaternion_sign_flips": true,
+    "no_negative_ground_height": true,
+    "release_no_velocity_impulse": true,
+    "acceleration_below_regularization_ceiling": true,
+    "ground_after_nominal_touchdown": true,
+    "ramp_wider_than_authored_car": true,
+    "delivered_polyline_contact_error_below_1cm": true,
+    "in_sample_pixel_fit_below_20px": true,
+    "withheld_pixel_evidence_reported": true,
+    "extrapolated_tail_explicit": true
+  },
+  "maxAcceleration_mps2": 34.39680468881786,
+  "maxQuaternionNormError": 6.841256006140384e-09,
+  "releaseAdjacentVelocityChange_mps": 0.2504708246481818,
+  "scope": "numerical consistency and evidence bookkeeping, not proof of metric accuracy or physical capability"
+}

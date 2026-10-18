@@ -1,0 +1,46 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "scene.transform",
+    "result": {
+      "localPosition": [
+        6,
+        0,
+        -34
+      ],
+      "localQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "localScale": [
+        1,
+        1,
+        1
+      ],
+      "globalPosition": [
+        6,
+        0,
+        -34
+      ],
+      "globalQuaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "globalScale": [
+        1,
+        1,
+        1
+      ],
+      "positionRelativeToXROrigin": [
+        6,
+        0.015001004561781883,
+        -34
+      ]
+    }
+  }
+}

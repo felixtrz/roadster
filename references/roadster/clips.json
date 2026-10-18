@@ -1,0 +1,29 @@
+[
+  {
+    "file": "media/ramp-event_0603-0756.mp4",
+    "event_start_seconds": 363,
+    "event_end_seconds": 476,
+    "nominal_duration_seconds": 113,
+    "timing_note": "Local time zero maps to nominal source start; allow one video frame of rounding.",
+    "sha256": "00644ffd775a54ab9f1cd27b66389e2a5364bbe086f97fa3aa8293718ef4c35d",
+    "bytes": 18583151
+  },
+  {
+    "file": "media/ramp-main_0708-0726.mp4",
+    "event_start_seconds": 428,
+    "event_end_seconds": 446,
+    "nominal_duration_seconds": 18,
+    "timing_note": "Local time zero maps to nominal source start; allow one video frame of rounding.",
+    "sha256": "d792202f634d69b76e29e28316cc056a661fc627a135611d6bfc9e41ffb2e84d",
+    "bytes": 3175877
+  },
+  {
+    "file": "media/fleet_1056-1149.mp4",
+    "event_start_seconds": 656,
+    "event_end_seconds": 709,
+    "nominal_duration_seconds": 53,
+    "timing_note": "Local time zero maps to nominal source start; allow one video frame of rounding.",
+    "sha256": "57211fe7b39e7ded74b0e56e7c5a7678f52f80d431b00b8c78df3eafe6ff7fb1",
+    "bytes": 11495498
+  }
+]

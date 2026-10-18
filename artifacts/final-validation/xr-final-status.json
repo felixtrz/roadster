@@ -1,0 +1,85 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "xr.status",
+    "result": {
+      "deviceName": "Meta Quest 3",
+      "isRuntimeInstalled": true,
+      "sessionActive": false,
+      "sessionOffered": true,
+      "sessionMode": null,
+      "enabledFeatures": [],
+      "visibilityState": "visible",
+      "runtimeKind": "emulated",
+      "browser": {
+        "lifecycle": {
+          "state": "running",
+          "policy": "eager",
+          "sessionId": "f16405b9-e080-4119-b9f8-364479b0dd09",
+          "browserEpoch": 1,
+          "revision": 15,
+          "stateEnteredAt": "2026-10-17T21:23:23.361Z",
+          "lastObservedAt": "2026-10-17T21:27:11.601Z",
+          "failures": 0,
+          "cleanupConfirmed": true,
+          "attemptLimit": 3,
+          "historyTruncated": false,
+          "retryEligible": false,
+          "nextAction": "Use runtime_list_targets to inspect endpoint readiness.",
+          "history": [
+            {
+              "revision": 1,
+              "state": "launching",
+              "at": "2026-10-17T21:23:22.684Z",
+              "reason": "launch"
+            },
+            {
+              "revision": 2,
+              "state": "launching",
+              "at": "2026-10-17T21:23:22.684Z",
+              "reason": "prepared"
+            },
+            {
+              "revision": 3,
+              "state": "running",
+              "at": "2026-10-17T21:23:23.361Z",
+              "reason": "running"
+            }
+          ],
+          "attemptId": "3ce8f38f-d5ef-4e71-b113-009ae1cd4cb8"
+        },
+        "status": "connected",
+        "clients": [
+          {
+            "commandReady": true,
+            "sessionId": "f16405b9-e080-4119-b9f8-364479b0dd09",
+            "browserEpoch": 1,
+            "deviceClass": "managed",
+            "pageId": "tab-mvcwlfla-iy70d5",
+            "role": "app",
+            "tabGeneration": 2
+          },
+          {
+            "commandReady": true,
+            "sessionId": "f16405b9-e080-4119-b9f8-364479b0dd09",
+            "browserEpoch": 1,
+            "deviceClass": "managed",
+            "pageId": "tab-mvcwlew0-792a72",
+            "role": "editor",
+            "sceneSessionId": "scene-mjx4dja5hr",
+            "tabGeneration": 2
+          }
+        ],
+        "lastBridgeConnectedAt": "2026-10-17T21:27:11.315Z",
+        "lastCommandReadyAt": "2026-10-17T21:27:11.601Z",
+        "connected": true,
+        "commandReady": true,
+        "connectedClientCount": 2,
+        "lastTransitionAt": "2026-10-17T21:23:23.361Z"
+      },
+      "browserConnected": true,
+      "browserCommandReady": true
+    }
+  }
+}

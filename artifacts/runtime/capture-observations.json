@@ -1,0 +1,110 @@
+[
+  {
+    "name": "ready",
+    "state": [
+      {
+        "time": 0,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 0
+      }
+    ]
+  },
+  {
+    "name": "climb",
+    "state": [
+      {
+        "time": 6,
+        "playing": false,
+        "phase": "climb",
+        "speed": 1,
+        "view": 0
+      }
+    ]
+  },
+  {
+    "name": "release",
+    "state": [
+      {
+        "time": 8.199999809265137,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    ]
+  },
+  {
+    "name": "flip",
+    "state": [
+      {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    ]
+  },
+  {
+    "name": "descent",
+    "state": [
+      {
+        "time": 10.5,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    ]
+  },
+  {
+    "name": "landing",
+    "state": [
+      {
+        "time": 11.600000381469727,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    ]
+  },
+  {
+    "name": "driveaway",
+    "state": [
+      {
+        "time": 14,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    ]
+  },
+  {
+    "name": "car",
+    "state": [
+      {
+        "time": 0,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    ]
+  },
+  {
+    "name": "wide",
+    "state": [
+      {
+        "time": 8.199999809265137,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 1
+      }
+    ]
+  }
+]

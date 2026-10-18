@@ -1,0 +1,162 @@
+{
+  "file": "public/models/roadster.glb",
+  "file_bytes": 1908080,
+  "triangles": 70821,
+  "mesh_parts": 60,
+  "nodes": 70,
+  "nonunit_normals": 0,
+  "degenerate_triangles": 0,
+  "degenerate_parts": {},
+  "degenerate_threshold": {
+    "official_iwsdk_preview": "dot(AB\u00d7AC,AB\u00d7AC)<1e-16",
+    "double_area_m2": 1e-08,
+    "triangle_area_m2": 5e-09,
+    "arithmetic": "float32 exported coordinates promoted to float64, in geometry-local coordinates"
+  },
+  "runtime_bounds": {
+    "min": [
+      -2.3315785139828265,
+      0.0,
+      -1.1969379547363388
+    ],
+    "max": [
+      2.309422202893314,
+      1.3209999799728394,
+      1.1969383344910673
+    ]
+  },
+  "semantic_checks": {
+    "Wheel_FL": {
+      "position": [
+        1.413211,
+        0.34831,
+        -1.05132
+      ],
+      "local_x_world": [
+        -0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    "Wheel_FR": {
+      "position": [
+        1.413211,
+        0.34831,
+        1.05132
+      ],
+      "local_x_world": [
+        -0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    "Wheel_RL": {
+      "position": [
+        -1.413211,
+        0.357693,
+        -1.051438
+      ],
+      "local_x_world": [
+        -0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    "Wheel_RR": {
+      "position": [
+        -1.413211,
+        0.357693,
+        1.051438
+      ],
+      "local_x_world": [
+        -0.0,
+        0.0,
+        -1.0
+      ]
+    },
+    "NozzleAnchor_1": {
+      "position": [
+        -2.323578,
+        0.367,
+        0.456
+      ],
+      "local_z_world": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "NozzleAnchor_2": {
+      "position": [
+        -2.323578,
+        0.367,
+        0.152
+      ],
+      "local_z_world": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "NozzleAnchor_3": {
+      "position": [
+        -2.323578,
+        0.367,
+        -0.152
+      ],
+      "local_z_world": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    },
+    "NozzleAnchor_4": {
+      "position": [
+        -2.323578,
+        0.367,
+        -0.456
+      ],
+      "local_z_world": [
+        -1.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "basis_verified": {
+    "forward": "+X",
+    "up": "+Y",
+    "left": "-Z",
+    "nozzle_local_plus_z": "rearward -X"
+  },
+  "source_mesh_shipped": false,
+  "front_material_checks": {
+    "corner_led_area_m2": 0.011764012204548667,
+    "corner_led_forward_area_fraction": 1.0,
+    "white_led_emissive_factor": [
+      0.800000011920929,
+      0.9399999976158142,
+      1
+    ],
+    "white_led_emissive_strength": 8,
+    "corner_led_surface_owner": "BodyShell",
+    "cavity_core_gltf": {
+      "baseColorFactor": [
+        0.003000000026077032,
+        0.004000000189989805,
+        0.004999999888241291,
+        1
+      ],
+      "metallicFactor": 0.949999988079071,
+      "roughnessFactor": 0.800000011920929
+    }
+  },
+  "glazing_ownership": {
+    "owners": [
+      "BodyShell"
+    ],
+    "triangles": 7128,
+    "overlay_meshes": 0,
+    "method": "Single exterior BodyShell topology has paint/glass face material regions; no underlying duplicate shell is retained beneath an overlay."
+  }
+}

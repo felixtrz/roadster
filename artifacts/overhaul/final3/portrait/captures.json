@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "p-climb",
+      "time": 5,
+      "view": 0,
+      "file": "artifacts/overhaul/final3/portrait/p-climb.png",
+      "state": {
+        "time": 5,
+        "playing": false,
+        "phase": "climb",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "p-flip",
+      "time": 9.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final3/portrait/p-flip.png",
+      "state": {
+        "time": 9.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "p-descent",
+      "time": 10.8,
+      "view": 0,
+      "file": "artifacts/overhaul/final3/portrait/p-descent.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "p-landing",
+      "time": 11.8,
+      "view": 0,
+      "file": "artifacts/overhaul/final3/portrait/p-landing.png",
+      "state": {
+        "time": 11.800000190734863,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.13019927455111,
+  "info": {
+    "frame": 49743,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

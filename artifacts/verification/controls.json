@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "check": "pointer-play",
+      "state": {
+        "time": 3.400200366973877,
+        "playing": true,
+        "phase": "climb",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "check": "pointer-pause",
+      "state": {
+        "time": 3.400200366973877,
+        "playing": false,
+        "phase": "climb",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "check": "pointer-slow-motion",
+      "state": {
+        "time": 3.400200366973877,
+        "playing": false,
+        "phase": "climb",
+        "speed": 0.25,
+        "view": 0
+      }
+    },
+    {
+      "check": "pointer-camera",
+      "state": {
+        "time": 3.400200366973877,
+        "playing": false,
+        "phase": "climb",
+        "speed": 0.25,
+        "view": 1
+      }
+    },
+    {
+      "check": "pointer-replay",
+      "state": {
+        "time": 0.025049999356269836,
+        "playing": true,
+        "phase": "ready",
+        "speed": 0.25,
+        "view": 1
+      }
+    },
+    {
+      "check": "keyboard-step",
+      "state": {
+        "time": 0.5250499844551086,
+        "playing": false,
+        "phase": "ready",
+        "speed": 0.25,
+        "view": 1
+      }
+    },
+    {
+      "check": "keyboard-play-view",
+      "state": {
+        "time": 0.6001001000404358,
+        "playing": true,
+        "phase": "ready",
+        "speed": 0.25,
+        "view": 2
+      }
+    },
+    {
+      "check": "end-stops",
+      "state": {
+        "time": 18,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 0.25,
+        "view": 2
+      }
+    }
+  ]
+}

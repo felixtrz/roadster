@@ -1,0 +1,63 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "ecs.query",
+    "result": {
+      "entityIndex": 14,
+      "active": true,
+      "name": "Roadster",
+      "components": [
+        {
+          "componentId": "Transform",
+          "description": "Component for 3D transformation (position, rotation, scale)",
+          "values": {
+            "position": [
+              -29.64285659790039,
+              2.9684269428253174,
+              -34
+            ],
+            "orientation": [
+              0,
+              1,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ],
+            "parent": {
+              "entityIndex": 11,
+              "name": "LevelRoot"
+            }
+          }
+        },
+        {
+          "componentId": "Visibility",
+          "description": "Component to control if an entity object is visible",
+          "values": {
+            "isVisible": true
+          }
+        },
+        {
+          "componentId": "LevelTag",
+          "description": "Marker component for level membership",
+          "values": {
+            "id": "/scenes/main.iwsdk.scene.json"
+          }
+        },
+        {
+          "componentId": "RoadsterReplay",
+          "values": {
+            "elapsed": 10.227083206176758,
+            "playing": true,
+            "speed": 0.25,
+            "phase": "descent"
+          }
+        }
+      ]
+    }
+  }
+}

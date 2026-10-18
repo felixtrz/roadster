@@ -1,0 +1,402 @@
+[
+  {
+    "id": "A01",
+    "requested_event_seconds": 368,
+    "decoded_source_pts_seconds": 368.001,
+    "source_frame_index_0_based": 11029,
+    "file": "frames/A01_event_06-08.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=368s",
+    "note": "First run: rear view at the foot of the ramp",
+    "sha256": "82780f302a8174a63cdf723f970b4cb81f7521ede01a792d492456d34dcd1731"
+  },
+  {
+    "id": "A02",
+    "requested_event_seconds": 392,
+    "decoded_source_pts_seconds": 392.025,
+    "source_frame_index_0_based": 11749,
+    "file": "frames/A02_event_06-32.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=392s",
+    "note": "First run: entry into the curve",
+    "sha256": "43b7db661e9d0dff25c51b99e9848730981ec1e954e3141995b6220aa332d22e"
+  },
+  {
+    "id": "A03",
+    "requested_event_seconds": 396,
+    "decoded_source_pts_seconds": 396.029,
+    "source_frame_index_0_based": 11869,
+    "file": "frames/A03_event_06-36.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=396s",
+    "note": "First run: car on the steep surface",
+    "sha256": "6e43d1df8ed282173b2e7f007e0e9b1b30d6304ca9540fb80895182ff6ca6aad"
+  },
+  {
+    "id": "A04",
+    "requested_event_seconds": 406,
+    "decoded_source_pts_seconds": 406.005,
+    "source_frame_index_0_based": 12168,
+    "file": "frames/A04_event_06-46.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=406s",
+    "note": "First run: inverted close-up; HUD pitch 170 deg, altitude 67.7 ft",
+    "sha256": "a52fa64044f876538921158ce7b6509a39462f6c47790e0c44e368c376eca7ec"
+  },
+  {
+    "id": "A05",
+    "requested_event_seconds": 412,
+    "decoded_source_pts_seconds": 412.011,
+    "source_frame_index_0_based": 12348,
+    "file": "frames/A05_event_06-52.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=412s",
+    "note": "First run: held near the top; HUD altitude 69.1 ft",
+    "sha256": "55592a5e51be4fba877a6b783279c222879085fb8dd77dfce1a182738ac14f96"
+  },
+  {
+    "id": "A06",
+    "requested_event_seconds": 416,
+    "decoded_source_pts_seconds": 416.015,
+    "source_frame_index_0_based": 12468,
+    "file": "frames/A06_event_06-56.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=416s",
+    "note": "First run: reversing down while wheels remain on the surface",
+    "sha256": "1915f300dd5df4b658b7efd4daf3db4171773901625fdf1f81d9628f8bcba607"
+  },
+  {
+    "id": "A07",
+    "requested_event_seconds": 424,
+    "decoded_source_pts_seconds": 424.023,
+    "source_frame_index_0_based": 12708,
+    "file": "frames/A07_event_07-04.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=424s",
+    "note": "First run: back at the bottom",
+    "sha256": "25ce75dbd98f7298a91d91ac432af7163937587c4a98db9a0e66f0baa4a92355"
+  },
+  {
+    "id": "B01",
+    "requested_event_seconds": 428,
+    "decoded_source_pts_seconds": 428.027,
+    "source_frame_index_0_based": 12828,
+    "file": "frames/B01_event_07-08.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=428s",
+    "note": "Second run: ready at the bottom",
+    "sha256": "48f72380e48d5b04d95cc81d93052ae8ffcd436579816fa4352e9d3e5178c383"
+  },
+  {
+    "id": "B02",
+    "requested_event_seconds": 431,
+    "decoded_source_pts_seconds": 431.03,
+    "source_frame_index_0_based": 12918,
+    "file": "frames/B02_event_07-11.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=431s",
+    "note": "Second run: entering the curve",
+    "sha256": "c2d16d4f45f1a5a3ec83f69271cd04202b1f2ce606945e9073cca3bc15280407"
+  },
+  {
+    "id": "B03",
+    "requested_event_seconds": 433,
+    "decoded_source_pts_seconds": 433.032,
+    "source_frame_index_0_based": 12978,
+    "file": "frames/B03_event_07-13.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=433s",
+    "note": "Second run: steep ascent",
+    "sha256": "40debe0cabc43b8b5f32e0c811f543fa835d8c48e1c083b6791756166e269dae"
+  },
+  {
+    "id": "B04",
+    "requested_event_seconds": 435,
+    "decoded_source_pts_seconds": 435.001,
+    "source_frame_index_0_based": 13037,
+    "file": "frames/B04_event_07-15.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=435s",
+    "note": "Second run: near the overhang",
+    "sha256": "d5929fdc6d1c6e6cdb4e60fd4aa94454a52eea1155c7f92fbbcef20c439c1e1a"
+  },
+  {
+    "id": "B05",
+    "requested_event_seconds": 436,
+    "decoded_source_pts_seconds": 436.002,
+    "source_frame_index_0_based": 13067,
+    "file": "frames/B05_event_07-16.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=436s",
+    "note": "Second run: crossing the lip, near-inverted",
+    "sha256": "06834dbee5c61f92939a375578732adfaca0e35193f1d88390d5d6443bbf4b2b"
+  },
+  {
+    "id": "B06",
+    "requested_event_seconds": 436.5,
+    "decoded_source_pts_seconds": 436.502,
+    "source_frame_index_0_based": 13082,
+    "file": "frames/B06_event_07-16.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=436s",
+    "note": "Second run: visibly leaving the lip; side plume",
+    "sha256": "d2fadb622c6898384cee44f45245c3639a5edb40d60b8f4f63530ab1a02ca331"
+  },
+  {
+    "id": "B07",
+    "requested_event_seconds": 437,
+    "decoded_source_pts_seconds": 437.003,
+    "source_frame_index_0_based": 13097,
+    "file": "frames/B07_event_07-17.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=437s",
+    "note": "Second run: detached, rotating beside the ramp",
+    "sha256": "cb4a7b17821b107371fba80c46a15b17191b98affc0ad9ddd4102af29a12b466"
+  },
+  {
+    "id": "B08",
+    "requested_event_seconds": 437.5,
+    "decoded_source_pts_seconds": 437.503,
+    "source_frame_index_0_based": 13112,
+    "file": "frames/B08_event_07-17.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=437s",
+    "note": "Second run: underside visible, approaching wheels-down",
+    "sha256": "0e94ad7d459a31868cb901fe9b2c89511777fab654757fd0d43d0a761e67fb29"
+  },
+  {
+    "id": "B09",
+    "requested_event_seconds": 438,
+    "decoded_source_pts_seconds": 438.004,
+    "source_frame_index_0_based": 13127,
+    "file": "frames/B09_event_07-18.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=438s",
+    "note": "Second run: upright descent; several downward jets",
+    "sha256": "43bb9f369b3c57ead0963cbfc940aba67b87f7eef42c25db83aa10143c1e19b7"
+  },
+  {
+    "id": "B10",
+    "requested_event_seconds": 438.5,
+    "decoded_source_pts_seconds": 438.504,
+    "source_frame_index_0_based": 13142,
+    "file": "frames/B10_event_07-18.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=438s",
+    "note": "Second run: jets meeting the ground and building a cloud",
+    "sha256": "5b9ba364b88d6e0ea53ba919013cf91186e57e6da8a6eee18e776b6dba1e3de4"
+  },
+  {
+    "id": "B11",
+    "requested_event_seconds": 439,
+    "decoded_source_pts_seconds": 439.005,
+    "source_frame_index_0_based": 13157,
+    "file": "frames/B11_event_07-19.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=439s",
+    "note": "Second run: low descent above expanding vapor",
+    "sha256": "2d994810dbd88ab39302b84bbd4a40c568afb1e0bbb53a139144a13109476e75"
+  },
+  {
+    "id": "B12",
+    "requested_event_seconds": 439.5,
+    "decoded_source_pts_seconds": 439.505,
+    "source_frame_index_0_based": 13172,
+    "file": "frames/B12_event_07-19.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=439s",
+    "note": "Second run: landing zone increasingly obscured",
+    "sha256": "b1d2010b9c3e7c52034d6bd4e7fe9f86f75c3e596c854aae1fc4d93b5bce3792"
+  },
+  {
+    "id": "B13",
+    "requested_event_seconds": 440.5,
+    "decoded_source_pts_seconds": 440.506,
+    "source_frame_index_0_based": 13202,
+    "file": "frames/B13_event_07-20.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=440s",
+    "note": "Second run: low/landing phase behind cloud; tire contact obscured",
+    "sha256": "065e0ba383f951291b8093732dc980258380e5bd4d4aa85fe079bd53cd29cc4c"
+  },
+  {
+    "id": "B14",
+    "requested_event_seconds": 442,
+    "decoded_source_pts_seconds": 442.008,
+    "source_frame_index_0_based": 13247,
+    "file": "frames/B14_event_07-22.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=442s",
+    "note": "Second run: car visible on the ground after landing",
+    "sha256": "c8f48aba423c8248785384efd13d6c9f3611fec48c3ed30d74a9f10cad0ad7a5"
+  },
+  {
+    "id": "B15",
+    "requested_event_seconds": 446,
+    "decoded_source_pts_seconds": 446.012,
+    "source_frame_index_0_based": 13367,
+    "file": "frames/B15_event_07-26.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=446s",
+    "note": "Post-run overhead view: car on the apron",
+    "sha256": "ac9763ad0aa3313828dd2ca9db73a10508acd85151abe41d09a5e888fb063f80"
+  },
+  {
+    "id": "R01",
+    "requested_event_seconds": 453.5,
+    "decoded_source_pts_seconds": 453.52,
+    "source_frame_index_0_based": 13592,
+    "file": "frames/R01_event_07-33.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=453s",
+    "note": "Close replay: lip and inverted car",
+    "sha256": "229271fc193e0c6fc904b1ce8d3224aa4890ee84591678097baf481dab8efc9a"
+  },
+  {
+    "id": "R02",
+    "requested_event_seconds": 454.5,
+    "decoded_source_pts_seconds": 454.521,
+    "source_frame_index_0_based": 13622,
+    "file": "frames/R02_event_07-34.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=454s",
+    "note": "Close replay: car turning away from the surface",
+    "sha256": "d279b47a074489704127fda914b037d9c485162256a97b90eaa4bad9756e063f"
+  },
+  {
+    "id": "R03",
+    "requested_event_seconds": 455.5,
+    "decoded_source_pts_seconds": 455.522,
+    "source_frame_index_0_based": 13652,
+    "file": "frames/R03_event_07-35.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=455s",
+    "note": "Close replay: underbody and asymmetrical plume directions",
+    "sha256": "344c18db9bbce934697da29ce0cbb761344b1ed61c6554da6e94f67e75811f5d"
+  },
+  {
+    "id": "R04",
+    "requested_event_seconds": 456,
+    "decoded_source_pts_seconds": 456.023,
+    "source_frame_index_0_based": 13667,
+    "file": "frames/R04_event_07-36.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=456s",
+    "note": "Close replay: underbody detail and side/downward jets",
+    "sha256": "7fab80189c105650426d3af0959c11bad96419bf9bdf0c646d0dbe7264f10dca"
+  },
+  {
+    "id": "R05",
+    "requested_event_seconds": 458,
+    "decoded_source_pts_seconds": 458.025,
+    "source_frame_index_0_based": 13727,
+    "file": "frames/R05_event_07-38.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=458s",
+    "note": "Close replay: wheels-down descent and vertical jet columns",
+    "sha256": "b0569ba51bd85873800a45f619f2e79dd48fc7f99778675dc0d56ae24a3fe269"
+  },
+  {
+    "id": "R06",
+    "requested_event_seconds": 460,
+    "decoded_source_pts_seconds": 460.027,
+    "source_frame_index_0_based": 13787,
+    "file": "frames/R06_event_07-40.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=460s",
+    "note": "Close replay: low descent into vapor",
+    "sha256": "97a11d11c3f90df477aeba3cd0fa5d261e36270e7ab1b05a1b666e1d84df0c6c"
+  },
+  {
+    "id": "R07",
+    "requested_event_seconds": 464.5,
+    "decoded_source_pts_seconds": 464.531,
+    "source_frame_index_0_based": 13922,
+    "file": "frames/R07_event_07-44.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=464s",
+    "note": "Aerial replay: inverted wheel contact under the overhang",
+    "sha256": "3f61a06ee55905973e370683e69a8503ada99bc1390514b8bcae4a39070b5861"
+  },
+  {
+    "id": "R08",
+    "requested_event_seconds": 466.5,
+    "decoded_source_pts_seconds": 466.5,
+    "source_frame_index_0_based": 13981,
+    "file": "frames/R08_event_07-46.500.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=466s",
+    "note": "Aerial replay: departure from the lip",
+    "sha256": "9b162c326e86a21fc928f2f3115fee3cf04b82b8936f26aa942d903714105884"
+  },
+  {
+    "id": "R09",
+    "requested_event_seconds": 467,
+    "decoded_source_pts_seconds": 467.0,
+    "source_frame_index_0_based": 13996,
+    "file": "frames/R09_event_07-47.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=467s",
+    "note": "Aerial replay: exposed underside and multiple jets",
+    "sha256": "fef270d7237dad276af92718b379d3b78bf88dbea7988cd076f8d535aeb20550"
+  },
+  {
+    "id": "R10",
+    "requested_event_seconds": 469,
+    "decoded_source_pts_seconds": 469.002,
+    "source_frame_index_0_based": 14056,
+    "file": "frames/R10_event_07-49.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=469s",
+    "note": "Aerial replay: body upright above the apron",
+    "sha256": "92d118eb385abf029227ef08296c9347d90e84d1568e0bb1ce5288d6155cdaf6"
+  },
+  {
+    "id": "F01",
+    "requested_event_seconds": 670,
+    "decoded_source_pts_seconds": 670.002,
+    "source_frame_index_0_based": 20080,
+    "file": "frames/F01_event_11-10.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=670s",
+    "note": "Separate fleet stunt: lineup including the Semi",
+    "sha256": "b6f0ce66dc45034900ad22c336cbf67aff4bf4caa652e77fe67fc9eb2d427b1b"
+  },
+  {
+    "id": "F02",
+    "requested_event_seconds": 672,
+    "decoded_source_pts_seconds": 672.004,
+    "source_frame_index_0_based": 20140,
+    "file": "frames/F02_event_11-12.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=672s",
+    "note": "Separate fleet stunt: upward departure",
+    "sha256": "8ce1f6a882ab078e75dace2bd064bf486d643d4bd54ca5e141ff7e2c479c629c"
+  },
+  {
+    "id": "F03",
+    "requested_event_seconds": 673,
+    "decoded_source_pts_seconds": 673.005,
+    "source_frame_index_0_based": 20170,
+    "file": "frames/F03_event_11-13.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=673s",
+    "note": "Separate fleet stunt: airborne rotation above the lineup",
+    "sha256": "e6846ae96a440b5999d8ffa92347f7e258970c6ef47df9a3c8a24acab114c83c"
+  },
+  {
+    "id": "F04",
+    "requested_event_seconds": 674,
+    "decoded_source_pts_seconds": 674.006,
+    "source_frame_index_0_based": 20200,
+    "file": "frames/F04_event_11-14.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=674s",
+    "note": "Separate fleet stunt: wheels-down descent",
+    "sha256": "c9fb225bf92ea2052071ee921a931b9e4a2f113834dcb90a3074a5022ce8fe20"
+  },
+  {
+    "id": "F05",
+    "requested_event_seconds": 675,
+    "decoded_source_pts_seconds": 675.007,
+    "source_frame_index_0_based": 20230,
+    "file": "frames/F05_event_11-15.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=675s",
+    "note": "Separate fleet stunt: landing cloud",
+    "sha256": "8f0d477eedd94899878eebe2c41612cf40ba4c66107f489dc70f6b37d4c39597"
+  },
+  {
+    "id": "D01",
+    "requested_event_seconds": 578,
+    "decoded_source_pts_seconds": 578.011,
+    "source_frame_index_0_based": 17323,
+    "file": "frames/D01_event_09-38.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=578s",
+    "note": "Model reference: side profile",
+    "sha256": "d6db8cd1f2bf74f4e53788466ee3484fb7be0b334fd6bfb7d47c0ce52f829a7f"
+  },
+  {
+    "id": "D02",
+    "requested_event_seconds": 661,
+    "decoded_source_pts_seconds": 661.027,
+    "source_frame_index_0_based": 19811,
+    "file": "frames/D02_event_11-01.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=661s",
+    "note": "Model reference: front three-quarter view",
+    "sha256": "04f22ec3f9c747c79702f457d33ebd4930c01b50e96b9a36fc368b3b15bd18ac"
+  },
+  {
+    "id": "D03",
+    "requested_event_seconds": 810,
+    "decoded_source_pts_seconds": 810.009,
+    "source_frame_index_0_based": 24276,
+    "file": "frames/D03_event_13-30.000.jpg",
+    "source_link": "https://www.youtube.com/watch?v=qt5p-_tE8d0&t=810s",
+    "note": "Model reference: rear light bar, four rear nozzles, diffuser",
+    "sha256": "103b066cf35df20ff861f9f4f3311e25672d13fd10e460d03f4ab427bbf41d43"
+  }
+]

@@ -1,0 +1,407 @@
+{
+  "method": "camera/timing calibration on10/11/13/15; ground trajectory uses18/20; alternate12/14/16/17/19 withheld",
+  "wideSource": "tesla-the-ramp.source.json",
+  "mainSource": "../source-metadata.json",
+  "sync": {
+    "appliedJointCalibration": {
+      "trainingWideIds": [
+        10,
+        11,
+        13,
+        15
+      ],
+      "withheldWideIds": [
+        12,
+        14,
+        16
+      ],
+      "offsetAtTimeCenter_s": 29.58729497516916,
+      "rate": 0.8103261795277974,
+      "timeCenter_s": 38.872166666666665,
+      "formula": "main=(official-timeCenter)*rate+timeCenter-offsetAtTimeCenter",
+      "status": "joint fitted camera/timing calibration; not hardware synchronization"
+    },
+    "fixedRate1DiagnosticOffset_s": 29.650221333667233,
+    "speedRatio": 0.8103261795277974,
+    "fixedRate1OffsetRangeWithin10PercentRms_s": [
+      29.598221333667233,
+      29.702221333667232
+    ],
+    "status": "visual/model alignment, not timecode synchronization",
+    "timestampRecovery": "each JPEG matched to a decoded official source-frame; see wide-frames.json",
+    "affineSensitivity": {
+      "rate": 0.8857563026130928,
+      "offsetAtMeanTime": 29.658155253079613,
+      "rmsPx": 18.67384753637928,
+      "status": "diagnostic only; camera/path/proxy bias can mimic a speed change"
+    },
+    "scope": "calibrated on air-window source37.75\u201340.25s; early climb affine mismatch is retained, not hidden"
+  },
+  "rmsPx": 34.05948071934878,
+  "maxPx": 41.387456177751,
+  "nWithheldPoints": 5,
+  "withheldWideIds": [
+    12,
+    14,
+    16,
+    17,
+    19
+  ],
+  "calibrationTrainingWideIds": [
+    10,
+    11,
+    13,
+    15
+  ],
+  "groundTrajectoryTrainingWideIds": [
+    18,
+    20
+  ],
+  "timingFitPointCount": 4,
+  "latePointsExcludedFromTimingFit": 2,
+  "samples": [
+    {
+      "wideImage": "wide_10.jpg",
+      "officialTime": 37.74604166666666,
+      "sourceFrame": 905,
+      "mainTime": 8.372343122576762,
+      "observedPx": [
+        1230,
+        52
+      ],
+      "predictedPx": [
+        1229.148579256016,
+        70.06138464979658
+      ],
+      "residualPx": 18.081441666836017,
+      "usedToFitCameraAndTiming": true,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_11.jpg",
+      "officialTime": 38.246541666666666,
+      "sourceFrame": 917,
+      "mainTime": 8.777911375430424,
+      "observedPx": [
+        1121.5,
+        115
+      ],
+      "predictedPx": [
+        1115.316438348554,
+        155.2466497021182
+      ],
+      "residualPx": 40.71890527681516,
+      "usedToFitCameraAndTiming": true,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_12.jpg",
+      "officialTime": 38.74704166666666,
+      "sourceFrame": 929,
+      "mainTime": 9.183479628284086,
+      "observedPx": [
+        1002,
+        236.5
+      ],
+      "predictedPx": [
+        996.5882625956693,
+        270.8662662836415
+      ],
+      "residualPx": 34.78975653855005,
+      "usedToFitCameraAndTiming": false,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_13.jpg",
+      "officialTime": 39.24754166666666,
+      "sourceFrame": 941,
+      "mainTime": 9.589047881137748,
+      "observedPx": [
+        895,
+        382
+      ],
+      "predictedPx": [
+        890.690269664578,
+        387.40826488335097
+      ],
+      "residualPx": 6.915425121606354,
+      "usedToFitCameraAndTiming": true,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_14.jpg",
+      "officialTime": 39.748041666666666,
+      "sourceFrame": 953,
+      "mainTime": 9.99461613399141,
+      "observedPx": [
+        797,
+        490
+      ],
+      "predictedPx": [
+        802.9548484103278,
+        476.42105819555053
+      ],
+      "residualPx": 14.827268127292003,
+      "usedToFitCameraAndTiming": false,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_15.jpg",
+      "officialTime": 40.24854166666666,
+      "sourceFrame": 965,
+      "mainTime": 10.400184386845073,
+      "observedPx": [
+        694.5,
+        530.5
+      ],
+      "predictedPx": [
+        708.8978730580563,
+        519.0487509754973
+      ],
+      "residualPx": 18.396463051822703,
+      "usedToFitCameraAndTiming": true,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_16.jpg",
+      "officialTime": 40.74904166666666,
+      "sourceFrame": 977,
+      "mainTime": 10.805752639698735,
+      "observedPx": [
+        586.5,
+        569
+      ],
+      "predictedPx": [
+        618.3395692003446,
+        542.5583025884924
+      ],
+      "residualPx": 41.387456177751,
+      "usedToFitCameraAndTiming": false,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_17.jpg",
+      "officialTime": 41.249541666666666,
+      "sourceFrame": 989,
+      "mainTime": 11.211320892552404,
+      "observedPx": [
+        486,
+        624
+      ],
+      "predictedPx": [
+        511.64952536956594,
+        596.8228772178879
+      ],
+      "residualPx": 37.369695669057855,
+      "usedToFitCameraAndTiming": false,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual cloud-obscured body-center proxy, about \u00b120 px initialization uncertainty"
+    },
+    {
+      "wideImage": "wide_18.jpg",
+      "officialTime": 41.70833333333333,
+      "sourceFrame": 1000,
+      "mainTime": 11.58309179100159,
+      "observedPx": [
+        390,
+        650
+      ],
+      "predictedPx": [
+        389.8871218276808,
+        649.6733504710495
+      ],
+      "residualPx": 0.34560294638458255,
+      "usedToFitCameraAndTiming": false,
+      "usedToFitGroundTrajectory": true,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    },
+    {
+      "wideImage": "wide_19.jpg",
+      "officialTime": 42.20883333333333,
+      "sourceFrame": 1012,
+      "mainTime": 11.988660043855251,
+      "observedPx": [
+        298,
+        681
+      ],
+      "predictedPx": [
+        262.52238421386073,
+        682.4103861514071
+      ],
+      "residualPx": 35.50563914316991,
+      "usedToFitCameraAndTiming": false,
+      "usedToFitGroundTrajectory": false,
+      "observationMethod": "manual cloud-obscured body-center proxy, about \u00b120 px initialization uncertainty"
+    },
+    {
+      "wideImage": "wide_20.jpg",
+      "officialTime": 42.70933333333333,
+      "sourceFrame": 1024,
+      "mainTime": 12.39422829670892,
+      "observedPx": [
+        145,
+        715
+      ],
+      "predictedPx": [
+        143.9497004350207,
+        712.8875672951658
+      ],
+      "residualPx": 2.3591314309823432,
+      "usedToFitCameraAndTiming": false,
+      "usedToFitGroundTrajectory": true,
+      "observationMethod": "manual body-silhouette center, about \u00b18 px initialization uncertainty; systematic viewpoint error may be larger"
+    }
+  ],
+  "stereoDiagnostics": [
+    {
+      "mainTime": 8.372343122576762,
+      "officialTime": 37.74604166666666,
+      "bodyPoint": [
+        -15.018991679245746,
+        21.422853488977353,
+        -0.6789764470926525
+      ],
+      "reprojectionPx": [
+        5.102650484965788,
+        7.999902374253157
+      ]
+    },
+    {
+      "mainTime": 8.777911375430424,
+      "officialTime": 38.246541666666666,
+      "bodyPoint": [
+        -20.679011918532495,
+        18.87621109869592,
+        -0.4302809064834299
+      ],
+      "reprojectionPx": [
+        13.10485117691909,
+        18.3211053776593
+      ]
+    },
+    {
+      "mainTime": 9.183479628284086,
+      "officialTime": 38.74704166666666,
+      "bodyPoint": [
+        -27.24885264472316,
+        14.115054157219848,
+        -0.1379754905956135
+      ],
+      "reprojectionPx": [
+        13.851799450622071,
+        16.840293497901364
+      ]
+    },
+    {
+      "mainTime": 9.589047881137748,
+      "officialTime": 39.24754166666666,
+      "bodyPoint": [
+        -33.68526192423573,
+        8.506621880866,
+        -0.04549889951181058
+      ],
+      "reprojectionPx": [
+        0.3951681099999982,
+        0.41198696032977206
+      ]
+    },
+    {
+      "mainTime": 9.99461613399141,
+      "officialTime": 39.748041666666666,
+      "bodyPoint": [
+        -39.44084102255356,
+        4.3669326165741085,
+        0.4794245527299929
+      ],
+      "reprojectionPx": [
+        4.80745289333998,
+        4.217050676187166
+      ]
+    },
+    {
+      "mainTime": 10.400184386845073,
+      "officialTime": 40.24854166666666,
+      "bodyPoint": [
+        -44.620229075533786,
+        3.468037627637735,
+        0.7224746503394477
+      ],
+      "reprojectionPx": [
+        0.5418058763612089,
+        0.4093705857876461
+      ]
+    },
+    {
+      "mainTime": 10.805752639698735,
+      "officialTime": 40.74904166666666,
+      "bodyPoint": [
+        -49.788518580247725,
+        2.98948074123671,
+        1.3305178253534014
+      ],
+      "reprojectionPx": [
+        7.154449891775373,
+        4.544924994715474
+      ]
+    }
+  ],
+  "stereoLateralZ_m": {
+    "min": -0.6789764470926525,
+    "max": 1.3305178253534014,
+    "median": -0.04549889951181058
+  },
+  "hudLatencyDiagnostic": {
+    "fittedDelay_s": 0.7342872679439877,
+    "uncorrectedRms_m": 5.662096977031007,
+    "lagAdjustedRms_m": 0.5154986292576134,
+    "status": "descriptive discrepancy; camera/plane/datum errors also contribute, not proof of actual telemetry delay"
+  },
+  "earlyClimbTimingDiagnostics": [
+    {
+      "wideImage": "wide_01.jpg",
+      "sourceTime": 33.24154166666666,
+      "observedPx": [
+        1527,
+        294
+      ],
+      "airWindowAffineMappedMainTime": 4.722228846893795,
+      "mappedResidualPx": 84.75441411324304,
+      "nearestRampPathMainTime": 3.9957605631631905,
+      "nearestPathResidualPx": 1.9222258220063937,
+      "status": "diagnostic only; affine air-window mapping does not establish timing throughout edited replay"
+    },
+    {
+      "wideImage": "wide_04.jpg",
+      "sourceTime": 34.74304166666666,
+      "observedPx": [
+        1571,
+        142
+      ],
+      "airWindowAffineMappedMainTime": 5.938933605454789,
+      "mappedResidualPx": 27.97691957704903,
+      "nearestRampPathMainTime": 5.591159836679659,
+      "nearestPathResidualPx": 1.0731815646506775,
+      "status": "diagnostic only; affine air-window mapping does not establish timing throughout edited replay"
+    },
+    {
+      "wideImage": "wide_06.jpg",
+      "sourceTime": 35.74404166666666,
+      "observedPx": [
+        1536,
+        71
+      ],
+      "airWindowAffineMappedMainTime": 6.750070111162106,
+      "mappedResidualPx": 15.698594018360929,
+      "nearestRampPathMainTime": 6.591898276613509,
+      "nearestPathResidualPx": 0.19972028377519307,
+      "status": "diagnostic only; affine air-window mapping does not establish timing throughout edited replay"
+    }
+  ]
+}

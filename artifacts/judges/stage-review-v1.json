@@ -1,0 +1,299 @@
+{
+  "judge_id": "image_geometry_judge",
+  "review_type": "Independent app/stage visual review from saved captures",
+  "reviewed_at_utc": "2026-10-17T20:30:59.376915+00:00",
+  "overall_stage_visual_score": 6.0,
+  "approved": false,
+  "target_score": 9.0,
+  "decision": "Recognizable and functional stage prototype, but the saved evidence is below a source-faithful9/10 visual target. Lighting, plume appearance and framing need substantial improvement. The ramp silhouette is the strongest stage element.",
+  "scope": {
+    "included": [
+      "ramp silhouette and visible support structure",
+      "ramp and floor appearance",
+      "stage lighting",
+      "jets and vapor",
+      "saved camera composition",
+      "UI visibility and obstruction"
+    ],
+    "excluded": [
+      "car model quality, which is being rebuilt separately",
+      "metric or uniquely measured6DoF correctness",
+      "live camera or app interactions",
+      "runtime performance or headset verification"
+    ],
+    "live_app_untouched": true,
+    "evidence_limit": "Scores describe the identified saved image hashes, not an unseen newer live renderer. Pending material/camera/effect edits receive no credit until recaptured.",
+    "usable_captures": "The selected release/descent/landing images show visible scene content and are usable. current.png is a portrait crop failure, not used as evidence of a total-render blackout."
+  },
+  "category_scores": {
+    "ramp_main_silhouette": 8.0,
+    "ramp_structural_cadence_and_detail": 6.5,
+    "ramp_surface_and_edge_lighting": 6.0,
+    "ground_and_stage_lighting": 3.8,
+    "grounding_and_contact_shadows": 4.5,
+    "lift_and_attitude_jet_appearance": 3.8,
+    "vapor_and_touchdown_visuals": 5.5,
+    "camera_framing_across_aspects": 5.4,
+    "UI_legibility_and_obstruction": 7.4
+  },
+  "capture_evidence": [
+    {
+      "path": "artifacts/runtime/current.png",
+      "sha256": "ae82b03e443c6e0021609a2293d4eb8f445f3a61459a297a3a3e367a7a3edb57",
+      "size_px": [
+        720,
+        800
+      ],
+      "modified_at_utc": "2026-10-17T20:27:57.616004+00:00"
+    },
+    {
+      "path": "artifacts/runtime/ready.png",
+      "sha256": "6d965c7485ac81a7f7d6aff6881dd3963a4e2431c0029038b53710f14d7202b1",
+      "size_px": [
+        1440,
+        1000
+      ],
+      "modified_at_utc": "2026-10-17T20:28:54.017282+00:00"
+    },
+    {
+      "path": "artifacts/runtime/release.png",
+      "sha256": "727f0d0cd2010ca655cf71e3d26ca90324a759c26a106c450f8d3b764de133e8",
+      "size_px": [
+        1440,
+        1000
+      ],
+      "modified_at_utc": "2026-10-17T20:28:54.451726+00:00"
+    },
+    {
+      "path": "artifacts/runtime/flip.png",
+      "sha256": "5589a6fa7c4b14dfea106c1b682e0e6978641653a5d1fe5a56691ff9218c1173",
+      "size_px": [
+        1440,
+        1000
+      ],
+      "modified_at_utc": "2026-10-17T20:28:54.667229+00:00"
+    },
+    {
+      "path": "artifacts/runtime/descent.png",
+      "sha256": "7d0bd82ea1f6151381c918e6ee2db1119e236a43043fd31ccea5cecffd6e06a1",
+      "size_px": [
+        1440,
+        1000
+      ],
+      "modified_at_utc": "2026-10-17T20:28:54.883355+00:00"
+    },
+    {
+      "path": "artifacts/runtime/landing.png",
+      "sha256": "2fe3f73fc50585d9e396ea4d5a541110a21328a7d745b61f2b4ad64d7669e557",
+      "size_px": [
+        1440,
+        1000
+      ],
+      "modified_at_utc": "2026-10-17T20:28:55.109869+00:00"
+    },
+    {
+      "path": "artifacts/runtime/wide.png",
+      "sha256": "c9988c8a88b72abe52795d522c16815f9294b729770c54290cf5d0dd8e7b4aa1",
+      "size_px": [
+        1440,
+        1000
+      ],
+      "modified_at_utc": "2026-10-17T20:28:55.762987+00:00"
+    },
+    {
+      "path": "artifacts/runtime/contact-v1.jpg",
+      "sha256": "02a5f3fd7be2840f256a7898b0e96301f0a1381a105c726142717f9820e28a04",
+      "size_px": [
+        1440,
+        1056
+      ],
+      "modified_at_utc": "2026-10-17T20:26:34.540117+00:00"
+    },
+    {
+      "path": "artifacts/ramp-clay.png",
+      "sha256": "1c1df373ca13a8604664b534cdbb6196615bd3e96613f81c3d683d22d912ea19",
+      "size_px": [
+        640,
+        480
+      ],
+      "modified_at_utc": "2026-10-17T20:25:51.730896+00:00"
+    },
+    {
+      "path": "artifacts/scene-hero.png",
+      "sha256": "6071911ce6e09fb91bc25d345eb45869f6d1f801e2048116355ed54026d21ec0",
+      "size_px": [
+        960,
+        640
+      ],
+      "modified_at_utc": "2026-10-17T20:27:29.439126+00:00"
+    },
+    {
+      "path": "artifacts/apron-material.png",
+      "sha256": "e4ce094f4c29864e38f1bac8834f9f75d1e5d6a05874bb8f1294c68a73e0870b",
+      "size_px": [
+        640,
+        480
+      ],
+      "modified_at_utc": "2026-10-17T20:27:51.874019+00:00"
+    }
+  ],
+  "source_evidence": [
+    {
+      "path": "references/roadster/reconstruction/frame_14.jpg",
+      "sha256": "a5c2498004058bfd18787faf4e2c38f9b0da0ef428a0edc8baf987df853fc8f1"
+    },
+    {
+      "path": "references/roadster/reconstruction/frame_20.jpg",
+      "sha256": "10257b9ba9c86454ba58599a63fd55712cf6ea9625a9b78a01b029d30595135c"
+    },
+    {
+      "path": "references/roadster/reconstruction/frame_22.jpg",
+      "sha256": "6556af6e2d2250d23afdb11e62d64c0be362b97f8b5acc4e408a78352e835912"
+    },
+    {
+      "path": "references/roadster/reconstruction/overhead-37.jpg",
+      "sha256": "0a18da43f20a0ca2700cc0254f1f182b6a3e07602f6e795ccda5b846a5e7dbdb"
+    },
+    {
+      "path": "references/roadster/reconstruction/wide_17.jpg",
+      "sha256": "e0493db40574fc51ff5e36342b19ebea182e8325f13826596b6905421d0b6784"
+    }
+  ],
+  "source_code_read_only": [
+    {
+      "path": "src/scene-assets/stage.scene-asset.ts",
+      "sha256": "33a08d59b53862a79d2ac498322ba88b4376436240aa6149ca4bd43c99529b64"
+    },
+    {
+      "path": "src/scene-assets/effects.scene-asset.ts",
+      "sha256": "78ae036fececb6747d6f0537d699518083d1704d42af1496e682287634e9f022"
+    },
+    {
+      "path": "src/replay-effects.ts",
+      "sha256": "d449b0092644c06861b90cf7014e7cbb86f090a0473ba56d2f9f8d02bd0f71d0"
+    },
+    {
+      "path": "src/replay-system.ts",
+      "sha256": "12fe33424d73ef620c95f9fd55624583eacad267240cb23bd5d7b14fb1883873"
+    }
+  ],
+  "strengths": [
+    "The low entry, tall curved face and long overhang are immediately recognizable against the video. The clay views show a coherent deck with thickness and two side support spines.",
+    "Red edge strips and a white center stripe preserve the important ramp cues. The black background keeps the action silhouette readable.",
+    "Descent and landing phases visibly contain jets and evolving vapor; the effect is integrated into the replay rather than a static prop.",
+    "The lower-right controls are readable and do not directly obscure the car in the inspected landscape action frames."
+  ],
+  "findings": [
+    {
+      "id": "ST-01",
+      "severity": "high",
+      "category": "ground_and_stage_lighting",
+      "score": 3.8,
+      "evidence": "ready.png and scene-hero.png show an almost uniformly lit dark-gray floor with a hard distant edge against black. Source overhead-37 and wide17 use a mostly dark apron with localized white floodlight pools, strong red edge spill/reflections and gradual falloff into darkness. The current captures look like a neutral preview plane rather than the event stage.",
+      "fix": "After confirming the darker runtime material actually applied, add restrained local white pools around the ramp foot and landing area, soft red spill beside the LED strip, a subtle rough floor response, and fade the distant ground edge into black. Keep the background dark while making selected lit surfaces carry the scene.",
+      "verification": "Recapture ready, overhead/wide and landing. The floor should read through local pools and reflections, with no broad flat gray horizon. Preserve car and ramp legibility."
+    },
+    {
+      "id": "ST-02",
+      "severity": "high",
+      "category": "camera_framing_across_aspects",
+      "score": 5.4,
+      "evidence": "wide.png at1440x1000 clips the right side of the ramp curve. current.png at720x800 loses nearly the entire ramp and places the inverted car/lip at the upper-right edge. The issue already affects the landscape wide mode, not just portrait.",
+      "fix": "Fit the wide camera to a stage/action envelope using current viewport aspect, including full ramp support, lip and relevant flight/landing region. Reserve a UI safe area. Keep the closer following shot as a separate mode; do not use a single fixed42-degree framing and fixed target for both aspects.",
+      "code_cause": "src/replay-system.ts sets a fixed42-degreeFOV and fixed wide camera/target without visible aspect-dependent envelope fitting.",
+      "verification": "At both1440x1000 and720x800, capture ready/release/flip and confirm the full ramp is visible in wide mode with safe margins and the active car remains in frame."
+    },
+    {
+      "id": "ST-03",
+      "severity": "high",
+      "category": "vapor_and_touchdown_visuals",
+      "score": 5.5,
+      "evidence": "descent.png and landing.png show a long trailing windrow behind a fully exposed car at its leading edge. Source frame20 has pressure columns striking a rising local impact cloud; frame22 and wide17 have turbulent vapor wrapping front/rear wheels and partly hiding the car. The captured effect grows behind the vehicle rather than building the characteristic local landing cloud.",
+      "fix": "Add a dense local impact/touchdown burst centered beneath and around the current car, covering both sides of the body, with a low spreading skirt and a few taller turbulent lobes. Emit from jet-ground impacts, then advect/fade into the existing trail. Redistribute density toward the car before simply enlarging the whole trailing ribbon.",
+      "code_cause": "src/replay-effects.ts seeds billboards along the historical9.7\u201311.8s path and grows them with age; young particles near the current car remain small while older particles make the broad wake.",
+      "verification": "At descent, touchdown and~0.5s later, the car should become partly occluded by a coherent cloud anchored to the ground, while the trail remains secondary."
+    },
+    {
+      "id": "ST-04",
+      "severity": "high",
+      "category": "lift_and_attitude_jet_appearance",
+      "score": 3.8,
+      "evidence": "descent.png shows four clean hard-edged white/cyan triangles. flip.png shows long opposing cyan blades that read like an axis gizmo. Source frame20 has narrow bright pressure cores, soft turbulent translucent blue-white plumes and expanding impact vapor; the source does not read as solid geometric cones.",
+      "fix": "Use feathered transparent plume geometry or crossed billboards with a narrow bright origin, softer noisy sheath, variation along length and a fading end. Shorten/soften the attitude bursts so they read as gas impulses. Retain four separated lift origins and vary their visibility through rotation rather than drawing rigid blades.",
+      "code_cause": "src/scene-assets/effects.scene-asset.ts uses a12-sided ConeGeometry with uniform MeshBasicMaterial opacity; src/replay-effects.ts mostly scales the solid cone.",
+      "verification": "Capture flip and descent against black. No hard triangular outline or full-length solid cyan blade should dominate; plume cores should remain legible without opaque graphic shapes."
+    },
+    {
+      "id": "ST-05",
+      "severity": "medium",
+      "category": "ramp_structural_cadence_and_detail",
+      "score": 6.5,
+      "evidence": "The ramp profile is good, but its curved rear support appears as a very dense comb while overhang bays are much larger. Source frame14/overhead-37 show larger, less uniformly repeated structural triangles and cross-ties. The clay view confirms the current support is mostly two narrow curved spines.",
+      "fix": "Place brace stations by arc length rather than point index, using roughly1\u20131.5m bays as an initial visual scale, then compare directly with the source. Preserve the current outer depth and add only source-visible cross-width/back ties and base anchoring.",
+      "code_cause": "createRamp uses i+=4 over centerline samples whose curved spacing is roughly0.10m but extension spacing is roughly0.64m, making bays about0.4m versus2.5m.",
+      "verification": "Side and quarter renders should retain the strong curve with fewer readable structural bays, without a zipper-like silhouette or unsupported decorative complexity."
+    },
+    {
+      "id": "ST-06",
+      "severity": "medium",
+      "category": "source_stage_cues",
+      "score": 5.0,
+      "evidence": "Two prominent T-shaped masts look like streetlights and do not visibly illuminate the captured floor. They are not a strong cue in the selected source frames. Conversely, the source wide views show low floodlight banks and a dim white apron line continuing/crossing near the ramp; the app apron is dominated by two perfect parallel red boundaries.",
+      "fix": "Reduce the visual prominence of the T-bars or replace them with a few low source-like floodlight banks. Add the restrained white apron alignment markings visible in the source and soft local light pools, with sparse fixture detail rather than a generic runway look.",
+      "verification": "A wide still should be identifiable as this event stage through ramp, ground markings and light placement, even before vapor appears."
+    },
+    {
+      "id": "ST-07",
+      "severity": "medium",
+      "category": "grounding_and_material_finish",
+      "score": 4.5,
+      "evidence": "The captured car and ramp foot have weak contact shading against the flat floor. Ramp paint is nearly uniform, the center stripe appears thin/jagged in places, and red strips have little glow or floor spill. Source frames show grounded shadows, subtle deck panel/tire wear, and bright strips with soft light response.",
+      "fix": "Add a restrained contact shadow under grounded focal masses, crisp continuous deck paint, subtle deck panel/wear variation and soft local red glow/spill. Cheap contact decals/glow cards or baked pools are valid if full dynamic shadows/postprocessing cost too much.",
+      "verification": "Ready and low landing frames should feel grounded; deck and stripe should remain clean at wide resolution without adding distracting texture."
+    },
+    {
+      "id": "ST-08",
+      "severity": "low",
+      "category": "UI_legibility_and_obstruction",
+      "score": 7.4,
+      "evidence": "The controls are legible and mostly outside the action, but the panel is large relative to the portrait view. EnterXR appears both at top center and within the panel, and runtime/editor chrome is visible in the desktop evidence.",
+      "fix": "Reserve the lower-right panel area in camera fitting, consider a compact playback state, avoid redundant XR entry presentation where supported, and capture a clean presentation view without development chrome.",
+      "verification": "Controls remain easy to operate at narrow width while the vehicle, touchdown cloud and ramp are never hidden beneath them."
+    }
+  ],
+  "priority_order_for_next_pass": [
+    {
+      "priority": 1,
+      "action": "Confirm the dark floor fix in actual runtime, then add source-like localized light pools, red spill and ground-edge falloff."
+    },
+    {
+      "priority": 2,
+      "action": "Fix wide framing for both landscape and portrait using aspect-aware scene bounds and UI safe area."
+    },
+    {
+      "priority": 3,
+      "action": "Build a local touchdown/jet-impact cloud around the car, keeping the historical wake secondary."
+    },
+    {
+      "priority": 4,
+      "action": "Replace hard cone/blade jet silhouettes with feathered turbulent plumes."
+    },
+    {
+      "priority": 5,
+      "action": "Clean up brace spacing, apron cues, contact shadows and deck paint/material detail."
+    }
+  ],
+  "known_pending_items_not_credited": [
+    "car-model rebuild is outside this score",
+    "darker floor/envMapIntensity change exists in read-only source but needs fresh runtime evidence",
+    "portrait-wide camera changes",
+    "larger touchdown vapor"
+  ],
+  "target9_acceptance_checks": [
+    "The full ramp and active car fit in wide mode at landscape and portrait widths.",
+    "The stage reads through localized light and shadow, with a dark fading floor rather than a gray preview plane.",
+    "Jets have soft gaseous edges; touchdown vapor visibly wraps and partially occludes the car as in the source.",
+    "The curved support uses source-like bay spacing, and ground/deck markings are crisp at wide resolution.",
+    "Fresh ready/release/flip/descent/landing captures support the score; pending code edits alone do not."
+  ]
+}

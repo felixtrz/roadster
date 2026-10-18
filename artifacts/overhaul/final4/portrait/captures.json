@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "name": "p-flip",
+      "time": 9.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final4/portrait/p-flip.png",
+      "state": {
+        "time": 9.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 59.99100134988691,
+  "info": {
+    "frame": 19653,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

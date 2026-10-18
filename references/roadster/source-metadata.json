@@ -1,0 +1,77 @@
+{
+  "id": "qt5p-_tE8d0",
+  "title": "Roadster Event",
+  "channel": "Tesla",
+  "channel_url": "https://www.youtube.com/channel/UC5WjFrtBdufl6CZojX3D8dQ",
+  "webpage_url": "https://www.youtube.com/watch?v=qt5p-_tE8d0",
+  "upload_date": "20261016",
+  "release_date": "20261016",
+  "release_timestamp": 1792112116,
+  "description": "Buckle up. \n\nhttps://www.tesla.com/roadster\n\nRamp Demo: 6:03-10:55\nKickflip Demo: 10:56-12:43\nDesign: 12:47-14:38\nAero: 14:38-15:57\n0-60 Demo: 15:58-19:26",
+  "chapters": [
+    {
+      "start_time": 0,
+      "end_time": 363,
+      "title": "<Untitled Chapter 1>"
+    },
+    {
+      "start_time": 363,
+      "title": "Ramp Demo.",
+      "end_time": 656
+    },
+    {
+      "start_time": 656,
+      "title": "Kickflip Demo.",
+      "end_time": 767
+    },
+    {
+      "start_time": 767,
+      "title": "Design.",
+      "end_time": 878
+    },
+    {
+      "start_time": 878,
+      "title": "Aero.",
+      "end_time": 958
+    },
+    {
+      "start_time": 958,
+      "title": "0-60 Demo.",
+      "end_time": 1401
+    }
+  ],
+  "was_live": true,
+  "retrieved_on": "2026-10-17",
+  "event_local_date": "2026-10-15",
+  "release_utc": "2026-10-16T00:55:16+00:00",
+  "source_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "vp9",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "avg_frame_rate": "30000/1001",
+        "start_time": "0.000000"
+      },
+      {
+        "index": 1,
+        "codec_name": "opus",
+        "codec_type": "audio",
+        "avg_frame_rate": "0/0",
+        "start_time": "0.000000"
+      }
+    ],
+    "format": {
+      "duration": "1400.541000",
+      "size": "104088432"
+    }
+  },
+  "source_sha256": "1d1c121c010158bf968bc0ceea8133d8cd1eb020a65468e59fae257b9cbe970a",
+  "download_formats": "YouTube 248 (VP9 video) + 251 (Opus audio), merged without re-encoding",
+  "credit": "Tesla \u2014 Roadster Event. Frames and excerpts retained for reference.",
+  "note": "The full 104 MB source is not included; the local media are derived excerpts. No temporary signed media URLs are retained."
+}

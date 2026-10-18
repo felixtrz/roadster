@@ -1,0 +1,966 @@
+{
+  "judge_id": "motion_reconstruction_independent_runtime_audit",
+  "review_type": "Final export-cleanup held-model integration hash refresh",
+  "reviewed_at_utc": "2026-10-17T21:28:10.683018+00:00",
+  "overall_technical_score": 9.2,
+  "target_score": 9.0,
+  "approved": true,
+  "decision": "Approved at retained9.2 runtime algorithm score on exact held export-cleanup modelc7efcb40 and unchanged app/VFX code. The current independent harness passes actual contact, all64mesh shadow states, ownership, temporal and camera/state checks. Floor/bounds and all wheel/nozzle pivots match the preceding approved model exactly. Loaded geometry has zero triangles below cross-product-squared threshold1e-16. No new open P1/P2 runtime correctness finding was found.",
+  "scope": {
+    "included": [
+      "20,000 actual TrackPlayer seek/interpolation evaluations",
+      "current GLB root and tire/ramp integration",
+      "visible/hidden/blurred replay gating and end/reset controls",
+      "desktop camera world transforms and immersive-camera preservation",
+      "fallback and atlas-texture VFX branches",
+      "per-instance geometry, attributes, matrices and shader-uniform isolation",
+      "owned-resource teardown versus prototype/texture ownership",
+      "ground/air shadow state across arbitrary seeks",
+      "ground shader patch wiring and stage-flood parent-space origins",
+      "temporal puff noncontraction and monotonic late opacity",
+      "smooth particle retirement at lifetime/burst boundaries",
+      "absolute-time shader animation seek reset",
+      "V4 actual pivot/spin-axis/radial-contact refresh",
+      "manual review of atlas UV/cell bounds and premultiplied sprite crossfade"
+    ],
+    "excluded": [
+      "unique physical 6DoF truth",
+      "visual similarity/mesh quality/lighting grade",
+      "native headset performance",
+      "GPU shader compilation and runtime image capture",
+      "browser network or XR event delivery"
+    ],
+    "live_app_untouched": true,
+    "app_and_project_verification_sources_edited_by_judge": false,
+    "method": "Ran the root-owned asserting project harness, then an additional independent offline harness that bundles actual TypeScript modules in memory. Its core boundary reexports the installed Three render-object/math classes and supplies minimal ECS/UI/visibility stubs. Both asset-manager return values are exercised. Actual GLB geometry is parsed with installed GLTFLoader. No browser or dev-server command was used.",
+    "prototype_test": "Two Group.clone(true) placements share original geometry/materials before ReplayEffects construction, matching the app asset contract. The test then checks that each live instance owns separate mutable attributes/material uniforms and never changes the other placement or prototype.",
+    "model_snapshot": "Held final export-cleanup GLBc7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a;70,821triangles,60glTF mesh definitions,70nodes,64parsed Mesh objects. This refresh covers model integration and numerical export cleanup, not a new visual grade."
+  },
+  "category_scores": {
+    "track_interpolation": 9.6,
+    "axes_model_origin_contact": 9.5,
+    "lifecycle_and_visibility": 9.3,
+    "controls_state_transitions": 9.3,
+    "effects_determinism_isolation_ownership": 9.5,
+    "wheel_animation": 8.4
+  },
+  "reviewed_file_sha256": {
+    "src/replay-track.ts": "237a66e687d38b952a58e75c14c3aa323054db274e761e98c7d5e8b71311180b",
+    "src/replay-system.ts": "0e7453ea784874ec12cdb741ee9a96e4af422282c1c849de6d3290978086c90e",
+    "src/replay-controls.ts": "9b2cccd138436c853a4e02470065628f6a197868de44d5b93877121be0643c4e",
+    "src/replay-effects.ts": "4fb9c2519ca0ca6b830fa6065c2c3fc5992437e76f05adde03bb82ed83e41da8",
+    "src/scene-assets/stage.scene-asset.ts": "0a44339dabf7085d12a5efa023fd96a36260d0b21c647afbb095b90cdf0f632e",
+    "src/scene-assets/effects.scene-asset.ts": "c33c01ee0a0bcf1f19259e7bcbe2aaf0a46084e9ca0253481837dc39e0fadf31",
+    "src/assets.ts": "56079d0900f8988899f9c084d94b3760916c5c14130c7adebe549675e3085934",
+    "public/textures/vapor-atlas.png": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153",
+    "public/models/roadster.glb": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+    "public/scenes/main.iwsdk.scene.json": "077bc6aeee50703b6a7036cf5722c508ff85af393f332843b80e80a30e60a1b4",
+    "iwsdk.config.json": "259ec6a8ab0c26137bd1e624cfbe47e710743342a30f04e1fb2b48afe894fa0f",
+    "tools/verification/runtime-harness.mjs": "68be72aae03b9e17014d5bb2ee87941b38bd29ee55aaa9a365a4f8101a82e218",
+    "references/roadster/reconstruction/reconstruction.json": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+  },
+  "previous_report": "artifacts/judges/runtime-technical-review-v4.json",
+  "previous_initial_findings": [
+    {
+      "id": "RT-001",
+      "priority": "P2",
+      "title": "Wheel rolling direction was reversed by the exported root transform",
+      "status": "resolved; current baseline checks retain the repair"
+    },
+    {
+      "id": "RT-002",
+      "priority": "P2",
+      "title": "Drive-away car left the finite ground before replay end",
+      "status": "resolved; current baseline checks retain the repair"
+    },
+    {
+      "id": "RT-003",
+      "priority": "P2",
+      "title": "Particle shader smoothstep used reversed edges",
+      "status": "resolved; current baseline checks retain the repair"
+    },
+    {
+      "id": "RT-004",
+      "priority": "P2",
+      "title": "Replay visibility gating omitted hidden XR sessions",
+      "status": "resolved; current baseline checks retain the repair"
+    },
+    {
+      "id": "RT-005",
+      "priority": "P2",
+      "title": "Desktop camera positions inherited the XR player transform after locomotion",
+      "status": "resolved; current baseline checks retain the repair"
+    }
+  ],
+  "new_revision_findings": [
+    {
+      "id": "RT-007",
+      "priority": "P2",
+      "status": "resolved in reviewed shader",
+      "title": "Transparent sprite RGB contaminated a straight RGBA atlas crossfade",
+      "source_of_finding": "The independent stage judge identified the V8 rendered artifact and the root agent repaired it before this final review.",
+      "reviewed_repair_location": "src/scene-assets/effects.scene-asset.ts:78-81",
+      "reviewed_equation": "density=mix(first.a,next.a,evolution);radiance=mix(first.rgb*first.a,next.rgb*next.a,evolution)/max(density,.0001);sprite=vec4(radiance,density)",
+      "correctness_reason": "A zero-alpha source contributes zero numerator and zero density, so its hidden RGB cannot tint the other sprite during crossfade. The final output remains straight alpha for the material blending path. Division is bounded; the .0001 guard is below the .003 final-alpha discard threshold after opacity factors.",
+      "verification_limit": "The equation and bounds were reviewed directly in the actual source. The independent CPU harness does not execute GLSL; final GPU appearance remains the stage/temporal judges scope."
+    }
+  ],
+  "open_findings": [
+    {
+      "id": "RT-006",
+      "priority": "P3",
+      "title": "Wheel spin remains an approximate cosmetic track",
+      "location": "src/replay-system.ts:42-48,78-80",
+      "evidence": "The same 60Hz cumulative-distance lookup, average radius .353m, and release/air freeze remain. Correct positive local-X rolling direction is preserved. Actual front/rear radii differ by about1.3% from the average.",
+      "impact": "Small spoke animation timing/rolling-speed differences and paused angular phase through last-contact/air phases; sampled car poses and rendered circular tire geometry remain correct.",
+      "suggestion": "For additional polish, interpolate per-wheel signed angular phase and give airborne wheels an explicit authored angular velocity.",
+      "blocks_approval": false
+    }
+  ],
+  "checks": {
+    "typecheck": {
+      "command": "npm run typecheck",
+      "exit_code": 0,
+      "run_for_current_revision": false,
+      "app_source_matches_preceding_fresh_pass": true,
+      "note": "Not repeated for this model-only hash refresh, as requested. Every TypeScript/config/atlas source hash matches the previous passing audit. Root owns the current full project build and its status is not independently claimed here."
+    },
+    "project_harness": {
+      "command": "node tools/verification/runtime-harness.mjs (inside unchanged independent harness)",
+      "exit_code": 0,
+      "assertions_passed": true,
+      "source_sha256": "68be72aae03b9e17014d5bb2ee87941b38bd29ee55aaa9a365a4f8101a82e218",
+      "results": {
+        "track": {
+          "count": 20000,
+          "maxPositionError": 0,
+          "maxQuaternionNormError": 2.220446049250313e-16,
+          "phaseMismatches": 0
+        },
+        "geometry": {
+          "deckError": 9.58558627652841e-07,
+          "groundMin": [
+            -180,
+            -0.23999999940395356,
+            -90
+          ],
+          "groundMax": [
+            180,
+            -0.020000000596046452,
+            90
+          ],
+          "modelSize": [
+            4.641000716876141,
+            1.3209999799728394,
+            2.3938762916303693
+          ],
+          "maxContactError": 0.008354773273662297,
+          "worstContact": {
+            "time": 7.9,
+            "wheel": "Wheel_FR",
+            "signedError": 0.008354773273662297
+          }
+        },
+        "effects": {
+          "effectsDeterministic": true,
+          "effectsFinite": true,
+          "visibleBillboardsAtReset": 0,
+          "nonContractingPuffs": 108
+        },
+        "runtime": {
+          "visibilityGates": [
+            {
+              "state": "non-immersive",
+              "advance": 0.016000000000000014
+            },
+            {
+              "state": "visible",
+              "advance": 0.016000000000000014
+            },
+            {
+              "state": "visible-blurred",
+              "advance": 0
+            },
+            {
+              "state": "hidden",
+              "advance": 0
+            }
+          ],
+          "cameraPositionError": 3.1776437161565096e-14,
+          "cameraAngleError": 2.9802322387695312e-08,
+          "immersiveCameraUntouched": true,
+          "wheelDelta": [
+            0.1345314555836878,
+            0,
+            0,
+            0.9909093235299252
+          ],
+          "framing": [
+            {
+              "aspect": 0.9,
+              "view": 1,
+              "carNDC": [
+                -0.8680786139852384,
+                -0.11599704171441469,
+                0.9999958378207179
+              ],
+              "maxAbsRampNDCX": 0.8906815229606666,
+              "maxAbsRampNDCY": 0.11636895543979836,
+              "maxRampNDCZ": 0.9999958378207179,
+              "far": 500
+            },
+            {
+              "aspect": 0.9,
+              "view": 3,
+              "carNDC": [
+                -0.8802190448282005,
+                -6.127878725403551e-16,
+                0.9999957236692244
+              ],
+              "maxAbsRampNDCX": 0.9450481518127268,
+              "maxAbsRampNDCY": 0.00010748573338634821,
+              "maxRampNDCZ": 0.9999957236692244,
+              "far": 500
+            },
+            {
+              "aspect": 1,
+              "view": 1,
+              "carNDC": [
+                -0.8673888754304087,
+                -0.12876819833314962,
+                0.9999949381169406
+              ],
+              "maxAbsRampNDCX": 0.8905611463099379,
+              "maxAbsRampNDCY": 0.12935679733680977,
+              "maxRampNDCZ": 0.9999949381169406,
+              "far": 500
+            },
+            {
+              "aspect": 1,
+              "view": 3,
+              "carNDC": [
+                -0.8802190271497531,
+                4.2554712516182935e-16,
+                0.9999948040762118
+              ],
+              "maxAbsRampNDCX": 0.9514446277845504,
+              "maxAbsRampNDCY": 0.00013418498967142356,
+              "maxRampNDCZ": 0.9999948040762118,
+              "far": 500
+            },
+            {
+              "aspect": 1.44,
+              "view": 1,
+              "carNDC": [
+                -0.8642674151629002,
+                -0.18466250524490113,
+                0.9999909978445722
+              ],
+              "maxAbsRampNDCX": 0.8900511508883625,
+              "maxAbsRampNDCY": 0.18665847199494265,
+              "maxRampNDCZ": 0.9999909978445722,
+              "far": 500
+            },
+            {
+              "aspect": 1.44,
+              "view": 3,
+              "carNDC": [
+                -0.8802189272572397,
+                4.902302325521659e-16,
+                0.9999907578677277
+              ],
+              "maxAbsRampNDCX": 0.9827934089362911,
+              "maxAbsRampNDCY": 0.0002926720690204373,
+              "maxRampNDCZ": 0.9999907578677277,
+              "far": 500
+            }
+          ],
+          "seekHigh": 18,
+          "seekLow": 0,
+          "restarted": {
+            "elapsed": 0,
+            "playing": true,
+            "speed": 1,
+            "phase": "climb"
+          },
+          "end": {
+            "elapsed": 18,
+            "playing": false,
+            "speed": 1,
+            "phase": "drive-away"
+          },
+          "cleanupCount": 3,
+          "debugRemoved": true,
+          "subscriptions": 0
+        },
+        "hashes": {
+          "src/replay-track.ts": "237a66e687d38b952a58e75c14c3aa323054db274e761e98c7d5e8b71311180b",
+          "src/replay-system.ts": "0e7453ea784874ec12cdb741ee9a96e4af422282c1c849de6d3290978086c90e",
+          "src/replay-controls.ts": "9b2cccd138436c853a4e02470065628f6a197868de44d5b93877121be0643c4e",
+          "src/replay-effects.ts": "4fb9c2519ca0ca6b830fa6065c2c3fc5992437e76f05adde03bb82ed83e41da8",
+          "src/scene-assets/stage.scene-asset.ts": "0a44339dabf7085d12a5efa023fd96a36260d0b21c647afbb095b90cdf0f632e",
+          "src/scene-assets/effects.scene-asset.ts": "c33c01ee0a0bcf1f19259e7bcbe2aaf0a46084e9ca0253481837dc39e0fadf31",
+          "public/models/roadster.glb": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+          "public/scenes/main.iwsdk.scene.json": "077bc6aeee50703b6a7036cf5722c508ff85af393f332843b80e80a30e60a1b4",
+          "iwsdk.config.json": "259ec6a8ab0c26137bd1e624cfbe47e710743342a30f04e1fb2b48afe894fa0f",
+          "references/roadster/reconstruction/reconstruction.json": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+        }
+      }
+    },
+    "independent_harness": {
+      "command": "node artifacts/judges/runtime-technical-harness-v3.mjs",
+      "exit_code": 0,
+      "source_sha256": "f6de622a35ae7ffb17d63b1cc823274eb3cc277fdc9feb546e2f312a608dbc08",
+      "reuse_reason": "The unchanged asserting harness reads the current public GLB dynamically; no test thresholds or source code were changed.",
+      "runs_project_baseline_as_subprocess": true,
+      "extra_effects_branches": [
+        {
+          "texture": "null/fallback",
+          "liveGeometryIndependentFromPrototype": true,
+          "instancesMutuallyIsolated": true,
+          "prototypeAttributesAndUniformsUnchanged": true,
+          "deterministic": true,
+          "finite": true,
+          "resetOpacityZero": true,
+          "ownedResourceCount": 8,
+          "eachOwnedResourceDisposedExactlyOnce": true,
+          "prototypeDisposeEvents": 0,
+          "atlasDisposeEvents": 0
+        },
+        {
+          "texture": "world-owned texture",
+          "liveGeometryIndependentFromPrototype": true,
+          "instancesMutuallyIsolated": true,
+          "prototypeAttributesAndUniformsUnchanged": true,
+          "deterministic": true,
+          "finite": true,
+          "resetOpacityZero": true,
+          "ownedResourceCount": 8,
+          "eachOwnedResourceDisposedExactlyOnce": true,
+          "prototypeDisposeEvents": 0,
+          "atlasDisposeEvents": 0
+        }
+      ],
+      "temporal_branches": [
+        {
+          "texture": false,
+          "samples": 841,
+          "intervalSeconds": [
+            9.6,
+            18
+          ],
+          "stepSeconds": 0.01,
+          "nonContractionComparisons": 87939,
+          "maxVisibleContraction": 0,
+          "maxLateOpacityIncrease": 0,
+          "deathCount": 180,
+          "maxPreDeathOpacity": 5.663745105266571e-05,
+          "burstEnd": [
+            {
+              "time": 15.9,
+              "opacity": 0.0001512231829110533
+            },
+            {
+              "time": 15.99,
+              "opacity": 1.4378504147316562e-06
+            },
+            {
+              "time": 15.999,
+              "opacity": 1.430543861147271e-08
+            },
+            {
+              "time": 15.9999,
+              "opacity": 1.4298146000513157e-10
+            },
+            {
+              "time": 16,
+              "opacity": 0
+            }
+          ],
+          "passed": true
+        },
+        {
+          "texture": true,
+          "samples": 841,
+          "intervalSeconds": [
+            9.6,
+            18
+          ],
+          "stepSeconds": 0.01,
+          "nonContractionComparisons": 87939,
+          "maxVisibleContraction": 0,
+          "maxLateOpacityIncrease": 0,
+          "deathCount": 180,
+          "maxPreDeathOpacity": 5.663745105266571e-05,
+          "burstEnd": [
+            {
+              "time": 15.9,
+              "opacity": 0.0001512231829110533
+            },
+            {
+              "time": 15.99,
+              "opacity": 1.4378504147316562e-06
+            },
+            {
+              "time": 15.999,
+              "opacity": 1.430543861147271e-08
+            },
+            {
+              "time": 15.9999,
+              "opacity": 1.4298146000513157e-10
+            },
+            {
+              "time": 16,
+              "opacity": 0
+            }
+          ],
+          "passed": true
+        }
+      ],
+      "extra_shadow_branches": [
+        {
+          "texture": false,
+          "assetManagerRequests": [
+            "vapor-atlas"
+          ],
+          "meshCount": 64,
+          "shadowSeekChecks": [
+            {
+              "time": 0,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 6,
+              "carY": 16.574007,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 10.5,
+              "carY": 2.750326,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 0,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 9,
+              "carY": 15.785313,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 11.6,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 18,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 6,
+              "carY": 16.574007,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 0,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            }
+          ],
+          "hotTraversalCalls": 0,
+          "carViewEyeHeightMetres": 1.5,
+          "cleanupPassed": true
+        },
+        {
+          "texture": true,
+          "assetManagerRequests": [
+            "vapor-atlas"
+          ],
+          "meshCount": 64,
+          "shadowSeekChecks": [
+            {
+              "time": 0,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 6,
+              "carY": 16.574007,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 10.5,
+              "carY": 2.750326,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 0,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 9,
+              "carY": 15.785313,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 11.6,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 18,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 6,
+              "carY": 16.574007,
+              "castsShadow": false,
+              "allMeshesAgree": true
+            },
+            {
+              "time": 0,
+              "carY": 0,
+              "castsShadow": true,
+              "allMeshesAgree": true
+            }
+          ],
+          "hotTraversalCalls": 0,
+          "carViewEyeHeightMetres": 1.5,
+          "cleanupPassed": true
+        }
+      ],
+      "stage": {
+        "groundShaderPatchApplied": true,
+        "groundUsesCanonicalParentOffset": true,
+        "floodChecks": [
+          {
+            "id": "flood-0",
+            "source": [
+              -60,
+              0.65,
+              -42.7
+            ],
+            "lensCenter": [
+              -60,
+              0.4,
+              -42.74
+            ],
+            "distance": 0.2531797780234431
+          },
+          {
+            "id": "flood-1",
+            "source": [
+              -36,
+              0.65,
+              -42.7
+            ],
+            "lensCenter": [
+              -36,
+              0.4,
+              -42.74
+            ],
+            "distance": 0.2531797780234431
+          },
+          {
+            "id": "flood-2",
+            "source": [
+              -12,
+              0.65,
+              -42.7
+            ],
+            "lensCenter": [
+              -12,
+              0.4,
+              -42.74
+            ],
+            "distance": 0.2531797780234431
+          },
+          {
+            "id": "flood-3",
+            "source": [
+              12,
+              0.65,
+              -42.7
+            ],
+            "lensCenter": [
+              12,
+              0.4,
+              -42.74
+            ],
+            "distance": 0.2531797780234431
+          },
+          {
+            "id": "flood-4",
+            "source": [
+              24,
+              0.65,
+              -42.7
+            ],
+            "lensCenter": [
+              24,
+              0.4,
+              -42.74
+            ],
+            "distance": 0.2531797780234431
+          }
+        ]
+      }
+    },
+    "resource_ownership": {
+      "live_vapor_geometry_is_cloned_before_attribute_mutation": true,
+      "instance_attributes_use_distinct_typed_arrays": true,
+      "live_instance_matrices_are_distinct": true,
+      "jet_material_uniforms_are_mutually_isolated": true,
+      "prototype_attributes_and_uniforms_remain_unchanged": true,
+      "two_instances_owned_resource_count_per_branch": 8,
+      "each_owned_resource_disposed_once": true,
+      "prototype_dispose_events": 0,
+      "world_texture_dispose_events": 0,
+      "shader_owned_geometry_and_material_cleanup_location": "src/replay-effects.ts:115"
+    },
+    "shadow_policy": {
+      "threshold": "car floor-origin Y <1m casts; Y>=1m does not",
+      "actual_mesh_count": 64,
+      "mesh_list_captured_once": true,
+      "hot_path_hierarchy_traversals": 0,
+      "seek_sequence_seconds": [
+        0,
+        6,
+        10.5,
+        0,
+        9,
+        11.6,
+        18,
+        6,
+        0
+      ],
+      "all_shadow_states_correct_in_both_texture_branches": true
+    },
+    "atlas": {
+      "path": "public/textures/vapor-atlas.png",
+      "sha256": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153",
+      "size_px": [
+        1254,
+        1254
+      ],
+      "layout": "2x2;627px per cell",
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "nonzero_alpha_fraction": 0.5606423082499638,
+      "all_four_cells_have_nonzero_alpha": true,
+      "world_texture_reference_preserved": true,
+      "sampling_color_space": "NoColorSpace, as explicitly chosen for the custom shader",
+      "shader_uniforms_in_texture_branch": {
+        "useAtlas": 1,
+        "cloudTexture": "same world-owned Texture object"
+      },
+      "shader_uniforms_in_null_branch": {
+        "useAtlas": 0,
+        "cloudTexture": null
+      },
+      "installed_API_checked": [
+        "node_modules/@iwsdk/core/dist/init/world-initializer.js assigns world.assetManager=AssetManager",
+        "node_modules/@iwsdk/core/dist/asset/asset-manager.js:getTexture delegates logical key lookup",
+        "node_modules/@iwsdk/core/dist/asset/loaders/texture-loader.js:getTexture returns cached object or null"
+      ],
+      "preload_contract": "The atlas manifest entry has no background/lazy priority, so installed AssetManager.preloadAssets treats it as critical and World.create waits for preload before this system is registered. The procedural null-texture branch is valid; it is not a network-download-failure recovery path when critical asset preload rejects."
+    },
+    "camera": {
+      "current_car_view_relative_eye_height_metres": 1.5,
+      "immersive_pose_not_overwritten": true,
+      "desktop_world_position_error_under_rotated_translated_origin_metres": 3.1776437161565096e-14,
+      "desktop_world_angle_error_radians": 2.9802322387695312e-08,
+      "far_plane_metres": 500,
+      "wide_and_overhead_t18_clipping_passes_at_aspects": [
+        0.9,
+        1,
+        1.44
+      ]
+    },
+    "contact": {
+      "actual_GLB_sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+      "actual_radial_tire_to_ramp_max_error_metres": 0.008354773273662297,
+      "worst_case": {
+        "time": 7.9,
+        "wheel": "Wheel_FR",
+        "signedError": 0.008354773273662297
+      },
+      "generated_deck_centerline_error_metres": 9.58558627652841e-07,
+      "method": "Closest XY distance of transformed actual GLB tire centers to the generated ramp/approach polyline minus each actual wheel radius, through t7.9 four-wheel contact. This is a model-to-track integration check."
+    },
+    "temporal_VFX": {
+      "texture_and_null_branches_independently_tested": true,
+      "samples_per_branch": 841,
+      "interval_seconds": [
+        9.6,
+        18
+      ],
+      "step_seconds": 0.01,
+      "live_puff_size_comparisons_per_branch": 87939,
+      "max_live_puff_contraction_metres": 0,
+      "max_late_opacity_increase": 0,
+      "all_180_particles_retired": true,
+      "max_alpha_immediately_before_10ms_sampled_retirement": 5.663745105266571e-05,
+      "burst_opacity_near_16s": [
+        {
+          "time": 15.9,
+          "opacity": 0.0001512231829110533
+        },
+        {
+          "time": 15.99,
+          "opacity": 1.4378504147316562e-06
+        },
+        {
+          "time": 15.999,
+          "opacity": 1.430543861147271e-08
+        },
+        {
+          "time": 15.9999,
+          "opacity": 1.4298146000513157e-10
+        },
+        {
+          "time": 16,
+          "opacity": 0
+        }
+      ],
+      "absolute_shader_time_uniform_asserted_at_every_temporal_sample": true,
+      "pause_seek_restart_deterministic": true,
+      "interpretation": "The CPU carrier geometry disperses without shrinking while alive; disappearance is controlled by smooth opacity. Card removal occurs at near-zero opacity. These checks do not substitute for a temporal visual grade or prove that every atlas silhouette expands at each pixel."
+    },
+    "shader_manual_review": {
+      "source_sha256": "c33c01ee0a0bcf1f19259e7bcbe2aaf0a46084e9ca0253481837dc39e0fadf31",
+      "atlas_cell_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "crossfade_weight_bounds": [
+        0.1,
+        0.9
+      ],
+      "first_UV_max_per_axis_analytic_offset": 0.0625,
+      "second_UV_max_per_axis_analytic_offset": 0.04,
+      "atlas_sample_clamp_per_cell": [
+        0.002,
+        0.998
+      ],
+      "premultiplied_crossfade_then_straight_alpha_output_reviewed": true,
+      "division_guard": 0.0001,
+      "final_alpha_discard": 0.003,
+      "zero_alpha_hidden_color_invariance": "An alpha-zero source contributes no weighted RGB radiance in the reviewed formula.",
+      "shader_uses_absolute_time_not_frame_accumulation": true,
+      "GPU_execution_by_this_judge": false,
+      "provided_browser_error_evidence": {
+        "path": "artifacts/verification/browser-errors-v8-current.json",
+        "result": [],
+        "sha256": "653405c0c7369985e67596829d2128da834b2bd45fec620128fdad3ceff401db",
+        "caveat": "Parent-produced earlier recording evidence; the root is producing V9 on the held final model. This log is contextual and is not claimed as this judge own GPU execution of the final crossfade."
+      }
+    },
+    "V4_model_contract": {
+      "sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+      "parsedMeshObjects": 64,
+      "glTFMeshDefinitions": 60,
+      "nodeCount": 70,
+      "triangles": 70821,
+      "effectiveDegeneratesAtCrossDotThreshold1eMinus16": 0,
+      "minCrossDot": 1.6460011323579653e-16,
+      "bounds": {
+        "min": [
+          -2.3315785139828265,
+          0,
+          -1.1969379559378204
+        ],
+        "max": [
+          2.309422202893314,
+          1.3209999799728394,
+          1.196938335692549
+        ],
+        "size": [
+          4.641000716876141,
+          1.3209999799728394,
+          2.3938762916303693
+        ]
+      },
+      "pivots": [
+        {
+          "name": "Wheel_FL",
+          "center": [
+            1.4132106790401193,
+            0.3483099341392517,
+            -1.0513200494923802
+          ],
+          "axis": [
+            -1.3435883849943764e-07,
+            0,
+            -0.9999999999999911
+          ],
+          "radius": 0.34830994013437233
+        },
+        {
+          "name": "Wheel_FR",
+          "center": [
+            1.4132109615483495,
+            0.3483099341392517,
+            1.0513196697376517
+          ],
+          "axis": [
+            -1.3435883849943764e-07,
+            0,
+            -0.9999999999999911
+          ],
+          "radius": 0.34830994013437233
+        },
+        {
+          "name": "Wheel_RL",
+          "center": [
+            -1.4132109615642383,
+            0.35769328474998474,
+            -1.051437925368775
+          ],
+          "axis": [
+            -1.3435883849943764e-07,
+            0,
+            -0.9999999999999911
+          ],
+          "radius": 0.3576932898546042
+        },
+        {
+          "name": "Wheel_RR",
+          "center": [
+            -1.4132106790242305,
+            0.35769328474998474,
+            1.0514383051235034
+          ],
+          "axis": [
+            -1.3435883849943764e-07,
+            0,
+            -0.9999999999999911
+          ],
+          "radius": 0.3576932898546042
+        },
+        {
+          "name": "NozzleAnchor_1",
+          "center": [
+            -2.323578370203615,
+            0.367000013589859,
+            0.4560003736993562
+          ],
+          "axis": [
+            -0.9999999999999752,
+            0,
+            2.2178160818953074e-07
+          ],
+          "radius": null
+        },
+        {
+          "name": "NozzleAnchor_2",
+          "center": [
+            -2.323578411048708,
+            0.367000013589859,
+            0.15200032772826372
+          ],
+          "axis": [
+            -0.9999999999999752,
+            0,
+            2.2178160818953074e-07
+          ],
+          "radius": null
+        },
+        {
+          "name": "NozzleAnchor_3",
+          "center": [
+            -2.3235784518937987,
+            0.367000013589859,
+            -0.15199970334166557
+          ],
+          "axis": [
+            -0.9999999999999752,
+            0,
+            2.2178160818953074e-07
+          ],
+          "radius": null
+        },
+        {
+          "name": "NozzleAnchor_4",
+          "center": [
+            -2.323578492738892,
+            0.367000013589859,
+            -0.4559997493127581
+          ],
+          "axis": [
+            -0.9999999999999752,
+            0,
+            2.2178160818953074e-07
+          ],
+          "radius": null
+        }
+      ],
+      "interpretation": "64parsed Mesh objects arise from60glTF mesh definitions/material primitives. Shadow cache covers all64. The full floor/bounds and all four wheel plus four nozzle positions/axes/radii compare exactly with preceding held54953f39 model. Degeneracy scan uses actual loaded Float32-position values with Vector3 cross-product squared threshold1e-16, matching the official preview criterion; no effective degenerates remain."
+    },
+    "unchanged_app_source_from_v4": {
+      "src/replay-track.ts": true,
+      "src/replay-system.ts": true,
+      "src/replay-controls.ts": true,
+      "src/replay-effects.ts": true,
+      "src/scene-assets/stage.scene-asset.ts": true,
+      "src/scene-assets/effects.scene-asset.ts": true,
+      "src/assets.ts": true,
+      "public/textures/vapor-atlas.png": true,
+      "public/scenes/main.iwsdk.scene.json": true,
+      "iwsdk.config.json": true,
+      "references/roadster/reconstruction/reconstruction.json": true
+    },
+    "export_cleanup": {
+      "exact_previous_contract_match": true,
+      "actual_triangle_count": 70821,
+      "effective_degenerates_at_cross_dot_below_1e_minus16": 0,
+      "minimum_loaded_triangle_cross_dot": 1.6460011323579653e-16,
+      "geometry_changes_reported_by_author": "88short-edge collapses at\u22640.108mm edge length /\u22640.054mm vertex shift; those edit-size bounds are author-reported, while this audit independently verifies resulting bounds/pivots/contact/degenerate count."
+    }
+  },
+  "score_limits": [
+    "The9.2 score covers runtime algorithm correctness in the stated scope. It is not a visual grade, a CV accuracy claim, or native-headset verification.",
+    "CPU execution proves branch wiring, state/resource isolation and finite matrices, not GPU shader compilation, atlas appearance, browser loading success or real XR tracking behavior.",
+    "The root agent owns final production build and live browser/headset checks; this audit did not start, restart or control a browser/server.",
+    "Current model front/lens visibility is documented separately as read-only geometric advice and does not alter this runtime score.",
+    "The temporal noncontraction/opacity checks concern per-particle carrier geometry/state. Visual smoke evolution and transparent-edge appearance require rendered review.",
+    "The held V4 model contract check concerns axes, pivots, mesh coverage, floor origin and contact; separate judges own front-fascia fidelity and overall model quality."
+  ],
+  "resources": {
+    "browser_automation_started": false,
+    "dev_server_started": false,
+    "persistent_worker_started": false,
+    "app_or_model_source_modified": false,
+    "new_owned_files": [
+      "artifacts/judges/runtime-technical-review-v5.json"
+    ],
+    "reused_unchanged_harness": "artifacts/judges/runtime-technical-harness-v3.mjs"
+  }
+}

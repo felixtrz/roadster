@@ -1,0 +1,71 @@
+{
+  "completedDate": "2026-10-17",
+  "modelSha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+  "triangles": 70821,
+  "effectiveDegenerateTriangles": 0,
+  "independentScores": {
+    "car": 9.0,
+    "stage": 9.0,
+    "temporal": 9.0,
+    "runtime": 9.2
+  },
+  "reviews": {
+    "car": "art/roadster/model/judge-independent-model-v4.json",
+    "stageTemporal": "artifacts/judges/final-stage-temporal-review.json",
+    "runtime": "artifacts/judges/runtime-technical-review-v5.json"
+  },
+  "checks": {
+    "typecheck": {
+      "passed": true,
+      "log": "artifacts/verification/final-typecheck.log"
+    },
+    "productionBuild": {
+      "passed": true,
+      "log": "artifacts/verification/final-build.log",
+      "publicArtifactsMatchDist": true
+    },
+    "runtimeHarness": {
+      "passed": true,
+      "log": "artifacts/verification/final-runtime-harness.log"
+    },
+    "tripoOfflineGuards": {
+      "passed": true,
+      "tests": 8,
+      "command": "python3 -m unittest discover -s tools/tripo -p 'test_*.py'"
+    },
+    "pointerKeyboard": "artifacts/verification/controls.json",
+    "xrControllerRay": "artifacts/final-validation/xr-interaction.json",
+    "xrExitProjection": "artifacts/final-validation/xr-exit-desktop.json",
+    "referenceIntegrity": "artifacts/verification/reference-integrity.json",
+    "processCleanup": "artifacts/final-validation/process-cleanup.json",
+    "consoleErrors": 0,
+    "sceneValid": true,
+    "sceneDirty": false,
+    "xrSessionClosed": true,
+    "all27FinalCaptureHashesMatch": true
+  },
+  "limits": [
+    "CV reconstruction remains conditional and approximate; independent measurement reliability7/10 and plausibility8/10.",
+    "Physical Quest performance has not been measured; XR interaction checks use IWER Meta Quest3.",
+    "Runtime audio is not authored; source reference clips retain broadcast audio."
+  ],
+  "deliveredFileHashes": {
+    "public/models/roadster.glb": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+    "dist/models/roadster.glb": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+    "references/roadster/reconstruction/reconstruction.json": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3",
+    "artifacts/roadster-replay.mp4": "d4b17a55c0fae038eadde78b43de54496361c62e3778754aa9c7a7829d200fa6",
+    "artifacts/final-review/snapshot-manifest.json": "b86953046a6283f3203a84a41b04b93976676bb6853e8be43e2496bcc0f6b3e6",
+    "art/roadster/model/judge-independent-model-v4.json": "4ce1051a2a852cbd8648b49c912f48092763756c1fc1694a37b2ee1fdeb819c9",
+    "artifacts/judges/final-stage-temporal-review.json": "a6c52f126de666e111179c02a09b55bcd08076dc7c12673c26a64825c537394b",
+    "artifacts/judges/runtime-technical-review-v5.json": "fbd63684a4e79394e30340bc38e72b9d7299f0370707a0932e838dc8ba890be7",
+    "artifacts/verification/controls.json": "b866051a4f67bda4c27c060afadc7a6768d3adcc42074703f50688fa5872444e",
+    "artifacts/final-validation/xr-interaction.json": "538b647ddaea18b444ccef9fbb96f99e806d4fe4e8ca30d9b573cb103acac453",
+    "artifacts/final-validation/xr-exit-desktop.json": "417db3d68a022af37d67553c1f518303b291d9e56c0f4e8b7f2c234e85468b47",
+    "artifacts/verification/reference-integrity.json": "42cc9004260bf37bcddcbbdae6e84380e69d25bed34c8601fea331b0f0ed4052",
+    "artifacts/final-validation/process-cleanup.json": "5e1c59bbf43bd25b4c76128dff18c833eba93ca47573a9aaa87e8e1e1a4486a8",
+    "artifacts/verification/final-typecheck.log": "ddbc61d03bd159267a2fedf641faad7c8df04af7b69beb2647d9da1e857c123b",
+    "artifacts/verification/final-build.log": "57fdbae7ef76b22ebaf020cdc198f41f93cc9cbf6bc63df5ed136497ef03735f",
+    "artifacts/verification/final-runtime-harness.log": "5e6fbd5a6325f83a2711b1ea279d9f6be58cac352347283c332065974bf4124c",
+    "art/roadster/model/review-input-v4/snapshot-manifest.json": "1dc7985af88126f897e21d7c0f9ce6ccc9ce322d0bbb486d8ac35a952b0a6a60"
+  }
+}

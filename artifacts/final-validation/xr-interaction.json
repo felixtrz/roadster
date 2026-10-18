@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "runtime": "IWER Meta Quest 3",
+  "modelSha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+  "before": "Play",
+  "after": "Pause",
+  "releasedTrigger": {
+    "device": "controller-right",
+    "value": 0
+  },
+  "physicalHeadsetTested": false
+}

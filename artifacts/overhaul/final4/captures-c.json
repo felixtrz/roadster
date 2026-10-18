@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "09-car-descent",
+      "time": 10.6,
+      "view": 2,
+      "file": "artifacts/overhaul/final4/09-car-descent.png",
+      "state": {
+        "time": 10.600000381469727,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "10-car-driveaway",
+      "time": 14,
+      "view": 2,
+      "file": "artifacts/overhaul/final4/10-car-driveaway.png",
+      "state": {
+        "time": 14,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "11-wide",
+      "time": 9,
+      "view": 1,
+      "file": "artifacts/overhaul/final4/11-wide.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 1
+      }
+    },
+    {
+      "name": "12-top",
+      "time": 10.6,
+      "view": 3,
+      "file": "artifacts/overhaul/final4/12-top.png",
+      "state": {
+        "time": 10.600000381469727,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 3
+      }
+    }
+  ],
+  "fps": 60.32806501506665,
+  "info": {
+    "frame": 36908,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

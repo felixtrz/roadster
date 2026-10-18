@@ -1,0 +1,169 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "scene.state",
+    "result": {
+      "activeFile": "public/scenes/main.iwsdk.scene.json",
+      "composedDocumentHash": "sha256:1ca4f47cd3b0512020b5cc5b6102b0df4056d864e93e1b8495f9ed257d6eeeee",
+      "conflict": false,
+      "dependencies": [],
+      "diagnostics": [],
+      "dirty": false,
+      "editor": {
+        "present": true,
+        "ready": true,
+        "commandReady": true,
+        "viewportReady": true,
+        "scenePath": "public/scenes/main.iwsdk.scene.json",
+        "pageId": "tab-mvcut5t2-q95zdj:editor",
+        "sceneSessionId": "scene-otcd2nyx9b",
+        "dirty": false,
+        "fileStatus": "ready",
+        "lastReloadedAt": "2026-10-17T20:33:26.357Z"
+      },
+      "renderStats": {
+        "available": true,
+        "calls": 21,
+        "frameTimeSamplesMs": [
+          5,
+          220.9,
+          0.3,
+          0.7,
+          0.3
+        ],
+        "lines": 48,
+        "environment": {
+          "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+          "devicePixelRatio": 1,
+          "emulatedUserAgent": "Mozilla/5.0 (X11; Linux x86_64; Quest 3) AppleWebKit/537.36 (KHTML, like Gecko) OculusBrowser/33.0.0.x.x.x Chrome/126.0.6478.122 VR Safari/537.36",
+          "emulationProfile": {
+            "active": true,
+            "device": "metaQuest3",
+            "runtime": "IWER"
+          },
+          "gpu": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4 Pro, Unspecified Version)",
+          "hostPlatform": "macOS",
+          "hostUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+          "renderer": "IWSDK WebGL",
+          "visibility": {
+            "method": "threejs-first-hit-sampling-v1",
+            "occlusion": "conservative-cpu-first-hit",
+            "sampleGrid": "3x3-projected-bounds+overhead-lower-frame",
+            "uncertainObjectsIncluded": false
+          }
+        },
+        "geometryCount": 71,
+        "points": 0,
+        "programs": 15,
+        "materialCount": 21,
+        "meshCount": 99,
+        "nodeCount": 14,
+        "objectCount": 142,
+        "shadowCasters": 70,
+        "sceneAssets": [
+          {
+            "id": "apron",
+            "meshCount": 18
+          },
+          {
+            "id": "ramp",
+            "meshCount": 4
+          },
+          {
+            "id": "roadster",
+            "meshCount": 65
+          },
+          {
+            "id": "thrusters",
+            "meshCount": 10
+          },
+          {
+            "id": "vapor",
+            "meshCount": 1
+          },
+          {
+            "id": "replay-controls",
+            "meshCount": 1
+          }
+        ],
+        "textures": 5,
+        "triangles": 8120,
+        "visibleNodeIds": [
+          "ambient",
+          "apron",
+          "controls",
+          "fill-light",
+          "flood-0",
+          "flood-1",
+          "flood-2",
+          "flood-3",
+          "flood-4",
+          "key-light"
+        ],
+        "framingBounds": {
+          "max": [
+            22.7526,
+            23.1706,
+            -2.3
+          ],
+          "min": [
+            -0.672,
+            -1,
+            -36.1201
+          ],
+          "size": [
+            23.4246,
+            24.1706,
+            33.8201
+          ]
+        },
+        "worldBounds": {
+          "max": [
+            192,
+            24.2308,
+            56
+          ],
+          "min": [
+            -168,
+            -1,
+            -124
+          ],
+          "size": [
+            360,
+            25.2308,
+            180
+          ]
+        }
+      },
+      "runtime": {
+        "present": true,
+        "ready": true,
+        "readinessReason": null,
+        "stale": false,
+        "pageId": "tab-mvcut5t2-q95zdj:runtime",
+        "error": null,
+        "expectedRuntimeHash": "sha256:610af4d7f21c020c55380b9495f80072ddd583204b6d312969fb9991b4ae3be8",
+        "frameConnected": true
+      },
+      "runtimeHash": "sha256:610af4d7f21c020c55380b9495f80072ddd583204b6d312969fb9991b4ae3be8",
+      "selection": {
+        "nodeIds": [],
+        "builtInTarget": "level-root",
+        "rootSelected": true
+      },
+      "sourceDocumentHash": "sha256:1ca4f47cd3b0512020b5cc5b6102b0df4056d864e93e1b8495f9ed257d6eeeee",
+      "validation": {
+        "valid": true,
+        "issues": [],
+        "lifecycle": {
+          "schemaValid": "passed",
+          "capabilityCompatible": "passed",
+          "resourcesReady": "not-run",
+          "editorCommitted": "not-run",
+          "runtimeProven": "not-run"
+        }
+      }
+    }
+  }
+}

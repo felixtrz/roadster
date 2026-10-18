@@ -1,0 +1,90 @@
+{
+  "results": [
+    {
+      "name": "07-driveaway",
+      "time": 13.5,
+      "view": 0,
+      "file": "artifacts/judges/app-r4/raw/07-driveaway.png",
+      "state": {
+        "time": 13.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "08-car-ready",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/judges/app-r4/raw/08-car-ready.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "09-car-descent",
+      "time": 10.8,
+      "view": 2,
+      "file": "artifacts/judges/app-r4/raw/09-car-descent.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "10-car-driveaway",
+      "time": 13.5,
+      "view": 2,
+      "file": "artifacts/judges/app-r4/raw/10-car-driveaway.png",
+      "state": {
+        "time": 13.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "11-wide",
+      "time": 10.5,
+      "view": 1,
+      "file": "artifacts/judges/app-r4/raw/11-wide.png",
+      "state": {
+        "time": 10.5,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 1
+      }
+    },
+    {
+      "name": "04c-flip-late",
+      "time": 9.5,
+      "view": 0,
+      "file": "artifacts/judges/app-r4/raw/04c-flip-late.png",
+      "state": {
+        "time": 9.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.21098726087862,
+  "info": {
+    "frame": 107305,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

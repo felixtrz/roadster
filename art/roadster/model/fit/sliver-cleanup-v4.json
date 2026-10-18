@@ -1,0 +1,16 @@
+{
+  "area_limit_m2": 6e-09,
+  "official_preview_double_area_squared_threshold": 1e-16,
+  "method": "Shortest-edge midpoint collapse for exact-boundary cut triangles below IWSDK effective-zero area; no face deletion holes. Maximum accepted edge length0.5mm.",
+  "objects": [
+    {
+      "object": "BodyShell",
+      "edge_collapses": 88,
+      "before_triangles": 51583,
+      "after_triangles": 51413,
+      "maximum_collapsed_edge_m": 0.00010801427561091259,
+      "maximum_per_collapse_vertex_displacement_m": 5.4007137805456296e-05
+    }
+  ],
+  "scope": "All authored meshes inspected; only reported meshes changed."
+}

@@ -1,0 +1,358 @@
+{
+  "judge_id": "image_geometry_judge",
+  "review_type": "independent stage/runtime visual review",
+  "version": 7,
+  "reviewed_at_utc": "2026-10-17T20:55:47.300884+00:00",
+  "overall_score": 9.0,
+  "target_score": 9,
+  "approved": true,
+  "approval_scope": "Stage appearance and camera/UI coverage in the 17 frozen still captures only.",
+  "critical_stage_issues": [],
+  "required_stage_corrections": [],
+  "readiness_decision": "Approved at the 9/10 threshold for the stage-only frozen visual scope. The latest apron lighting/material/paint changes close the remaining material visual gap identified in V6. The coherent ramp, dark stage, low banks, red boundaries, jets, local landing cloud and framing now read as a strong source-grounded recreation. Remaining differences are minor finish rather than a required stage rebuild.",
+  "scope": {
+    "included": [
+      "Ramp silhouette/structure/deck/paint",
+      "Floor and stage lighting/materials/shadows",
+      "Pressure jets and cloud appearance",
+      "Landing obscuration and 13s visual clearance",
+      "Landscape and portrait action framing",
+      "UI obstruction in supplied screenshots"
+    ],
+    "excluded": [
+      "Car model hero form, geometry and material quality",
+      "Metric motion accuracy or uniquely measured 6DoF",
+      "Temporal cloud sorting/coherence and shadow transitions",
+      "Native XR rendering/performance",
+      "Live app functional verification"
+    ],
+    "method": "Fresh view_image reads of all 17 V7 captures and six actual source frames. Initial read-only verification of all 27 manifest entries; final recheck of all 17 frozen capture hashes. Limited read-only stage/effects code inspection for cause. No IWSDK App CLI/browser automation, live camera/input changes, source edits or consultation of another judge report.",
+    "scoring_basis": "Overall score is a holistic stage-readiness judgment, not an arithmetic mean of category diagnostics. A 9/10 recreation can retain minor differences in surface detail, lighting arrangement and effect simulation. This is not pixel-identical event footage or a physical reconstruction accuracy score."
+  },
+  "hash_evidence": {
+    "manifest_path": "artifacts/stage-review-input-v7/snapshot-manifest.json",
+    "manifest_sha256": "738edc12b06f793d083f1d0da5ba4c9ef747406977089f8cb16c80ce5cb92f40",
+    "initial_verification": {
+      "matched": 27,
+      "total": 27,
+      "mismatches": []
+    },
+    "final_frozen_capture_recheck": {
+      "matched": 17,
+      "total": 17,
+      "mismatches": []
+    },
+    "reviewed_manifest_entries": [
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-ready.png",
+        "bytes": 448399,
+        "sha256": "52335eb24281d4b807374321150101c94e2b35c2f5829581dc89af8e36fd188e"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-climb.png",
+        "bytes": 448049,
+        "sha256": "e1cdc1c457af311a19845afe2b49615c8350b48442c674c477495a2d94f5747f"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-release.png",
+        "bytes": 452134,
+        "sha256": "816bd5c2e80311ab5f2286a41a95348b7a1a9b07d57d975d7d674c2c4c855231"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-flip.png",
+        "bytes": 458565,
+        "sha256": "42acfe8f469e59e58dad931d0616cdb742b5b82f863e4b5f9c8a0101b3c387f3"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-jets.png",
+        "bytes": 445939,
+        "sha256": "adceb2fc9ce129cb1cfa93f7d9187dbcc3a80a8126943be1d224c6f2842c6e81"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-descent.png",
+        "bytes": 429264,
+        "sha256": "d6467b962633a2115a44032d488149c950e6376896efd892ee0df53653e1af28"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-landing.png",
+        "bytes": 467181,
+        "sha256": "3c0f7b11ecd5175afa74473347798a511ce5bacfe0aa29f2fa0d8385102372fc"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-clearance.png",
+        "bytes": 444881,
+        "sha256": "163f57ac294e77642a29c4eceb7cc2316178409de34e20c244dde2dc39398865"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-end.png",
+        "bytes": 281956,
+        "sha256": "8189ee977329948a89a9a0429ca5656ff0a24cdb6d71270f3438a164837e5b25"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-car.png",
+        "bytes": 320128,
+        "sha256": "a3cbe163988b90e5a1f617f41bbcac2cea8197a17d2fd709e8c8ccac4ecfb703"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-wide.png",
+        "bytes": 492100,
+        "sha256": "5890ca7d7ccdc6bf1aacb1a8e3882e844f4be9a49c73fdfdc940e53f39398b40"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-wide-end.png",
+        "bytes": 236110,
+        "sha256": "274565ee612432087b7e90591c174be2fc84f8dec6073791b6f5213b2b218426"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/landscape-overhead.png",
+        "bytes": 856286,
+        "sha256": "7651f5c154872333692922e4ae12357ac0bfdcbc6b6f3cf514d694c99fd3319a"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/portrait-release.png",
+        "bytes": 364376,
+        "sha256": "2b1812ac4309ba5533101296a0a5eba4aac3ab615b0b84acaaa6887976982f0c"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/portrait-descent.png",
+        "bytes": 330769,
+        "sha256": "f24c37d8fdbb329dc447217e3843fa50f32282e555562d10941a5360f47d220f"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/portrait-landing.png",
+        "bytes": 367681,
+        "sha256": "25e7fe40f40dcc266e5cea70ba4f7fa6e3c4b2e6d93b4dd781f76e0bcade3d75"
+      },
+      {
+        "path": "artifacts/stage-review-input-v7/portrait-wide-end.png",
+        "bytes": 107337,
+        "sha256": "96e8acf8839b3657c4f118638d5f2176c79302d572ea2cade7d456bccae4870e"
+      },
+      {
+        "path": "src/replay-system.ts",
+        "bytes": 7028,
+        "sha256": "0e7453ea784874ec12cdb741ee9a96e4af422282c1c849de6d3290978086c90e"
+      },
+      {
+        "path": "src/replay-effects.ts",
+        "bytes": 6278,
+        "sha256": "6936ea6219a8c551ec011188c7b3d8874b6b59f67885a951d935f20153431a34"
+      },
+      {
+        "path": "src/scene-assets/stage.scene-asset.ts",
+        "bytes": 10383,
+        "sha256": "0a44339dabf7085d12a5efa023fd96a36260d0b21c647afbb095b90cdf0f632e"
+      },
+      {
+        "path": "src/scene-assets/effects.scene-asset.ts",
+        "bytes": 5638,
+        "sha256": "e3a92716767acb257284a61da05497ba8b2ca2f497200d8407b5e4147b9dba55"
+      },
+      {
+        "path": "public/scenes/main.iwsdk.scene.json",
+        "bytes": 7622,
+        "sha256": "077bc6aeee50703b6a7036cf5722c508ff85af393f332843b80e80a30e60a1b4"
+      },
+      {
+        "path": "public/models/roadster.glb",
+        "bytes": 1381564,
+        "sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4"
+      },
+      {
+        "path": "public/ui/replay.uikitml",
+        "bytes": 1657,
+        "sha256": "b078498a0d1ed94a19eccd1931a90527827fdd058097ff4893feb7871e14e8db"
+      },
+      {
+        "path": "public/textures/vapor-atlas.png",
+        "bytes": 1602259,
+        "sha256": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153"
+      },
+      {
+        "path": "src/assets.ts",
+        "bytes": 908,
+        "sha256": "56079d0900f8988899f9c084d94b3760916c5c14130c7adebe549675e3085934"
+      },
+      {
+        "path": "references/roadster/reconstruction/reconstruction.json",
+        "bytes": 382400,
+        "sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+      }
+    ],
+    "actual_source_frames_freshly_viewed": [
+      {
+        "path": "references/roadster/reconstruction/frame_19.jpg",
+        "sha256": "9089b4011f8c3b9f2b47334e163f8cfc1fcab0086423e38c45f27d85508f95dc"
+      },
+      {
+        "path": "references/roadster/reconstruction/frame_21.jpg",
+        "sha256": "d917e0d715286aa34f30efad102143c33f3c4e214f458ceca77b63c36face15b"
+      },
+      {
+        "path": "references/roadster/reconstruction/frame_24.jpg",
+        "sha256": "8aa97fa8045f9d9cd918e805ca03ad8ccd729e72c69d6b49d6fa41890bcf65d8"
+      },
+      {
+        "path": "references/roadster/reconstruction/frame_26.jpg",
+        "sha256": "f02fbe5700ad35b4021ad3571986fc255ec5ef177b50b84ff05359e3b3d5da32"
+      },
+      {
+        "path": "references/roadster/reconstruction/wide_17.jpg",
+        "sha256": "e0493db40574fc51ff5e36342b19ebea182e8325f13826596b6905421d0b6784"
+      },
+      {
+        "path": "references/roadster/reconstruction/overhead-37.jpg",
+        "sha256": "0a18da43f20a0ca2700cc0254f1f182b6a3e07602f6e795ccda5b846a5e7dbdb"
+      }
+    ],
+    "note": "Current model hash also matched the manifest, but model quality is explicitly excluded. Conclusions apply to the frozen V7 capture state."
+  },
+  "category_scores": {
+    "ramp_main_silhouette": 8.7,
+    "ramp_structural_cadence": 8.6,
+    "deck_surface_and_paint": 8.2,
+    "ground_and_stage_lighting": 8.8,
+    "shadow_and_grounding_finish": 9.0,
+    "pressure_jets": 8.2,
+    "vapor_and_touchdown": 8.9,
+    "framing_across_aspects": 9.0,
+    "ui_legibility_and_obstruction": 7.8
+  },
+  "evidence_for_approval": [
+    {
+      "item": "Apron now has source-supported material and lighting cues",
+      "evidence": "Ready and wide show light footprints originating near the low bank fixtures, with rough grazing reflections instead of the earlier smooth overhead oval pools. Overhead and car views show a restrained center marking aligned with the ramp lane. Roughness variation gives the floor an irregular worn response while keeping the apron dark.",
+      "images": [
+        "landscape-ready.png",
+        "landscape-wide.png",
+        "landscape-overhead.png",
+        "landscape-car.png"
+      ],
+      "source_comparison": "Actual wide_17 and overhead-37 support low banks, grazing light, rough floor variation and thin white floor markings. App light/camera arrangement remains an interpretation; exact pixels are not required."
+    },
+    {
+      "item": "Earlier shadow defects remain resolved",
+      "evidence": "No isolated hard airborne-car footprint or giant black ramp/truss C is visible in release, wide or overhead. Grounded car views retain contact darkness. The ramp foot reads as grounded through contact and localized illumination.",
+      "images": [
+        "landscape-release.png",
+        "landscape-wide.png",
+        "landscape-overhead.png",
+        "landscape-ready.png",
+        "landscape-car.png"
+      ]
+    },
+    {
+      "item": "Cloud remains present and locally credible",
+      "evidence": "Landing retains substantial occlusion around the car. The cloud has irregular coarse lobes, cool gray interior shade and sharp wisps, with softer lower edges. Mirroring/aspect variation reduces the repeated-puff read. At 13 seconds the car is clearly visible and a substantial aged trailing bank remains, with a dark/translucent left edge.",
+      "images": [
+        "landscape-descent.png",
+        "landscape-landing.png",
+        "landscape-clearance.png",
+        "portrait-descent.png",
+        "portrait-landing.png"
+      ],
+      "source_comparison": "Actual frames_21, _24 and _26 support a tall irregular mass, touchdown obscuration and persistent vapor after the car begins clearing it. Turbulent silhouette differences are expected; source vapor has not been erased."
+    },
+    {
+      "item": "Ramp and jet presentation hold",
+      "evidence": "The main curved silhouette and triangulated back structure are clear, brace spacing stays consistent and the driving-face center paint is continuous in show/portrait-release. The 9.5s pressure jets remain thin noisy wisps rather than opaque cones, compatible with frame_19.",
+      "images": [
+        "landscape-ready.png",
+        "landscape-climb.png",
+        "landscape-release.png",
+        "landscape-flip.png",
+        "landscape-jets.png",
+        "portrait-release.png"
+      ]
+    },
+    {
+      "item": "Frame coverage remains sound",
+      "evidence": "Release, descent and landing remain comfortably visible in portrait. Full-path end-wide includes both ramp and distant car in both aspects. The lower car-view camera shows the full car and contact region. Controls do not hide the active car in the submitted captures.",
+      "images": [
+        "portrait-release.png",
+        "portrait-descent.png",
+        "portrait-landing.png",
+        "landscape-wide-end.png",
+        "portrait-wide-end.png",
+        "landscape-car.png"
+      ]
+    }
+  ],
+  "minor_nonblocking_finish": [
+    {
+      "id": "schematic_flood_footprints",
+      "evidence": "Some flood footprints remain narrow and similarly cone-shaped, with less uneven glare/spill than actual footage. The low origin and rough floor response are now credible enough; this no longer dominates the stage.",
+      "regions_px": [
+        {
+          "image": "landscape-ready.png",
+          "bbox": [
+            65,
+            725,
+            1030,
+            950
+          ]
+        },
+        {
+          "image": "landscape-wide.png",
+          "bbox": [
+            175,
+            675,
+            1110,
+            955
+          ]
+        }
+      ],
+      "optional_polish": "Modest differences in bank spread/aim/intensity could add variety. Preserve low origins, dark floor, and the absence of global ambient fill."
+    },
+    {
+      "id": "residual_atlas_construction",
+      "evidence": "A few repeated cauliflower details and short pale basal slivers can still be recognized in the cloud, most visibly near the landing car. They are reduced enough to read as minor particle-system limitations at normal stage framing.",
+      "regions_px": [
+        {
+          "image": "portrait-landing.png",
+          "bbox": [
+            245,
+            640,
+            475,
+            705
+          ]
+        },
+        {
+          "image": "landscape-landing.png",
+          "bbox": [
+            550,
+            535,
+            770,
+            585
+          ]
+        }
+      ],
+      "optional_polish": "Only if an additional effects pass is justified, blend these few complete-puff bases into ground haze and add occasional broad darker interior masses. Keep landing density and 13s clearance."
+    },
+    {
+      "id": "far_floor_tone_edge",
+      "evidence": "At the widest end framing a faint transition remains between the faded floor and slightly lighter background. It is subtle and does not reveal a distracting bright floor island.",
+      "optional_polish": "Converge the final fade to the exact background color."
+    },
+    {
+      "id": "presentation_controls",
+      "evidence": "The persistent bottom-right controls and small supporting copy are visually heavy for a clean presentation, but do not obstruct the action in this evidence.",
+      "optional_polish": "A compact or collapsible presentation control mode would be useful, without changing current playback behavior."
+    }
+  ],
+  "do_not_regress": [
+    "Low grazing bank origins, rough reflected floor texture and restrained white center paint.",
+    "No hard high-ramp or airborne-car shadow, with grounded contact preserved.",
+    "Continuous driving-face center stripe and consistent brace rhythm.",
+    "Thin noisy blue-white jets rather than solid opaque cones.",
+    "Large local landing cloud, opacity aging, softened bases and visible 13s clearance.",
+    "Portrait action coverage and a full-path wide view; tiny far-end actor is the natural coverage tradeoff."
+  ],
+  "limitations": [
+    "All runtime evidence is still images; video review is still needed to establish particle sorting/popping, temporal coherence and smooth camera/shadow transitions.",
+    "No dedicated 10.0s capture isolates the stronger pressure-column phase seen in source footage.",
+    "The overhead screenshot views the outside/back of the upper ramp, so absence of center paint there is not a defect.",
+    "This approval does not establish numerical reconstruction accuracy, physical plume dynamics, live behavior, car-model quality or XR performance."
+  ],
+  "conclusion": "9.0/10, approved for the frozen stage-only visual scope. No further stage correction is required for this threshold. Preserve the current evidence and assess car-model quality and temporal/live behavior separately."
+}

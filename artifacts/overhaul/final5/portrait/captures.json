@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "name": "p-flip",
+      "time": 9,
+      "view": 0,
+      "file": "artifacts/overhaul/final5/portrait/p-flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "p-descent",
+      "time": 10.8,
+      "view": 0,
+      "file": "artifacts/overhaul/final5/portrait/p-descent.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.15411384538902,
+  "info": {
+    "frame": 36262,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

@@ -1,0 +1,1346 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "asset.render-preview",
+    "result": {
+      "assetId": "roadster",
+      "background": "#202226",
+      "diagnostics": {
+        "bounds": {
+          "max": [
+            2.309422202893314,
+            1.3209999799728394,
+            1.196938335692549
+          ],
+          "min": [
+            -2.3315785139828265,
+            0,
+            -1.1969379559378204
+          ]
+        },
+        "framingBounds": {
+          "max": [
+            2.309422202893314,
+            1.3209999799728394,
+            1.196938335692549
+          ],
+          "min": [
+            -2.3315785139828265,
+            0,
+            -1.1969379559378204
+          ]
+        },
+        "geometryCount": 64,
+        "materialCount": 13,
+        "meshCount": 64,
+        "namedPartCount": 76,
+        "namedParts": [
+          {
+            "bounds": {
+              "max": [
+                2.309422202893314,
+                1.3209999799728394,
+                1.196938335692549
+              ],
+              "min": [
+                -2.3315785139828265,
+                0,
+                -1.1969379559378204
+              ]
+            },
+            "name": "Scene",
+            "path": "Scene",
+            "type": "Group"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.309422202893314,
+                1.3209999799728394,
+                1.196938335692549
+              ],
+              "min": [
+                -2.3315785139828265,
+                0,
+                -1.1969379559378204
+              ]
+            },
+            "name": "Roadster",
+            "path": "Scene/Roadster",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.2864222416473634,
+                1.3209999799728394,
+                1.18063329242639
+              ],
+              "min": [
+                -2.2635786392586654,
+                0.27068042755126953,
+                -1.18063329549563
+              ]
+            },
+            "name": "BodyShell",
+            "path": "Scene/Roadster/BodyShell",
+            "type": "Group"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.2864222416473634,
+                1.3140000104904175,
+                1.18063329242639
+              ],
+              "min": [
+                -2.2635786392586654,
+                0.27068042755126953,
+                -1.18063329549563
+              ]
+            },
+            "name": "BodyShellGeometry",
+            "path": "Scene/Roadster/BodyShell/BodyShellGeometry",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.4600003773070291,
+                1.3209999799728394,
+                1.0642854301181548
+              ],
+              "min": [
+                -1.8400004235950225,
+                0.871999979019165,
+                -1.0642853790617899
+              ]
+            },
+            "name": "BodyShellGeometry_1",
+            "path": "Scene/Roadster/BodyShell/BodyShellGeometry_1",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.2864222234238856,
+                0.652999997138977,
+                1.0449997904035124
+              ],
+              "min": [
+                2.2855669734743564,
+                0.5434410572052002,
+                -1.0450004046906702
+              ]
+            },
+            "name": "BodyShellGeometry_2",
+            "path": "Scene/Roadster/BodyShell/BodyShellGeometry_2",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.2864222211397904,
+                0.6380000114440918,
+                1.0279998280744662
+              ],
+              "min": [
+                2.2863058350343595,
+                0.5580000281333923,
+                -1.0280004424608964
+              ]
+            },
+            "name": "BodyShellGeometry_3",
+            "path": "Scene/Roadster/BodyShell/BodyShellGeometry_3",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.1700002540088283,
+                1.2971400022506714,
+                1.0399338987703972
+              ],
+              "min": [
+                0.30999990431111535,
+                0.899450421333313,
+                -1.0399340976214992
+              ]
+            },
+            "name": "BodyShellGeometry_4",
+            "path": "Scene/Roadster/BodyShell/BodyShellGeometry_4",
+            "type": "Mesh"
+          },
+          {
+            "bounds": null,
+            "name": "Canopy",
+            "path": "Scene/Roadster/Canopy",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.8485782292008326,
+                0.3149999976158142,
+                0.8530003979117672
+              ],
+              "min": [
+                -2.2185783269455293,
+                0.16500000655651093,
+                0.5310003378372063
+              ]
+            },
+            "name": "DiffuserChannel_1",
+            "path": "Scene/Roadster/DiffuserChannel_1",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.848578275688991,
+                0.3149999976158142,
+                0.5070003952926273
+              ],
+              "min": [
+                -2.2185783734336955,
+                0.16500000655651093,
+                0.1850002756134136
+              ]
+            },
+            "name": "DiffuserChannel_2",
+            "path": "Scene/Roadster/DiffuserChannel_2",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.8485783221771594,
+                0.3149999976158142,
+                0.1610003181676715
+              ],
+              "min": [
+                -2.21857841992186,
+                0.16500000655651093,
+                -0.1609997717092159
+              ]
+            },
+            "name": "DiffuserChannel_3",
+            "path": "Scene/Roadster/DiffuserChannel_3",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.8485783686653239,
+                0.3149999976158142,
+                -0.184999729154958
+              ],
+              "min": [
+                -2.2185784664100288,
+                0.16500000655651093,
+                -0.5069998488341717
+              ]
+            },
+            "name": "DiffuserChannel_4",
+            "path": "Scene/Roadster/DiffuserChannel_4",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.8485784151534903,
+                0.3149999976158142,
+                -0.5309997913787508
+              ],
+              "min": [
+                -2.218578512898187,
+                0.16500000655651093,
+                -0.8529998514533116
+              ]
+            },
+            "name": "DiffuserChannel_5",
+            "path": "Scene/Roadster/DiffuserChannel_5",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.278578216787681,
+                0.514957845211029,
+                0.9850003999090462
+              ],
+              "min": [
+                -2.3285786789274487,
+                0.15000000596046448,
+                -0.9849997808967972
+              ]
+            },
+            "name": "DiffuserFrame",
+            "path": "Scene/Roadster/DiffuserFrame",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.0585784003960788,
+                0.16200000047683716,
+                0.9600004186452692
+              ],
+              "min": [
+                -2.315578662377722,
+                0.10499999672174454,
+                -0.9599998309386072
+              ]
+            },
+            "name": "DiffuserLowerShroud",
+            "path": "Scene/Roadster/DiffuserLowerShroud",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.988578469237026,
+                0.39500001072883606,
+                -0.899999786231398
+              ],
+              "min": [
+                -2.313578571336091,
+                0.12999999523162842,
+                -0.9799998835620912
+              ]
+            },
+            "name": "DiffuserOuterShroud_L",
+            "path": "Scene/Roadster/DiffuserOuterShroud_L",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.9885782166423764,
+                0.39500001072883606,
+                0.98000046159488
+              ],
+              "min": [
+                -2.3135783187414414,
+                0.12999999523162842,
+                0.9000003642641867
+              ]
+            },
+            "name": "DiffuserOuterShroud_R",
+            "path": "Scene/Roadster/DiffuserOuterShroud_R",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.2085783043705103,
+                0.5120000243186951,
+                0.7600004034256982
+              ],
+              "min": [
+                -2.313578541777139,
+                0.47699999809265137,
+                -0.7599997958339572
+              ]
+            },
+            "name": "DiffuserUpperBeam",
+            "path": "Scene/Roadster/DiffuserUpperBeam",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.0028414553750045,
+                0.8427299857139587,
+                -1.1312346745741444
+              ],
+              "min": [
+                0.8570916236883177,
+                0.3677041530609131,
+                -1.16655891479202
+              ]
+            },
+            "name": "DoorSeam_L_Front",
+            "path": "Scene/Roadster/DoorSeam_L_Front",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -0.11740054908589269,
+                0.9036608338356018,
+                -1.1005804337939362
+              ],
+              "min": [
+                -0.3627762108821585,
+                0.4113648533821106,
+                -1.1231968562146109
+              ]
+            },
+            "name": "DoorSeam_L_Rear",
+            "path": "Scene/Roadster/DoorSeam_L_Rear",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.0028417641038485,
+                0.8427299857139587,
+                1.1665586648935302
+              ],
+              "min": [
+                0.8570919324171618,
+                0.3677041530609131,
+                1.1312344246756547
+              ]
+            },
+            "name": "DoorSeam_R_Front",
+            "path": "Scene/Roadster/DoorSeam_R_Front",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -0.1174002503017504,
+                0.9036608338356018,
+                1.1231969207305625
+              ],
+              "min": [
+                -0.3627759120980162,
+                0.4113648533821106,
+                1.100580498309888
+              ]
+            },
+            "name": "DoorSeam_R_Rear",
+            "path": "Scene/Roadster/DoorSeam_R_Rear",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.291422314352026,
+                0.550000011920929,
+                0.8649998212433146
+              ],
+              "min": [
+                2.2664219831847863,
+                0.5120000243186951,
+                -0.8650004336299802
+              ]
+            },
+            "name": "FrontLEDRecess",
+            "path": "Scene/Roadster/FrontLEDRecess",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.309422202893314,
+                0.5390000343322754,
+                0.854999825808756
+              ],
+              "min": [
+                2.2934221769836025,
+                0.5230000019073486,
+                -0.8550004442415804
+              ]
+            },
+            "name": "FrontLightBar",
+            "path": "Scene/Roadster/FrontLightBar",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.28634902017695,
+                0.5519999861717224,
+                0.9799998952722955
+              ],
+              "min": [
+                1.9014220283650947,
+                0.12999999523162842,
+                -0.9800004579363492
+              ]
+            },
+            "name": "FrontOpeningJambs",
+            "path": "Scene/Roadster/FrontOpeningJambs",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.9014222769289824,
+                0.515999972820282,
+                0.8699998661877046
+              ],
+              "min": [
+                1.901422043144571,
+                0.12999999523162842,
+                -0.8700003771334501
+              ]
+            },
+            "name": "FrontRecessBack",
+            "path": "Scene/Roadster/FrontRecessBack",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.2634222197698706,
+                0.125,
+                1.054999795891575
+              ],
+              "min": [
+                2.183741005919643,
+                0.10000000149011612,
+                -1.0550003934072605
+              ]
+            },
+            "name": "FrontSplitter",
+            "path": "Scene/Roadster/FrontSplitter",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.286944819712831,
+                0.8874173760414124,
+                -0.8583008184825144
+              ],
+              "min": [
+                1.459476667786024,
+                0.5953528881072998,
+                -0.8816999282035111
+              ]
+            },
+            "name": "HoodShutLine_L",
+            "path": "Scene/Roadster/HoodShutLine_L",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.2869450534972424,
+                0.8874173760414124,
+                0.8816994248386404
+              ],
+              "min": [
+                1.4594769015704356,
+                0.5953528881072998,
+                0.8583003151176437
+              ]
+            },
+            "name": "HoodShutLine_R",
+            "path": "Scene/Roadster/HoodShutLine_R",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835783310082486,
+                0.4310000166296959,
+                0.5200003878117938
+              ],
+              "min": [
+                -2.3315783914475494,
+                0.3030000105500221,
+                0.39200031877193425
+              ]
+            },
+            "name": "NozzleAnchor_1",
+            "path": "Scene/Roadster/NozzleAnchor_1",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835783310082486,
+                0.4310000166296959,
+                0.5200003878117938
+              ],
+              "min": [
+                -2.3315783914475494,
+                0.3030000105500221,
+                0.39200031877193425
+              ]
+            },
+            "name": "Nozzle_1",
+            "path": "Scene/Roadster/NozzleAnchor_1/Nozzle_1",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.193578346683185,
+                0.4020000137388706,
+                0.4910003451568479
+              ],
+              "min": [
+                -2.2155783637135977,
+                0.3320000134408474,
+                0.4210003286512118
+              ]
+            },
+            "name": "Nozzle_1_Interior",
+            "path": "Scene/Roadster/NozzleAnchor_1/Nozzle_1_Interior",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835783718533417,
+                0.4310000166296959,
+                0.21600034184070138
+              ],
+              "min": [
+                -2.3315784322926425,
+                0.3030000105500221,
+                0.08800027280084177
+              ]
+            },
+            "name": "NozzleAnchor_2",
+            "path": "Scene/Roadster/NozzleAnchor_2",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835783718533417,
+                0.4310000166296959,
+                0.21600034184070138
+              ],
+              "min": [
+                -2.3315784322926425,
+                0.3030000105500221,
+                0.08800027280084177
+              ]
+            },
+            "name": "Nozzle_2",
+            "path": "Scene/Roadster/NozzleAnchor_2/Nozzle_2",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.193578387528278,
+                0.4020000137388706,
+                0.18700029918575536
+              ],
+              "min": [
+                -2.215578404558691,
+                0.3320000134408474,
+                0.11700028268011928
+              ]
+            },
+            "name": "Nozzle_2_Interior",
+            "path": "Scene/Roadster/NozzleAnchor_2/Nozzle_2_Interior",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835784126984326,
+                0.4310000166296959,
+                -0.08799968922922792
+              ],
+              "min": [
+                -2.3315784731377334,
+                0.3030000105500221,
+                -0.21599975826908752
+              ]
+            },
+            "name": "NozzleAnchor_3",
+            "path": "Scene/Roadster/NozzleAnchor_3",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835784126984326,
+                0.4310000166296959,
+                -0.08799968922922792
+              ],
+              "min": [
+                -2.3315784731377334,
+                0.3030000105500221,
+                -0.21599975826908752
+              ]
+            },
+            "name": "Nozzle_3",
+            "path": "Scene/Roadster/NozzleAnchor_3/Nozzle_3",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.193578428373369,
+                0.4020000137388706,
+                -0.11699973188417392
+              ],
+              "min": [
+                -2.2155784454037817,
+                0.3320000134408474,
+                -0.18699974838981
+              ]
+            },
+            "name": "Nozzle_3_Interior",
+            "path": "Scene/Roadster/NozzleAnchor_3/Nozzle_3_Interior",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835784535435256,
+                0.4310000166296959,
+                -0.39199973520032044
+              ],
+              "min": [
+                -2.3315785139828265,
+                0.3030000105500221,
+                -0.5199998042401801
+              ]
+            },
+            "name": "NozzleAnchor_4",
+            "path": "Scene/Roadster/NozzleAnchor_4",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1835784535435256,
+                0.4310000166296959,
+                -0.39199973520032044
+              ],
+              "min": [
+                -2.3315785139828265,
+                0.3030000105500221,
+                -0.5199998042401801
+              ]
+            },
+            "name": "Nozzle_4",
+            "path": "Scene/Roadster/NozzleAnchor_4/Nozzle_4",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.193578469218462,
+                0.4020000137388706,
+                -0.42099977785526643
+              ],
+              "min": [
+                -2.2155784862488748,
+                0.3320000134408474,
+                -0.4909997943609025
+              ]
+            },
+            "name": "Nozzle_4_Interior",
+            "path": "Scene/Roadster/NozzleAnchor_4/Nozzle_4_Interior",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.3015783265851866,
+                0.8299999833106995,
+                0.20500033687386804
+              ],
+              "min": [
+                -2.3155785609367876,
+                0.6549999713897705,
+                -0.20499971651803178
+              ]
+            },
+            "name": "RearBlankPlate",
+            "path": "Scene/Roadster/RearBlankPlate",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.2635783415687762,
+                0.9179999828338623,
+                1.0350004135766178
+              ],
+              "min": [
+                -2.2915785013833196,
+                0.8690000176429749,
+                -1.0349998015510355
+              ]
+            },
+            "name": "RearLampHousing",
+            "path": "Scene/Roadster/RearLampHousing",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.2875782755650675,
+                0.9020000100135803,
+                1.0250004239195198
+              ],
+              "min": [
+                -2.307578534614405,
+                0.8820000290870667,
+                -1.0249998065195884
+              ]
+            },
+            "name": "RearLightBar",
+            "path": "Scene/Roadster/RearLightBar",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.0985786108129862,
+                0.5699999928474426,
+                -0.8499998313622883
+              ],
+              "min": [
+                -2.282578680352759,
+                0.30000001192092896,
+                -1.0699999142535017
+              ]
+            },
+            "name": "RearSidePocket_L",
+            "path": "Scene/Roadster/RearSidePocket_L",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.0985783528439717,
+                0.5699999928474426,
+                1.0700005029006716
+              ],
+              "min": [
+                -2.2825784223837444,
+                0.30000001192092896,
+                0.8500004200094583
+              ]
+            },
+            "name": "RearSidePocket_R",
+            "path": "Scene/Roadster/RearSidePocket_R",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.2915783112655426,
+                0.9310000538825989,
+                0.38000035606281596
+              ],
+              "min": [
+                -2.305578354224132,
+                0.9169999957084656,
+                -0.37999973839418627
+              ]
+            },
+            "name": "RearUpperBrakeLamp",
+            "path": "Scene/Roadster/RearUpperBrakeLamp",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -2.1185783458627867,
+                0.8349999785423279,
+                1.0000004384906318
+              ],
+              "min": [
+                -2.263578614989045,
+                0.5350000262260437,
+                -0.9999998497091127
+              ]
+            },
+            "name": "RearWhiteRelief",
+            "path": "Scene/Roadster/RearWhiteRelief",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.1012828302884619,
+                0.7705695629119873,
+                -1.1363999001678375
+              ],
+              "min": [
+                0.8987171267950353,
+                0.7456603050231934,
+                -1.1830176800009857
+              ]
+            },
+            "name": "SideMarker_L",
+            "path": "Scene/Roadster/SideMarker_L",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.1012831419226776,
+                0.7705695629119873,
+                1.1830174112832728
+              ],
+              "min": [
+                0.8987174384292511,
+                0.7456603050231934,
+                1.1363996314501246
+              ]
+            },
+            "name": "SideMarker_R",
+            "path": "Scene/Roadster/SideMarker_R",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                2.25142238751248,
+                0.5339759588241577,
+                1.1655971842965367
+              ],
+              "min": [
+                -2.2635786372384312,
+                0.11500000208616257,
+                -1.1655971826632372
+              ]
+            },
+            "name": "Undercarriage",
+            "path": "Scene/Roadster/Undercarriage",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7615206784522386,
+                0.6966198682785034,
+                -0.9138199812392804
+              ],
+              "min": [
+                1.064900679628,
+                0,
+                -1.1968200798849222
+              ]
+            },
+            "name": "Wheel_FL",
+            "path": "Scene/Roadster/Wheel_FL",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7075325978464742,
+                0.6426318287849426,
+                -1.1658200264046
+              ],
+              "min": [
+                1.1188887261066138,
+                0.05398803949356079,
+                -1.1908201148135429
+              ]
+            },
+            "name": "Wheel_FL_AeroDisc",
+            "path": "Scene/Roadster/Wheel_FL/Wheel_FL_AeroDisc",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7188284209794762,
+                0.6539276540279388,
+                -1.1928200236270132
+              ],
+              "min": [
+                1.107592899077207,
+                0.042692214250564575,
+                -1.1928201057519079
+              ]
+            },
+            "name": "Wheel_FL_AeroRimSegments",
+            "path": "Scene/Roadster/Wheel_FL/Wheel_FL_AeroRimSegments",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.4619740588229242,
+                0.39707332476973534,
+                -1.180820062008989
+              ],
+              "min": [
+                1.3644472623086281,
+                0.2995465435087681,
+                -1.1968200798849222
+              ]
+            },
+            "name": "Wheel_FL_Hub",
+            "path": "Scene/Roadster/Wheel_FL/Wheel_FL_Hub",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.716240360377889,
+                0.651339590549469,
+                -1.1688200242668045
+              ],
+              "min": [
+                1.1101809641126363,
+                0.045280277729034424,
+                -1.1838201008570886
+              ]
+            },
+            "name": "Wheel_FL_RimRing",
+            "path": "Scene/Roadster/Wheel_FL/Wheel_FL_RimRing",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7615206784522386,
+                0.6966198682785034,
+                -0.9138199812392804
+              ],
+              "min": [
+                1.064900679628,
+                0,
+                -1.18882011774548
+              ]
+            },
+            "name": "Wheel_FL_Tire",
+            "path": "Scene/Roadster/Wheel_FL/Wheel_FL_Tire",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7615209609604687,
+                0.6966198682785034,
+                1.1968197001301937
+              ],
+              "min": [
+                1.0649009621362302,
+                0,
+                0.9138196014845519
+              ]
+            },
+            "name": "Wheel_FR",
+            "path": "Scene/Roadster/Wheel_FR",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.707532914481855,
+                0.6426318287849426,
+                1.1908197350588143
+              ],
+              "min": [
+                1.1188890427419946,
+                0.05398803949356079,
+                1.1658196466498714
+              ]
+            },
+            "name": "Wheel_FR_AeroDisc",
+            "path": "Scene/Roadster/Wheel_FR/Wheel_FR_AeroDisc",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7188287415112617,
+                0.6539276540279388,
+                1.1928197259971793
+              ],
+              "min": [
+                1.1075932196089926,
+                0.042692214250564575,
+                1.1928196438722847
+              ]
+            },
+            "name": "Wheel_FR_AeroRimSegments",
+            "path": "Scene/Roadster/Wheel_FR/Wheel_FR_AeroRimSegments",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.4619743782798407,
+                0.39707332476973534,
+                1.1968197001301937
+              ],
+              "min": [
+                1.3644475817655446,
+                0.2995465435087681,
+                1.1808196822542605
+              ]
+            },
+            "name": "Wheel_FR_Hub",
+            "path": "Scene/Roadster/Wheel_FR/Wheel_FR_Hub",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7162406764758324,
+                0.651339590549469,
+                1.18381972110236
+              ],
+              "min": [
+                1.1101812802105797,
+                0.045280277729034424,
+                1.168819644512076
+              ]
+            },
+            "name": "Wheel_FR_RimRing",
+            "path": "Scene/Roadster/Wheel_FR/Wheel_FR_RimRing",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                1.7615209609604687,
+                0.6966198682785034,
+                1.1888197379907515
+              ],
+              "min": [
+                1.0649009621362302,
+                0,
+                0.9138196014845519
+              ]
+            },
+            "name": "Wheel_FR_Tire",
+            "path": "Scene/Roadster/Wheel_FR/Wheel_FR_Tire",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.0555176102806496,
+                0.7153865694999695,
+                -0.9139378558549388
+              ],
+              "min": [
+                -1.770904312847827,
+                0,
+                -1.1969379559378204
+              ]
+            },
+            "name": "Wheel_RL",
+            "path": "Scene/Roadster/Wheel_RL",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.1109601040189916,
+                0.6599441170692444,
+                -1.1659379012156714
+              ],
+              "min": [
+                -1.7154618532366355,
+                0.0554424524307251,
+                -1.1909379917552605
+              ]
+            },
+            "name": "Wheel_RL_AeroDisc",
+            "path": "Scene/Roadster/Wheel_RL/Wheel_RL_AeroDisc",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.0995753805463628,
+                0.6713288426399231,
+                -1.1929378984261403
+              ],
+              "min": [
+                -1.7268465806056692,
+                0.04405772686004639,
+                -1.1929379827055702
+              ]
+            },
+            "name": "Wheel_RL_AeroRimSegments",
+            "path": "Scene/Roadster/Wheel_RL/Wheel_RL_AeroRimSegments",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.3631339101352415,
+                0.4077703468501568,
+                -1.1809379377088802
+              ],
+              "min": [
+                -1.4632880499419214,
+                0.3076162226498127,
+                -1.1969379559378204
+              ]
+            },
+            "name": "Wheel_RL_Hub",
+            "path": "Scene/Roadster/Wheel_RL/Wheel_RL_Hub",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.102017767376546,
+                0.6688864529132843,
+                -1.168937899046359
+              ],
+              "min": [
+                -1.7244041893416435,
+                0.04650011658668518,
+                -1.1839379778303232
+              ]
+            },
+            "name": "Wheel_RL_RimRing",
+            "path": "Scene/Roadster/Wheel_RL/Wheel_RL_RimRing",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.0555176102806496,
+                0.7153865694999695,
+                -0.9139378558549388
+              ],
+              "min": [
+                -1.770904312847827,
+                0,
+                -1.188937994882611
+              ]
+            },
+            "name": "Wheel_RL_Tire",
+            "path": "Scene/Roadster/Wheel_RL/Wheel_RL_Tire",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.0555173277406418,
+                0.7153865694999695,
+                1.196938335692549
+              ],
+              "min": [
+                -1.7709040303078192,
+                0,
+                0.9139382356096674
+              ]
+            },
+            "name": "Wheel_RR",
+            "path": "Scene/Roadster/Wheel_RR",
+            "type": "Object3D"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.1109597873518333,
+                0.6599441170692444,
+                1.190938371509989
+              ],
+              "min": [
+                -1.7154615365694772,
+                0.0554424524307251,
+                1.1659382809704
+              ]
+            },
+            "name": "Wheel_RR_AeroDisc",
+            "path": "Scene/Roadster/Wheel_RR/Wheel_RR_AeroDisc",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.0995750599827996,
+                0.6713288426399231,
+                1.1929383624602987
+              ],
+              "min": [
+                -1.726846260042106,
+                0.04405772686004639,
+                1.1929382781808688
+              ]
+            },
+            "name": "Wheel_RR_AeroRimSegments",
+            "path": "Scene/Roadster/Wheel_RR/Wheel_RR_AeroRimSegments",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.3631335906465474,
+                0.4077703468501568,
+                1.196938335692549
+              ],
+              "min": [
+                -1.4632877304532272,
+                0.3076162226498127,
+                1.1809383174636088
+              ]
+            },
+            "name": "Wheel_RR_Hub",
+            "path": "Scene/Roadster/Wheel_RR/Wheel_RR_Hub",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.1020174512468253,
+                0.6688864529132843,
+                1.1839383575850517
+              ],
+              "min": [
+                -1.7244038732119227,
+                0.04650011658668518,
+                1.1689382788010876
+              ]
+            },
+            "name": "Wheel_RR_RimRing",
+            "path": "Scene/Roadster/Wheel_RR/Wheel_RR_RimRing",
+            "type": "Mesh"
+          },
+          {
+            "bounds": {
+              "max": [
+                -1.0555173277406418,
+                0.7153865694999695,
+                1.1889383746373396
+              ],
+              "min": [
+                -1.7709040303078192,
+                0,
+                0.9139382356096674
+              ]
+            },
+            "name": "Wheel_RR_Tire",
+            "path": "Scene/Roadster/Wheel_RR/Wheel_RR_Tire",
+            "type": "Mesh"
+          }
+        ],
+        "namedPartsTruncated": false,
+        "objectCount": 76,
+        "renderedTriangles": 70821,
+        "warnings": [
+          {
+            "code": "non_front_side_materials",
+            "message": "64 mesh material assignments render back faces; verify this is intentional."
+          }
+        ],
+        "focusBounds": null
+      },
+      "height": 480,
+      "mimeType": "image/png",
+      "mode": "clay",
+      "views": [
+        "front",
+        "back",
+        "right",
+        "top",
+        "quarter"
+      ],
+      "width": 640
+    },
+    "screenshotPath": "artifacts/final-validation/roadster-clay.png"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "stage": "primary geometry preflight only; no approval or final score claimed",
+  "version": "v4-a",
+  "files": [
+    {
+      "file": "clay-front.png",
+      "sha256": "150ae601b5b493e5613c6f3124725d2343d6b007c0101b3da72cea490bf04ba8",
+      "bytes": 315536
+    },
+    {
+      "file": "clay-left.png",
+      "sha256": "b8af4095c46d628598d7e5488086b9ec4918af38a5327556e3c1d554ade7b09a",
+      "bytes": 320759
+    },
+    {
+      "file": "clay-quarter.png",
+      "sha256": "f24643fd541e7b0af432dd23f7b8ea6f1963c40ee1a09536dc948d57f68e83d2",
+      "bytes": 330482
+    },
+    {
+      "file": "clay-rear-quarter.png",
+      "sha256": "b992c5a49f92ff5a66a19836e9a2f2e9a44fc8c80444f6f2c49811070fb46728",
+      "bytes": 326160
+    },
+    {
+      "file": "fair-body-v4.json",
+      "sha256": "42e399dc68fc2e80bd501d1c8df6bc726c527d83f23ee1004425942fbe12c274",
+      "bytes": 5526
+    },
+    {
+      "file": "material-front.png",
+      "sha256": "9f6d96d66e701e862087f9bd3a9510d19c5a59ecbbaccc9bebaa87700e8ee10a",
+      "bytes": 319290
+    },
+    {
+      "file": "material-quarter.png",
+      "sha256": "dd71fe44b8fea0f0eb4d43b92bd8dbd823aa675a048aec2429efecd2bd3bc98c",
+      "bytes": 340337
+    },
+    {
+      "file": "sections/measurement-summary.json",
+      "sha256": "34f348fd4e8b29090a38992818207d71c6f13c254ed3f1eb88c3a98d27defc81",
+      "bytes": 1751
+    },
+    {
+      "file": "sections/roadster-overlays.png",
+      "sha256": "f2fa779945f1ad31f20d9b8a964680604624e68ef5406134d226fccbdc6036ce",
+      "bytes": 64192
+    },
+    {
+      "file": "sections/roadster.json",
+      "sha256": "eedee3f953d379fca7ed1fc0eefd705773749da1610a4419fb4ab59fced2493a",
+      "bytes": 434938
+    },
+    {
+      "file": "stats.json",
+      "sha256": "dc058a7f0d54e6756b0d6dcf3cfafb249324726632d6b61005106ee8a6d3138c",
+      "bytes": 122
+    }
+  ],
+  "public_glb": "unchanged immutableV3; primary checkpoint intentionally not exported"
+}

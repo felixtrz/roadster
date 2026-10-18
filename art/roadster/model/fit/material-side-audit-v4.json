@@ -1,0 +1,340 @@
+{
+  "policy": "Retain reviewed DoubleSide flags; no visible ownership/normal changes made merely to suppress an informational warning.",
+  "culling_limit": "This is a material intent audit, not proof that every part is watertight. Named closed discs can be culled as a future optimization without being required for correctness.",
+  "materials": {
+    "PearlWhite": {
+      "double_sided": true,
+      "reason": "Shared exterior skin has open intake/arch/underside boundaries and rear relief sheets. Both sides intentionally remain visible during airborne low views.",
+      "objects": [
+        {
+          "name": "BodyShell",
+          "nonmanifold_or_boundary_edges": 356
+        },
+        {
+          "name": "RearBlankPlate",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "RearWhiteRelief",
+          "nonmanifold_or_boundary_edges": 112
+        }
+      ]
+    },
+    "SmokedCanopy": {
+      "double_sided": true,
+      "reason": "Single shared exterior glass skin has no duplicate thickness/backing shell. DoubleSide preserves the sheet at low/inside sightlines.",
+      "objects": [
+        {
+          "name": "BodyShell",
+          "nonmanifold_or_boundary_edges": 356
+        }
+      ]
+    },
+    "DeepBlack": {
+      "double_sided": true,
+      "reason": "Shared by cavity back/pocket regions, open shut-line tubes and nozzle interior sheets. DoubleSide is intentional for these cavity and sheet uses.",
+      "objects": [
+        {
+          "name": "BodyShell",
+          "nonmanifold_or_boundary_edges": 356
+        },
+        {
+          "name": "Wheel_FL_Hub",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Wheel_FR_Hub",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Wheel_RL_Hub",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Wheel_RR_Hub",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "DoorSeam_L_Front",
+          "nonmanifold_or_boundary_edges": 8
+        },
+        {
+          "name": "DoorSeam_L_Rear",
+          "nonmanifold_or_boundary_edges": 8
+        },
+        {
+          "name": "DoorSeam_R_Front",
+          "nonmanifold_or_boundary_edges": 8
+        },
+        {
+          "name": "DoorSeam_R_Rear",
+          "nonmanifold_or_boundary_edges": 8
+        },
+        {
+          "name": "Nozzle_1_Interior",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Nozzle_2_Interior",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Nozzle_3_Interior",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Nozzle_4_Interior",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "RearSidePocket_L",
+          "nonmanifold_or_boundary_edges": 6
+        },
+        {
+          "name": "RearSidePocket_R",
+          "nonmanifold_or_boundary_edges": 6
+        },
+        {
+          "name": "RearLampHousing",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Wheel_FL_AeroRimSegments",
+          "nonmanifold_or_boundary_edges": 128
+        },
+        {
+          "name": "Wheel_FR_AeroRimSegments",
+          "nonmanifold_or_boundary_edges": 128
+        },
+        {
+          "name": "Wheel_RL_AeroRimSegments",
+          "nonmanifold_or_boundary_edges": 128
+        },
+        {
+          "name": "Wheel_RR_AeroRimSegments",
+          "nonmanifold_or_boundary_edges": 128
+        },
+        {
+          "name": "HoodShutLine_L",
+          "nonmanifold_or_boundary_edges": 8
+        },
+        {
+          "name": "HoodShutLine_R",
+          "nonmanifold_or_boundary_edges": 8
+        }
+      ]
+    },
+    "WhiteLED": {
+      "double_sided": true,
+      "reason": "Shared exterior corner-lens regions and open-ended light-bar tubes. No duplicate white or glass layer is retained below the lens.",
+      "objects": [
+        {
+          "name": "BodyShell",
+          "nonmanifold_or_boundary_edges": 356
+        },
+        {
+          "name": "FrontLightBar",
+          "nonmanifold_or_boundary_edges": 16
+        }
+      ]
+    },
+    "StructuralTrim": {
+      "double_sided": true,
+      "reason": "Single shared skin trim next to glazing, without a separate thickness shell.",
+      "objects": [
+        {
+          "name": "BodyShell",
+          "nonmanifold_or_boundary_edges": 356
+        }
+      ]
+    },
+    "CarbonUndercarriage": {
+      "double_sided": true,
+      "reason": "Undercarriage is opened at the body join and intake; diffuser frames/strips have exposed sheet boundaries.",
+      "objects": [
+        {
+          "name": "Undercarriage",
+          "nonmanifold_or_boundary_edges": 335
+        },
+        {
+          "name": "DiffuserChannel_1",
+          "nonmanifold_or_boundary_edges": 48
+        },
+        {
+          "name": "DiffuserChannel_2",
+          "nonmanifold_or_boundary_edges": 48
+        },
+        {
+          "name": "DiffuserChannel_3",
+          "nonmanifold_or_boundary_edges": 48
+        },
+        {
+          "name": "DiffuserChannel_4",
+          "nonmanifold_or_boundary_edges": 48
+        },
+        {
+          "name": "DiffuserChannel_5",
+          "nonmanifold_or_boundary_edges": 48
+        },
+        {
+          "name": "DiffuserFrame",
+          "nonmanifold_or_boundary_edges": 16
+        },
+        {
+          "name": "DiffuserUpperBeam",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "DiffuserLowerShroud",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "DiffuserOuterShroud_L",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "DiffuserOuterShroud_R",
+          "nonmanifold_or_boundary_edges": 0
+        }
+      ]
+    },
+    "TireRubber": {
+      "double_sided": true,
+      "reason": "Revolved tire carcass intentionally has small open inner hub rings; no unseen end-cap thickness is claimed.",
+      "objects": [
+        {
+          "name": "Wheel_FL_Tire",
+          "nonmanifold_or_boundary_edges": 192
+        },
+        {
+          "name": "Wheel_FR_Tire",
+          "nonmanifold_or_boundary_edges": 192
+        },
+        {
+          "name": "Wheel_RL_Tire",
+          "nonmanifold_or_boundary_edges": 192
+        },
+        {
+          "name": "Wheel_RR_Tire",
+          "nonmanifold_or_boundary_edges": 192
+        }
+      ]
+    },
+    "AeroDiscGraphite": {
+      "double_sided": true,
+      "reason": "Closed aero discs could use FrontSide. DoubleSide is deliberately retained for current material/render parity; the extra backface work is bounded by the complete model triangle budget.",
+      "objects": [
+        {
+          "name": "Wheel_FL_AeroDisc",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Wheel_FR_AeroDisc",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Wheel_RL_AeroDisc",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "Wheel_RR_AeroDisc",
+          "nonmanifold_or_boundary_edges": 0
+        }
+      ]
+    },
+    "RimEdge": {
+      "double_sided": true,
+      "reason": "Open revolved rim ribbon; both sides of its narrow edge are visible at wheel oblique views.",
+      "objects": [
+        {
+          "name": "Wheel_FL_RimRing",
+          "nonmanifold_or_boundary_edges": 192
+        },
+        {
+          "name": "Wheel_FR_RimRing",
+          "nonmanifold_or_boundary_edges": 192
+        },
+        {
+          "name": "Wheel_RL_RimRing",
+          "nonmanifold_or_boundary_edges": 192
+        },
+        {
+          "name": "Wheel_RR_RimRing",
+          "nonmanifold_or_boundary_edges": 192
+        }
+      ]
+    },
+    "AmberLED": {
+      "double_sided": true,
+      "reason": "Open-ended side-marker tubes.",
+      "objects": [
+        {
+          "name": "SideMarker_L",
+          "nonmanifold_or_boundary_edges": 12
+        },
+        {
+          "name": "SideMarker_R",
+          "nonmanifold_or_boundary_edges": 12
+        }
+      ]
+    },
+    "ThrusterBrass": {
+      "double_sided": true,
+      "reason": "Open-ended flare with authored inner and outer walls. DoubleSide retained at the thin end rings for complete airborne rear/low views.",
+      "objects": [
+        {
+          "name": "Nozzle_1",
+          "nonmanifold_or_boundary_edges": 96
+        },
+        {
+          "name": "Nozzle_2",
+          "nonmanifold_or_boundary_edges": 96
+        },
+        {
+          "name": "Nozzle_3",
+          "nonmanifold_or_boundary_edges": 96
+        },
+        {
+          "name": "Nozzle_4",
+          "nonmanifold_or_boundary_edges": 96
+        }
+      ]
+    },
+    "IntakeAbsorbent": {
+      "double_sided": true,
+      "reason": "Open cavity jamb/back and narrow lower-lip surfaces. Their backside must not reveal the scene through a cut sheet.",
+      "objects": [
+        {
+          "name": "FrontOpeningJambs",
+          "nonmanifold_or_boundary_edges": 8
+        },
+        {
+          "name": "FrontRecessBack",
+          "nonmanifold_or_boundary_edges": 4
+        },
+        {
+          "name": "FrontSplitter",
+          "nonmanifold_or_boundary_edges": 0
+        },
+        {
+          "name": "FrontLEDRecess",
+          "nonmanifold_or_boundary_edges": 0
+        }
+      ]
+    },
+    "RedLED": {
+      "double_sided": true,
+      "reason": "Open-ended thin rear light tubes.",
+      "objects": [
+        {
+          "name": "RearLightBar",
+          "nonmanifold_or_boundary_edges": 16
+        },
+        {
+          "name": "RearUpperBrakeLamp",
+          "nonmanifold_or_boundary_edges": 16
+        }
+      ]
+    }
+  }
+}

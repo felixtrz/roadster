@@ -1,0 +1,2731 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "scene.runtime-hierarchy",
+    "result": {
+      "name": "(unnamed)",
+      "uuid": "5962140d-5fc0-48f3-81ad-c79186f6714d",
+      "objectType": "Scene",
+      "entityIndex": 0,
+      "children": [
+        {
+          "name": "(unnamed)",
+          "uuid": "cebdd8a9-a545-4f14-b411-e132b695d2b1",
+          "objectType": "Group",
+          "entityIndex": 2,
+          "children": [
+            {
+              "name": "xr-origin-head",
+              "uuid": "ab857e1f-bb99-46fd-869c-2df85665d31c",
+              "objectType": "Group",
+              "entityIndex": 4,
+              "children": [
+                {
+                  "name": "(unnamed)",
+                  "uuid": "a7bb81c2-6db1-4b91-86dd-eea236ebc0a6",
+                  "objectType": "AudioListener"
+                }
+              ]
+            },
+            {
+              "name": "xr-origin-eye",
+              "uuid": "1c795848-16bf-43ef-b596-cf38dfe7613d",
+              "objectType": "Group"
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "d48dfd18-e031-4c41-97b2-2733b5d5d9e2",
+              "objectType": "Group",
+              "entityIndex": 5,
+              "children": [
+                {
+                  "name": "(unnamed)",
+                  "uuid": "7325b7b4-66da-4353-b70a-ac405660133d",
+                  "objectType": "Mesh"
+                }
+              ]
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "ed8802de-1957-4fdf-ae97-598ac2e2bf17",
+              "objectType": "Group",
+              "entityIndex": 6,
+              "children": [
+                {
+                  "name": "(unnamed)",
+                  "uuid": "d940e3ce-a6fd-4ea9-a737-4b2c68741237",
+                  "objectType": "Mesh"
+                },
+                {
+                  "name": "(unnamed)",
+                  "uuid": "a0ff3abe-457e-4f7a-80d1-feeb533e1d46",
+                  "objectType": "Group",
+                  "children": [
+                    {
+                      "name": "(unnamed)",
+                      "uuid": "a4f86d28-0175-4f9e-8611-8428c8f1890a",
+                      "objectType": "Mesh"
+                    },
+                    {
+                      "name": "(unnamed)",
+                      "uuid": "b2c91ce2-0f0a-45df-9e00-8595818c41cf",
+                      "objectType": "Mesh"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "e72df1e5-7619-4830-8738-c8768e17c2a0",
+              "objectType": "Group",
+              "entityIndex": 7
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "462fdec5-43e2-444d-ae9d-694390d386d3",
+              "objectType": "Group",
+              "entityIndex": 8
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "ae9a494c-53ff-498c-abeb-d208e04acd21",
+              "objectType": "Group",
+              "entityIndex": 9
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "d28a329f-854a-424d-bf44-b227ca8a3d87",
+              "objectType": "Group",
+              "entityIndex": 10
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "35d4b7ca-993a-4aa8-80f6-30b2ba05c436",
+              "objectType": "Mesh"
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "26e4b03d-03fc-4f1f-b172-ed8e6463736d",
+              "objectType": "Mesh"
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "9be86faa-2ab8-4c78-b18c-c31fdf7439d2",
+              "objectType": "PerspectiveCamera",
+              "entityIndex": 3,
+              "children": [
+                {
+                  "name": "(unnamed)",
+                  "uuid": "19713ee9-f9af-42f7-8ca8-4e1fbbea3f29",
+                  "objectType": "Mesh"
+                }
+              ]
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "43df27aa-7504-4d7b-a1b3-8a37a48fb4ee",
+              "objectType": "Group",
+              "children": [
+                {
+                  "name": "(unnamed)",
+                  "uuid": "5762c06b-017d-48d8-bb03-3ac13f54696a",
+                  "objectType": "Mesh"
+                }
+              ]
+            },
+            {
+              "name": "(unnamed)",
+              "uuid": "d1be87e8-4ba0-4e7e-84a6-672bb28d950e",
+              "objectType": "Group",
+              "children": [
+                {
+                  "name": "(unnamed)",
+                  "uuid": "798d4bec-766f-4811-812d-48689865fb0a",
+                  "objectType": "Mesh"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "(unnamed)",
+          "uuid": "b0238437-63fd-4d76-8106-4657700457ae",
+          "objectType": "Mesh"
+        },
+        {
+          "name": "(unnamed)",
+          "uuid": "3b5b720b-3875-411e-af03-c730246233f6",
+          "objectType": "Line2"
+        },
+        {
+          "name": "LevelRoot",
+          "uuid": "03371fca-487b-4a69-930d-9111e0a7adca",
+          "objectType": "Object3D",
+          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+          "resources": {},
+          "entityIndex": 11,
+          "children": [
+            {
+              "name": "Launch apron",
+              "uuid": "e6b40cd8-e620-43b8-b55c-265dbb8fae58",
+              "objectType": "Group",
+              "sceneNodeId": "apron",
+              "sourceNodeId": "apron",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "contentType": "asset",
+              "content": {
+                "type": "asset",
+                "asset": "apron",
+                "receiveShadow": true
+              },
+              "framingRole": "support",
+              "resourceRefs": {
+                "assetId": "apron"
+              },
+              "assetId": "apron",
+              "entityIndex": 12,
+              "children": [
+                {
+                  "name": "Ground",
+                  "uuid": "c727ac3b-f765-45ab-9588-ad53c9ce6eb4",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "apron",
+                  "sourceNodeId": "apron",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "apron",
+                    "receiveShadow": true
+                  },
+                  "framingRole": "support",
+                  "resourceRefs": {
+                    "assetId": "apron"
+                  },
+                  "assetId": "apron"
+                },
+                {
+                  "name": "Floodlight--24",
+                  "uuid": "be49f154-641c-4598-8d50-2123ce6ef595",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "apron",
+                  "sourceNodeId": "apron",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "apron",
+                    "receiveShadow": true
+                  },
+                  "framingRole": "support",
+                  "resourceRefs": {
+                    "assetId": "apron"
+                  },
+                  "assetId": "apron"
+                },
+                {
+                  "name": "Floodlight-12",
+                  "uuid": "6b756112-3ac3-4d8b-9710-89c61720663a",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "apron",
+                  "sourceNodeId": "apron",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "apron",
+                    "receiveShadow": true
+                  },
+                  "framingRole": "support",
+                  "resourceRefs": {
+                    "assetId": "apron"
+                  },
+                  "assetId": "apron"
+                },
+                {
+                  "name": "SteelTrusses",
+                  "uuid": "860e0cbb-6446-4b8c-921e-09944803cdb4",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "apron",
+                  "sourceNodeId": "apron",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "apron",
+                    "receiveShadow": true
+                  },
+                  "framingRole": "support",
+                  "resourceRefs": {
+                    "assetId": "apron"
+                  },
+                  "assetId": "apron"
+                },
+                {
+                  "name": "EdgeLighting",
+                  "uuid": "80007be1-1104-4aaa-b94e-f488f6c49ee5",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "apron",
+                  "sourceNodeId": "apron",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "apron",
+                    "receiveShadow": true
+                  },
+                  "framingRole": "support",
+                  "resourceRefs": {
+                    "assetId": "apron"
+                  },
+                  "assetId": "apron"
+                }
+              ]
+            },
+            {
+              "name": "The ramp",
+              "uuid": "01476932-ac4f-47c9-a717-c613bb9af08c",
+              "objectType": "Group",
+              "sceneNodeId": "ramp",
+              "sourceNodeId": "ramp",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "contentType": "asset",
+              "content": {
+                "type": "asset",
+                "asset": "ramp",
+                "castShadow": true
+              },
+              "framingRole": "content",
+              "resourceRefs": {
+                "assetId": "ramp"
+              },
+              "assetId": "ramp",
+              "entityIndex": 13,
+              "children": [
+                {
+                  "name": "DrivingDeck",
+                  "uuid": "3fc0e586-4572-46b2-900b-9c4bac6fca78",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "ramp",
+                  "sourceNodeId": "ramp",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "ramp",
+                    "castShadow": true
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "ramp"
+                  },
+                  "assetId": "ramp"
+                },
+                {
+                  "name": "SteelTrusses",
+                  "uuid": "a2782e74-734d-4179-8ca6-b6525b4733a3",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "ramp",
+                  "sourceNodeId": "ramp",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "ramp",
+                    "castShadow": true
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "ramp"
+                  },
+                  "assetId": "ramp"
+                },
+                {
+                  "name": "EdgeLighting",
+                  "uuid": "fee9c72a-4ac3-48b3-b608-e689f58956fc",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "ramp",
+                  "sourceNodeId": "ramp",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "ramp",
+                    "castShadow": true
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "ramp"
+                  },
+                  "assetId": "ramp"
+                },
+                {
+                  "name": "LaneStripe",
+                  "uuid": "17c1e3ed-964e-45e6-be75-d94aadb1ce2f",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "ramp",
+                  "sourceNodeId": "ramp",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "ramp",
+                    "castShadow": true
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "ramp"
+                  },
+                  "assetId": "ramp"
+                }
+              ]
+            },
+            {
+              "name": "Roadster",
+              "uuid": "46fd6985-c214-416a-a016-f41ba9daad10",
+              "objectType": "Group",
+              "sceneNodeId": "roadster",
+              "sourceNodeId": "roadster",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "contentType": "asset",
+              "content": {
+                "type": "asset",
+                "asset": "roadster",
+                "castShadow": true
+              },
+              "framingRole": "content",
+              "resourceRefs": {
+                "assetId": "roadster"
+              },
+              "assetId": "roadster",
+              "entityIndex": 14,
+              "children": [
+                {
+                  "name": "Roadster",
+                  "uuid": "9f148d64-c9f2-4cb8-9a01-12a4bbbddb56",
+                  "objectType": "Object3D",
+                  "sceneNodeId": "roadster",
+                  "sourceNodeId": "roadster",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "roadster",
+                    "castShadow": true
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "roadster"
+                  },
+                  "assetId": "roadster",
+                  "children": [
+                    {
+                      "name": "BodyShell",
+                      "uuid": "cd6bdcae-4f4c-4e9b-af80-84d3b8b8cc0f",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "Canopy",
+                      "uuid": "931ccecf-66b5-4317-8514-d48d29856c27",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserCavityBack",
+                      "uuid": "15d134a8-551d-490f-834c-d27c8b8b6c98",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserFrame",
+                      "uuid": "ee2614ea-97fd-4ce0-9189-dd7d4a953be9",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserStrake_1",
+                      "uuid": "71f4dbf0-fa44-4fee-a5c2-2fc3c312454d",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserStrake_2",
+                      "uuid": "6a55e548-9f1b-4809-8749-ad1df6387524",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserStrake_3",
+                      "uuid": "a3e20468-9e4c-432b-853b-5eb65c274d5b",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserStrake_4",
+                      "uuid": "68f87045-44a0-43f5-bde8-36642278a053",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserStrake_5",
+                      "uuid": "8f73a147-a278-48de-8879-fa4eb56393c0",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DiffuserStrake_6",
+                      "uuid": "1c6feca9-72c0-499a-991f-1985c4d20ab5",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DoorSeam_L_Front",
+                      "uuid": "a9c79a68-eab2-4743-b545-3e9301c98ec8",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DoorSeam_L_Rear",
+                      "uuid": "3b24a349-5530-494f-8afe-44e8636310c3",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DoorSeam_R_Front",
+                      "uuid": "7b978ed5-68a4-45a9-aa54-88159ea2a053",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "DoorSeam_R_Rear",
+                      "uuid": "d994a374-44d7-4be2-afe3-78cc591eb208",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "FrontFascia",
+                      "uuid": "f3314a52-4942-4fa6-b487-364e70e3bde2",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "FrontLEDRecess",
+                      "uuid": "91cba14a-9745-4a50-beb3-fcce109e3232",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "FrontLightBar",
+                      "uuid": "fcc2146f-a44c-4841-8aee-5650dec5049d",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "Headlamp_L",
+                      "uuid": "1f2abfb2-f1e8-4aa6-a3aa-1fe39c6e5194",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "Headlamp_R",
+                      "uuid": "2d50c3c5-01e9-4f89-80f5-eed07c70cbc7",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "NozzleAnchor_1",
+                      "uuid": "29118fd5-d9e0-4442-a043-f6e15751ac32",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Nozzle_1",
+                          "uuid": "e642a4f9-0b0b-4088-bf6b-0d1c5a0d644d",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Nozzle_1_Interior",
+                          "uuid": "649883f1-e8c5-47ce-b27b-800737914a43",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "NozzleAnchor_2",
+                      "uuid": "d12ae432-6da0-4e0b-8ea0-889195b8ed70",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Nozzle_2",
+                          "uuid": "a79e5556-ad22-48ab-a578-35685770ec53",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Nozzle_2_Interior",
+                          "uuid": "8bfe4706-1753-4575-87c8-2619d60f7e07",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "NozzleAnchor_3",
+                      "uuid": "f76d780a-147c-46e1-af33-ea97974e70bb",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Nozzle_3",
+                          "uuid": "72f68fcd-c215-4f89-9a2e-aa82de5f8519",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Nozzle_3_Interior",
+                          "uuid": "98d0fd92-9b75-42a7-a294-9e38d410dc4e",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "NozzleAnchor_4",
+                      "uuid": "92151263-3286-4969-98be-e8cdf4f56cc6",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Nozzle_4",
+                          "uuid": "4f3e24d7-017a-4eff-9230-1400bd318401",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Nozzle_4_Interior",
+                          "uuid": "89bc9063-e194-44c8-b336-d69fbc249866",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "RearBlankPlate",
+                      "uuid": "31429dbd-a57d-4edd-9f8d-a54b7ea3b198",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RearButtress_L",
+                      "uuid": "0388d52c-1487-4946-9bf8-aa17d01d5357",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RearButtress_R",
+                      "uuid": "74ccf805-68f9-47fb-b71e-47d4cfbb9983",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RearDiffuser",
+                      "uuid": "8f1879bf-4771-417a-b499-c87d8f85a363",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RearLampHousing",
+                      "uuid": "2a50feac-2bb3-4862-bff6-3ecb58b331ef",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RearLightBar",
+                      "uuid": "ff2ed56d-1b68-45e3-b6f7-ccf539689f08",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RearUpperBrakeLamp",
+                      "uuid": "30688e7f-5c42-49b2-aca3-70da19e3cf8d",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RoofEdge_L",
+                      "uuid": "96229847-1b6f-4696-a4cc-0cf256fcf4c8",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "RoofEdge_R",
+                      "uuid": "29602754-61f8-4a9c-a969-f36b0d4a0a96",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "SideMarker_L",
+                      "uuid": "c87d7e3b-a9fe-49e1-905d-958106bb5547",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "SideMarker_R",
+                      "uuid": "c8c40267-c040-4a4c-9bfb-05503a09df62",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "SillRail_L",
+                      "uuid": "61bdc078-dfde-4fd0-841a-c9061756e3c6",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "SillRail_R",
+                      "uuid": "1bdc71a8-a2c1-43c2-88bd-fd263f46d714",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "Undercarriage",
+                      "uuid": "f1ac9731-b6d1-4a53-8e69-90aabddcc72b",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster"
+                    },
+                    {
+                      "name": "Wheel_FL",
+                      "uuid": "d1dfbb19-de5b-424a-a3c0-c8c95871792f",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Wheel_FL_AeroDisc",
+                          "uuid": "6355431f-a131-4c3f-899c-3fec31620a7a",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_FL_Hub",
+                          "uuid": "68baaa1e-6842-43aa-8df3-b3d8a26e0a5b",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_FL_RimRing",
+                          "uuid": "c07878a6-d7c4-4bc4-b496-49c5c9d70c92",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_FL_Tire",
+                          "uuid": "7dfadaeb-7e93-4934-9ef7-4d893daa7195",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Wheel_FR",
+                      "uuid": "2d84dbfb-85fc-4b47-a2e5-45a43ad72c20",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Wheel_FR_AeroDisc",
+                          "uuid": "f4038210-c1f6-495d-9504-384f6237126a",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_FR_Hub",
+                          "uuid": "0d9cda7d-9e1b-425a-adda-9de3c4645bb9",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_FR_RimRing",
+                          "uuid": "7851df09-0c3e-4c71-be0f-2aa3609a3034",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_FR_Tire",
+                          "uuid": "74b5b02e-0ede-4247-9715-33cd82ab277d",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Wheel_RL",
+                      "uuid": "06b02122-3747-4e62-8088-3a4344791e4b",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Wheel_RL_AeroDisc",
+                          "uuid": "b1c9e948-d115-4bdd-aa71-806d849a1079",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_RL_Hub",
+                          "uuid": "1c5c7eff-fb1d-4989-9327-c8762248deee",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_RL_RimRing",
+                          "uuid": "f3b801ee-4cf3-4f85-862a-0822a18a15ba",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_RL_Tire",
+                          "uuid": "dcdf12ca-bb4e-4e9f-aadb-5ee437f6559f",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Wheel_RR",
+                      "uuid": "c89cd125-b09c-46ea-b008-1c28bf0a1855",
+                      "objectType": "Object3D",
+                      "sceneNodeId": "roadster",
+                      "sourceNodeId": "roadster",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "roadster",
+                        "castShadow": true
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "roadster"
+                      },
+                      "assetId": "roadster",
+                      "children": [
+                        {
+                          "name": "Wheel_RR_AeroDisc",
+                          "uuid": "6f120c16-83d8-4431-9566-046531649cf9",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_RR_Hub",
+                          "uuid": "e78caabe-24b9-45bd-b4ef-a5926797ec27",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_RR_RimRing",
+                          "uuid": "0fd000f8-472d-4e7b-8f2a-cb6bee9ffb53",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        },
+                        {
+                          "name": "Wheel_RR_Tire",
+                          "uuid": "7000ed64-5e79-4d84-a027-0bf6d2fb1da2",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "roadster",
+                          "sourceNodeId": "roadster",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "roadster",
+                            "castShadow": true
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "roadster"
+                          },
+                          "assetId": "roadster"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "thrusters",
+              "uuid": "812ddd0d-a7e2-4549-b402-75fafde91265",
+              "objectType": "Group",
+              "sceneNodeId": "thrusters",
+              "sourceNodeId": "thrusters",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "contentType": "asset",
+              "content": {
+                "type": "asset",
+                "asset": "thrusters"
+              },
+              "framingRole": "content",
+              "resourceRefs": {
+                "assetId": "thrusters"
+              },
+              "assetId": "thrusters",
+              "entityIndex": 15,
+              "children": [
+                {
+                  "name": "LiftJet_Rear_Left",
+                  "uuid": "920d11e4-925f-4d77-92af-93da0497709c",
+                  "objectType": "Group",
+                  "sceneNodeId": "thrusters",
+                  "sourceNodeId": "thrusters",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "thrusters"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "thrusters"
+                  },
+                  "assetId": "thrusters",
+                  "children": [
+                    {
+                      "name": "JetSheath",
+                      "uuid": "5856b70b-ef10-4c3b-93f8-697b37d964c7",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    },
+                    {
+                      "name": "JetCore",
+                      "uuid": "ab5515ca-c2dd-46c8-ba39-31b85d48b18d",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    }
+                  ]
+                },
+                {
+                  "name": "LiftJet_Rear_Right",
+                  "uuid": "3a739773-d560-45b8-87de-7a983c76bf64",
+                  "objectType": "Group",
+                  "sceneNodeId": "thrusters",
+                  "sourceNodeId": "thrusters",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "thrusters"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "thrusters"
+                  },
+                  "assetId": "thrusters",
+                  "children": [
+                    {
+                      "name": "JetSheath",
+                      "uuid": "efa95af8-dc42-4b44-8a22-1e6384deb372",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    },
+                    {
+                      "name": "JetCore",
+                      "uuid": "3595eae8-a98d-4c4e-82ec-3a42e279b522",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    }
+                  ]
+                },
+                {
+                  "name": "LiftJet_Front_Left",
+                  "uuid": "ee36a7a2-65b5-4b92-9f65-6677d8a93c94",
+                  "objectType": "Group",
+                  "sceneNodeId": "thrusters",
+                  "sourceNodeId": "thrusters",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "thrusters"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "thrusters"
+                  },
+                  "assetId": "thrusters",
+                  "children": [
+                    {
+                      "name": "JetSheath",
+                      "uuid": "a06d8cd6-04bf-477c-b0b2-0bdd7c0be6e3",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    },
+                    {
+                      "name": "JetCore",
+                      "uuid": "76b74977-ec5a-427b-b974-17c289a4f1cb",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    }
+                  ]
+                },
+                {
+                  "name": "LiftJet_Front_Right",
+                  "uuid": "6b57f3d4-7c9e-49c5-9fe9-d946eeae47c0",
+                  "objectType": "Group",
+                  "sceneNodeId": "thrusters",
+                  "sourceNodeId": "thrusters",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "thrusters"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "thrusters"
+                  },
+                  "assetId": "thrusters",
+                  "children": [
+                    {
+                      "name": "JetSheath",
+                      "uuid": "41cb1f7f-e48f-4538-aa0c-cca20c223570",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    },
+                    {
+                      "name": "JetCore",
+                      "uuid": "318013f7-d521-4afd-b47e-deeba13f101b",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "thrusters",
+                      "sourceNodeId": "thrusters",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "thrusters"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "thrusters"
+                      },
+                      "assetId": "thrusters"
+                    }
+                  ]
+                },
+                {
+                  "name": "AttitudeJet_Left",
+                  "uuid": "5f40a278-28cc-4883-87fd-ecbaa6d9b798",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "thrusters",
+                  "sourceNodeId": "thrusters",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "thrusters"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "thrusters"
+                  },
+                  "assetId": "thrusters"
+                },
+                {
+                  "name": "AttitudeJet_Right",
+                  "uuid": "2735a43b-15a1-4e28-af6f-36a9a48d4f33",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "thrusters",
+                  "sourceNodeId": "thrusters",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "thrusters"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "thrusters"
+                  },
+                  "assetId": "thrusters"
+                }
+              ]
+            },
+            {
+              "name": "vapor",
+              "uuid": "4c1a4332-5dfe-4055-bffc-1679f33c52f2",
+              "objectType": "Group",
+              "sceneNodeId": "vapor",
+              "sourceNodeId": "vapor",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "contentType": "asset",
+              "content": {
+                "type": "asset",
+                "asset": "vapor"
+              },
+              "framingRole": "content",
+              "resourceRefs": {
+                "assetId": "vapor"
+              },
+              "assetId": "vapor",
+              "entityIndex": 16,
+              "children": [
+                {
+                  "name": "VaporBillboards",
+                  "uuid": "fe0b9a6f-e1ab-4f5f-9848-39ef099dd280",
+                  "objectType": "Mesh",
+                  "sceneNodeId": "vapor",
+                  "sourceNodeId": "vapor",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "vapor"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "vapor"
+                  },
+                  "assetId": "vapor"
+                }
+              ]
+            },
+            {
+              "name": "Replay controls",
+              "uuid": "6b94ee35-9c43-4b1a-a580-f8f979477c0d",
+              "objectType": "Group",
+              "sceneNodeId": "controls",
+              "sourceNodeId": "controls",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "contentType": "asset",
+              "content": {
+                "type": "asset",
+                "asset": "replay-controls"
+              },
+              "framingRole": "content",
+              "resourceRefs": {
+                "assetId": "replay-controls"
+              },
+              "assetId": "replay-controls",
+              "entityIndex": 17,
+              "children": [
+                {
+                  "name": "(unnamed)",
+                  "uuid": "e6b12892-a830-4b2b-98b5-d08df87efbad",
+                  "objectType": "Group",
+                  "sceneNodeId": "controls",
+                  "sourceNodeId": "controls",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "contentType": "asset",
+                  "content": {
+                    "type": "asset",
+                    "asset": "replay-controls"
+                  },
+                  "framingRole": "content",
+                  "resourceRefs": {
+                    "assetId": "replay-controls"
+                  },
+                  "assetId": "replay-controls",
+                  "children": [
+                    {
+                      "name": "(unnamed)",
+                      "uuid": "825e7cf4-3ac8-4a8a-bf85-cd571dd8891f",
+                      "objectType": "Mesh",
+                      "sceneNodeId": "controls",
+                      "sourceNodeId": "controls",
+                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                      "contentType": "asset",
+                      "content": {
+                        "type": "asset",
+                        "asset": "replay-controls"
+                      },
+                      "framingRole": "content",
+                      "resourceRefs": {
+                        "assetId": "replay-controls"
+                      },
+                      "assetId": "replay-controls",
+                      "children": [
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "1d159aca-43c0-4e8b-a906-a64f0dfdc8a2",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "controls",
+                          "sourceNodeId": "controls",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "replay-controls"
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "replay-controls"
+                          },
+                          "assetId": "replay-controls",
+                          "children": [
+                            {
+                              "name": "(unnamed)",
+                              "uuid": "b811c4ee-b7b4-426a-9b9d-fa58a01f6c52",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "c4e4e66a-1275-4440-9dda-e7729e3174c1",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "(unnamed)",
+                              "uuid": "49324113-2c51-4369-9240-707cf931dba4",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "5c01e8ff-ca94-4b88-98e4-2cb8b9c5ccb8",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "99a5e6a7-4ac0-4e33-8ac2-53585abe854f",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "controls",
+                          "sourceNodeId": "controls",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "replay-controls"
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "replay-controls"
+                          },
+                          "assetId": "replay-controls",
+                          "children": [
+                            {
+                              "name": "(unnamed)",
+                              "uuid": "7f5d8c64-2389-4cd0-8090-142c3a9f3cf1",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "6d888260-33ba-4300-ada6-776835b19792",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "(unnamed)",
+                              "uuid": "d9d72c56-fc9f-4d19-8e20-c6137c4519fd",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "96053d2d-9d89-4fa6-8c43-ed41daff5d50",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "13dd5775-6f0b-4f30-9737-0455a2a9deec",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "controls",
+                          "sourceNodeId": "controls",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "replay-controls"
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "replay-controls"
+                          },
+                          "assetId": "replay-controls",
+                          "children": [
+                            {
+                              "name": "PlayPause",
+                              "uuid": "d9976297-08df-4398-a603-c70fb839b7f1",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "7c634f50-e437-42f9-93b0-4ceac80ba1db",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls",
+                                  "children": [
+                                    {
+                                      "name": "(unnamed)",
+                                      "uuid": "70f9b62b-a602-43af-918b-944a4d8e11af",
+                                      "objectType": "Mesh",
+                                      "sceneNodeId": "controls",
+                                      "sourceNodeId": "controls",
+                                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                      "contentType": "asset",
+                                      "content": {
+                                        "type": "asset",
+                                        "asset": "replay-controls"
+                                      },
+                                      "framingRole": "content",
+                                      "resourceRefs": {
+                                        "assetId": "replay-controls"
+                                      },
+                                      "assetId": "replay-controls"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "Restart",
+                              "uuid": "816dbcc4-e36b-47a9-bd74-7ba5d66f4dca",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "7a3294e4-7775-461e-a42a-16fd7cd17422",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls",
+                                  "children": [
+                                    {
+                                      "name": "(unnamed)",
+                                      "uuid": "85dbbee5-5769-48ae-a058-4a8807d1fd1c",
+                                      "objectType": "Mesh",
+                                      "sceneNodeId": "controls",
+                                      "sourceNodeId": "controls",
+                                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                      "contentType": "asset",
+                                      "content": {
+                                        "type": "asset",
+                                        "asset": "replay-controls"
+                                      },
+                                      "framingRole": "content",
+                                      "resourceRefs": {
+                                        "assetId": "replay-controls"
+                                      },
+                                      "assetId": "replay-controls"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "SlowMotion",
+                              "uuid": "b71110b3-0e9e-4e7c-a9f8-ccedf411e365",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "27a82f7d-5dba-4722-9d6c-05510745e285",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls",
+                                  "children": [
+                                    {
+                                      "name": "(unnamed)",
+                                      "uuid": "a213fcea-ff5e-43ec-9d72-83d251cec865",
+                                      "objectType": "Mesh",
+                                      "sceneNodeId": "controls",
+                                      "sourceNodeId": "controls",
+                                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                      "contentType": "asset",
+                                      "content": {
+                                        "type": "asset",
+                                        "asset": "replay-controls"
+                                      },
+                                      "framingRole": "content",
+                                      "resourceRefs": {
+                                        "assetId": "replay-controls"
+                                      },
+                                      "assetId": "replay-controls"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "name": "View",
+                              "uuid": "d62b48f9-2666-4f0d-b9f9-bb28043cf02d",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "63065603-949f-444b-a329-871e3541429c",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls",
+                                  "children": [
+                                    {
+                                      "name": "(unnamed)",
+                                      "uuid": "647ade70-f3b5-475a-8374-2824ffd9c0c7",
+                                      "objectType": "Mesh",
+                                      "sceneNodeId": "controls",
+                                      "sourceNodeId": "controls",
+                                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                      "contentType": "asset",
+                                      "content": {
+                                        "type": "asset",
+                                        "asset": "replay-controls"
+                                      },
+                                      "framingRole": "content",
+                                      "resourceRefs": {
+                                        "assetId": "replay-controls"
+                                      },
+                                      "assetId": "replay-controls"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "5f1daf0f-2aa0-490a-a512-b92ae4d71c75",
+                          "objectType": "Mesh",
+                          "sceneNodeId": "controls",
+                          "sourceNodeId": "controls",
+                          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                          "contentType": "asset",
+                          "content": {
+                            "type": "asset",
+                            "asset": "replay-controls"
+                          },
+                          "framingRole": "content",
+                          "resourceRefs": {
+                            "assetId": "replay-controls"
+                          },
+                          "assetId": "replay-controls",
+                          "children": [
+                            {
+                              "name": "(unnamed)",
+                              "uuid": "65dbcf2e-5b63-4854-ba26-1cb363f8b928",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "3c7294c6-9214-4925-9507-76bde281e9d0",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "EnterXR",
+                              "uuid": "1d54c7c6-48d9-4863-95fb-58d3893dfa2b",
+                              "objectType": "Mesh",
+                              "sceneNodeId": "controls",
+                              "sourceNodeId": "controls",
+                              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                              "contentType": "asset",
+                              "content": {
+                                "type": "asset",
+                                "asset": "replay-controls"
+                              },
+                              "framingRole": "content",
+                              "resourceRefs": {
+                                "assetId": "replay-controls"
+                              },
+                              "assetId": "replay-controls",
+                              "children": [
+                                {
+                                  "name": "(unnamed)",
+                                  "uuid": "e7d803d6-4202-4bbb-87b9-7d503ef1ae76",
+                                  "objectType": "Mesh",
+                                  "sceneNodeId": "controls",
+                                  "sourceNodeId": "controls",
+                                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                  "contentType": "asset",
+                                  "content": {
+                                    "type": "asset",
+                                    "asset": "replay-controls"
+                                  },
+                                  "framingRole": "content",
+                                  "resourceRefs": {
+                                    "assetId": "replay-controls"
+                                  },
+                                  "assetId": "replay-controls",
+                                  "children": [
+                                    {
+                                      "name": "(unnamed)",
+                                      "uuid": "25da1dad-168e-4870-8078-a3d6f7172e6a",
+                                      "objectType": "Mesh",
+                                      "sceneNodeId": "controls",
+                                      "sourceNodeId": "controls",
+                                      "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                                      "contentType": "asset",
+                                      "content": {
+                                        "type": "asset",
+                                        "asset": "replay-controls"
+                                      },
+                                      "framingRole": "content",
+                                      "resourceRefs": {
+                                        "assetId": "replay-controls"
+                                      },
+                                      "assetId": "replay-controls"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "7b18d6d5-09db-40fe-81e1-fee60aeaeb4e",
+                          "objectType": "Mesh"
+                        },
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "4e0068e9-7a29-49b9-869d-efacdaac9d9f",
+                          "objectType": "Mesh"
+                        },
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "5771fb73-e2c7-46d8-82d2-c4b0c871e1c9",
+                          "objectType": "Mesh"
+                        },
+                        {
+                          "name": "(unnamed)",
+                          "uuid": "25567f06-693d-4c05-90f4-f710d8437bb8",
+                          "objectType": "Mesh"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "key-light",
+              "uuid": "f59c30c6-6c89-4d85-b538-004a08fa5582",
+              "objectType": "Object3D",
+              "sceneNodeId": "key-light",
+              "sourceNodeId": "key-light",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "framingRole": "content",
+              "entityIndex": 18,
+              "children": [
+                {
+                  "name": "directional-light",
+                  "uuid": "d973fe7a-df5e-49f1-ad88-846b6a069eea",
+                  "objectType": "DirectionalLight",
+                  "sceneNodeId": "key-light",
+                  "sourceNodeId": "key-light",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "framingRole": "content"
+                }
+              ]
+            },
+            {
+              "name": "fill-light",
+              "uuid": "1fbd5b21-c6a4-439b-aa90-c62ae2404ee3",
+              "objectType": "Object3D",
+              "sceneNodeId": "fill-light",
+              "sourceNodeId": "fill-light",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "framingRole": "content",
+              "entityIndex": 19,
+              "children": [
+                {
+                  "name": "directional-light",
+                  "uuid": "b6687428-7bdd-4ca0-8053-a05d6f185a7b",
+                  "objectType": "DirectionalLight",
+                  "sceneNodeId": "fill-light",
+                  "sourceNodeId": "fill-light",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "framingRole": "content"
+                }
+              ]
+            },
+            {
+              "name": "ambient",
+              "uuid": "240ee78d-a9d0-4e54-be43-36d19b7dfbcf",
+              "objectType": "Object3D",
+              "sceneNodeId": "ambient",
+              "sourceNodeId": "ambient",
+              "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+              "framingRole": "content",
+              "entityIndex": 20,
+              "children": [
+                {
+                  "name": "ambient-light",
+                  "uuid": "b39f43ef-cee9-4b9e-b722-9499fb7154e2",
+                  "objectType": "AmbientLight",
+                  "sceneNodeId": "ambient",
+                  "sourceNodeId": "ambient",
+                  "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+                  "framingRole": "content"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "directional-light-target",
+          "uuid": "947862e6-4f79-4a8f-a056-8c3d43362296",
+          "objectType": "Object3D",
+          "sceneNodeId": "key-light",
+          "sourceNodeId": "key-light",
+          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+          "framingRole": "content"
+        },
+        {
+          "name": "directional-light-target",
+          "uuid": "c8ae24f9-dae5-4732-9d15-78d57a2faa93",
+          "objectType": "Object3D",
+          "sceneNodeId": "fill-light",
+          "sourceNodeId": "fill-light",
+          "runtimeHash": "sha256:3beeadf7ea491337c48aa60a5104ea2b064fbfe306396cb3d5daf2d5b4127e7d",
+          "framingRole": "content"
+        },
+        {
+          "name": "(unnamed)",
+          "uuid": "e2b2c09d-f5d7-441a-8d4b-3c2b6044d81e",
+          "objectType": "Mesh"
+        }
+      ]
+    }
+  }
+}

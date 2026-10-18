@@ -1,0 +1,380 @@
+{
+  "judge_id": "image_geometry_judge",
+  "review_type": "independent stage and runtime visual review",
+  "version": 5,
+  "reviewed_at_utc": "2026-10-17T20:45:57.167309+00:00",
+  "overall_score": 8.6,
+  "target_score": 9,
+  "approved": false,
+  "critical_stage_issues": [],
+  "readiness_decision": "Useful polished prototype; the frozen stage remains below the 9/10 source-fidelity target. The large ramp-shadow defect is resolved and vapor is substantially improved. Remaining issues are smaller: airborne car cast-shadow sharpness, layered flat bases in atlas vapor, and simplified apron light/material detail.",
+  "scope": {
+    "included": [
+      "Ramp silhouette, structure, deck and paint",
+      "Apron continuity, lighting and shadows",
+      "Jets and vapor appearance including landing occlusion and 13s clearance",
+      "Landscape and portrait framing",
+      "UI obstruction"
+    ],
+    "excluded": [
+      "Car model form and author repair quality",
+      "Measured 6DoF or metric motion accuracy",
+      "Native XR performance",
+      "Temporal smoothness beyond still-image evidence"
+    ],
+    "method": "Fresh reads of all 17 immutable V5 runtime captures, the four-puff atlas, five actual source frames, and stage/effects code for cause. No app automation, live camera changes, app/source edits, or consultation of another judge report."
+  },
+  "hash_evidence": {
+    "manifest_path": "artifacts/stage-review-input-v5/snapshot-manifest.json",
+    "manifest_sha256": "cce314a802736b8b62f45d629c7e9ad2e0b35192ff8a2ad68c41985f116ece94",
+    "initial_verification": {
+      "matched": 26,
+      "total": 27,
+      "mismatches": [
+        {
+          "path": "public/models/roadster.glb",
+          "expected_sha256": "1d22d32342f1fc5f2ca7671192411d961f93d8699132dd5e0f98d04f60a3c82c",
+          "actual_sha256_at_initial_check": "25430496f72786429d15425e61f3b055355f96f0a35518e2623f2e974046de20",
+          "disposition": "Expected independent model-author edits; model quality excluded. Frozen capture images remain valid."
+        }
+      ]
+    },
+    "final_frozen_capture_recheck": {
+      "matched": 17,
+      "total": 17,
+      "mismatches": []
+    },
+    "reviewed_manifest_entries": [
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-ready.png",
+        "bytes": 401897,
+        "sha256": "f328c5dae19554f31853b8bab4f5a7e2d0cb152820106aee5daa3f596ab00c15"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-climb.png",
+        "bytes": 402434,
+        "sha256": "b7826e232bc0abb940e37f5837d4f0689143c5c6ab68bf990508bd0e4d2bfdab"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-release.png",
+        "bytes": 406600,
+        "sha256": "49cf16ef0a2a84cac4ce72d13efc1ef18486f5f2849a81e60b3f0b505ff27f50"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-flip.png",
+        "bytes": 415401,
+        "sha256": "f457c8ef03aa107e0f9695021235dce73bc6a425f7c4edffae329411ef00d1d3"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-jets.png",
+        "bytes": 404578,
+        "sha256": "de0d7dcea9b7ae456fbcff3d353284fce3f1846edaa5775188ffce781bbf30a2"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-descent.png",
+        "bytes": 392007,
+        "sha256": "b3548ef2fdddbf215911f706f3bc42b0fa2416a1bb2791100d9f8d256b4d55fc"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-landing.png",
+        "bytes": 418003,
+        "sha256": "2ac00c25ab5327e45383e4e8ab6ec9d2f5639e3efc61c289c20ba438c6e47b6a"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-clearance.png",
+        "bytes": 392851,
+        "sha256": "6af4da45c8c79420ff8b85bf82f085fddd5deb48d38b1db4def164dedd9f59b9"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-end.png",
+        "bytes": 234508,
+        "sha256": "7dff20fbb74d3f05e7fe125f9393913f84f937948d99b6d768f09d7d8f2f6c06"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-car.png",
+        "bytes": 479689,
+        "sha256": "d677f12683507cb6d6ac3de0f607b57994753c89c7149eb50ed9a476272a9052"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-wide.png",
+        "bytes": 436001,
+        "sha256": "f7a3244246bfd6e2380b359ec41ff0f172c9cdfb3c28f6ba6688da7464b93125"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-wide-end.png",
+        "bytes": 185933,
+        "sha256": "0cc937888d987afba464597857007e6d8e579918ba3706e8dcdb1f0b7f2a2eba"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/landscape-overhead.png",
+        "bytes": 847414,
+        "sha256": "d5e243ab9d2e69eee8b3fc78140868e9552e6cef3ca5d3d890af47117ea75e84"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/portrait-release.png",
+        "bytes": 333830,
+        "sha256": "f4d703e7d17cb70df17d0f1791e536a48f409cb0d95a9e6e9bd8c2492030985a"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/portrait-descent.png",
+        "bytes": 302037,
+        "sha256": "be93ea1d7d3a5e73d948dc2e4a436a411a6db99d899e10ea2488b7d8ea012d8a"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/portrait-landing.png",
+        "bytes": 337246,
+        "sha256": "249fc35746f8f0c27f8b11759a0468e8f0adbce49e5cd046060e580ea752c0eb"
+      },
+      {
+        "path": "artifacts/stage-review-input-v5/portrait-wide-end.png",
+        "bytes": 87762,
+        "sha256": "2f5f57287e580b0d65bfeb7c6fcf8b405533b610c581b7f74a61d30fd9d703fc"
+      },
+      {
+        "path": "src/replay-system.ts",
+        "bytes": 6596,
+        "sha256": "1795fc4aee7e1fe39580d64d5da340a5bc1e0fc877d3f282d111f3c8032ea558"
+      },
+      {
+        "path": "src/replay-effects.ts",
+        "bytes": 5817,
+        "sha256": "44a77e8e812a1ef5a22c60fd2599e93bd522105b579433d6ea354aa4ede2983b"
+      },
+      {
+        "path": "src/scene-assets/stage.scene-asset.ts",
+        "bytes": 9570,
+        "sha256": "6b6c268cbab848237202b32dee65c1859637ac5e5c3541d07e1cda51a18a77a5"
+      },
+      {
+        "path": "src/scene-assets/effects.scene-asset.ts",
+        "bytes": 5229,
+        "sha256": "c91c123e1cf1ae957b98aaec9c68d28602b64e846a3a2f73f9f7665d3c58399f"
+      },
+      {
+        "path": "public/scenes/main.iwsdk.scene.json",
+        "bytes": 7582,
+        "sha256": "f7837a5a745f0055a7681d670f105365bfa8e1deeda78525fbba4ca110b9d724"
+      },
+      {
+        "path": "public/models/roadster.glb",
+        "bytes": 1248676,
+        "sha256": "1d22d32342f1fc5f2ca7671192411d961f93d8699132dd5e0f98d04f60a3c82c"
+      },
+      {
+        "path": "public/ui/replay.uikitml",
+        "bytes": 1657,
+        "sha256": "b078498a0d1ed94a19eccd1931a90527827fdd058097ff4893feb7871e14e8db"
+      },
+      {
+        "path": "public/textures/vapor-atlas.png",
+        "bytes": 1602259,
+        "sha256": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153"
+      },
+      {
+        "path": "src/assets.ts",
+        "bytes": 908,
+        "sha256": "56079d0900f8988899f9c084d94b3760916c5c14130c7adebe549675e3085934"
+      },
+      {
+        "path": "references/roadster/reconstruction/reconstruction.json",
+        "bytes": 382400,
+        "sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+      }
+    ],
+    "actual_source_frames_freshly_viewed": [
+      {
+        "path": "references/roadster/reconstruction/frame_21.jpg",
+        "sha256": "d917e0d715286aa34f30efad102143c33f3c4e214f458ceca77b63c36face15b"
+      },
+      {
+        "path": "references/roadster/reconstruction/frame_24.jpg",
+        "sha256": "8aa97fa8045f9d9cd918e805ca03ad8ccd729e72c69d6b49d6fa41890bcf65d8"
+      },
+      {
+        "path": "references/roadster/reconstruction/frame_26.jpg",
+        "sha256": "f02fbe5700ad35b4021ad3571986fc255ec5ef177b50b84ff05359e3b3d5da32"
+      },
+      {
+        "path": "references/roadster/reconstruction/wide_17.jpg",
+        "sha256": "e0493db40574fc51ff5e36342b19ebea182e8325f13826596b6905421d0b6784"
+      },
+      {
+        "path": "references/roadster/reconstruction/overhead-37.jpg",
+        "sha256": "0a18da43f20a0ca2700cc0254f1f182b6a3e07602f6e795ccda5b846a5e7dbdb"
+      }
+    ],
+    "note": "All 17 image hashes and all non-model stage/effect/texture/code entries matched initially. This judgment applies to the frozen capture state, not subsequent live car repairs."
+  },
+  "category_scores": {
+    "ramp_main_silhouette": 8.7,
+    "ramp_structural_cadence": 8.6,
+    "deck_surface_and_paint": 8.2,
+    "ground_and_stage_lighting": 8.0,
+    "shadow_and_grounding_finish": 8.3,
+    "pressure_jets": 8.2,
+    "vapor_and_touchdown": 8.5,
+    "framing_across_aspects": 9.0,
+    "ui_legibility_and_obstruction": 7.8
+  },
+  "confirmed_improvements": [
+    {
+      "item": "Large ramp shadow removed",
+      "evidence": "Ready, wide and overhead no longer have the black C-shaped ramp/truss projection that dominated V3. The ramp remains grounded visually by its foot and stage light pool."
+    },
+    {
+      "item": "Vapor shape and shading",
+      "evidence": "The new atlas produces coarse irregular lobes, sharp wisps, internal blue-gray shade and darker aged areas, replacing the smooth bright wall. Landing remains substantially occluded in landscape and portrait."
+    },
+    {
+      "item": "13s clearance preserved",
+      "evidence": "The car is plainly visible left of the cloud. The trailing cloud still exists, while its left edge becomes darker/translucent. This follows the source-supported idea of a large persistent vapor mass rather than erasing it."
+    },
+    {
+      "item": "Retained stage and camera fixes",
+      "evidence": "Ramp stripe remains continuous in show/portrait release, deck is visible, brace rhythm is consistent, floor fade is much less obtrusive than V2, and portrait/full-path framing remains sound."
+    }
+  ],
+  "remaining_material_gaps": [
+    {
+      "id": "airborne_car_shadow",
+      "severity": "medium",
+      "priority": 1,
+      "category": "shadow_and_grounding_finish",
+      "evidence": "The high ramp shadow is gone, but the airborne car still makes a crisp near-black isolated footprint on the floor. It is small in show view and conspicuous in overhead. This is a rendering/lighting issue, separate from car-model form.",
+      "regions_px": [
+        {
+          "image": "landscape-overhead.png",
+          "bbox": [
+            570,
+            235,
+            690,
+            300
+          ]
+        },
+        {
+          "image": "landscape-release.png",
+          "bbox": [
+            665,
+            675,
+            765,
+            700
+          ]
+        },
+        {
+          "image": "portrait-release.png",
+          "bbox": [
+            385,
+            808,
+            505,
+            840
+          ]
+        }
+      ],
+      "fix": "Fade or disable distant car cast shadow as height increases, and retain a soft short contact shadow when grounded. Check overhead, release, ready and landing so the car does not lose contact grounding.",
+      "source_caveat": "Source lights and camera differ, so exact shadow position is not expected; the issue is the detached hard black cutout."
+    },
+    {
+      "id": "layered_flat_vapor_bases",
+      "severity": "medium",
+      "priority": 2,
+      "category": "vapor_and_touchdown",
+      "evidence": "The atlas is a strong improvement, but many sprites contain complete upright cloud masses with flat ground-like bases. When billboard particles overlap at different heights, the lower cloud shows horizontal shelf/strip edges and similarly scaled repeated cauliflower forms. This reads as stacked images in parts of descent/landing. The actual source has soft ground spread plus rising lobes with less regular internal detail. At 13s the aged cloud is improved and no longer a uniformly bright rounded capsule.",
+      "regions_px": [
+        {
+          "image": "landscape-descent.png",
+          "bbox": [
+            565,
+            590,
+            750,
+            630
+          ]
+        },
+        {
+          "image": "landscape-landing.png",
+          "bbox": [
+            550,
+            535,
+            800,
+            585
+          ]
+        },
+        {
+          "image": "portrait-landing.png",
+          "bbox": [
+            275,
+            645,
+            500,
+            705
+          ]
+        },
+        {
+          "image": "landscape-clearance.png",
+          "bbox": [
+            865,
+            390,
+            1440,
+            570
+          ]
+        }
+      ],
+      "fix": "Reserve complete flat-base puffs for ground level. For elevated particles, soften their lower edge or use wisps/open-bottom variants, vary the vertical size/arrangement more, and reduce repeated similarly sized full-cloud silhouettes. Keep the useful blue-gray interior, local touchdown opacity, and visible car at 13s.",
+      "source_caveat": "Large persistent vapor is supported by frames_24 and _26. A different turbulent silhouette alone is not a defect; the remaining concern is visible sprite construction."
+    },
+    {
+      "id": "simplified_apron_material_and_lighting",
+      "severity": "medium",
+      "priority": 3,
+      "category": "ground_and_stage_lighting",
+      "evidence": "The stage still has very regular identical cool spot pools, clean bright rectangular lenses, a nearly textureless black apron and parallel red rails. Actual wide_17 and overhead-37 show grazing reflected light, rough floor variation, white apron/track markings and more uneven brightness/red spill. The main source stage language is present, but the current rendering remains visibly simplified.",
+      "regions_px": [
+        {
+          "image": "landscape-ready.png",
+          "bbox": [
+            0,
+            700,
+            985,
+            995
+          ]
+        },
+        {
+          "image": "landscape-overhead.png",
+          "bbox": [
+            0,
+            330,
+            1145,
+            665
+          ]
+        }
+      ],
+      "fix": "For a further source-fidelity pass, add source-supported dim white apron/track markings and subtle rough grazing reflections, and vary a few bank intensities/aims. Do not increase global fill or add unrelated props.",
+      "source_caveat": "The event contains cameras, vehicles and other equipment outside this stage scope; their omission is not scored as a defect."
+    }
+  ],
+  "minor_finish": [
+    {
+      "id": "faint_floor_background_boundary",
+      "evidence": "The far-end floor still converges to a slightly different black than the background, leaving a faint straight transition in full-path wide-end. It is minor compared with the old bright floor island.",
+      "fix": "Fade to the exact scene background color rather than pure black."
+    },
+    {
+      "id": "ui_density",
+      "evidence": "The bottom-right control panel is functional and does not hide the supplied active car region, but its persistent block and tiny supporting text are visually heavy for a clean replay. This is secondary to stage fidelity.",
+      "fix": "Optional compact/collapsible playback controls for a presentation mode."
+    }
+  ],
+  "do_not_regress": [
+    "Keep the large ramp cast shadow disabled or appropriately softened.",
+    "Keep thin noisy pressure jets; do not restore solid opaque cyan cones.",
+    "Keep the new cloud lobes/interior shading and age opacity decay.",
+    "Keep touchdown cloud occlusion and a visible car at 13 seconds.",
+    "Keep portrait action framing and the full-path wide option; tiny actor size at the far end is the natural coverage tradeoff.",
+    "Do not treat car-model repairs or fitted numerical motion as stage-quality credit."
+  ],
+  "limitations": [
+    "No motion video was supplied for this freeze, so temporal billboard behavior, sorting, popping and cloud coherence are not established.",
+    "No direct 10.0s pressure-column capture isolates the stronger source thrust phase; the supplied 9.5s thin jets remain plausible.",
+    "The overhead view shows the outer/back face of the upper ramp; absent center paint there is not counted as a new paint bug.",
+    "The atlas is an appearance asset; it provides no physical plume measurement or source-motion validation."
+  ],
+  "conclusion": "V5 is materially better than V3 and is suitable as a strong prototype stage. It scores 8.6/10 on the same source-fidelity bar; residual shadow, sprite construction and apron rendering gaps prevent 9/10 approval. No critical functional stage issue was found in the supplied still evidence."
+}

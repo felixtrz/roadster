@@ -1,0 +1,306 @@
+{
+  "judge_id": "image_geometry_judge",
+  "review_type": "independent temporal playback evaluation",
+  "version": 1,
+  "reviewed_at_utc": "2026-10-17T21:05:37.982253+00:00",
+  "overall_score": 8.8,
+  "target_score": 9,
+  "approved": false,
+  "readiness_decision": "The supplied one-pass Show-view recording is continuous and usable. Camera/event sequencing is strong, with no observed teleport, unexpected freeze, sudden whole-cloud disappearance or UI obstruction. Temporal effects realism remains below 9/10 because the vapor still reads as growing/translating/fading prelit sprites rather than evolving billowing gas.",
+  "relationship_to_still_review": "The independent V7 stage still-image approval at 9.0 remains valid within its stated scope. This is a fresh temporal presentation score, not a revision of that still judgment.",
+  "scope": {
+    "included": [
+      "Continuity through approach/climb/release/reorientation/descent/landing/drive-away",
+      "Show-view camera tracking",
+      "Jet and vapor onset, continuity, occlusion and decay",
+      "Running-stage stability and visible playback completion"
+    ],
+    "excluded": [
+      "Car hero-model quality and known mesh/form limitations",
+      "Metric CV accuracy, scale/plane ambiguity or uniquely measured 6DoF",
+      "Physical accuracy of a particular plume or flight path",
+      "Native headset/XR performance",
+      "Pause/replay/seek/rate/view-switch interaction tests not exercised in this recording",
+      "Portrait temporal playback not present in the supplied video"
+    ],
+    "method": "Decoded the actual 565-frame H.264 MP4 and inspected sampled decoded content. Inspected the supplied 2fps overview, nine full-resolution timestamped JPEG checkpoints and dense sequential crop sheets: 21 frames at approximately 10fps over recording 7.8\u20139.8s, 27 at approximately 10fps over 9.6\u201312.2s, and 22 at approximately 5fps over 12.0\u201316.2s. Computed adjacent-frame stage differences over all 936 source JPEGs and checked capture timestamp cadence. This is a frame-by-frame temporal review; no live app/browser or real-time player interaction was used.",
+    "mutations": "Only this report and temporary analysis contact sheets under /tmp/roadster-temporal-judge were created. App, model, source data and browser state were not changed."
+  },
+  "evidence": {
+    "recording": {
+      "path": "artifacts/roadster-replay-v7.mp4",
+      "bytes": 2938390,
+      "sha256": "3643f08f134e705f6b9c199215523d0080e15d43401fcecd302201f5b61f4f12"
+    },
+    "frame_metadata": {
+      "path": "artifacts/replay-recording/frames.json",
+      "bytes": 65451,
+      "sha256": "859e2859f925ee796967ffeb060d462139392fbb52bc7f38e3c713949487f43a"
+    },
+    "provided_contact_sheet": {
+      "path": "artifacts/replay-recording/contact-2fps.jpg",
+      "bytes": 187121,
+      "sha256": "47fec175ebdddcc2c2bf62b76d7a53b97bfa0eaa0e97a8cf31c6fbd7c919d2ce"
+    },
+    "stage_manifest": {
+      "path": "artifacts/stage-review-input-v7/snapshot-manifest.json",
+      "bytes": 4903,
+      "sha256": "738edc12b06f793d083f1d0da5ba4c9ef747406977089f8cb16c80ce5cb92f40"
+    },
+    "current_non_capture_manifest_check": {
+      "matched": 10,
+      "total": 10,
+      "mismatches": []
+    },
+    "reviewed_model_sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4",
+    "reconstruction_sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3",
+    "ordered_source_frame_set_sha256": "409a494e78f02a748711d17de7821ad0fa3b605af0209397a8dc9b8352b26cd5",
+    "frame_set_digest_method": "SHA256 of concatenated UTF-8 lines: frame-NNNNN.jpg + space + its SHA256 + newline, for indices 0 through 935.",
+    "representative_source_frames": [
+      {
+        "path": "artifacts/replay-recording/frame-00000.jpg",
+        "bytes": 78343,
+        "sha256": "961642aa43fb94dc6b8ef1c169dd7214bb716e0a213e97519b695ac55efaf870",
+        "index": 0,
+        "recording_elapsed_seconds": 0.0
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00402.jpg",
+        "bytes": 81511,
+        "sha256": "27d5bb997b215113198eb31639fa5fea2fb79692455ee5be888c34e2d69cbb14",
+        "index": 402,
+        "recording_elapsed_seconds": 8.108334
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00446.jpg",
+        "bytes": 82314,
+        "sha256": "fe5ffb80edda9369d7a5e177c9a85c3212aafa25b77d2ecd34adfb151538432b",
+        "index": 446,
+        "recording_elapsed_seconds": 8.992705
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00481.jpg",
+        "bytes": 74702,
+        "sha256": "8ac31910b462ae980059502d7900ef2cae19787b1fb42ce5020eb1b245996dc0",
+        "index": 481,
+        "recording_elapsed_seconds": 9.692916
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00486.jpg",
+        "bytes": 74055,
+        "sha256": "75ecaf69e6867eb8e4616d02549d27f5530da32551d82f21bcc92373abdb6baa",
+        "index": 486,
+        "recording_elapsed_seconds": 9.793591
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00506.jpg",
+        "bytes": 70084,
+        "sha256": "ef2d93c58a4ca0558134c9361e5aef28f14fd30a3900ef0f3ff4108e69239bf6",
+        "index": 506,
+        "recording_elapsed_seconds": 10.192422
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00521.jpg",
+        "bytes": 70162,
+        "sha256": "ee4b226f0d0986492ae1700302ece1b4da5dad86406c83392b77caa13f998edb",
+        "index": 521,
+        "recording_elapsed_seconds": 10.493347
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00571.jpg",
+        "bytes": 74381,
+        "sha256": "65b207074516dbe5333cf195835ddc398e63fd9b1dc7fbe8c830081e08661d7b",
+        "index": 571,
+        "recording_elapsed_seconds": 11.494762
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00581.jpg",
+        "bytes": 75130,
+        "sha256": "bb852e25d8f7469b65591e4f89f437bde4d5da3573887101230384952dd917c2",
+        "index": 581,
+        "recording_elapsed_seconds": 11.695579
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00646.jpg",
+        "bytes": 67611,
+        "sha256": "5b866b70d4d60b1a18c4f781ef95cacbf29aa5532e80a52b34f27e286b36da4a",
+        "index": 646,
+        "recording_elapsed_seconds": 12.996763
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00696.jpg",
+        "bytes": 61476,
+        "sha256": "4924834746c2a17dc9b30c7c08582e21d92c7e947edb6d1c29b884787aaf06f7",
+        "index": 696,
+        "recording_elapsed_seconds": 13.997533
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00746.jpg",
+        "bytes": 55237,
+        "sha256": "7fa015c64e0f271b5bb4bc4a8f6b3daa9cac7be223723eee1fc764ea5dc229ce",
+        "index": 746,
+        "recording_elapsed_seconds": 14.998331
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00796.jpg",
+        "bytes": 52930,
+        "sha256": "0170f5aab5c22897e4e6f3ddae53caac6bf736a6d99a5d74e4f718ea32e0ea3e",
+        "index": 796,
+        "recording_elapsed_seconds": 15.999074
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00896.jpg",
+        "bytes": 50130,
+        "sha256": "c24f179151513bb83a1976a87f754efcc964cb3c92418c07a457c71afc3f9cd9",
+        "index": 896,
+        "recording_elapsed_seconds": 18.000758
+      },
+      {
+        "path": "artifacts/replay-recording/frame-00935.jpg",
+        "bytes": 49869,
+        "sha256": "0662f162bba1cf86cbaea5fffe9b453aee8047bdd6cfa732b873d6b175f2b7d9",
+        "index": 935,
+        "recording_elapsed_seconds": 18.784251
+      }
+    ],
+    "source_comparison_context": [
+      "references/roadster/reconstruction/frame_19.jpg",
+      "references/roadster/reconstruction/frame_21.jpg",
+      "references/roadster/reconstruction/frame_24.jpg",
+      "references/roadster/reconstruction/frame_26.jpg"
+    ],
+    "time_convention": "Defect windows below use recording elapsed time from the first JPEG timestamp, approximately the MP4 clock. UI simulation time is rounded to 0.1s and trails that clock slightly; windows are intentionally approximate."
+  },
+  "quantitative_checks": {
+    "source_jpeg_count": 936,
+    "source_timestamp_span_seconds": 18.78425097465515,
+    "mean_capture_rate_hz": 49.77574039345825,
+    "capture_interval_ms": {
+      "min": 15.033960342407227,
+      "median": 16.891002655029297,
+      "p95": 25.27308464050293,
+      "p99": 25.959687232971188,
+      "max": 27.01091766357422
+    },
+    "capture_gaps_above_50ms": 0,
+    "encoded_mp4": {
+      "width": 1440,
+      "height": 1000,
+      "fps": 30,
+      "decoded_frames": 565,
+      "duration_seconds": 18.833333
+    },
+    "identical_stage_pixel_runs": [
+      {
+        "frames": [
+          0,
+          71
+        ],
+        "recording_seconds": [
+          0,
+          1.481848955154419
+        ],
+        "interpretation": "Intentional ready hold; playback control is Pause and clock advances."
+      },
+      {
+        "frames": [
+          897,
+          935
+        ],
+        "recording_seconds": [
+          18.017117977142334,
+          18.78425097465515
+        ],
+        "interpretation": "Expected final stopped state at simulation 18 seconds."
+      }
+    ],
+    "stage_difference_method": "Converted each JPEG scene region y=80..799, x=0..1439 to gray and resized to 720x360; measured mean absolute adjacent-pixel difference. Only intended ready/end holds were exactly unchanged. Largest changes per second occur during the visible 9.05\u20139.45s camera follow/reorientation, not an isolated flash elsewhere.",
+    "cadence_caveat": "Capture cadence and absence of exact repeated stage frames do not establish the engine frame rate, full runtime performance or absence of every possible rendering artifact."
+  },
+  "category_scores": {
+    "actor_and_pose_continuity_as_rendered": 9.2,
+    "show_camera_tracking_and_coverage": 9.2,
+    "jet_and_vapor_event_sequencing": 9.0,
+    "cloud_occlusion_and_clearance": 9.0,
+    "vapor_internal_temporal_evolution": 8.0,
+    "vapor_decay_presentation": 8.5,
+    "running_stage_and_ui_stability": 9.0,
+    "capture_and_encoded_playback_integrity": 9.0
+  },
+  "passed_observations": [
+    {
+      "item": "Release and rotation continuity",
+      "evidence": "The dense 7.8\u20139.8s sequence shows progressive departure and quaternion rotation, without a visible position snap or pose flip. The camera begins following smoothly and keeps the active car fully inside the actual uncropped frame. No apparent old near-stop/relaunch artifact is present."
+    },
+    {
+      "item": "Camera follow",
+      "evidence": "Through airpath and drive-away the active car remains readable and clear of the controls. The ramp leaving the right edge as the camera follows the car is deliberate subject tracking, not lost actor coverage. The camera settles into a consistent follow composition."
+    },
+    {
+      "item": "Jet-to-cloud sequence",
+      "evidence": "Thin jets are visible before the first ground cloud appears around recording 9.7\u20139.8s. The first cloud grows beneath/behind the moving car; a larger local mass develops by approximately 10.3\u201310.7s. No detached late cloud or sudden replacement by a whole full-sized cloud was observed."
+    },
+    {
+      "item": "Landing and clearance",
+      "evidence": "The car becomes heavily obscured during approximately 10.7\u201311.6s and emerges over the following few tenths. By recording 13.0s it is clear of the cloud while substantial vapor remains behind. Occlusion means exact wheel-ground contact cannot be visually judged during touchdown."
+    },
+    {
+      "item": "Decay without a whole-cloud pop",
+      "evidence": "The cloud fades in parts over 12\u201316s. It is visibly thinner by 14s, faint by 15s and essentially gone by 16s, without a single-frame removal of the entire mass in the inspected sequence."
+    },
+    {
+      "item": "Running-stage stability and completion",
+      "evidence": "No shader failure, blank scene, large lighting flash or control obstruction appears in the record. The replay reaches 18.0/18.0 and the button changes from Pause to Play. Post-end stillness is expected."
+    }
+  ],
+  "actionable_temporal_defects": [
+    {
+      "id": "cloud_lobes_retain_card_like_internal_shapes",
+      "priority": 1,
+      "severity": "medium",
+      "recording_seconds": [
+        10.4,
+        14.4
+      ],
+      "evidence": "Individual recognizable lobes retain nearly the same internal shaded shapes while enlarging, rising/translating and fading. The effect remains coherent, but much of the apparent motion is card transformation instead of coarse rolling/billowing. This is clearer over the dense temporal sequence than a single approved still.",
+      "representative_frames": [
+        521,
+        571,
+        616,
+        646,
+        696
+      ],
+      "source_context": "Actual source plume frames change coarse lobe structure, open and close gaps, and develop rising wisps. This finding concerns temporal appearance, not a requirement for exact turbulent simulation.",
+      "implementation_support": "V7 effects use a four-cell prelit atlas, camera-facing quaternions, instance position/scale animation and only a small UV perturbation; the observed stable lobe shapes are consistent with that implementation.",
+      "recommended_fix": "Add low-frequency internal density evolution through slow per-puff warped UVs or crossfaded atlas states with independent phase. Preserve silhouette and contrast quality; changing only scale/mirroring is insufficient. Retain local landing density and visible 13s clearance.",
+      "verification": "Compare a 10.5\u201314.5s crop at playback speed: interior gaps and coarse lobes should evolve without texture swimming, card flips, or a loss of landing opacity."
+    },
+    {
+      "id": "late_puffs_contract_as_they_disappear",
+      "priority": 2,
+      "severity": "low",
+      "recording_seconds": [
+        13.2,
+        15.8
+      ],
+      "evidence": "Some late puffs visibly tighten/shrink while fading, reducing the cloud toward a few small residual shapes. The sequence avoids a hard pop but can read as sprites being scaled away rather than gas spreading and thinning.",
+      "representative_frames": [
+        656,
+        696,
+        736,
+        776
+      ],
+      "implementation_support": "Particle size is multiplied by the remaining-life fade in addition to per-particle opacity decay.",
+      "recommended_fix": "Keep late-puff radius stable or gently expanding while opacity falls, and let a few small wisps rise independently. Tune density rather than removing all remaining cloud early.",
+      "verification": "In the 13\u201316s sequence, cloud volume should thin and disperse without synchronized contraction or a bright residual wall."
+    }
+  ],
+  "scoped_non_findings": [
+    "Known car silhouette, glazing/front-form and mesh artifacts are outside this temporal stage judgment.",
+    "The replayed track remains a conditional approximate CV reconstruction; smooth presentation is not evidence of uniquely measured reliable 6DoF.",
+    "The hidden touchdown is source-supported vapor occlusion, not itself a defect or proof of exact root contact.",
+    "The final freeze at the end of a finite replay is intended completion, not a playback stall.",
+    "No interactive replay/reset, speed switch, seek or alternate camera transition is shown, so those behaviors are not approved by this record."
+  ],
+  "conclusion": "Temporal continuity, camera tracking and event sequencing are at approximately 9/10. Overall temporal presentation is 8.8/10 because cloud internal evolution and shrink-based late decay remain visibly approximate. No critical functional playback defect was found in this one-pass recording. The prior 9.0 still-stage approval remains scoped and unchanged."
+}

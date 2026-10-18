@@ -1,0 +1,595 @@
+{
+  "judge_id": "image_judge",
+  "model_version": "review-input-v3",
+  "review_type": "fresh independent visual/source review, exact-GLB round-trip and supplied runtime close frame",
+  "model_sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4",
+  "overall_score": 7.8,
+  "category_scores": {
+    "source_identity_fidelity": 7.6,
+    "primary_form_in_clay": 7.7,
+    "canopy_hood_shoulder_transitions": 7.9,
+    "wheel_proportion_and_visible_separation": 8.6,
+    "front_and_rear_fascia": 7.0,
+    "four_nozzles": 8.8,
+    "materials_and_visible_shading": 7.9,
+    "hidden_geometry_assumptions": 8.5
+  },
+  "score_weights": {
+    "source_identity_fidelity": 0.2,
+    "primary_form_in_clay": 0.2,
+    "canopy_hood_shoulder_transitions": 0.15,
+    "wheel_proportion_and_visible_separation": 0.1,
+    "front_and_rear_fascia": 0.15,
+    "four_nozzles": 0.05,
+    "materials_and_visible_shading": 0.1,
+    "hidden_geometry_assumptions": 0.05
+  },
+  "approved": false,
+  "approval_threshold": 9.0,
+  "critical_visual_defects": false,
+  "major_source_fidelity_defects": true,
+  "decision": "V3 is improved and the prior critical body/glass overlap artifact is visibly resolved. It is not yet 9/10: the front nose/lamp identity still diverges from the source, while visible white-body and glazing borders retain kinks, local ripples and abrupt transitions. The current result is about 7.8/10, with wheels, four nozzles and bounded hidden assumptions stronger than the front/primary-surface fidelity.",
+  "snapshot_integrity": {
+    "manifest": "art/roadster/model/review-input-v3/snapshot-manifest.json",
+    "files_verified": 49,
+    "mismatches": 0,
+    "public_glb_matches_snapshot": true
+  },
+  "evidence_hashes": [
+    {
+      "path": "art/roadster/model/review-input-v3/roadster.glb",
+      "sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/Roadster.blend",
+      "sha256": "55c91136df6e220fb256fab9781126ef20347555f342fbcf2c235de151a2c09d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/model-contract.json",
+      "sha256": "0b6d0d354140bf6b0061dc2874223fdd9cf54ae95ae9abce4e91bc73617cf808",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/glb-validation.json",
+      "sha256": "0c82e50c0a605544c83ecbfee045639500751a2e0e2b13c509f428e1c128d64b",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/README.md",
+      "sha256": "35073b1963c96ce64079dd53a31a43cebbe785383e1c4610f6b5c460985bf91a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/source-comparison.png",
+      "sha256": "e6a1dfe84e1d266fa0770cbdad9a3d0994ff010ee4a759f5f9708f4572bcc31d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/clay-back.png",
+      "sha256": "18b1d32b37fb9dab26a51d39c435247b16ab71de6f042f12d39ccef414ed97b7",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/clay-front.png",
+      "sha256": "a88eeec3d9c8392e1d8b200788c04cacc031a1eb3c13c804c03614395d057766",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/clay-left.png",
+      "sha256": "8fc7e82d037b4c2b4fddb14730ecfe31b33abed32078a926cfa0e91d096d99fc",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/clay-quarter.png",
+      "sha256": "82f037e7c066c0426ee819efdf0f6d9c7d0b2c24857f5050284dd0a3bff7ff07",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/clay-rear-quarter.png",
+      "sha256": "0f9e77985c896f56a698e4d1e0a4b012db445e7e61a4c42ffd2c8354520ffd6a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/clay-top.png",
+      "sha256": "7de6f3f4c32c3dd68fbca71757c79c3a35b6fb4384cd0b2c914c0722bb676943",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/clay-underside.png",
+      "sha256": "a1cf5cccaa63ef5b3dd1fcdd931945c8e1a68a55cdd72325405e28752078f7a4",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/contact.png",
+      "sha256": "8b294fa5fadad1d0e14849f70061e46ea829c9727e43a2bb630511022ab56351",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/inspection-small.jpg",
+      "sha256": "02654239dd176f16b1d986aca31a8dba562f6155c498c4306d08ff3052d77dcd",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/material-back.png",
+      "sha256": "a0b623f3ec122e51f181c6cd9754df214fe92aaf6e47a8ea9f11f5be2cac0990",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/material-front.png",
+      "sha256": "07c651d9e01db7bb317cc33387da0ce03adeca07e59dab4992549ff0b1afbcd4",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/material-left.png",
+      "sha256": "78e2495bf170ec0edb42ed4e4d4c1a2d31989e1992375db2c6c82b0cf139f41d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/material-quarter.png",
+      "sha256": "dc145222cc3216c90168ff0f73a11270c62bdcff6f84a96f981739e5dfe7501d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/material-rear-quarter.png",
+      "sha256": "aa2df55c18203c995cd8729b790acdea740f97fd9573703b04dc24f89fd16401",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/material-top.png",
+      "sha256": "359a0e4c026b96ccc844ddfd467621f8a1099e8624882c11513c07a719a03edd",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/material-underside.png",
+      "sha256": "f7581aded7c5e23ac70ff53093bca82d6dc75cf343e73e80fd7c9d90bf9f9ee9",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/renders/stats.json",
+      "sha256": "d5a9d2c26732287fc87a1649cbb6643bce91233263af4fa32287eed393572d5f",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/runtime-glb-renders/clay-front.png",
+      "sha256": "cdf04c255c86451a75f426dc430283b87b55a21fdd6ab779db2ecdb95ae3c3ac",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/runtime-glb-renders/clay-quarter.png",
+      "sha256": "f7356bfc6da02337211ab28210e99da6de95de581474fcc17c125d1d1b0b250d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/runtime-glb-renders/clay-rear-quarter.png",
+      "sha256": "aa0c190538012d4d2b479ac5d42293109e7a3a90fcb77e1d590393b6657426ff",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/runtime-glb-renders/material-front.png",
+      "sha256": "91c1f22301bfaf432503890ea5c65b115bee51aa3deb4c41478f157457a3a03a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/runtime-glb-renders/material-quarter.png",
+      "sha256": "ae1574a2cca8b00b963c432896a1aec1f03fede205acaf52a32eefa612a4fc87",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/runtime-glb-renders/material-rear-quarter.png",
+      "sha256": "adab62e1ca4e18dc398a27d70df30e4450385de37bab248351dca0ea211ed19e",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/sections/measurement-log.txt",
+      "sha256": "a122b0189d1b7d5ebac9d35bb4be9f4f916a14a90d209ad2a02e7dae8bcb2b77",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/sections/measurement-summary.json",
+      "sha256": "8ce823d31750ff239b201cc07f193be4d24a0ff6e5a796ed4cdecca7d9326ff5",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/sections/roadster-overlays.png",
+      "sha256": "a2abfb87e37c6aaeb27a81a427f2a50417996e9efcee9983daa83b956bad4151",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/sections/roadster.json",
+      "sha256": "c86edcf7788a6c03e63fa205d1fb7dfa3fe04134d58c15468591d00a444366e4",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/fit/roadster.json",
+      "sha256": "74ba693338691ad42e4cc23b7fada1f8faf7e2df2fe972984fbe91a64c4be4cd",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/fit/surface-patches.json",
+      "sha256": "031346208d8a9f600c66a099d65b81efdae5d7f5593e8ace3e248e7af8529c26",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/build_roadster.py",
+      "sha256": "33c786147ec74913d183f819ab2e226f0e91fad34c5fbdd83b5537c579fc158e",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/facade_refinements.py",
+      "sha256": "1af56b004a017f727cad9cc3ccc95415651c053984c8dccc41a06a5e79f3b474",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/fit_roadster.py",
+      "sha256": "770b76c08b9e4fa096aab777f75f713a35fb53bd2addc245357c87f62f56f832",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/fit_surface_patches.py",
+      "sha256": "19937391340d6988443971a9eb5a6b0fc292a0fd2f0fd41d65e9cddc002a4cb8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/freeze_review.py",
+      "sha256": "d7a5fbbe368c623176577b24c6910f0664de643940956cad8d09fbe5d548e71d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/make_review_sheets.py",
+      "sha256": "cfbf43cdf5ee5ca53f800b0721f8b656497e7febb9064026ff84e37cfdfde316",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/measure_roadster.py",
+      "sha256": "a08b08e1e0091e401263af60517cb062e66a3d9870c877f7ced8fcd4b837a4b9",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/model_lib.py",
+      "sha256": "8955a9afbb3258ec61cf28d3f54fce1ecd4a71cbe459c0abe4cf39023a20ede6",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/plot_measurements.py",
+      "sha256": "f1932d8b66c0df1de89367aa318852adab0dba6d566ac5a7dc37dfbe4a8d9bba",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/render_reference.py",
+      "sha256": "e1d28c5b5239800ab4090d155666432752aa55dec3d9c1143a5e9951df02ae9d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/render_runtime_glb.py",
+      "sha256": "c6582272d650e23122483c81708bb6f3282f561fd519da6b4494a1c4c840b9d6",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/render_underside.py",
+      "sha256": "6aba447a8032b5a0e8225fe1a8df1d66b7ed3cb136a037a20ee566c458b81614",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/setup_reference.py",
+      "sha256": "11f406aebe742c245161010dc80b0198a0b96d4b3a58dcd5951a67be7503d838",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v3/scripts/validate_glb.py",
+      "sha256": "579a45e8d4d22b61ae9528a4602e8516df127c2a4628be26ca9b87726d6a9c53",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "public/models/roadster.glb",
+      "sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4"
+    },
+    {
+      "path": "artifacts/verification/glass-v3.png",
+      "sha256": "312689bcd21a5cf87eb751a95e237c018c232feb7a55f3795f2d0d4fa4af64e8"
+    },
+    {
+      "path": "references/roadster/frames/D01_event_09-38.000.jpg",
+      "sha256": "d6db8cd1f2bf74f4e53788466ee3484fb7be0b334fd6bfb7d47c0ce52f829a7f"
+    },
+    {
+      "path": "references/roadster/frames/D02_event_11-01.000.jpg",
+      "sha256": "04f22ec3f9c747c79702f457d33ebd4930c01b50e96b9a36fc368b3b15bd18ac"
+    },
+    {
+      "path": "references/roadster/frames/D03_event_13-30.000.jpg",
+      "sha256": "103b066cf35df20ff861f9f4f3311e25672d13fd10e460d03f4ab427bbf41d43"
+    },
+    {
+      "path": "art/roadster/source-inspection/event-803.jpg",
+      "sha256": "28998a011bb95e2dacbe9a244e17f6af6618c50b2144866b9ca0d96cd60b28f1"
+    },
+    {
+      "path": "references/roadster/frames/A04_event_06-46.000.jpg",
+      "sha256": "a52fa64044f876538921158ce7b6509a39462f6c47790e0c44e368c376eca7ec"
+    },
+    {
+      "path": "art/roadster/reference-images/turnaround-v2.png",
+      "sha256": "ce0f4bd4610bff77d2e8c20c43b1ec0942480552e1119cb82289e37cc2e25fb0"
+    },
+    {
+      "path": "art/roadster/reference-images/front-v2.png",
+      "sha256": "6c878ede93cf3db988b3f9e16e97c1fb8153ac486f94a298a201ccc86f14077a"
+    },
+    {
+      "path": "art/roadster/reference-images/left-v2.png",
+      "sha256": "9012ba004ff1733adc0bc04539bc08308cf79283d08130968464dc18263c41e4"
+    },
+    {
+      "path": "art/roadster/reference-images/back-v2.png",
+      "sha256": "c82f8b942e7a32abbd317afa473734c362dcc25d781dfead6c82e91a95b01e15"
+    },
+    {
+      "path": "art/roadster/reference-images/right-v2.png",
+      "sha256": "f7d9357ecd8832c0a29da4517976c7150ac5c087862e9227b96bd64f96854e12"
+    }
+  ],
+  "inspection": {
+    "viewed": "All 14 individual material/clay renders, contact sheet, all six exact-GLB round-trip renders, same-camera source comparison, fresh glass-v3 runtime screenshot, actual D01/D02/D03/event-803 source images and approved v2 turnaround.",
+    "read_and_checked": "All 49 manifest hashes, public GLB hash, validation JSON, measurement summary, GLB material records and corner-LED primitive position/normal data.",
+    "independence": "No other judge report was consulted. No author/model/app/image files were edited. No browser automation was used.",
+    "runtime_limit": "The supplied close frame is direct visual evidence for that view. It does not prove every camera angle or certify the app/animation/XR experience."
+  },
+  "verified_improvements": [
+    "Dense windshield/side-glass speckling visible in v2 is absent in the fresh v3 runtime close frame. Exact-GLB renders agree with the offline shape/material renders.",
+    "The validation records one BodyShell owner for glazing with zero overlay meshes; the observed runtime repair is consistent with the documented topology change.",
+    "The front intake is now dark, open-looking and free of the prior visible blocking slab and gross disconnected fascia layers.",
+    "The front splitter is shorter and cleaner. Large projecting end fins have been reduced.",
+    "Rear curved channels are contained inside a lower diffuser envelope; the former row of exposed hanging scoop ends is substantially improved.",
+    "The pointed side glass, straight windshield lower edge and coherent rear trapezoid remain. Four brass nozzles, segmented aero-disc rims and a blank plate remain intact.",
+    "Validation reports zero degenerate triangles and unit normals. These checks complement the visible improvements without establishing 9/10 fidelity."
+  ],
+  "priority_visible_fixes": [
+    {
+      "id": "V3-M1",
+      "priority": 1,
+      "severity": "major",
+      "confidence": "high",
+      "feature": "Recover source front lighting identity and correct the raised nose cap profile",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-front.png",
+          "region_xyxy": [
+            195,
+            245,
+            445,
+            350
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-left.png",
+          "region_xyxy": [
+            75,
+            195,
+            175,
+            315
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v3/runtime-glb-renders/material-quarter.png",
+          "region_xyxy": [
+            80,
+            250,
+            285,
+            375
+          ]
+        },
+        {
+          "path": "artifacts/verification/glass-v3.png",
+          "region_xyxy": [
+            845,
+            485,
+            1075,
+            690
+          ]
+        },
+        {
+          "path": "references/roadster/frames/D02_event_11-01.000.jpg",
+          "region_xyxy": [
+            620,
+            535,
+            1225,
+            780
+          ]
+        },
+        {
+          "path": "references/roadster/frames/D01_event_09-38.000.jpg",
+          "region_xyxy": [
+            530,
+            525,
+            735,
+            645
+          ]
+        },
+        {
+          "path": "art/roadster/reference-images/turnaround-v2.png",
+          "feature": "Source-related front corner lamps, continuous white bar and declining nose wedge."
+        }
+      ],
+      "observed": "Current front reads as a broad almost blank white cap above a black trapezoid. The source corner headlamps and thin continuous white bar are not legible as light features in either the neutral material renders or the fresh runtime close frame. In side view the white front cap curls upward into a rounded near-vertical lip; the source nose descends as a clean wedge ahead of the front fender. The previous gross layers are fixed, but this remaining front profile changes the car identity.",
+      "geometry_check": "WhiteLED material and geometry do exist. The BodyShell LED primitive has 98 triangles and mean local normal approximately [0,0.929,0.237], where Y is up and Z is front before the root correction. This supports a mostly upward-facing lamp region; it is not evidence that lamps are missing from the file. FrontLightBar is also present.",
+      "correction": "Reshape the foremost hood/fender cap against D01/D02 so it slopes cleanly down from the front fender crown without the rounded raised lip. Place simple identifiable corner lamp/lens faces on the source front-facing fender transitions and ensure the white bar is unobstructed and forward-visible. Preserve the single-owner surface approach; do not add duplicate overlays or speculative elaborate pockets.",
+      "acceptance": "At source-like low front/quarter angles, both corner lamps and the continuous bar should be visible and the side nose should retain the declining wedge. Show emission-off clay and emission-on material/runtime evidence."
+    },
+    {
+      "id": "V3-M2",
+      "priority": 2,
+      "severity": "medium-major",
+      "confidence": "high",
+      "feature": "Fair remaining body/arch/shoulder transition ripples",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v3/renders/clay-left.png",
+          "region_xyxy": [
+            115,
+            220,
+            560,
+            310
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-left.png",
+          "region_xyxy": [
+            115,
+            220,
+            560,
+            310
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-rear-quarter.png",
+          "region_xyxy": [
+            260,
+            185,
+            560,
+            310
+          ]
+        },
+        {
+          "path": "artifacts/verification/glass-v3.png",
+          "region_xyxy": [
+            420,
+            450,
+            875,
+            650
+          ]
+        },
+        {
+          "path": "references/roadster/frames/D01_event_09-38.000.jpg",
+          "region_xyxy": [
+            700,
+            490,
+            1180,
+            630
+          ]
+        }
+      ],
+      "observed": "White surfaces are calmer than v2, but vertical highlight streaks remain around wheel-arch tops and the rear body end, and short abrupt creases remain at the hood/fender junction. The side reads with soft inflated lower shading rather than the source controlled mostly planar wedge door and crisp shoulder. These are visible in clay and exact-GLB renders, so they are not solely a runtime lighting problem.",
+      "correction": "Fair the local control rails around wheel crowns and body ends, keeping door surfaces near planar where supported and concentrating curvature into the actual fender/shoulder transitions. Remove unintended short vertical ripples and abrupt curvature changes. Avoid chasing noisy generated reference samples as design features.",
+      "acceptance": "A moving broad reflection or neutral studio highlight should flow smoothly across each intended panel and break only at deliberate source creases."
+    },
+    {
+      "id": "V3-M3",
+      "priority": 3,
+      "severity": "medium",
+      "confidence": "high",
+      "feature": "Clean side-glass border and canopy patch/frame joins",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-quarter.png",
+          "region_xyxy": [
+            285,
+            170,
+            480,
+            280
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-rear-quarter.png",
+          "region_xyxy": [
+            310,
+            170,
+            480,
+            250
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-top.png",
+          "region_xyxy": [
+            205,
+            115,
+            435,
+            365
+          ]
+        },
+        {
+          "path": "artifacts/verification/glass-v3.png",
+          "region_xyxy": [
+            510,
+            420,
+            760,
+            535
+          ]
+        },
+        {
+          "path": "art/roadster/source-inspection/event-803.jpg",
+          "region_xyxy": [
+            805,
+            425,
+            1100,
+            550
+          ]
+        }
+      ],
+      "observed": "Glazing is clean of depth speckles, but its side aperture border still has polygonal notches/short kinks and the white frame changes width abruptly near the roof and rear quarter point. The canopy also shows blunt planar bands at patch transitions. The original source has a thin controlled continuous frame and mild glass curvature. Some angularity is intended; these local border irregularities do not look like intentional design creases.",
+      "correction": "Use a clean low-complexity boundary curve/polygon for each side aperture and align adjoining paint/glass vertices to it. Smooth only the unintended local kinks, preserve the pointed rear quarter and thin frame, and give adjacent canopy patches a controlled tangent transition where the source calls for mild curvature.",
+      "acceptance": "Close front/rear quarter views should show clean aperture outlines with no nicks or abrupt border-width jumps, while retaining the v3 overlap repair."
+    },
+    {
+      "id": "V3-M4",
+      "priority": 4,
+      "severity": "minor-medium",
+      "confidence": "medium",
+      "feature": "Refine rear relief and diffuser finish",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v3/renders/material-back.png",
+          "region_xyxy": [
+            210,
+            255,
+            430,
+            345
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v3/renders/clay-back.png",
+          "region_xyxy": [
+            210,
+            255,
+            430,
+            345
+          ]
+        },
+        {
+          "path": "art/roadster/source-inspection/event-803.jpg",
+          "region_xyxy": [
+            1130,
+            650,
+            1900,
+            990
+          ]
+        }
+      ],
+      "observed": "The contained diffuser is much better. The white relief still reads as two regular wave-like arches and the lower enclosure as a simple rectangular frame; source contours are more integrated and less schematic. This is secondary to front and surface cleanup.",
+      "correction": "Keep four nozzles, the plate, light bar and current contained silhouette. Refine the white recess as one source-shaped relief and soften the channel/shroud transitions without asserting exact hidden internals."
+    }
+  ],
+  "nonblocking_strengths": {
+    "wheels": "Wheelbase/tire diameter remains about4.0, source-related; independent semantic wheel nodes and segmented aero rims are intact. No visible fused-wheel defect was found.",
+    "nozzles": "Exactly four brass circular mouths, separate anchors and sensible rear spacing are visible. Internal plumbing remains appropriately unspecified.",
+    "hidden_geometry": "Simple undertray and occluded wheel inner surfaces remain bounded documented assumptions. No invented source precision is claimed."
+  },
+  "metrics_context": {
+    "central_silhouette_p90_mm": 90.21392813092206,
+    "wheel_side_p90_mm": 127.07182230237541,
+    "shoulder_plan_p90_mm": 82.12499999999993,
+    "assessment": "These one-sided distances to a generated reference increased relative to v2 in several sections. This does not automatically make v3 worse: deliberate simplification and hidden geometry affect them. They do reinforce that source-shaped primary forms must be checked visually rather than accepting technical export/topology cleanliness as 9/10 fidelity."
+  },
+  "runtime_artifact_status": {
+    "v2_glass_speckling": "Resolved in supplied v3 close frame and consistent with exact-GLB round-trip evidence.",
+    "current_critical_overlap_observed": false,
+    "current_visual_limits": "One runtime frame does not prove every camera angle; some narrow paint/trim edges still merit closer inspection after surface cleanup."
+  },
+  "readiness_limits": [
+    "This is an asset visual/source review, not final app or native XR certification.",
+    "No browser automation, playback, performance or rig animation checks were performed by this judge.",
+    "No automatic score credit was given for iteration count, script safeguards, topology ownership claims or passing technical validation alone.",
+    "A fresh export should be judged after the concrete front/profile/surface repairs; the current asset is below the stated9/10 criterion."
+  ]
+}

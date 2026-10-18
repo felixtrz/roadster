@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "render": {
+    "ground": {
+      "color": "07090d",
+      "roughness": 1,
+      "envMapIntensity": 0.04
+    },
+    "fog": null,
+    "toneMapping": 4,
+    "exposure": 1,
+    "shadows": true,
+    "render": {
+      "frame": 33207,
+      "calls": 94,
+      "triangles": 87827,
+      "points": 0,
+      "lines": 0
+    },
+    "camera": {
+      "position": [
+        -32.712432861328125,
+        11.963160514831543,
+        16
+      ],
+      "fov": 42
+    }
+  }
+}

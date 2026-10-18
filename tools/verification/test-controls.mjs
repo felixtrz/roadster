@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+export default async function({page,frame,workspaceRoot}) {
+ await page.setViewportSize({width:1440,height:1000});
+ await frame.waitForFunction(()=>window.roadster?.state().length===1);
+ const state=()=>frame.evaluate(()=>window.roadster.state()[0]);
+ const results=[];
+ await frame.evaluate(()=>{window.roadster.seek(3);window.roadster.view(0);});
+ await frame.waitForTimeout(300);
+ await page.mouse.click(1048,910);
+ await frame.waitForTimeout(400);
+ let a=await state();assert(a.playing&&a.time>3.15,'Pointer play must advance time');results.push({check:'pointer-play',state:a});
+ await page.mouse.click(1048,910); await frame.waitForTimeout(150);
+ a=await state();assert(!a.playing,'Pointer pause must stop');
+ const frozen=a.time;await frame.waitForTimeout(250);assert.equal((await state()).time,frozen);results.push({check:'pointer-pause',state:a});
+ await page.mouse.click(1250,910);await frame.waitForTimeout(100);
+ a=await state();assert.equal(a.speed,.25);results.push({check:'pointer-slow-motion',state:a});
+ await page.mouse.click(1360,910);await frame.waitForTimeout(100);
+ a=await state();assert.equal(a.view,1);results.push({check:'pointer-camera',state:a});
+ await page.mouse.click(1150,910);await frame.waitForTimeout(100);
+ a=await state();assert(a.playing&&a.time<.2);results.push({check:'pointer-replay',state:a});
+ await frame.evaluate(()=>window.roadster.pause());
+ await page.keyboard.press('ArrowRight');await frame.waitForTimeout(100);
+ a=await state();assert(!a.playing&&a.time>=.5&&a.time<.8);results.push({check:'keyboard-step',state:a});
+ await page.keyboard.press('Digit3');await frame.waitForTimeout(100);assert.equal((await state()).view,2);
+ await page.keyboard.press('Space');await frame.waitForTimeout(300);a=await state();assert(a.playing);results.push({check:'keyboard-play-view',state:a});
+ await frame.evaluate(()=>{window.roadster.seek(17.98);window.roadster.play();});await frame.waitForTimeout(400);
+ a=await state();assert.equal(a.time,18);assert.equal(a.playing,false);results.push({check:'end-stops',state:a});
+ await frame.evaluate(()=>{window.roadster.seek(10);window.roadster.view(0);});
+ await fs.mkdir(path.join(workspaceRoot,'artifacts/verification'),{recursive:true});
+ await fs.writeFile(path.join(workspaceRoot,'artifacts/verification/controls.json'),JSON.stringify({passed:true,results},null,2));
+ return {passed:true,results};
+}

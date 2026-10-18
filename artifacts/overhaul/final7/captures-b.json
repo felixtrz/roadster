@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "name": "04b-flip",
+      "time": 9,
+      "view": 0,
+      "file": "artifacts/overhaul/final7/04b-flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "05-descent",
+      "time": 10.8,
+      "view": 0,
+      "file": "artifacts/overhaul/final7/05-descent.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "06-hover",
+      "time": 11.2,
+      "view": 0,
+      "file": "artifacts/overhaul/final7/06-hover.png",
+      "state": {
+        "time": 11.199999809265137,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "07-landing",
+      "time": 11.6,
+      "view": 0,
+      "file": "artifacts/overhaul/final7/07-landing.png",
+      "state": {
+        "time": 11.600000381469727,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "07b-landing",
+      "time": 11.9,
+      "view": 0,
+      "file": "artifacts/overhaul/final7/07b-landing.png",
+      "state": {
+        "time": 11.899999618530273,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.37924151696607,
+  "info": {
+    "frame": 29088,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

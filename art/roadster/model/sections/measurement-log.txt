@@ -1,0 +1,60 @@
+{
+  "method": "One-sided uniform 4mm reference section samples to closest authored section segment; intentional hidden underbody/regularization departures remain included.",
+  "source_to_authored": [
+    {
+      "name": "Central side silhouette",
+      "axis": "x",
+      "value_m": 0.001,
+      "samples": 2596,
+      "mean_mm": 18.996063053507495,
+      "p90_mm": 49.82493638824879,
+      "max_mm": 173.4435574798038
+    },
+    {
+      "name": "Wheel-side silhouette",
+      "axis": "x",
+      "value_m": 1.051319776070927,
+      "samples": 5373,
+      "mean_mm": 30.038131758315785,
+      "p90_mm": 76.04896063792474,
+      "max_mm": 203.4807521241123
+    },
+    {
+      "name": "Front axle cross-section",
+      "axis": "y",
+      "value_m": -1.4132106041355603,
+      "samples": 2570,
+      "mean_mm": 22.670025521415617,
+      "p90_mm": 67.42199999999995,
+      "max_mm": 96.66187500000001
+    },
+    {
+      "name": "Cabin cross-section",
+      "axis": "y",
+      "value_m": 0.1,
+      "samples": 1957,
+      "mean_mm": 28.700834626847218,
+      "p90_mm": 73.17449876765268,
+      "max_mm": 98.90948905030048
+    },
+    {
+      "name": "Rear axle cross-section",
+      "axis": "y",
+      "value_m": 1.4132106041355603,
+      "samples": 2638,
+      "mean_mm": 19.9674245456846,
+      "p90_mm": 58.985513392857044,
+      "max_mm": 99.22999999999993
+    },
+    {
+      "name": "Body shoulder plan",
+      "axis": "z",
+      "value_m": 0.83,
+      "samples": 4647,
+      "mean_mm": 25.10921051099003,
+      "p90_mm": 64.64151574810712,
+      "max_mm": 91.08999999999989
+    }
+  ],
+  "not_a_certification": "These are measured section differences from the generated reference, not proof of exact real-car geometry or video-calibrated dimensions."
+}

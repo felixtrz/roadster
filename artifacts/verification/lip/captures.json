@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "w08",
+      "time": 8.6,
+      "view": 1,
+      "file": "artifacts/verification/lip/w08.png",
+      "state": {
+        "time": 8.600000381469727,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 1
+      }
+    },
+    {
+      "name": "w10",
+      "time": 10,
+      "view": 1,
+      "file": "artifacts/verification/lip/w10.png",
+      "state": {
+        "time": 10,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 1
+      }
+    },
+    {
+      "name": "w118",
+      "time": 11.8,
+      "view": 1,
+      "file": "artifacts/verification/lip/w118.png",
+      "state": {
+        "time": 11.800000190734863,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 1
+      }
+    },
+    {
+      "name": "w14",
+      "time": 14.5,
+      "view": 1,
+      "file": "artifacts/verification/lip/w14.png",
+      "state": {
+        "time": 14.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 1
+      }
+    }
+  ],
+  "fps": 60.2589641434263,
+  "info": {
+    "frame": 63988,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

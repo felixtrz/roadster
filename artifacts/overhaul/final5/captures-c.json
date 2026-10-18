@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "03-release",
+      "time": 8.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final5/03-release.png",
+      "state": {
+        "time": 8.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "04-reorient",
+      "time": 9.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final5/04-reorient.png",
+      "state": {
+        "time": 9.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "04b-flip",
+      "time": 9,
+      "view": 0,
+      "file": "artifacts/overhaul/final5/04b-flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "04c-flip",
+      "time": 8.75,
+      "view": 0,
+      "file": "artifacts/overhaul/final5/04c-flip.png",
+      "state": {
+        "time": 8.75,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.187027457044,
+  "info": {
+    "frame": 16558,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

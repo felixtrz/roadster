@@ -1,0 +1,6 @@
+{
+  "vertices_adjusted": 4076,
+  "maximum_vertex_departure_mm": 56.472891865396946,
+  "aperture_yz_preserved": true,
+  "method": "One plane owns each side pane; shared surrounding paint/trim vertices blend over80mm. Sharp edges recomputed after projection."
+}

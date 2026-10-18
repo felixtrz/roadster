@@ -1,0 +1,1 @@
+export default async function({page,frame}) {await page.setViewportSize({width:1440,height:1000});await frame.evaluate(()=>{window.roadster.seek(0);window.roadster.view(0);});return await frame.evaluate(()=>window.roadster.state());}

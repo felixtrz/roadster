@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "wide",
+      "time": 6,
+      "view": 1,
+      "file": "artifacts/verification/perf2/wide.png",
+      "state": {
+        "time": 6,
+        "playing": false,
+        "phase": "climb",
+        "speed": 1,
+        "view": 1
+      }
+    },
+    {
+      "name": "flip",
+      "time": 9,
+      "view": 0,
+      "file": "artifacts/verification/perf2/flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "land",
+      "time": 11.8,
+      "view": 0,
+      "file": "artifacts/verification/perf2/land.png",
+      "state": {
+        "time": 11.800000190734863,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "drive",
+      "time": 12.6,
+      "view": 2,
+      "file": "artifacts/verification/perf2/drive.png",
+      "state": {
+        "time": 12.600000381469727,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    }
+  ],
+  "fps": 60.05260806970175,
+  "info": {
+    "frame": 35018,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "judge_id": "image_geometry_judge",
+  "reviewed_at_utc": "2026-10-17T21:32:41.048879+00:00",
+  "review_type": "compact independent final stage and temporal regression validation",
+  "target_score": 9.0,
+  "stage_score": 9.0,
+  "temporal_score": 9.0,
+  "stage_approved": true,
+  "temporal_approved": true,
+  "approved": true,
+  "decision": "Carry the scoped V9 stage and temporal approvals to the current c7 final delivery. Fresh final stills and encoded replay samples show no material stage/effects or continuity regression.",
+  "scope": "17 final landscape/portrait stage stills and one landscape Show-view replay; car quality, source-motion accuracy and native XR excluded.",
+  "evidence": {
+    "manifest": {
+      "path": "artifacts/final-review/snapshot-manifest.json",
+      "bytes": 4756,
+      "sha256": "b86953046a6283f3203a84a41b04b93976676bb6853e8be43e2496bcc0f6b3e6"
+    },
+    "capture_metadata": {
+      "path": "artifacts/final-review/captures.json",
+      "bytes": 12617,
+      "sha256": "beaf3acb1055c92e256e09fb1653166315c6ec5e42eddf2e3adf78d8029fca49"
+    },
+    "recording": {
+      "path": "artifacts/roadster-replay.mp4",
+      "bytes": 2870145,
+      "sha256": "d4b17a55c0fae038eadde78b43de54496361c62e3778754aa9c7a7829d200fa6"
+    },
+    "recording_metadata": {
+      "path": "artifacts/final-recording/frames.json",
+      "bytes": 66905,
+      "sha256": "7f7cec799681ef9187991dde27f158eec892938d4a7ea1ab1b498099a15ab649"
+    },
+    "contact_sheet": {
+      "path": "artifacts/final-recording/contact-2fps.jpg",
+      "bytes": 198858,
+      "sha256": "e0710fa464c97b20b16a0bbecc55d1e22d9e1d1f3834526d00b12789038c4c81"
+    },
+    "current_model_identity_only": {
+      "path": "public/models/roadster.glb",
+      "bytes": 1908080,
+      "sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a"
+    },
+    "manifest_verified_entries": [
+      {
+        "path": "artifacts/final-review/landscape-ready.png",
+        "bytes": 448587,
+        "sha256": "67fa5507f85206fc7553d9b9876941505907985c3b31f3f4dd2735c2a004d737"
+      },
+      {
+        "path": "artifacts/final-review/landscape-climb.png",
+        "bytes": 447211,
+        "sha256": "072a0b73fe86b3aeae7a46369fdc41d454868846fc6c34cbbd7689a5a17faf8d"
+      },
+      {
+        "path": "artifacts/final-review/landscape-release.png",
+        "bytes": 451089,
+        "sha256": "14b7886f4b6e8bfd4e6c4c0f95892d561bc27b0a7624cee6467a456176056b77"
+      },
+      {
+        "path": "artifacts/final-review/landscape-flip.png",
+        "bytes": 456866,
+        "sha256": "cf1cf6ea11edfa34ab7f81f56f164308737bb44d5e2964779ca557a182065d51"
+      },
+      {
+        "path": "artifacts/final-review/landscape-jets.png",
+        "bytes": 444961,
+        "sha256": "3a91107a020daa46a06306f25070c16eeef394171c959a99b039654af613a13c"
+      },
+      {
+        "path": "artifacts/final-review/landscape-descent.png",
+        "bytes": 427871,
+        "sha256": "1dbe1765e97b246dc8f95b49e5991d342d976fd77e27df5e1a04184c09d2a4cd"
+      },
+      {
+        "path": "artifacts/final-review/landscape-landing.png",
+        "bytes": 466789,
+        "sha256": "59020f5d9354a582dace4b92692db298802b49e76f68847c516cf827394c1a22"
+      },
+      {
+        "path": "artifacts/final-review/landscape-clearance.png",
+        "bytes": 441898,
+        "sha256": "3efe5fa534f4792c62584ad7bd5a705063424adc7b0a1910296a70707b298991"
+      },
+      {
+        "path": "artifacts/final-review/landscape-end.png",
+        "bytes": 280142,
+        "sha256": "6a2b4d376e6c2f58185e3c484583081e13603e0d8b57ffeece382712c1d02f61"
+      },
+      {
+        "path": "artifacts/final-review/landscape-car.png",
+        "bytes": 291608,
+        "sha256": "7f69bace92638f30c640d256671b62377caac9bbab9316d352744e5dd67cbed8"
+      },
+      {
+        "path": "artifacts/final-review/landscape-wide.png",
+        "bytes": 491272,
+        "sha256": "cbd66e0e3de213db72a7d7a4d5f830daaf6c90a926015582a75145205e6cf607"
+      },
+      {
+        "path": "artifacts/final-review/landscape-wide-end.png",
+        "bytes": 236613,
+        "sha256": "7b6ee7e424cfbab79e1ece5d9ce22cdc9a647b928aeb082169761ee40ab3a03d"
+      },
+      {
+        "path": "artifacts/final-review/landscape-overhead.png",
+        "bytes": 855275,
+        "sha256": "ca0e839acab30c54ac6d0dcd70926aad40dfeac463f67c0f033dc8231bbd0872"
+      },
+      {
+        "path": "artifacts/final-review/portrait-release.png",
+        "bytes": 362938,
+        "sha256": "02fd9fc6a92d1baafa3bbebe778a2a469c456c613dd4416b5aa863ae5a89b012"
+      },
+      {
+        "path": "artifacts/final-review/portrait-descent.png",
+        "bytes": 329834,
+        "sha256": "682790207dec099c7057ca4b2b39950e01e1fd88427758f131ee53688c51209d"
+      },
+      {
+        "path": "artifacts/final-review/portrait-landing.png",
+        "bytes": 363124,
+        "sha256": "e555c7a848d8f173a3b2fc5663a0373cf41a9028e5ef3647d6d15f5ae1b1bd81"
+      },
+      {
+        "path": "artifacts/final-review/portrait-wide-end.png",
+        "bytes": 107310,
+        "sha256": "98057d8d47c9dd2312d6a0059eff0dd6a54afc9289681a406ca086fe37fd2c3d"
+      },
+      {
+        "path": "src/replay-system.ts",
+        "bytes": 7028,
+        "sha256": "0e7453ea784874ec12cdb741ee9a96e4af422282c1c849de6d3290978086c90e"
+      },
+      {
+        "path": "src/replay-effects.ts",
+        "bytes": 6326,
+        "sha256": "4fb9c2519ca0ca6b830fa6065c2c3fc5992437e76f05adde03bb82ed83e41da8"
+      },
+      {
+        "path": "src/scene-assets/stage.scene-asset.ts",
+        "bytes": 10383,
+        "sha256": "0a44339dabf7085d12a5efa023fd96a36260d0b21c647afbb095b90cdf0f632e"
+      },
+      {
+        "path": "src/scene-assets/effects.scene-asset.ts",
+        "bytes": 6445,
+        "sha256": "c33c01ee0a0bcf1f19259e7bcbe2aaf0a46084e9ca0253481837dc39e0fadf31"
+      },
+      {
+        "path": "public/scenes/main.iwsdk.scene.json",
+        "bytes": 7622,
+        "sha256": "077bc6aeee50703b6a7036cf5722c508ff85af393f332843b80e80a30e60a1b4"
+      },
+      {
+        "path": "public/models/roadster.glb",
+        "bytes": 1908080,
+        "sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a"
+      },
+      {
+        "path": "public/ui/replay.uikitml",
+        "bytes": 1657,
+        "sha256": "b078498a0d1ed94a19eccd1931a90527827fdd058097ff4893feb7871e14e8db"
+      },
+      {
+        "path": "public/textures/vapor-atlas.png",
+        "bytes": 1602259,
+        "sha256": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153"
+      },
+      {
+        "path": "src/assets.ts",
+        "bytes": 908,
+        "sha256": "56079d0900f8988899f9c084d94b3760916c5c14130c7adebe549675e3085934"
+      },
+      {
+        "path": "references/roadster/reconstruction/reconstruction.json",
+        "bytes": 382400,
+        "sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+      }
+    ],
+    "manifest_verification": {
+      "matched": 27,
+      "total": 27,
+      "mismatches": []
+    },
+    "comparison_with_v9": {
+      "changed_non_capture_manifest_files": [
+        "public/models/roadster.glb"
+      ],
+      "unchanged_non_capture_manifest_files": 9,
+      "meaning": "Stage, effects, replay, UI, scene, atlas and numerical track hashes match the approved V9 manifest. The current car hash identifies this delivery, without granting model approval."
+    },
+    "jpeg_frame_set": {
+      "count": 937,
+      "ordered_hash_method": "SHA256 of ordered lines: filename + space + file SHA256 + newline",
+      "ordered_digest_sha256": "75c53197163e0c9f5b26adfe20336ccd8560c5944f78288e4eaf590ca4569539"
+    },
+    "prior_scoped_reports": [
+      {
+        "path": "artifacts/judges/stage-review-v9.json",
+        "bytes": 12105,
+        "sha256": "ccdd2b57996d7425361bda278d6f96ec262f80188fa8fb0918efa067854d562e"
+      },
+      {
+        "path": "artifacts/judges/temporal-review-v3.json",
+        "bytes": 13978,
+        "sha256": "f912cbcd4750b4a71e73af795f1857bc89339e549ebb7e3069bad78b49d04e89"
+      }
+    ]
+  },
+  "fresh_checks": [
+    "Verified all 27 manifest files against current bytes, including all 17 PNGs and current c7 model.",
+    "Fresh visual inspection of all 17 final stills in two contact sheets; separate full-size inspection of portrait landing and landscape 13-second clearance.",
+    "Decoded the complete encoded MP4 successfully: 565 frames, 30 fps, 1440 by 1000, 18.833 seconds.",
+    "Inspected encoded frames at 0, 6, 8.1, 8.8, 9.5, 9.8, 10.2, 10.7, 11.2, 11.6, 12, 12.5, 13, 14, 15, 16 and 18 seconds, with enlarged landing/decay crops.",
+    "Checked timestamp cadence across all 937 source JPEG entries. This does not establish runtime frame rate.",
+    "No app, model or browser operations or edits. Only this report was written inside the project."
+  ],
+  "quantitative_checks": {
+    "manifest_matches": 27,
+    "manifest_total": 27,
+    "non_artifact_changed_from_v9": [
+      "public/models/roadster.glb"
+    ],
+    "decoded_mp4_frames": 565,
+    "header_frames": 565,
+    "fps": 30.0,
+    "mp4_dimensions": [
+      1440,
+      1000
+    ],
+    "mp4_duration_seconds": 18.833333333333332,
+    "source_frame_count": 937,
+    "source_timestamp_span_seconds": 18.782202005386353,
+    "interval_ms_min_median_p95_p99_max": [
+      14.968156814575195,
+      16.727566719055176,
+      25.19780397415161,
+      26.27636194229126,
+      26.861906051635742
+    ],
+    "source_gaps_over_50ms": 0
+  },
+  "confirmed_observations": [
+    "Ramp silhouette, continuous paint, bracing, dark irregular apron, low grazing lights and center paint preserve the approved stage presentation.",
+    "Release, reorientation and descent samples keep the actor framed; no obvious camera or actor continuity regression appears in the final sequence.",
+    "Jets precede local grounded cloud growth. Landing remains heavily occluded, with the car emerging before a clear 13-second drive-away state.",
+    "Vapor retains internal lobe variation and broad thinning decay. The V8 cyan contour/dark contamination artifact has not returned.",
+    "Cloud has largely dissipated by 16 seconds. Final sampled frames show no synchronized whole-cloud shrink-away or blank-stage regression.",
+    "Portrait release/descent/landing and final full-path wide views preserve coverage, with the expected distant small subject in wide-end views."
+  ],
+  "material_regressions": [],
+  "required_corrections": [],
+  "limits": [
+    "This is a compact final regression check carried from the detailed V9 review, not a repeat of the full dense temporal audit.",
+    "Car hero form, geometry and material quality are separately reviewed; no car-quality score is granted here.",
+    "Smooth visual playback does not establish metric accuracy or uniquely measured source 6DoF; the prior numerical review and its uncertainties remain applicable.",
+    "Native XR, portrait temporal playback and interactive seek/reset/rate/view-switch behavior were not independently exercised in this review. Optional XR screenshots were not used as proof of native performance.",
+    "Prelit image-lobe vapor remains a visual approximation. Landing cloud hides exact wheel/root contact.",
+    "Capture timestamps and successful encoded decoding characterize the supplied evidence, not engine performance."
+  ]
+}

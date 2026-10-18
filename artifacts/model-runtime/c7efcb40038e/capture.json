@@ -1,0 +1,39 @@
+{
+  "modelSha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+  "state": [
+    {
+      "time": 0,
+      "playing": false,
+      "phase": "ready",
+      "speed": 1,
+      "view": 2
+    }
+  ],
+  "render": {
+    "ground": {
+      "color": "07090d",
+      "roughness": 1,
+      "envMapIntensity": 0.04
+    },
+    "fog": null,
+    "toneMapping": 4,
+    "exposure": 1,
+    "shadows": true,
+    "render": {
+      "frame": 725,
+      "calls": 81,
+      "triangles": 87583,
+      "points": 0,
+      "lines": 0
+    },
+    "camera": {
+      "position": [
+        12,
+        1.5150010585784912,
+        -27
+      ],
+      "fov": 42
+    }
+  },
+  "imageSha256": "7f69bace92638f30c640d256671b62377caac9bbab9316d352744e5dd67cbed8"
+}

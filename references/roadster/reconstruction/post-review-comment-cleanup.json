@@ -1,0 +1,16 @@
+{
+  "scope": "comment-only source wording cleanup after independent review IR-05; frozen numerical track unchanged",
+  "frozenReconstructionSha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3",
+  "changedReviewedFiles": [
+    {
+      "path": "tools/reconstruction/reconstruct.py",
+      "reviewedSha256": "669646d230681e6377fd8d318583d7bd0b445e4dd2ff8125806b95af110422a5",
+      "currentSha256": "aa86aad9cf721313a1da0b15747d24413622adcc2580ef516682032586646bf6"
+    },
+    {
+      "path": "tools/reconstruction/validate_views.py",
+      "reviewedSha256": "a57fc33bee0e98b8630c05ac995e87491b5ebadec264cd82ad88dee0f9e2c044",
+      "currentSha256": "e6522155a777abd12ff584c799dfd9d9b2a9440f1710064e20e4b5de9b4eba97"
+    }
+  ]
+}

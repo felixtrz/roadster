@@ -1,0 +1,67 @@
+{
+  "stage": "primary geometry preflight only; no final quality score claimed",
+  "version": "v4-b",
+  "files": [
+    {
+      "file": "clay-front.png",
+      "sha256": "55ed87e84939190fe06d7236e643b5cc007fe1f0f4084b272395aac3b0dc5dd6",
+      "bytes": 316507
+    },
+    {
+      "file": "clay-left.png",
+      "sha256": "1f48d2fc9867470f63bd66fcaab225ab9135305749ea707206515fc09781b17d",
+      "bytes": 321075
+    },
+    {
+      "file": "clay-quarter.png",
+      "sha256": "f7ebd12e6fdce5046ed52f3ab86806a8338d92c036382ba5ae0ffc5b5b19e7f6",
+      "bytes": 331234
+    },
+    {
+      "file": "clay-rear-quarter.png",
+      "sha256": "fe977f09dd335e3f6a72db4f77069bca4a66c80c5901f9392e6a307d0e601346",
+      "bytes": 326077
+    },
+    {
+      "file": "fair-body-v4.json",
+      "sha256": "a0b5468f5b5017cc4c1dff8765e60fb94cbc72548ca46f5737e796ac6130cf98",
+      "bytes": 5774
+    },
+    {
+      "file": "form-validation-v4.json",
+      "sha256": "cb67bc58016ecd8b473e05b6cda5d1566dadaf356f3a00914978208dec315819",
+      "bytes": 780
+    },
+    {
+      "file": "material-front.png",
+      "sha256": "4911407b943be29e655d15655aa99cea00d808eac3ba239090c14b76afdbb81b",
+      "bytes": 320258
+    },
+    {
+      "file": "material-quarter.png",
+      "sha256": "5cdc97a0960d7ab95c4e8192a4ee8251e4dc3442ee53a9c84177536ba5e1fb1c",
+      "bytes": 340913
+    },
+    {
+      "file": "sections/measurement-summary.json",
+      "sha256": "54814294d35a28253d6eae15d9b70a0c8fae6b53ac073abb3e5010f4c82fa940",
+      "bytes": 1751
+    },
+    {
+      "file": "sections/roadster-overlays.png",
+      "sha256": "75d44841b504f2e1d6128912dfdf785f5f75c36d93ba89cd11a1d2310193d8e4",
+      "bytes": 64135
+    },
+    {
+      "file": "sections/roadster.json",
+      "sha256": "5f0f8ae7cac6bc46472f0abe6723cd96b62be425b9839b4362a67605c75f58ba",
+      "bytes": 439602
+    },
+    {
+      "file": "stats.json",
+      "sha256": "50496d0d0220aa40da2324c385dc352d21f4d895dd8713cd19048f1ec5f63023",
+      "bytes": 122
+    }
+  ],
+  "public_glb": "unchanged immutable V3; primary checkpoint intentionally not exported"
+}

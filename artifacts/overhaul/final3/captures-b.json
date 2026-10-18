@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "05-descent",
+      "time": 10.8,
+      "view": 0,
+      "file": "artifacts/overhaul/final3/05-descent.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "06-landing",
+      "time": 11.6,
+      "view": 0,
+      "file": "artifacts/overhaul/final3/06-landing.png",
+      "state": {
+        "time": 11.600000381469727,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "07-driveaway",
+      "time": 13.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final3/07-driveaway.png",
+      "state": {
+        "time": 13.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "08-car-ready",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/overhaul/final3/08-car-ready.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    }
+  ],
+  "fps": 54.6231006054965,
+  "info": {
+    "frame": 28408,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "side_glass": {
+    "faces": 1592,
+    "vertices": 1014,
+    "maximum_plane_residual_mm": 8.286400898782631e-05,
+    "maximum_face_normal_angle_from_mean_degrees": 0.027147108308229653,
+    "p90_face_normal_angle_degrees": 0.017840618252539037
+  },
+  "raw_bvh_contact_pairs": {
+    "Undercarriage": 356,
+    "FrontOpeningJambs": 0,
+    "SillRail_L": null,
+    "SillRail_R": null
+  },
+  "contact_count_limit": "Raw BVH pairs include legitimate shared-edge contacts and do not measure penetration depth. Actual low-angle runtime remains the final seam evidence.",
+  "removed_interfaces": {
+    "BodyShell": {
+      "discarded_duplicate_cavity_wall_faces": 4,
+      "glazing_faces": 7134,
+      "overlay_glass_meshes": 0
+    },
+    "Undercarriage": {
+      "discarded_duplicate_cavity_wall_faces": 3,
+      "discarded_duplicate_roof_faces": 94
+    }
+  },
+  "baseline_f45_raw_pairs": {
+    "Undercarriage": 1941,
+    "SillRail_L": 222,
+    "SillRail_R": 222,
+    "FrontOpeningJambs": 226
+  }
+}

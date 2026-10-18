@@ -1,0 +1,382 @@
+{
+  "judge_id": "image_geometry_judge",
+  "review_role": "Independent adversarial CV/ramp/motion reconstruction reviewer",
+  "reviewed_at_utc": "2026-10-17T20:27:55.583103+00:00",
+  "review_status": "final on frozen numerical track",
+  "frozen_reconstruction_sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3",
+  "reviewed_hashes": {
+    "references/roadster/reconstruction/reconstruction.json": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3",
+    "references/roadster/reconstruction/geometry-fit.json": "bb0072fff7c2f20119e7f2b0851712cc6ea44103fc0bc56d3f0281e1e0e84db4",
+    "references/roadster/reconstruction/observations.json": "8ff029fb70c551a6bc411a2fd88e15f43f8d06ca48c4d4a0178a2c935fc476c2",
+    "references/roadster/reconstruction/independent-validation.json": "7121a65aacf912e93f768f923f90fad342c2fb5805409f50251a6be5acdd0070",
+    "references/roadster/reconstruction/calibration-observations.json": "7bfdcf1177954b0aaf31a8fdbe393f1258bbff8bd659a2ba4e5c8b677f59752b",
+    "references/roadster/reconstruction/wide-frames.json": "10414ee74faa6387a421c5f0c4215792b60042cc186e1ea34ba7c0f8646b0d8c",
+    "tools/reconstruction/reconstruct.py": "669646d230681e6377fd8d318583d7bd0b445e4dd2ff8125806b95af110422a5",
+    "tools/reconstruction/fit_geometry.py": "5c9acbd0fe1029c9f72cb2414008867b309b81e92a8badc334825cf8b1f86b67",
+    "tools/reconstruction/validate_views.py": "a57fc33bee0e98b8630c05ac995e87491b5ebadec264cd82ad88dee0f9e2c044"
+  },
+  "decision": {
+    "useful_as_approximate_visual_replay": true,
+    "approved_as_9_of_10_reliable_measured_6dof": false,
+    "measured_and_fitted_reliability_score": 7.0,
+    "trajectory_motion_plausibility_score": 8.0,
+    "score_scale": "0-10; expert judgment, not probabilities or statistical confidence",
+    "summary": "A useful, reproducible, evidence-constrained vertical-plane replay. Static geometry and broad outward flight are supported; exact metric position, global edited-video synchronization, airborne attitude and touchdown time are not recovered to 9/10 measurement reliability.",
+    "visual_score_scope": "Assesses exported trajectory, quaternion evolution, plots and source overlays. Does not replace a rendered application/vehicle visual review."
+  },
+  "category_scores": {
+    "static_rail_and_ground_image_fit": 8.5,
+    "main_view_registration_and_body_proxy_tracking": 7.5,
+    "conditional_airborne_vertical_plane_position": 7.0,
+    "metric_scale_and_lateral_depth_identifiability": 6.0,
+    "edited_replay_time_alignment": 5.5,
+    "airborne_orientation_measurement": 4.0,
+    "export_numerical_validity_and_constructed_contact": 9.0,
+    "trajectory_motion_plausibility": 8.0,
+    "honesty_of_final_machine_readable_description": 8.5
+  },
+  "final_independent_checks": {
+    "sample_count": 1081,
+    "position_and_quaternion_finite": true,
+    "strictly_increasing_time": true,
+    "sample_dt_min_s": 0.016665999999997183,
+    "sample_dt_max_s": 0.016667000000001764,
+    "minimum_root_height_m": 0.0,
+    "maximum_root_height_m": 22.108305,
+    "max_quaternion_norm_error": 6.841256006140384e-09,
+    "minimum_adjacent_quaternion_dot": 0.9996283431665606,
+    "max_speed_mps": 20.73391302375089,
+    "max_acceleration_mps2": 34.42304861759259,
+    "max_angular_speed_radps": 3.271678644276466,
+    "max_angular_acceleration_radps2": 5.595923631843549,
+    "release_time_s": 8.15,
+    "release_velocity_before_mps": [
+      -10.003419931601366,
+      1.204775904481917,
+      0.0
+    ],
+    "release_velocity_after_mps": [
+      -10.13787724245524,
+      0.993460130797589,
+      0.0
+    ],
+    "reproduced_rail_reprojection": [
+      {
+        "view": "main",
+        "rms_px": 5.531392292555609,
+        "max_px": 12.403520830737293
+      },
+      {
+        "view": "overhead",
+        "rms_px": 4.025669226132955,
+        "max_px": 8.039786832261656
+      }
+    ],
+    "max_nominal_contact_point_to_delivered_deck_polyline_m": 0.00012991039557408755,
+    "contact_interpretation": "Internal geometric consistency of model contact points and generated deck, not measured tire contact or clearance in the event.",
+    "withheld_ids": [
+      "wide_12.jpg",
+      "wide_14.jpg",
+      "wide_16.jpg",
+      "wide_17.jpg",
+      "wide_19.jpg"
+    ],
+    "reproduced_withheld_rms_px": 34.05948071934878,
+    "reproduced_withheld_max_px": 41.387456177751,
+    "uniform_scale_1_2_projection_max_change_px": 2.8421709430404007e-13,
+    "metric_gauge_interpretation": "Uniformly scaling geometry and camera translations by 1.2 preserves image projections. The HUD/ramp-height and vehicle-length assumptions choose metric scale.",
+    "numeric_rounding_note": "Velocities and accelerations here use the delivered rounded timestamps. Small differences from author metadata using exactly 1/60s do not affect conclusions."
+  },
+  "findings": [
+    {
+      "id": "IR-01",
+      "severity": "high",
+      "status": "remaining identifiability limit",
+      "title": "A fitted image path is not a unique measured 6-DoF trajectory",
+      "evidence": "Main body centers constrain rays. The exported root remains on z=0, airborne attitude is an eased interpolation, and a HUD-based 22m height prior plus length-normalized generated model select scale. At main9.009s, the stored sensitivity changes rootX from -25.708m to -21.065/-30.350m when rootZ changes by -2/+2m; rootY changes by about +/-1.594m. The five withheld wide points have 34.06px RMS and 41.39px maximum error, materially above the stated +/-8px proxy uncertainty.",
+      "implication": "The broad motion is supported. Exact XYZ, yaw/roll/pitch and stated modeling ranges are not statistically established. Do not describe the output as uniquely measured or 9/10 reliable 6-DoF.",
+      "locations": [
+        "tools/reconstruction/reconstruct.py:219",
+        "tools/reconstruction/reconstruct.py:344",
+        "references/roadster/reconstruction/reconstruction.json:reconstructionStatus"
+      ]
+    },
+    {
+      "id": "IR-02",
+      "severity": "high",
+      "status": "remaining time-alignment limit",
+      "title": "The fitted affine timing map applies to the air window and fails early climb",
+      "evidence": "Camera/timing calibration uses wide10/11/13/15 with main=(official-center)*0.810326+center-29.587295. Never-fit early wide01/04/06 have mapped errors84.75/27.98/15.70px, while allowing nearest time along the same ramp path reduces spatial errors to1.92/1.07/0.20px. Thus geometry can match those images but the global affine timing cannot.",
+      "implication": "The main clip clock is valid, but the edited-wide mapping is a fitted nuisance parameter, not hardware synchronization or proven playback speed. It cannot establish a single time correspondence through all edited footage.",
+      "locations": [
+        "tools/reconstruction/fit_geometry.py:100",
+        "tools/reconstruction/validate_views.py:107",
+        "references/roadster/reconstruction/independent-validation.json:earlyClimbTimingDiagnostics"
+      ]
+    },
+    {
+      "id": "IR-03",
+      "severity": "medium",
+      "status": "remaining landing/tail limit",
+      "title": "Touchdown is conditionally inferred and the later drive-away is extrapolated",
+      "evidence": "Wide18/20 are now explicitly ground-trajectory training observations, not held-out validation. Their ray/plane roots are near ground under the fitted calibration, then ground contact is imposed. Nominal touchdown11.533091791s is computed as the first mapped ground observation minus0.05s. The tail after12.394228297s is authored extrapolation. Smoke hides the main-view contact event.",
+      "implication": "The ground portion is useful for replay, but the decimal touchdown timestamp is not a measured wheel-contact instant. Do not claim precise landing timing or recovered post-observation driving.",
+      "locations": [
+        "tools/reconstruction/reconstruct.py:75",
+        "tools/reconstruction/reconstruct.py:90",
+        "tools/reconstruction/reconstruct.py:293",
+        "references/roadster/reconstruction/reconstruction.json:events"
+      ]
+    },
+    {
+      "id": "IR-04",
+      "severity": "medium",
+      "status": "correctly disclosed in final metadata",
+      "title": "Fit residuals and contact error have limited meanings",
+      "evidence": "11.539px main car-center RMS uses observations directly optimized by the motion fit. Rail residuals use digitized curve points in the geometry objective. Near-zero contact error verifies the constructed ramp/wheelbase geometry. These are valuable consistency checks, not independent metric 3D measurements. Current withheld IDs12/14/16/17/19 are excluded from the final calibration/trajectory objectives, but some wide images were seen during iterative model selection, so this is not a pristine blind test.",
+      "implication": "Keep the current explicit training flags and residual-meaning labels. Numeric confidence values are authoring heuristics, not calibrated probabilities.",
+      "locations": [
+        "tools/reconstruction/reconstruct.py:257",
+        "tools/reconstruction/reconstruct.py:311",
+        "tools/reconstruction/validate_views.py:47"
+      ]
+    },
+    {
+      "id": "IR-05",
+      "severity": "low",
+      "status": "documentation cleanup only",
+      "title": "Some source comments retain stronger or older wording than the final metadata",
+      "evidence": "validate_views.py still opens with an offset-only and entirely unused-wide-set description, while the actual pipeline now jointly fits cameras and affine timing on four wide points and fits two late points. reconstruct.py still labels a calculation as independent car-center residuals and mentions a0.55m datum even though current body offset is0.660508m. Final JSON provenance is substantially more accurate.",
+      "implication": "Prefer the final JSON status and training flags when describing results. These stale comments should be cleaned up in a later documentation pass; they do not require changing the frozen numeric track.",
+      "locations": [
+        "tools/reconstruction/validate_views.py:3",
+        "tools/reconstruction/validate_views.py:16",
+        "tools/reconstruction/reconstruct.py:110",
+        "tools/reconstruction/reconstruct.py:304"
+      ]
+    }
+  ],
+  "resolved_findings_from_this_review": [
+    {
+      "title": "Release velocity discontinuity",
+      "before": "The original8.30s PCHIP join jumped from near rest to about[-26.47,-5.14,0]m/s, producing approximately1603m/s^2 sampled acceleration.",
+      "after": "The frozen8.15s transition shares boundary velocity and eases orientation. The reproduced release velocities are about[-10.003,1.205,0] and[-10.138,0.993,0]m/s; maximum track acceleration is34.42m/s^2. No force/capability inference is made."
+    },
+    {
+      "title": "Slow late horizontal continuation and unregistered ground direction",
+      "before": "The earlier continuation slowed artificially and disagreed with visible wide frames by roughly100-300px; the ramp-only cameras did not constrain the ground travel direction adequately.",
+      "after": "A visible ground line and explicitly identified cross-view calibration observations constrain cameras; wide18/20 now constrain the ground trajectory, and independent17/19 remain excluded from the final trajectory fit."
+    },
+    {
+      "title": "Overstated validation and plane uncertainty",
+      "before": "Main reprojected center error could be mistaken for independent 3D validation and the initial +/-3m X range did not cover the stated +/-2m depth sensitivity.",
+      "after": "Final metadata identifies in-sample consistency, marks training versus withheld points, records depth-plane sensitivity and uses wider heuristic X/Y ranges. These remain modeling ranges, not confidence intervals."
+    }
+  ],
+  "large_horizontal_path_assessment": {
+    "decision": "Broad large outward motion is supported, but its exact metric path is conditional.",
+    "frozen_samples": [
+      {
+        "time": 9.0,
+        "position": [
+          -25.621226,
+          15.785313,
+          0.0
+        ]
+      },
+      {
+        "time": 10.0,
+        "position": [
+          -38.885353,
+          3.843002,
+          0.0
+        ]
+      },
+      {
+        "time": 11.0,
+        "position": [
+          -50.408042,
+          2.251725,
+          0.0
+        ]
+      }
+    ],
+    "interpretation": "The wide video visibly traverses a large distance from the lip toward the left landing area. The originally queried -22/-36/-47m samples were not silently disproven by source images; final calibration changes them to approximately -25.6/-38.9/-50.4m. Differences of several metres are plausible under the stated gauge/plane/camera ambiguity.",
+    "limits": "No unique horizontal metric truth is established. z=0 is a model constraint, and future calibrated multiview pose measurements would be needed to validate lateral movement and attitude."
+  },
+  "registration_bootstrap": {
+    "method": "SIFT2200 features, Lowe ratio0.72, RANSAC threshold2px on delivered JPEGs;300 replacement resamples of rerun inlier correspondences per frame; least-squares homography refit; seed1972; project to the frozen root z=0 plane using current body orientation.",
+    "interpretation": "Feature-resampling sensitivity only. Percentile ranges are not confidence intervals on real motion. This uses delivered JPEGs rather than original decoded source frames, so feature sets differ from author registration.",
+    "omitted_error_terms": [
+      "camera and intrinsic priors",
+      "global metric gauge",
+      "depth-plane choice",
+      "body-center proxy bias and rotation",
+      "lens distortion and camera-motion model error",
+      "edited-video time alignment",
+      "source compression and source point selection"
+    ],
+    "results": [
+      {
+        "frame": 18,
+        "mainTime": 9.009,
+        "nInliers": 53,
+        "rawCarCenterPx": [
+          998.0,
+          442.5
+        ],
+        "rawMatchedFeatureBoundsPx": [
+          [
+            1178.3909912109375,
+            404.97943115234375
+          ],
+          [
+            1327.82568359375,
+            958.8230590820312
+          ]
+        ],
+        "columns": [
+          "canonicalU_px",
+          "canonicalV_px",
+          "conditionalRootX_m",
+          "conditionalRootY_m"
+        ],
+        "percentile2_5": [
+          704.9978118896485,
+          133.9739097595215,
+          -26.033837052007428,
+          15.623734104945536
+        ],
+        "median": [
+          707.3098449707031,
+          138.42755889892578,
+          -25.912705734035434,
+          15.704139264267791
+        ],
+        "percentile97_5": [
+          709.6616226196289,
+          142.19451751708985,
+          -25.78520881755948,
+          15.791370548549438
+        ],
+        "standardDeviation": [
+          1.2261939027401563,
+          2.026514613777074,
+          0.06514391679318689,
+          0.04172030035879364
+        ]
+      },
+      {
+        "frame": 20,
+        "mainTime": 10.010000000000002,
+        "nInliers": 34,
+        "rawCarCenterPx": [
+          978.0,
+          784.5
+        ],
+        "rawMatchedFeatureBoundsPx": [
+          [
+            1389.2607421875,
+            372.5690002441406
+          ],
+          [
+            1577.97802734375,
+            945.7085571289062
+          ]
+        ],
+        "columns": [
+          "canonicalU_px",
+          "canonicalV_px",
+          "conditionalRootX_m",
+          "conditionalRootY_m"
+        ],
+        "percentile2_5": [
+          248.46341819763182,
+          573.66904296875,
+          -40.374246331075476,
+          3.7221838702523944
+        ],
+        "median": [
+          259.4573669433594,
+          599.3056335449219,
+          -40.11098709067632,
+          3.809389347957419
+        ],
+        "percentile97_5": [
+          316.76019668579096,
+          605.2575775146485,
+          -38.684076502588375,
+          4.33567718120577
+        ],
+        "standardDeviation": [
+          16.04989501215501,
+          7.287853498432108,
+          0.3973437932865037,
+          0.14194424068648512
+        ]
+      },
+      {
+        "frame": 22,
+        "mainTime": 11.011000000000001,
+        "nInliers": 27,
+        "rawCarCenterPx": [
+          876.5,
+          688.0
+        ],
+        "rawMatchedFeatureBoundsPx": [
+          [
+            1683.9146728515625,
+            189.4345703125
+          ],
+          [
+            1910.5411376953125,
+            805.9488525390625
+          ]
+        ],
+        "columns": [
+          "canonicalU_px",
+          "canonicalV_px",
+          "conditionalRootX_m",
+          "conditionalRootY_m"
+        ],
+        "percentile2_5": [
+          -415.756876373291,
+          645.7991577148438,
+          -50.99791690354795,
+          2.05543630627527
+        ],
+        "median": [
+          -329.0354309082031,
+          660.5439147949219,
+          -50.00711501275584,
+          2.19116328260392
+        ],
+        "percentile97_5": [
+          -284.87353210449226,
+          674.7476318359375,
+          -49.46815416399072,
+          2.269048988348353
+        ],
+        "standardDeviation": [
+          33.24403949463745,
+          7.41182556544031,
+          0.38916893784110523,
+          0.05371307661166392
+        ]
+      }
+    ]
+  },
+  "source_checks": {
+    "official_wide_video_sha256": "d94454dc88a726a3e34b45e9bd4dc8f56cf1879a13e99e45c4e8ca30cb2e4a65",
+    "source_hash_matches_metadata": true,
+    "decoded_fps": 23.976023976023978,
+    "nearest_decoded_frame_checks": {
+      "wide_01.jpg": 797,
+      "wide_10.jpg": 905,
+      "wide_16.jpg": 977,
+      "wide_20.jpg": 1024
+    },
+    "note": "Late frame20 was one frame earlier than the initial fixed-increment assumption; final manifest uses individual decoded-frame recovery."
+  },
+  "recommendation": "Freeze and use the track as an approximate visual replay with its current provenance. Keep source overlays and uncertainty available. A higher measurement-reliability claim would require stronger camera/time calibration, persistent body keypoints or calibrated multiview pose fitting, and an independently established scale/datum; do not obtain a higher score by adding unconstrained fit degrees."
+}

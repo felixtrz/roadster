@@ -1,0 +1,172 @@
+{
+  "advisory_id": "front-geometry-advisory-v1",
+  "author": "motion_reconstruction",
+  "reviewed_at_utc": "2026-10-17T20:40:05.421900+00:00",
+  "scope": "Read-only geometry diagnosis of the 31,576-triangle front fascia shown in glass-v3.png. No quality score requested or assigned.",
+  "model_triangle_count": 31576,
+  "reviewed_file_sha256": {
+    "artifacts/verification/glass-v3.png": "8e69f1a0dba9d157f58013072061f5cdd1601823a7ef02c556adb0145459d20f",
+    "public/models/roadster.glb": "5e24e8eaa813e3b69764864b2fbc36a7070548f403946d93b79eab9edc8790e6",
+    "art/roadster/model/build_roadster.py": "804527f1f28a5f6b35aeb3a6cc3fae2fa37ba23f4e25fd373dd92b4568704658",
+    "art/roadster/model/model_lib.py": "87ba37d9fddf8401a892f692e38bcdd78adb596b7f9fb6c6c51c0941f8937210",
+    "art/roadster/model/facade_refinements.py": "2e3bb7891d6904b590e35e6302f877988fd373a0f8ad335f420e92dcef39f668",
+    "art/roadster/model/fit/surface-patches.json": "031346208d8a9f600c66a099d65b81efdae5d7f5593e8ace3e248e7af8529c26",
+    "art/roadster/reference-images/front-v2.png": "6c878ede93cf3db988b3f9e16e97c1fb8153ac486f94a298a201ccc86f14077a",
+    "references/roadster/frames/D02_event_11-01.000.jpg": "04f22ec3f9c747c79702f457d33ebd4930c01b50e96b9a36fc368b3b15bd18ac"
+  },
+  "observation": "The broad front white corners have warped dents and protruding peaks; the lower black opening is partly filled by a forward cap, yielding stacked horizontal slabs. D02 and approved front-v2 show coherent white corner planes around one deep dark opening.",
+  "findings": [
+    {
+      "id": "FG-001",
+      "cause": "The added FrontFenderTerminal solids use strongly nonplanar broad quads, then boolean-union them into BodyShell.",
+      "location": "art/roadster/model/facade_refinements.py:40-48",
+      "measured_fourth_vertex_off_plane_metres": {
+        "face_0_1_2_3": -0.05381,
+        "face_4_7_6_5": 0.04214,
+        "face_0_4_5_1": -0.02807,
+        "face_1_5_6_2": -0.0055,
+        "face_2_6_7_3": -0.00801,
+        "face_3_7_4_0": 0.00388
+      },
+      "method": "For each authored four-vertex face, normalize cross(v1-v0,v2-v0); report dot(v3-v0,normal). Mirrored side has equal magnitude.",
+      "implication": "A 54 mm warp across an intended broad corner panel must triangulate into separate planes. Recalculating unit normals cannot flatten it. Boolean intersection fragments and mixed smoothness reveal these diagonal dents.",
+      "repair": "Replace the overlapping warped hexahedron/union with explicit front cheek surface patches sharing the body/hood/opening/wheel-arch boundaries. Use one or two coherent designed planes for broad facets; use small quads on a smooth analytic patch where curvature is intended. Reuse boundary vertices instead of crossing two independently authored skins."
+    },
+    {
+      "id": "FG-002",
+      "cause": "Upper cheek controls overshoot the fitted body surface and create actual protruding white horns.",
+      "location": "art/roadster/model/facade_refinements.py:40-43",
+      "evidence": {
+        "p1": {
+          "position_blender": [
+            1.035,
+            -2.076421865342621,
+            0.735
+          ],
+          "height_above_existing_deck_metres": 0.235,
+          "outside_existing_half_width_metres": 0.0222
+        },
+        "p5": {
+          "position_blender": [
+            1.09,
+            -1.881421865342621,
+            0.765
+          ],
+          "height_above_existing_deck_metres": 0.1593
+        }
+      },
+      "method": "Evaluate the same front-region dimension()/deck() interpolation from surface-patches.json at each cheek point XY; compare authored Z.",
+      "repair": "Derive the terminal upper/back boundary from the same deck/hood crown and fender shoulder controls used by BodyShell. Remove the 16-24 cm discontinuity before normal or material changes. Preserve the strong source front corner silhouette without adding independent raised peaks."
+    },
+    {
+      "id": "FG-003",
+      "cause": "Only BodyShell is cut for the front opening; Undercarriage retains its original front cap in front of the recess.",
+      "locations": [
+        "art/roadster/model/facade_refinements.py:25-32",
+        "art/roadster/model/build_roadster.py:120-126"
+      ],
+      "evidence": {
+        "undercarriage_front_cap_runtime_x_metres": 2.2864220830189277,
+        "intended_back_wall_runtime_x_metres": 2.106422230495731,
+        "cap_ahead_of_back_metres": 0.1799998525231967,
+        "cap_height_range_metres": [
+          0.115,
+          0.318
+        ]
+      },
+      "exported_GLB_raycast": [
+        {
+          "ray_origin": [
+            10,
+            0.18,
+            0
+          ],
+          "ray_direction": [
+            -1,
+            0,
+            0
+          ],
+          "first_hit": "Undercarriage",
+          "x": 2.286422083018927
+        },
+        {
+          "ray_origin": [
+            10,
+            0.25,
+            0
+          ],
+          "first_hit": "Undercarriage",
+          "x": 2.2864220830189277,
+          "next_intended_hit": "FrontRecessBack",
+          "next_x": 2.106422230495731
+        },
+        {
+          "ray_origin": [
+            10,
+            0.3,
+            0
+          ],
+          "first_hit": "Undercarriage",
+          "x": 2.2864220830189277
+        },
+        {
+          "ray_origin": [
+            10,
+            0.35,
+            0
+          ],
+          "first_hit": "FrontRecessBack",
+          "x": 2.106422230495731
+        },
+        {
+          "ray_origin": [
+            10,
+            0.4,
+            0
+          ],
+          "first_hit": "FrontRecessBack",
+          "x": 2.106422230495731
+        },
+        {
+          "ray_origin": [
+            10,
+            0.5,
+            0
+          ],
+          "first_hit": "FrontRecessBack",
+          "x": 2.106422230495731
+        }
+      ],
+      "method": "Parse public/models/roadster.glb with the installed GLTFLoader, update matrixWorld, and raycast through the front center. Coordinates are the canonical runtime model axes.",
+      "repair": "Apply the same opening volume to the belt or omit/trim its front center faces. Retain one designed lower splitter/lip and the jambs. Recess the dark back behind the mouth; do not leave a full-width uncut cap ahead of it. Check the low front and quarter views after rebuilding."
+    },
+    {
+      "id": "FG-004",
+      "cause": "Smoothness is reassigned independently per final triangle by a normal component threshold.",
+      "location": "art/roadster/model/build_roadster.py:157",
+      "evidence": "face.use_smooth = glass or not(abs(face.normal.x)>.85 and z<1.0)",
+      "implication": "Neighboring fragments of the same intended cheek surface can cross the normal threshold and get different smooth/flat shading. Global triangulation and booleans turn that heuristic into a patchwork. This compounds actual geometry warp; it is not the primary cause of the silhouette defects.",
+      "repair": "After repairing the surface, assign smooth/flat behavior by coherent semantic surface regions and deliberate sharp edges. Smooth within fender curvature; preserve designed hood/cheek creases. A normal-weighting pass may help planar-panel shading but cannot repair the current warped shape."
+    }
+  ],
+  "negative_findings": [
+    "FrontRecessBack exported triangle normals point forward (+X canonical), so its back-facing normal is not the mouth defect.",
+    "The examined front components export DoubleSide materials, so disappearing single-sided recess faces do not explain the stacked cap.",
+    "The validation report has zero degenerate triangles and unit normals. Those checks do not assess broad face planarity, surface overshoot, occluding duplicate volumes or semantic normal continuity."
+  ],
+  "recommended_order": [
+    "Remove/trim the surviving lower-mouth belt cap.",
+    "Replace warped cheek solids with boundary-consistent front patches, deriving upper boundaries from the body controls.",
+    "Cut/place lamp apertures on those final clean planes; use offset/depth from their surface frame.",
+    "Assign coherent sharp/smooth regions after final topology.",
+    "Inspect front and front-quarter clay plus material renders before adding more cosmetics."
+  ],
+  "acceptance_checks": [
+    "Center-mouth front rays through heights .20-.50 m hit the intended recessed interior/jamb, with only the explicit thin lower lip crossing its designed height.",
+    "No broad intended planar cheek quad has centimetre-scale planarity error.",
+    "Cheek boundary vertices coincide with intended deck/hood/arch boundaries instead of protruding 0.16-.24 m above them.",
+    "Front and low front-quarter silhouettes match D02/approved front-v2 without protruding white horns or a forward lower cap.",
+    "Normals remain finite/unit and no zero-area triangles are introduced; verify shading continuity visually as an additional check."
+  ],
+  "coordination": "Read-only findings were sent directly to /root/tripo_pipeline and /root. No app/model files, .blend data or public exports were edited. No live browser automation or Blender mutation was used."
+}

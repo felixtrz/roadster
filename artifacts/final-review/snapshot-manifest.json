@@ -1,0 +1,140 @@
+{
+  "version": "final",
+  "files": [
+    {
+      "path": "artifacts/final-review/landscape-ready.png",
+      "bytes": 448587,
+      "sha256": "67fa5507f85206fc7553d9b9876941505907985c3b31f3f4dd2735c2a004d737"
+    },
+    {
+      "path": "artifacts/final-review/landscape-climb.png",
+      "bytes": 447211,
+      "sha256": "072a0b73fe86b3aeae7a46369fdc41d454868846fc6c34cbbd7689a5a17faf8d"
+    },
+    {
+      "path": "artifacts/final-review/landscape-release.png",
+      "bytes": 451089,
+      "sha256": "14b7886f4b6e8bfd4e6c4c0f95892d561bc27b0a7624cee6467a456176056b77"
+    },
+    {
+      "path": "artifacts/final-review/landscape-flip.png",
+      "bytes": 456866,
+      "sha256": "cf1cf6ea11edfa34ab7f81f56f164308737bb44d5e2964779ca557a182065d51"
+    },
+    {
+      "path": "artifacts/final-review/landscape-jets.png",
+      "bytes": 444961,
+      "sha256": "3a91107a020daa46a06306f25070c16eeef394171c959a99b039654af613a13c"
+    },
+    {
+      "path": "artifacts/final-review/landscape-descent.png",
+      "bytes": 427871,
+      "sha256": "1dbe1765e97b246dc8f95b49e5991d342d976fd77e27df5e1a04184c09d2a4cd"
+    },
+    {
+      "path": "artifacts/final-review/landscape-landing.png",
+      "bytes": 466789,
+      "sha256": "59020f5d9354a582dace4b92692db298802b49e76f68847c516cf827394c1a22"
+    },
+    {
+      "path": "artifacts/final-review/landscape-clearance.png",
+      "bytes": 441898,
+      "sha256": "3efe5fa534f4792c62584ad7bd5a705063424adc7b0a1910296a70707b298991"
+    },
+    {
+      "path": "artifacts/final-review/landscape-end.png",
+      "bytes": 280142,
+      "sha256": "6a2b4d376e6c2f58185e3c484583081e13603e0d8b57ffeece382712c1d02f61"
+    },
+    {
+      "path": "artifacts/final-review/landscape-car.png",
+      "bytes": 291608,
+      "sha256": "7f69bace92638f30c640d256671b62377caac9bbab9316d352744e5dd67cbed8"
+    },
+    {
+      "path": "artifacts/final-review/landscape-wide.png",
+      "bytes": 491272,
+      "sha256": "cbd66e0e3de213db72a7d7a4d5f830daaf6c90a926015582a75145205e6cf607"
+    },
+    {
+      "path": "artifacts/final-review/landscape-wide-end.png",
+      "bytes": 236613,
+      "sha256": "7b6ee7e424cfbab79e1ece5d9ce22cdc9a647b928aeb082169761ee40ab3a03d"
+    },
+    {
+      "path": "artifacts/final-review/landscape-overhead.png",
+      "bytes": 855275,
+      "sha256": "ca0e839acab30c54ac6d0dcd70926aad40dfeac463f67c0f033dc8231bbd0872"
+    },
+    {
+      "path": "artifacts/final-review/portrait-release.png",
+      "bytes": 362938,
+      "sha256": "02fd9fc6a92d1baafa3bbebe778a2a469c456c613dd4416b5aa863ae5a89b012"
+    },
+    {
+      "path": "artifacts/final-review/portrait-descent.png",
+      "bytes": 329834,
+      "sha256": "682790207dec099c7057ca4b2b39950e01e1fd88427758f131ee53688c51209d"
+    },
+    {
+      "path": "artifacts/final-review/portrait-landing.png",
+      "bytes": 363124,
+      "sha256": "e555c7a848d8f173a3b2fc5663a0373cf41a9028e5ef3647d6d15f5ae1b1bd81"
+    },
+    {
+      "path": "artifacts/final-review/portrait-wide-end.png",
+      "bytes": 107310,
+      "sha256": "98057d8d47c9dd2312d6a0059eff0dd6a54afc9289681a406ca086fe37fd2c3d"
+    },
+    {
+      "path": "src/replay-system.ts",
+      "bytes": 7028,
+      "sha256": "0e7453ea784874ec12cdb741ee9a96e4af422282c1c849de6d3290978086c90e"
+    },
+    {
+      "path": "src/replay-effects.ts",
+      "bytes": 6326,
+      "sha256": "4fb9c2519ca0ca6b830fa6065c2c3fc5992437e76f05adde03bb82ed83e41da8"
+    },
+    {
+      "path": "src/scene-assets/stage.scene-asset.ts",
+      "bytes": 10383,
+      "sha256": "0a44339dabf7085d12a5efa023fd96a36260d0b21c647afbb095b90cdf0f632e"
+    },
+    {
+      "path": "src/scene-assets/effects.scene-asset.ts",
+      "bytes": 6445,
+      "sha256": "c33c01ee0a0bcf1f19259e7bcbe2aaf0a46084e9ca0253481837dc39e0fadf31"
+    },
+    {
+      "path": "public/scenes/main.iwsdk.scene.json",
+      "bytes": 7622,
+      "sha256": "077bc6aeee50703b6a7036cf5722c508ff85af393f332843b80e80a30e60a1b4"
+    },
+    {
+      "path": "public/models/roadster.glb",
+      "bytes": 1908080,
+      "sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a"
+    },
+    {
+      "path": "public/ui/replay.uikitml",
+      "bytes": 1657,
+      "sha256": "b078498a0d1ed94a19eccd1931a90527827fdd058097ff4893feb7871e14e8db"
+    },
+    {
+      "path": "public/textures/vapor-atlas.png",
+      "bytes": 1602259,
+      "sha256": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153"
+    },
+    {
+      "path": "src/assets.ts",
+      "bytes": 908,
+      "sha256": "56079d0900f8988899f9c084d94b3760916c5c14130c7adebe549675e3085934"
+    },
+    {
+      "path": "references/roadster/reconstruction/reconstruction.json",
+      "bytes": 382400,
+      "sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+    }
+  ]
+}

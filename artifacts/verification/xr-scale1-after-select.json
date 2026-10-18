@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "ui.inspect",
+    "result": {
+      "panel": {
+        "entityIndex": 17,
+        "name": "Replay controls",
+        "assetId": "replay-controls",
+        "computedSize": {
+          "width": 120,
+          "height": 44.2400016784668
+        },
+        "targetSize": {
+          "width": 0,
+          "height": 0
+        }
+      },
+      "selector": "#PlayLabel",
+      "elements": [
+        {
+          "id": "PlayLabel",
+          "classes": [
+            "label"
+          ],
+          "componentType": "_Container",
+          "uuid": "b704e6d8-3a65-4d12-afba-6b952e1b1a28",
+          "text": "Pause",
+          "state": {
+            "active": false,
+            "clipped": false,
+            "disabled": false,
+            "displayed": true,
+            "hovered": false,
+            "visible": true
+          },
+          "layout": {
+            "relativeCenter": [
+              0,
+              -7.152557373046875e-7
+            ],
+            "size": [
+              10.640000343322754,
+              4.320001602172852
+            ]
+          },
+          "properties": {
+            "text": "Pause",
+            "visibility": "visible"
+          }
+        }
+      ],
+      "total": 1,
+      "limited": false
+    }
+  }
+}

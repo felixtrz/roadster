@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "ready",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/verification/perf/ready.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "flip",
+      "time": 9,
+      "view": 0,
+      "file": "artifacts/verification/perf/flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "hover",
+      "time": 10.8,
+      "view": 0,
+      "file": "artifacts/verification/perf/hover.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "land",
+      "time": 12,
+      "view": 2,
+      "file": "artifacts/verification/perf/land.png",
+      "state": {
+        "time": 12,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    }
+  ],
+  "fps": 60.184033822432234,
+  "info": {
+    "frame": 102071,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

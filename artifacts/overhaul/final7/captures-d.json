@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "name": "13-top",
+      "time": 10.8,
+      "view": 3,
+      "file": "artifacts/overhaul/final7/13-top.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 3
+      }
+    }
+  ],
+  "fps": 60.16308671431021,
+  "info": {
+    "frame": 45221,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

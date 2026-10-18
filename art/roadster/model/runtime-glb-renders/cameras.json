@@ -1,0 +1,97 @@
+{
+  "front": {
+    "eye_blender": [
+      0,
+      -9,
+      2.5
+    ],
+    "target_blender": [
+      0,
+      0,
+      0.65
+    ],
+    "projection": "orthographic",
+    "vertical_fov_degrees": null,
+    "ortho_scale_m": 6.1,
+    "resolution": [
+      640,
+      480
+    ]
+  },
+  "quarter": {
+    "eye_blender": [
+      7,
+      -8,
+      4.3
+    ],
+    "target_blender": [
+      0,
+      0,
+      0.65
+    ],
+    "projection": "orthographic",
+    "vertical_fov_degrees": null,
+    "ortho_scale_m": 6.1,
+    "resolution": [
+      640,
+      480
+    ]
+  },
+  "rear-quarter": {
+    "eye_blender": [
+      -7,
+      8,
+      4.0
+    ],
+    "target_blender": [
+      0,
+      0,
+      0.65
+    ],
+    "projection": "orthographic",
+    "vertical_fov_degrees": null,
+    "ortho_scale_m": 6.1,
+    "resolution": [
+      640,
+      480
+    ]
+  },
+  "low-front": {
+    "eye_blender": [
+      0,
+      -9,
+      1.5
+    ],
+    "target_blender": [
+      0,
+      0,
+      0.7
+    ],
+    "projection": "perspective",
+    "vertical_fov_degrees": 42,
+    "ortho_scale_m": null,
+    "resolution": [
+      640,
+      480
+    ]
+  },
+  "low-quarter": {
+    "eye_blender": [
+      -7,
+      -6,
+      1.5
+    ],
+    "target_blender": [
+      0,
+      0,
+      0.7
+    ],
+    "projection": "perspective",
+    "vertical_fov_degrees": 42,
+    "ortho_scale_m": null,
+    "resolution": [
+      640,
+      480
+    ]
+  }
+}

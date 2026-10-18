@@ -1,0 +1,54 @@
+{
+  "method": "Least-squares x=a+b*y+c*z plane through the six source-informed authored side-aperture controls; bilateral symmetry.",
+  "coefficients": [
+    1.7303499975438434,
+    0.0040674880653889444,
+    -0.7583785505051251
+  ],
+  "aperture_yz": [
+    [
+      -1.17,
+      0.872
+    ],
+    [
+      -0.31,
+      1.262
+    ],
+    [
+      0.6,
+      1.245
+    ],
+    [
+      1.15,
+      1.087
+    ],
+    [
+      0.55,
+      0.988
+    ],
+    [
+      -0.1,
+      0.925
+    ]
+  ],
+  "original_control_x": [
+    1.0789433360478895,
+    0.768642789330585,
+    0.790260668280233,
+    0.9117835014503646,
+    1.0024298679170738,
+    0.9952716399718025
+  ],
+  "control_departure_mm": [
+    -14.658395581020223,
+    3.372556175519903,
+    -1.6514732760369855,
+    -1.1133770303947133,
+    -19.12075983632999,
+    33.17144954826112
+  ],
+  "maximum_control_departure_mm": 33.17144954826112,
+  "frame_blend_margin_m": 0.08,
+  "white_front_frame_width_yz_m": 0.025,
+  "limits": "This is an explicit fairing departure from the ruled proxy, not a certified source-car glass plane. The aperture YZ landmarks and accepted body/nose/shoulder rails are preserved."
+}

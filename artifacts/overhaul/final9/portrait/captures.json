@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "p-flip",
+      "time": 8.9,
+      "view": 0,
+      "file": "artifacts/overhaul/final9/portrait/p-flip.png",
+      "state": {
+        "time": 8.899999618530273,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "p-descent",
+      "time": 10.8,
+      "view": 0,
+      "file": "artifacts/overhaul/final9/portrait/p-descent.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "p-landing",
+      "time": 11.6,
+      "view": 0,
+      "file": "artifacts/overhaul/final9/portrait/p-landing.png",
+      "state": {
+        "time": 11.600000381469727,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "p-emerge",
+      "time": 12.2,
+      "view": 0,
+      "file": "artifacts/overhaul/final9/portrait/p-emerge.png",
+      "state": {
+        "time": 12.199999809265137,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.17804744607383,
+  "info": {
+    "frame": 25200,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

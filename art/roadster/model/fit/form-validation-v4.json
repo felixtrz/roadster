@@ -1,0 +1,20 @@
+{
+  "revision": "v4",
+  "front_rail_minimum_rearward_step_m": {
+    "0": 0.00024358671638380347,
+    "0.4": 0.00024389849835804167,
+    "0.72": 0.00024459676589527746,
+    "0.8": 0.0001663669038369786,
+    "0.91": 3.6361579774824015e-05,
+    "0.993": 3.6029767467637974e-05
+  },
+  "rail_maximum_numerical_left_right_slope_difference": {
+    "width": 1.1809575539700743e-05,
+    "lower": 1.3989226443911205e-05,
+    "centre": 1.1384559961413743e-05,
+    "shoulder": 9.655609645164986e-06,
+    "outer": 1.0211309575680616e-05
+  },
+  "method": "1001 front-profile samples and one-sided10micrometre tangent probes at all interior C1 rail controls.",
+  "limits": "Checks continuity and monotonic design constraints only; source fidelity still requires independent visual judgement."
+}

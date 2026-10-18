@@ -1,0 +1,170 @@
+[
+  {
+    "file": "wide_01.jpg",
+    "sourceFrame": 797,
+    "sourceTime": 33.24154166666666,
+    "jpegMseAt192x108": 3.751559284979424,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_02.jpg",
+    "sourceFrame": 809,
+    "sourceTime": 33.742041666666665,
+    "jpegMseAt192x108": 3.7489390432098766,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_03.jpg",
+    "sourceFrame": 821,
+    "sourceTime": 34.24254166666667,
+    "jpegMseAt192x108": 3.752909593621399,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_04.jpg",
+    "sourceFrame": 833,
+    "sourceTime": 34.74304166666666,
+    "jpegMseAt192x108": 3.542872299382716,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_05.jpg",
+    "sourceFrame": 845,
+    "sourceTime": 35.243541666666665,
+    "jpegMseAt192x108": 3.0910493827160495,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_06.jpg",
+    "sourceFrame": 857,
+    "sourceTime": 35.74404166666666,
+    "jpegMseAt192x108": 3.127957818930041,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_07.jpg",
+    "sourceFrame": 869,
+    "sourceTime": 36.24454166666666,
+    "jpegMseAt192x108": 3.122636959876543,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_08.jpg",
+    "sourceFrame": 881,
+    "sourceTime": 36.745041666666665,
+    "jpegMseAt192x108": 3.130658436213992,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_09.jpg",
+    "sourceFrame": 893,
+    "sourceTime": 37.24554166666666,
+    "jpegMseAt192x108": 3.0775945216049383,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_10.jpg",
+    "sourceFrame": 905,
+    "sourceTime": 37.74604166666666,
+    "jpegMseAt192x108": 2.852318029835391,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_11.jpg",
+    "sourceFrame": 917,
+    "sourceTime": 38.246541666666666,
+    "jpegMseAt192x108": 2.947579089506173,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_12.jpg",
+    "sourceFrame": 929,
+    "sourceTime": 38.74704166666666,
+    "jpegMseAt192x108": 3.040010931069959,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_13.jpg",
+    "sourceFrame": 941,
+    "sourceTime": 39.24754166666666,
+    "jpegMseAt192x108": 3.0778356481481484,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_14.jpg",
+    "sourceFrame": 953,
+    "sourceTime": 39.748041666666666,
+    "jpegMseAt192x108": 3.090454603909465,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_15.jpg",
+    "sourceFrame": 965,
+    "sourceTime": 40.24854166666666,
+    "jpegMseAt192x108": 3.0192097479423867,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_16.jpg",
+    "sourceFrame": 977,
+    "sourceTime": 40.74904166666666,
+    "jpegMseAt192x108": 3.0721289866255144,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_17.jpg",
+    "sourceFrame": 989,
+    "sourceTime": 41.249541666666666,
+    "jpegMseAt192x108": 3.095244984567901,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_18.jpg",
+    "sourceFrame": 1000,
+    "sourceTime": 41.70833333333333,
+    "jpegMseAt192x108": 3.0640271347736627,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_19.jpg",
+    "sourceFrame": 1012,
+    "sourceTime": 42.20883333333333,
+    "jpegMseAt192x108": 3.2958301183127574,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_20.jpg",
+    "sourceFrame": 1024,
+    "sourceTime": 42.70933333333333,
+    "jpegMseAt192x108": 3.4339795524691357,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_21.jpg",
+    "sourceFrame": 1036,
+    "sourceTime": 43.20983333333333,
+    "jpegMseAt192x108": 3.45995691872428,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_22.jpg",
+    "sourceFrame": 1048,
+    "sourceTime": 43.71033333333333,
+    "jpegMseAt192x108": 3.495338220164609,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_23.jpg",
+    "sourceFrame": 1060,
+    "sourceTime": 44.21083333333333,
+    "jpegMseAt192x108": 3.416184413580247,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  },
+  {
+    "file": "wide_24.jpg",
+    "sourceFrame": 1072,
+    "sourceTime": 44.71133333333333,
+    "jpegMseAt192x108": 3.3511606224279835,
+    "timestampMethod": "nearest decoded source-frame image match; CFR24000/1001"
+  }
+]

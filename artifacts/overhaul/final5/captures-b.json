@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "name": "08-car-ready",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/overhaul/final5/08-car-ready.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "08b-car-flip",
+      "time": 9,
+      "view": 2,
+      "file": "artifacts/overhaul/final5/08b-car-flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "09-car-descent",
+      "time": 10.6,
+      "view": 2,
+      "file": "artifacts/overhaul/final5/09-car-descent.png",
+      "state": {
+        "time": 10.600000381469727,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "09b-car-landing",
+      "time": 11.8,
+      "view": 2,
+      "file": "artifacts/overhaul/final5/09b-car-landing.png",
+      "state": {
+        "time": 11.800000190734863,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "10-car-driveaway",
+      "time": 14,
+      "view": 2,
+      "file": "artifacts/overhaul/final5/10-car-driveaway.png",
+      "state": {
+        "time": 14,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    }
+  ],
+  "fps": 60.04068873129506,
+  "info": {
+    "frame": 29683,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

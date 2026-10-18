@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "xr.get-select-value",
+    "result": {
+      "device": "controller-right",
+      "value": 0
+    }
+  }
+}

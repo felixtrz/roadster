@@ -1,0 +1,64 @@
+{
+  "results": [
+    {
+      "name": "09-car-ready",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/overhaul/final9/09-car-ready.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "10-car-flip",
+      "time": 9,
+      "view": 2,
+      "file": "artifacts/overhaul/final9/10-car-flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "11-car-driveout",
+      "time": 12.5,
+      "view": 2,
+      "file": "artifacts/overhaul/final9/11-car-driveout.png",
+      "state": {
+        "time": 12.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "12-wide",
+      "time": 11.8,
+      "view": 1,
+      "file": "artifacts/overhaul/final9/12-wide.png",
+      "state": {
+        "time": 11.800000190734863,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 1
+      }
+    }
+  ],
+  "fps": 60.37924151696607,
+  "info": {
+    "frame": 39662,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

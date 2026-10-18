@@ -1,0 +1,525 @@
+{
+  "judge_id": "image_judge",
+  "review_type": "independent visual source-and-form review of authored model",
+  "model_version": "review-input-v1",
+  "model_sha256": "5413f00bbe29c0835f55345188b78233c1660cedfd149477d9f39e98788c9afe",
+  "overall_score": 6.3,
+  "category_scores": {
+    "source_identity_fidelity": 6.3,
+    "primary_form_in_clay": 5.8,
+    "canopy_hood_shoulder_transitions": 5.2,
+    "wheel_proportion_and_visible_separation": 8.0,
+    "front_and_rear_fascia": 5.5,
+    "four_nozzles": 8.0,
+    "materials_and_visible_shading": 6.5,
+    "hidden_geometry_assumptions": 8.0
+  },
+  "score_weights": {
+    "source_identity_fidelity": 0.2,
+    "primary_form_in_clay": 0.2,
+    "canopy_hood_shoulder_transitions": 0.15,
+    "wheel_proportion_and_visible_separation": 0.1,
+    "front_and_rear_fascia": 0.15,
+    "four_nozzles": 0.05,
+    "materials_and_visible_shading": 0.1,
+    "hidden_geometry_assumptions": 0.05
+  },
+  "approved": false,
+  "approval_threshold": 9.0,
+  "critical_visual_defects": true,
+  "decision": "Not approved. The model keeps the broad white wedge, aero discs, light bars and four rear nozzles, but the source-defining windshield/canopy, hood/fender shoulders and fascia surfaces are substantially simplified. Clay renders show the losses directly. Fixing two degenerate undercarriage triangles and a 2.8 mm floor gap does not resolve these primary visible defects.",
+  "snapshot_integrity": {
+    "manifest": "art/roadster/model/review-input-v1/snapshot-manifest.json",
+    "files_verified": 21,
+    "mismatches": 0
+  },
+  "evidence_hashes": [
+    {
+      "path": "art/roadster/model/review-input-v1/roadster.glb",
+      "sha256": "5413f00bbe29c0835f55345188b78233c1660cedfd149477d9f39e98788c9afe",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/model-contract.json",
+      "sha256": "ad37c3a8ccf3ea1706e94a8dd0713dfe5cf26a09dfbfcca261369365c64cc9ba",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/glb-validation.json",
+      "sha256": "d8ee44f3cf95d4dc448082b13ab036483f20f90c06e9d187f9fa0cc27a1cbfa5",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/sections/measurement-summary.json",
+      "sha256": "ac40700fb7dcf5330367e1fd36f37af4828b179ad2ad31513ef515639136d279",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/sections/roadster-overlays.png",
+      "sha256": "e509690d2d5040dea72b1a51ae62ec3f7fc6615c10a4d852096f823e6ad8f5d0",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/sections/roadster.json",
+      "sha256": "f01603a3669cc8e88aec2d087dd5645cb324e6fd6ed72a5b7b7df540b16fae06",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/clay-quarter.png",
+      "sha256": "b74440716a38c13f841755a2915fed61343b27bad6d4eb054b464035099fcda7",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/material-quarter.png",
+      "sha256": "129b62da11bab05aba571c1437bc92248a639bfa195703b8b2fcca3f796918a4",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/clay-front.png",
+      "sha256": "f703b731892d1d3a3f4f163c575bdf1a1e91d35bd160ca784e128fcfbc803d6b",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/material-front.png",
+      "sha256": "f076424872d738bf53dc83e44bce7a47d3c4213b105c1646a9e52bb0d59e4e51",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/clay-top.png",
+      "sha256": "9788eccbf32dbc32486e00f29ce362ec792eafbaef40abddd34fbd422ff85311",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/contact.png",
+      "sha256": "b6e0169266fbb31ac83de25850676fee5fa33d12af954009854ff77c55edc575",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/clay-rear-quarter.png",
+      "sha256": "9ad5cb45adf27f8e21444c57a134ff9cfaad2744c2ecdc5bb9affac4ccd88e71",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/material-rear-quarter.png",
+      "sha256": "4924d522aa9ba069885b23d9db0215687bab7ca4d148bd4d15e547f01186bd38",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/clay-left.png",
+      "sha256": "e45e719fa9d98723cd35453d78ccc8457d831639b15dec9d85161f8212f7c131",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/material-back.png",
+      "sha256": "ffb646b87e472a16f3c3f3398a32a8c3aae3e4c96e730ad590abfd999440be16",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/clay-back.png",
+      "sha256": "205052d77bf41057da7f0f3ecf8cf7cb056472cd220420164b5849507453b092",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/material-top.png",
+      "sha256": "057ee3196d7db9d99a7f8c6788e0dbb9b8dd0fdcbb29eb53e39e6cd1d886a5c9",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/material-left.png",
+      "sha256": "7a30933a47100735d843da58792f04a3f538057b9d80aa95b7597595562bc104",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/stats.json",
+      "sha256": "bea75661c010d69cb58c9c4fe3e78ac379ec84b97afb76ec07dc144a818e9c9c",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v1/renders/inspection-small.jpg",
+      "sha256": "02654239dd176f16b1d986aca31a8dba562f6155c498c4306d08ff3052d77dcd",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/reference/contact.png",
+      "sha256": "f6c7becc42f7a39107bea2c30e4c3c89d2233fe1281e983fc2b83ef1e18a6387"
+    },
+    {
+      "path": "references/roadster/frames/D01_event_09-38.000.jpg",
+      "sha256": "d6db8cd1f2bf74f4e53788466ee3484fb7be0b334fd6bfb7d47c0ce52f829a7f"
+    },
+    {
+      "path": "references/roadster/frames/D02_event_11-01.000.jpg",
+      "sha256": "04f22ec3f9c747c79702f457d33ebd4930c01b50e96b9a36fc368b3b15bd18ac"
+    },
+    {
+      "path": "art/roadster/source-inspection/event-803.jpg",
+      "sha256": "28998a011bb95e2dacbe9a244e17f6af6618c50b2144866b9ca0d96cd60b28f1"
+    },
+    {
+      "path": "references/roadster/frames/D03_event_13-30.000.jpg",
+      "sha256": "103b066cf35df20ff861f9f4f3311e25672d13fd10e460d03f4ab427bbf41d43"
+    },
+    {
+      "path": "references/roadster/frames/A04_event_06-46.000.jpg",
+      "sha256": "a52fa64044f876538921158ce7b6509a39462f6c47790e0c44e368c376eca7ec"
+    },
+    {
+      "path": "art/roadster/reference-images/turnaround-v2.png",
+      "sha256": "ce0f4bd4610bff77d2e8c20c43b1ec0942480552e1119cb82289e37cc2e25fb0"
+    },
+    {
+      "path": "art/roadster/reference-images/front-v2.png",
+      "sha256": "6c878ede93cf3db988b3f9e16e97c1fb8153ac486f94a298a201ccc86f14077a"
+    },
+    {
+      "path": "art/roadster/reference-images/left-v2.png",
+      "sha256": "9012ba004ff1733adc0bc04539bc08308cf79283d08130968464dc18263c41e4"
+    },
+    {
+      "path": "art/roadster/reference-images/back-v2.png",
+      "sha256": "c82f8b942e7a32abbd317afa473734c362dcc25d781dfead6c82e91a95b01e15"
+    },
+    {
+      "path": "art/roadster/reference-images/right-v2.png",
+      "sha256": "f7d9357ecd8832c0a29da4517976c7150ac5c087862e9227b96bd64f96854e12"
+    }
+  ],
+  "inspection": {
+    "viewed": "Frozen contact sheet and all 12 individual material/clay renders; original D01/D02/D03/event-803/A04 frames; approved v2 sheet and front/rear images reopened; raw Tripo reference contact; section overlays.",
+    "read": "Frozen model-contract.json, measurement-summary.json, glb-validation.json and snapshot-manifest.json.",
+    "independence": "No other judge report was read or used. Model, app and frozen inputs were not edited.",
+    "not_performed": "No interactive runtime test, wheel animation test or app readiness assessment. Hidden underside was not rendered in the evidence, so it was assessed as an explicitly documented assumption."
+  },
+  "strengths": [
+    "Overall long low white car, dark aero discs, thin full-width light bars and black lower body are recognizable.",
+    "Wheelbase-to-tire diameter in the contract is approximately 4.0, agreeing with the source side profile. Four individual wheel nodes and pivots are documented; separate tire/disc silhouettes are visible.",
+    "Four rear brass nozzles are correctly counted, evenly placed and visually separate. A blank rear plate is present.",
+    "Authoring removes obvious raw generated dents/asymmetry and the contract explicitly distinguishes generated reference triangles from shipped authored surfaces.",
+    "Hidden tray, occluded tire width and nozzle interiors are disclosed as assumptions instead of asserted as video-observed facts."
+  ],
+  "priority_visible_fixes": [
+    {
+      "id": "M1",
+      "priority": 1,
+      "severity": "major",
+      "confidence": "high",
+      "feature": "Rebuild source-defining windshield, roof and side/rear glass boundaries",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v1/renders/clay-front.png",
+          "region_xyxy": [
+            195,
+            150,
+            445,
+            265
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/clay-quarter.png",
+          "region_xyxy": [
+            160,
+            130,
+            480,
+            285
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-left.png",
+          "region_xyxy": [
+            140,
+            160,
+            530,
+            240
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-top.png",
+          "region_xyxy": [
+            230,
+            35,
+            410,
+            430
+          ]
+        },
+        {
+          "path": "references/roadster/frames/D02_event_11-01.000.jpg",
+          "region_xyxy": [
+            700,
+            430,
+            1330,
+            570
+          ]
+        },
+        {
+          "path": "art/roadster/reference-images/turnaround-v2.png",
+          "feature": "Compare front and side glazing contours."
+        }
+      ],
+      "defect": "The authored windscreen has a long rounded U-shaped lower boundary and balloons smoothly into the roof, rather than the source relatively planar trapezoid windscreen with a nearly straight lower edge. Side glass stops in a vertical rectangular end, losing the pointed rear quarter-window shape. Top/rear views show the rear glass narrowing into a pronounced hourglass waist. These boundaries change the identity of the cabin even though the center side roof height is close.",
+      "correction": "Use separate controlled windshield, roof and rear hatch patches with explicit source landmarks. Rebuild the front lower glass edge, A-pillar line, pointed side-quarter glass and straighter rear hatch trapezoid. Judge the shape in clay before adding dark glass; avoid using a single global smooth trend for the entire canopy.",
+      "acceptance_evidence": "Side, front, top and quarter clay renders must retain the source cabin silhouette and aperture shapes simultaneously, without relying on dark material to hide joins."
+    },
+    {
+      "id": "M2",
+      "priority": 2,
+      "severity": "major",
+      "confidence": "high",
+      "feature": "Restore hood, fender crown and shoulder structure",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v1/renders/clay-quarter.png",
+          "region_xyxy": [
+            85,
+            190,
+            565,
+            370
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/clay-left.png",
+          "region_xyxy": [
+            80,
+            220,
+            565,
+            315
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/sections/roadster-overlays.png",
+          "feature": "Wheel-side silhouette and shoulder-plan plots show substantial visible-surface departures."
+        },
+        {
+          "path": "references/roadster/frames/D01_event_09-38.000.jpg",
+          "region_xyxy": [
+            535,
+            475,
+            1220,
+            650
+          ]
+        },
+        {
+          "path": "references/roadster/frames/D02_event_11-01.000.jpg",
+          "region_xyxy": [
+            620,
+            530,
+            1470,
+            750
+          ]
+        },
+        {
+          "path": "art/roadster/model/reference/contact.png",
+          "feature": "Raw front/quarter retain more hood/fender separation than the authored model."
+        }
+      ],
+      "defect": "The primary body reads as a high slab with a nearly straight upper side edge and a smooth swelling canopy laid over it. The source has a distinct flat wedge hood, front fender crowns and a crisp shoulder transition into the rear haunch. In clay, these planes and their intersections are weak or lost; the broad C-pillar also becomes a triangular flange. The section summary has wheel-side p90 deviation about 128 mm and shoulder-plan p90 about 121 mm, which are consistent with visible form loss, although those metrics also include assumptions.",
+      "correction": "Fit the visible hood, fender crown, belt/shoulder edge and rear haunch as separately controlled features, preserving crisp intentional creases and limited smooth transitions. Preserve the measured axle geometry while revising the shell. A close centerline side profile alone is insufficient.",
+      "acceptance_evidence": "New clay front-quarter/rear-quarter views must show the source hood/fender/shoulder planes and avoid the present slab-and-bubble impression."
+    },
+    {
+      "id": "M3",
+      "priority": 3,
+      "severity": "major",
+      "confidence": "high",
+      "feature": "Restore the front fascia and visible corner headlights",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-front.png",
+          "region_xyxy": [
+            195,
+            270,
+            445,
+            345
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/clay-front.png",
+          "region_xyxy": [
+            195,
+            270,
+            445,
+            345
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-quarter.png",
+          "region_xyxy": [
+            80,
+            260,
+            250,
+            375
+          ]
+        },
+        {
+          "path": "references/roadster/frames/D02_event_11-01.000.jpg",
+          "region_xyxy": [
+            615,
+            535,
+            1220,
+            780
+          ]
+        },
+        {
+          "path": "art/roadster/reference-images/front-v2.png",
+          "feature": "Corner lamps, angled opening jambs, splitter depth and white fender terminals."
+        }
+      ],
+      "defect": "The current face is dominated by an almost featureless upright rectangular black mouth. The source and approved references establish corner headlamps, white outer fender terminals, angled/recessed black opening sides and a lower splitter. Tiny pale strips on top of the authored nose do not reproduce the visible corner lamp identity. This is a substantial loss of face geometry, not a request to add unsupported lamp pockets.",
+      "correction": "Rebuild the lower opening with source-shaped depth and angled side transitions; add restrained corner headlamp geometry/emission in the correct positions; preserve the continuous white light bar and low splitter. Keep small speculative lamp-pocket details simple.",
+      "acceptance_evidence": "The front should remain recognizable as the source when emission is disabled and the whole model is clay."
+    },
+    {
+      "id": "M4",
+      "priority": 4,
+      "severity": "medium-major",
+      "confidence": "high",
+      "feature": "Sculpt rear white relief and diffuser depth",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-back.png",
+          "region_xyxy": [
+            195,
+            245,
+            445,
+            345
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/clay-rear-quarter.png",
+          "region_xyxy": [
+            80,
+            270,
+            285,
+            350
+          ]
+        },
+        {
+          "path": "art/roadster/source-inspection/event-803.jpg",
+          "region_xyxy": [
+            1120,
+            625,
+            1920,
+            985
+          ]
+        },
+        {
+          "path": "references/roadster/frames/D03_event_13-30.000.jpg",
+          "region_xyxy": [
+            1135,
+            585,
+            1675,
+            875
+          ]
+        },
+        {
+          "path": "art/roadster/reference-images/back-v2.png",
+          "feature": "White sculpted recess and deeper black channel assembly."
+        }
+      ],
+      "defect": "The source rear has a deep sculpted white recess/relief below the light bar, dark side pockets and a substantial curved diffuser-channel assembly. The authored rear is a flat white panel over a thin rectangular open rail grid. The four nozzles and plate help recognition but do not recover the lost bumper and diffuser volumes.",
+      "correction": "Keep the plate, four nozzles and light-bar span. Add the source white recessed relief, dark side cavities and tapering diffuser channels with visible depth. Avoid replacing the unsupported repeated fan circles with an equally generic open fence.",
+      "acceptance_evidence": "Clay back and rear-quarter views should show the rear relief and diffuser volumes without material contrast."
+    },
+    {
+      "id": "M5",
+      "priority": 5,
+      "severity": "medium",
+      "confidence": "high",
+      "feature": "Remove unintended faceting and improve dark-glass material response",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-quarter.png",
+          "region_xyxy": [
+            160,
+            130,
+            480,
+            290
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-front.png",
+          "region_xyxy": [
+            225,
+            155,
+            420,
+            265
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-top.png",
+          "region_xyxy": [
+            235,
+            40,
+            405,
+            430
+          ]
+        },
+        {
+          "path": "art/roadster/source-inspection/event-803.jpg",
+          "feature": "Smoked dark glazing with controlled broad reflections."
+        }
+      ],
+      "defect": "The canopy has conspicuous horizontal bands/planar reflection steps and reads as gray coated sheet metal in the front render. White hood/shoulder highlights also show polygonal stepping. Some source panels are intentionally angular, but these repeated bands are not intentional design creases.",
+      "correction": "After the primary surfaces are corrected, use sufficient local tessellation and consistent smooth normals on continuous glass/paint, retaining explicit hard edges at actual creases. Tune smoked glazing to remain dark under this neutral studio setup with broad controlled reflections. Do not use material changes to mask incorrect primary geometry."
+    },
+    {
+      "id": "M6",
+      "priority": 6,
+      "severity": "minor",
+      "confidence": "medium",
+      "feature": "Refine aero-disc and nozzle surface detail after form corrections",
+      "evidence": [
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-left.png",
+          "feature": "Discs lack the source segmented rim detail."
+        },
+        {
+          "path": "references/roadster/frames/A04_event_06-46.000.jpg",
+          "region_xyxy": [
+            510,
+            310,
+            715,
+            510
+          ]
+        },
+        {
+          "path": "art/roadster/model/review-input-v1/renders/material-rear-quarter.png",
+          "region_xyxy": [
+            125,
+            300,
+            245,
+            340
+          ]
+        },
+        {
+          "path": "art/roadster/source-inspection/event-803.jpg",
+          "region_xyxy": [
+            1385,
+            800,
+            1780,
+            875
+          ]
+        }
+      ],
+      "defect": "The discs are very plain dark circles with small hubs; source rims have a visible segmented perimeter. Brass nozzles are correctly four, but faceted projecting pipe ends read more mechanical/hexagonal than the smooth circular mouths in the source. These are secondary details, and source footage cannot establish exact nozzle internals.",
+      "correction": "Add restrained segmented aero-rim perimeter detail, maintain distinct rubber/disc materials, and smooth the circular nozzle lips. Retain four separate anchors and avoid inventing internal plumbing."
+    }
+  ],
+  "hidden_geometry_assumptions": {
+    "assessment": "Acceptable as bounded authored assumptions, with visual limits.",
+    "supported": "A04 supports low underside rails/sill silhouette, but not exact tray components. Rear frames establish four circular brass nozzles, not internal plumbing. Exact bilateral symmetry is a reasonable authored regularization.",
+    "uncertain": "Inner tire width, unseen tray/rails, nozzle interior depth and hidden suspension are not certified by source imagery. No underside or animation evidence was supplied to independently inspect them.",
+    "recommendation": "Keep hidden geometry simple and within observed silhouette; document assumptions and inspect an underside render before claiming complete asset QA."
+  },
+  "known_validation_issues": {
+    "degenerate_undercarriage_triangles": 2,
+    "floor_gap_mm": 2.8,
+    "visual_score_effect": "Not used as the primary reason for rejection; major visible surface and identity losses dominate.",
+    "required_before_export_acceptance": "Fix them in the stated review batch and rerun validation, alongside visible form corrections."
+  },
+  "limits": [
+    "Source event video includes glare, perspective and different stunt/show wheel styles. Black aero discs are correctly the stunt identity.",
+    "Raw Tripo geometry is a fallible secondary measurement reference; closeness to it does not prove closeness to the original vehicle.",
+    "A technically coherent 19,896-triangle authored export is useful, but triangle counts, symmetry and semantic nodes do not establish visual fidelity.",
+    "This report does not certify final app readiness, runtime integration, animation, performance or interaction behavior."
+  ]
+}

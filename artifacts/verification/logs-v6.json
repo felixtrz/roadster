@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "browser.logs",
+    "result": [
+      {
+        "timestamp": 1792270020530,
+        "level": "log",
+        "message": "                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.0.1\nThree.js r181\nEliCS v3.4.2",
+        "args": [
+          "\"                                                 \\n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \\n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \\n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \\n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \\n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \\n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \\n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \\n===============================================\\nImmersive Web SDK v1.0.1\\nThree.js r181\\nEliCS v3.4.2\""
+        ],
+        "columnNumber": 8,
+        "frameUrl": "https://localhost:8084/node_modules/@iwsdk/core/dist/index.js?v=01640845",
+        "kind": "console",
+        "lineNumber": 117,
+        "url": "https://localhost:8084/node_modules/@iwsdk/core/dist/index.js?v=01640845"
+      },
+      {
+        "timestamp": 1792270022287,
+        "level": "info",
+        "message": "Frame navigated: https://localhost:8084/?__iwsdk_preview_reload=mvcvam6a",
+        "args": [
+          "Frame navigated: https://localhost:8084/?__iwsdk_preview_reload=mvcvam6a"
+        ],
+        "frameUrl": "https://localhost:8084/?__iwsdk_preview_reload=mvcvam6a",
+        "kind": "navigation",
+        "url": "https://localhost:8084/?__iwsdk_preview_reload=mvcvam6a"
+      },
+      {
+        "timestamp": 1792270022307,
+        "level": "log",
+        "message": "[IWSDK Dev] Configuration: {device: metaQuest3, activation: localhost, verbose: false, sem: null, ai: null}",
+        "args": [
+          "\"[IWSDK Dev] Configuration:\"",
+          "{\"device\":\"metaQuest3\",\"activation\":\"localhost\",\"verbose\":false,\"sem\":null,\"ai\":null,\"workspace\":{\"enabled\":true,\"open\":true,\"headless\":false,\"devUI\":true,\"browserAutomation\":true,\"viewport\":null,\"screenshotSize\":{\"width\":800,\"height\":800}},\"userAgentException\":\"/OculusBrowser/\",\"iwer\":true,\"nativeXRControl\":false}"
+        ],
+        "columnNumber": 668509,
+        "frameUrl": "https://localhost:8084/@iwer-injection-runtime",
+        "kind": "console",
+        "lineNumber": 1044,
+        "url": "https://localhost:8084/@iwer-injection-runtime"
+      },
+      {
+        "timestamp": 1792270022457,
+        "level": "log",
+        "message": "                                                 \n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \n===============================================\nImmersive Web SDK v1.0.1\nThree.js r181\nEliCS v3.4.2",
+        "args": [
+          "\"                                                 \\n▄▄▄▄▄▄  ▄▄      ▄▄   ▄▄▄▄    ▄▄▄▄▄     ▄▄   ▄▄▄ \\n▀▀██▀▀  ██      ██ ▄█▀▀▀▀█   ██▀▀▀██   ██  ██▀  \\n  ██    ▀█▄ ██ ▄█▀ ██▄       ██    ██  ██▄██    \\n  ██     ██ ██ ██   ▀████▄   ██    ██  █████    \\n  ██     ███▀▀███       ▀██  ██    ██  ██  ██▄  \\n▄▄██▄▄   ███  ███  █▄▄▄▄▄█▀  ██▄▄▄██   ██   ██▄ \\n▀▀▀▀▀▀   ▀▀▀  ▀▀▀   ▀▀▀▀▀    ▀▀▀▀▀     ▀▀    ▀▀                                                \\n===============================================\\nImmersive Web SDK v1.0.1\\nThree.js r181\\nEliCS v3.4.2\""
+        ],
+        "columnNumber": 8,
+        "frameUrl": "https://localhost:8084/node_modules/@iwsdk/core/dist/index.js?v=01640845",
+        "kind": "console",
+        "lineNumber": 117,
+        "url": "https://localhost:8084/node_modules/@iwsdk/core/dist/index.js?v=01640845"
+      }
+    ]
+  }
+}

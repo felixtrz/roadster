@@ -1,0 +1,401 @@
+[
+  {
+    "weld_distance_m": 0,
+    "vertices": 25978,
+    "faces": 51583,
+    "materials": {
+      "PearlWhite": {
+        "faces": 43516,
+        "area": 21.621993700823317,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 34,
+          "1e-08": 100,
+          "1e-07": 268
+        }
+      },
+      "SmokedCanopy": {
+        "faces": 7134,
+        "area": 6.334099781575034,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 5,
+          "1e-08": 6,
+          "1e-07": 10
+        }
+      },
+      "DeepBlack": {
+        "faces": 392,
+        "area": 0.00932836936294379,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 1,
+          "1e-07": 5
+        }
+      },
+      "WhiteLED": {
+        "faces": 261,
+        "area": 0.011764016208250183,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 3,
+          "1e-07": 5
+        }
+      },
+      "StructuralTrim": {
+        "faces": 280,
+        "area": 0.2186367784815566,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 2
+        }
+      }
+    }
+  },
+  {
+    "weld_distance_m": 1e-06,
+    "vertices": 25968,
+    "faces": 51569,
+    "materials": {
+      "PearlWhite": {
+        "faces": 43506,
+        "area": 21.621993694563464,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 30,
+          "1e-08": 90,
+          "1e-07": 258
+        }
+      },
+      "SmokedCanopy": {
+        "faces": 7130,
+        "area": 6.3340997835096085,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 2,
+          "1e-08": 2,
+          "1e-07": 6
+        }
+      },
+      "DeepBlack": {
+        "faces": 392,
+        "area": 0.00932836936294379,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 1,
+          "1e-07": 5
+        }
+      },
+      "WhiteLED": {
+        "faces": 261,
+        "area": 0.011764016208250183,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 3,
+          "1e-07": 5
+        }
+      },
+      "StructuralTrim": {
+        "faces": 280,
+        "area": 0.2186367784815566,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 2
+        }
+      }
+    }
+  },
+  {
+    "weld_distance_m": 2e-06,
+    "vertices": 25968,
+    "faces": 51569,
+    "materials": {
+      "PearlWhite": {
+        "faces": 43506,
+        "area": 21.621993694563464,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 30,
+          "1e-08": 90,
+          "1e-07": 258
+        }
+      },
+      "SmokedCanopy": {
+        "faces": 7130,
+        "area": 6.3340997835096085,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 2,
+          "1e-08": 2,
+          "1e-07": 6
+        }
+      },
+      "DeepBlack": {
+        "faces": 392,
+        "area": 0.00932836936294379,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 1,
+          "1e-07": 5
+        }
+      },
+      "WhiteLED": {
+        "faces": 261,
+        "area": 0.011764016208250183,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 3,
+          "1e-07": 5
+        }
+      },
+      "StructuralTrim": {
+        "faces": 280,
+        "area": 0.2186367784815566,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 2
+        }
+      }
+    }
+  },
+  {
+    "weld_distance_m": 5e-06,
+    "vertices": 25960,
+    "faces": 51555,
+    "materials": {
+      "PearlWhite": {
+        "faces": 43494,
+        "area": 21.621993694441358,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 28,
+          "1e-08": 86,
+          "1e-07": 248
+        }
+      },
+      "SmokedCanopy": {
+        "faces": 7128,
+        "area": 6.3340997834150965,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 4
+        }
+      },
+      "DeepBlack": {
+        "faces": 392,
+        "area": 0.00932836936294379,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 1,
+          "1e-07": 5
+        }
+      },
+      "WhiteLED": {
+        "faces": 261,
+        "area": 0.011764016208250183,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 3,
+          "1e-07": 5
+        }
+      },
+      "StructuralTrim": {
+        "faces": 280,
+        "area": 0.2186367784815566,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 2
+        }
+      }
+    }
+  },
+  {
+    "weld_distance_m": 1e-05,
+    "vertices": 25938,
+    "faces": 51513,
+    "materials": {
+      "PearlWhite": {
+        "faces": 43452,
+        "area": 21.62199369067223,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 18,
+          "1e-08": 68,
+          "1e-07": 223
+        }
+      },
+      "SmokedCanopy": {
+        "faces": 7128,
+        "area": 6.3340997834150965,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 4
+        }
+      },
+      "DeepBlack": {
+        "faces": 392,
+        "area": 0.00932836936294379,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 1,
+          "1e-07": 5
+        }
+      },
+      "WhiteLED": {
+        "faces": 261,
+        "area": 0.011764016208250183,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 3,
+          "1e-07": 5
+        }
+      },
+      "StructuralTrim": {
+        "faces": 280,
+        "area": 0.2186367784815566,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 2
+        }
+      }
+    }
+  },
+  {
+    "weld_distance_m": 2e-05,
+    "vertices": 25904,
+    "faces": 51445,
+    "materials": {
+      "PearlWhite": {
+        "faces": 43384,
+        "area": 21.621993620073532,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 8,
+          "1e-08": 36,
+          "1e-07": 177
+        }
+      },
+      "SmokedCanopy": {
+        "faces": 7128,
+        "area": 6.334099850813486,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 4
+        }
+      },
+      "DeepBlack": {
+        "faces": 392,
+        "area": 0.00932836936294379,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 1,
+          "1e-07": 5
+        }
+      },
+      "WhiteLED": {
+        "faces": 261,
+        "area": 0.011764016208250183,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 3,
+          "1e-07": 5
+        }
+      },
+      "StructuralTrim": {
+        "faces": 280,
+        "area": 0.2186367784815566,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 2
+        }
+      }
+    }
+  },
+  {
+    "weld_distance_m": 5e-05,
+    "vertices": 25843,
+    "faces": 51323,
+    "materials": {
+      "PearlWhite": {
+        "faces": 43266,
+        "area": 21.621993626367914,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 9,
+          "1e-07": 127
+        }
+      },
+      "SmokedCanopy": {
+        "faces": 7128,
+        "area": 6.334099850813486,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 4
+        }
+      },
+      "DeepBlack": {
+        "faces": 389,
+        "area": 0.009328424859868623,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 1,
+          "1e-07": 3
+        }
+      },
+      "WhiteLED": {
+        "faces": 260,
+        "area": 0.011763929982345767,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 2,
+          "1e-07": 4
+        }
+      },
+      "StructuralTrim": {
+        "faces": 280,
+        "area": 0.2186367784815566,
+        "below_threshold": {
+          "1e-10": 0,
+          "1e-09": 0,
+          "1e-08": 0,
+          "1e-07": 2
+        }
+      }
+    }
+  }
+]

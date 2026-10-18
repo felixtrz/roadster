@@ -1,0 +1,649 @@
+{
+  "judge_id": "image_judge",
+  "model_version": "review-input-v4",
+  "review_type": "final independent model source/form/material review with exact-GLB, official-preview and actual runtime visual evidence",
+  "model_sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+  "overall_score": 9.0,
+  "weighted_score_before_rounding": 9.035,
+  "category_scores": {
+    "source_identity_fidelity": 9.0,
+    "primary_form_in_clay": 9.1,
+    "canopy_hood_shoulder_transitions": 9.1,
+    "wheel_proportion_and_visible_separation": 9.2,
+    "front_and_rear_fascia": 8.8,
+    "four_nozzles": 9.2,
+    "materials_and_visible_shading": 9.0,
+    "hidden_geometry_assumptions": 9.0
+  },
+  "score_weights": {
+    "source_identity_fidelity": 0.2,
+    "primary_form_in_clay": 0.2,
+    "canopy_hood_shoulder_transitions": 0.15,
+    "wheel_proportion_and_visible_separation": 0.1,
+    "front_and_rear_fascia": 0.15,
+    "four_nozzles": 0.05,
+    "materials_and_visible_shading": 0.1,
+    "hidden_geometry_assumptions": 0.05
+  },
+  "approved": true,
+  "approval_threshold": 9.0,
+  "critical_visual_defects": false,
+  "major_source_fidelity_defects": false,
+  "approval_scope": "Visual/source-fidelity acceptance of the exact c7efcb40 authored car model within the available event-video and approved-reference evidence. This does not certify the full application, native headset performance or animation behavior.",
+  "decision": "Approved at 9.0/10. V4 resolves the previously blocking nose, shoulder, glazing-border and runtime-surface defects while preserving the source-defining low white wedge, dark continuous canopy, aero discs, light bars and four rear nozzles. Clay, exact-GLB round-trip and actual runtime views agree. Remaining cheek/lens and rear-relief simplifications are minor at this evidence level and do not require another model revision.",
+  "snapshot_integrity": {
+    "manifest": "art/roadster/model/review-input-v4/snapshot-manifest.json",
+    "manifest_sha256": "1dc7985af88126f897e21d7c0f9ce6ccc9ce322d0bbb486d8ac35a952b0a6a60",
+    "files_verified": 81,
+    "mismatches": 0,
+    "public_glb_matches_snapshot": true
+  },
+  "independent_binary_validation": {
+    "method": "Read frozen GLB JSON/BIN accessors independently and scanned every indexed triangle in geometry-local float32-exported coordinates promoted to Python float. No author validation script was executed.",
+    "triangles": 70821,
+    "official_threshold_cross_product_squared": 1e-16,
+    "effective_degenerate_triangles": 0,
+    "minimum_triangle_area_m2": 6.4148287825123694e-09
+  },
+  "evidence_hashes": [
+    {
+      "path": "art/roadster/model/review-input-v4/roadster.glb",
+      "sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/Roadster.blend",
+      "sha256": "c49d605d7e7a150b5b7416e1696ed0c2bc5c8c0c17702943906d091a0f692d97",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/model-contract.json",
+      "sha256": "210e6dd2e80987a97d153a1236335ae79349cacfd2c7535d4ec84d5e0ca37bf1",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/glb-validation.json",
+      "sha256": "44eb5c07b8c94a0915ad1c540bfdb16298afa1f0dca1c251444204c7e7a18cb9",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/README.md",
+      "sha256": "ff67f31147cc5dccad433a7aca006f65dc66cee3ec592f558567fb9daf3fac72",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/source-comparison.png",
+      "sha256": "ced0e71d5de55540dd614596d205a79a699f915fa1757c6a4439460dc01a14b3",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/cameras.json",
+      "sha256": "f38ae6d982a6b50556dc336b6b7db8c0d35954f59f6265f170dc4ec746a6b685",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-back.png",
+      "sha256": "f5922235a7d9fec50a0c9788c4c6a45f03c9bb8ae9e0524d92575d47211bc55f",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-front.png",
+      "sha256": "7d82bd99f04c04f57f7a1069c0364372c95cb717d725a95865102c48945f614a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-left.png",
+      "sha256": "0c462559f205c2d8996611c441948cd420fe8bd7b7cdd2fe47f018ea706d64fd",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-low-front.png",
+      "sha256": "3146fff399dfd67737db6f7b61adc24c6ce71e08850e21658dc684ec7985f343",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-low-quarter.png",
+      "sha256": "6b9dc827d13b920f9c37882262271aac138f65d0a1afe7933b268a3b76d57f83",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-quarter.png",
+      "sha256": "8aa7508f1fe827ef7018c8eaf5378486e4629527295594886fd756434e39b663",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-rear-quarter.png",
+      "sha256": "164846eb07170ab05d29fcb15433a54b56ffbd3e6da202a77badf0cfb0c98226",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-top.png",
+      "sha256": "ee5ff6bd0f62a10bee7995bdbcf07b95a83d9e1d5cb3b497b39aaf7927ac6ab5",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/clay-underside.png",
+      "sha256": "6c7e695d578a079ada7de1b6b33b44bc5040814d5d59cbe838564bfcfb0dd945",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/contact.png",
+      "sha256": "ed09d9862620d2bf70312a235fe0865af7407d285bb55eb6cb712a6a3fef5d6f",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-back.png",
+      "sha256": "59cff17ddf30a4b1c52ce52f4c7ed599864455697c1ca19d13d406fa28b19da1",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-front.png",
+      "sha256": "2f23c67768b656af20f21c07036a31a6546717fe55d625b7760bcbfbd48aed9d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-left.png",
+      "sha256": "f5e099b24e82b65218005581f93c30de146f5ef54253c31edf3b47611936da80",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-low-front.png",
+      "sha256": "2fbb1d605d9ee6e7260da1f9d1d9ba16caaa9e4fbecb7271161a57a944035fdd",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-low-quarter.png",
+      "sha256": "0e868c136c7ba9aa3d1a1f1810a3569af4a72f89b73e025196924b23736e68e2",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-quarter.png",
+      "sha256": "954ffbb18fc6cf7d3453aaf5c5480bfa700ab95d31859ddbc5f328249d2f0df8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-rear-quarter.png",
+      "sha256": "317255c6f7b1f3f667e9df6f8ad3a4023f5a9b0bac0138fa56b06f114a91c0b9",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-top.png",
+      "sha256": "8bbba6ac747257247d1c2be1f94668b60b3e56426fc86b80eff59247e04887b1",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/material-underside.png",
+      "sha256": "7002fa17e0b82657b0b60199df7a3087006f405162b510a5bdc6607cb4ff5e36",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/renders/stats.json",
+      "sha256": "a8628b3b991f6f14d42eafc6f1dd1dc423b8c8e09fb50a738a88f91aac77ef65",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/cameras.json",
+      "sha256": "438f3c5aebf3027c68de85b3a6a6b053f028db038e462876b0f7600df0bab472",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/clay-front.png",
+      "sha256": "93bad92aaf55af90f9ee011e9254df5b57493c694b23693d2e44a65cb6295463",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/clay-low-front.png",
+      "sha256": "5cf8dab56eb5b5dbe742171bce9181ac2d8a8e974c9239191f09eb87383a03f8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/clay-low-quarter.png",
+      "sha256": "2357bb8b5ed8a09d57b448aaeb65dce85aecdab8d67a6620dc73a959bdfcd2f3",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/clay-quarter.png",
+      "sha256": "28c1b905f34a33a60ba7dceddd933268c8c2c937d513094fe862c620b7f6b8e0",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/clay-rear-quarter.png",
+      "sha256": "2cf99305e174bdd8820765a8a72b6905cf2119bcb70c2f15521996da700206aa",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/material-front.png",
+      "sha256": "48bdc8c8e727c190007e9e7f145d9c9341b98ef13f3886c2ca3ac3667ba11df4",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/material-low-front.png",
+      "sha256": "9ab51fa7d05328d5947e264631956657b1093d10111d33598206e07f6378cfdf",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/material-low-quarter.png",
+      "sha256": "17709b1a188e06dd8aa47c985b646a6782c6074396bb24df802d03cd887e6728",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/material-quarter.png",
+      "sha256": "69c43f67b2c8e994534e7c4d729bb07a6c1ece68f53b0bceda7cc836da103f09",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-glb-renders/material-rear-quarter.png",
+      "sha256": "e69e329011dec422aed4cd652f00286310b3947e7b8769dc39cf9a612b5fe0b6",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-captures/asset-preview/roadster-clay.json",
+      "sha256": "7993410e9ab730062c6089b87b9072b8172af3c0ca6322012e8d75d7a150c8b1",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-captures/asset-preview/roadster-clay.png",
+      "sha256": "6b66b8856fcd2740bc07f46830857c2214a51281b36604b0cc2cd6189daa7f8a",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-captures/asset-preview/roadster-material.json",
+      "sha256": "144e5517d9ea4c7f3872c98c40c2a57ce977a07ea36a8ad4cf5d5ae724979311",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-captures/asset-preview/roadster-material.png",
+      "sha256": "36d8f9777ec51a71dc2f6c152faba003ba28eb81ea1dde223e5a493a326b9ffb",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-captures/capture.json",
+      "sha256": "0ad9d7a138beb8ab8b40e3c19cbe40b3959b978d80c9706256b7d7c2d1a747c6",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/runtime-captures/car.png",
+      "sha256": "7f69bace92638f30c640d256671b62377caac9bbab9316d352744e5dd67cbed8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/sections/measurement-log.txt",
+      "sha256": "a122b0189d1b7d5ebac9d35bb4be9f4f916a14a90d209ad2a02e7dae8bcb2b77",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/sections/measurement-summary.json",
+      "sha256": "a79cf2583e7926f7a1bd31bbd4ae7ec715293f26fc10e207c73b3ce5a55b9914",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/sections/roadster-overlays.png",
+      "sha256": "21b282ad753b89de461f664ce2c47bc66b05ace7a8735879d228592ac2bba698",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/sections/roadster.json",
+      "sha256": "dede88dea9a15cb4874c3a35af430e816b8c4d67230c15c7f2a9d21ec3174db1",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/fair-body-v4.json",
+      "sha256": "a0b5468f5b5017cc4c1dff8765e60fb94cbc72548ca46f5737e796ac6130cf98",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/form-validation-v4.json",
+      "sha256": "cb67bc58016ecd8b473e05b6cda5d1566dadaf356f3a00914978208dec315819",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/material-side-audit-v4.json",
+      "sha256": "0b2bcb1752122b2108ff01d1eac7bece115ce9c12fd90a1d8b1e80876b4b8473",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/roadster.json",
+      "sha256": "74ba693338691ad42e4cc23b7fada1f8faf7e2df2fe972984fbe91a64c4be4cd",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/side-glass-plane-v4.json",
+      "sha256": "93999fd533f380977ac5f70e1593417982b32c2a0e4e327e414627bafe0afe85",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/side-glass-projection-v4.json",
+      "sha256": "b089147b81f6c25f91b0973313880b2932a81101004a9ae809eaaefe2591ef39",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/sliver-cleanup-v4.json",
+      "sha256": "3fa23946c274c7551559ae8875d37c2c357fa09dd93e84d8570c03b2c26b18ed",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/surface-ownership-v4.json",
+      "sha256": "f56d4f2c84ca10e9546e14246ee49cb4eacf78ae7171084551b27c4f040739f2",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/fit/surface-patches.json",
+      "sha256": "031346208d8a9f600c66a099d65b81efdae5d7f5593e8ace3e248e7af8529c26",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/audit_material_sides.py",
+      "sha256": "7628b759322061d217d00f9db77663106ebb2d130414c88f6cb004638a9086aa",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/build_roadster.py",
+      "sha256": "e5a6f6a19c06bdb668f9bc09f0cdaaa4f27c361fa647cce1ec083e392935e033",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/cleanup_geometry.py",
+      "sha256": "a3610c09593352b21ad9fc7bdbdd4c382241936600dd13ba098c34c301fdba35",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/diagnose_cut_slivers.py",
+      "sha256": "d8a8fd2ffdae8ececd6e6524ae55ecfaa5c287ee3e41922fc7e5d424233f41aa",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/diagnose_surface_ownership.py",
+      "sha256": "dc80e431f5e1fcd2d1fd504857bab584a8f1fb79854d3eee2841373571b6f3f1",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/facade_refinements.py",
+      "sha256": "ae91b2201e6ef93cdd8350d963eee132ad5225c60c31b42558645e3feb25dac8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/fair_body.py",
+      "sha256": "adaf159aa8e9e0990f234eb712187e350c30d0b5af9c92afa32b680ce950fc94",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/fit_fair_body.py",
+      "sha256": "b6f10c1ded3e0aa12ff83cc195acdfaf095c686d49ad738c7c52131e8eb7e063",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/fit_roadster.py",
+      "sha256": "770b76c08b9e4fa096aab777f75f713a35fb53bd2addc245357c87f62f56f832",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/fit_side_glass_plane.py",
+      "sha256": "b7c94365fd80100457e1142dc113e53f3c8422295c48d7c14032e3ec71898df9",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/fit_surface_patches.py",
+      "sha256": "19937391340d6988443971a9eb5a6b0fc292a0fd2f0fd41d65e9cddc002a4cb8",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/freeze_review.py",
+      "sha256": "6b055fbc811fc84817ea351afd242bb4597629df17b64bf7a9a7423ac67beb53",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/make_review_sheets.py",
+      "sha256": "9cb77b78ea9db9f8248d3e75663ed2039cd60b1e28642464a7a28b969ffa6c6d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/measure_roadster.py",
+      "sha256": "3801c741dac3afba4bdbbcec6e71e5911d580a4dea907b4be9392aec78aa39a1",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/model_lib.py",
+      "sha256": "6a3c2acbabe0bcbd313adb5ed9b34c3b9e095509fdd0ad1db76e02615ddfa30b",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/plot_measurements.py",
+      "sha256": "c9a122988ca208ca1b0d2c099978fc882da70078447c90008cc2245fc79f7aac",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/refresh_review_evidence.py",
+      "sha256": "271176d371e620484cb436e6abf63e7c883b181eb18e0ff38bf979b9b45d277d",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/render_authored.py",
+      "sha256": "73764a56d8704e8cc3d2193fd36af34438159f6bc62b1bc14fd18e516f7e07e0",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/render_reference.py",
+      "sha256": "701fd94d4b0c038a3850f5ec5ea6b71803129dabddc70a0bfeb51483bf684e6b",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/render_runtime_glb.py",
+      "sha256": "71d0ca131607cf4c156c3fda922016592c3bb4c6f2a7421e877a68b18dc56cfb",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/render_underside.py",
+      "sha256": "6aba447a8032b5a0e8225fe1a8df1d66b7ed3cb136a037a20ee566c458b81614",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/setup_reference.py",
+      "sha256": "11f406aebe742c245161010dc80b0198a0b96d4b3a58dcd5951a67be7503d838",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/validate_glb.py",
+      "sha256": "cd5df8839f195d092ce65973d8ed775f2de87b98848ffa274425e5b62e27ea26",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "art/roadster/model/review-input-v4/scripts/verify_form.py",
+      "sha256": "3f4f5d460657b9b8426c7dbc371a5d4cb4575a873c7e5dcdabd9819096712e4e",
+      "matches_frozen_manifest": true
+    },
+    {
+      "path": "public/models/roadster.glb",
+      "sha256": "c7efcb40038e54845c262cef6ecfeef52b97288e23312aaba112077faa43701a"
+    },
+    {
+      "path": "artifacts/final-validation/xr-car.png",
+      "sha256": "c8646f5f65e5aee363c888210df0b729a1ace77fb5903fd748c9971157e9bd66"
+    },
+    {
+      "path": "references/roadster/frames/D01_event_09-38.000.jpg",
+      "sha256": "d6db8cd1f2bf74f4e53788466ee3484fb7be0b334fd6bfb7d47c0ce52f829a7f"
+    },
+    {
+      "path": "references/roadster/frames/D02_event_11-01.000.jpg",
+      "sha256": "04f22ec3f9c747c79702f457d33ebd4930c01b50e96b9a36fc368b3b15bd18ac"
+    },
+    {
+      "path": "references/roadster/frames/D03_event_13-30.000.jpg",
+      "sha256": "103b066cf35df20ff861f9f4f3311e25672d13fd10e460d03f4ab427bbf41d43"
+    },
+    {
+      "path": "art/roadster/source-inspection/event-803.jpg",
+      "sha256": "28998a011bb95e2dacbe9a244e17f6af6618c50b2144866b9ca0d96cd60b28f1"
+    },
+    {
+      "path": "references/roadster/frames/A04_event_06-46.000.jpg",
+      "sha256": "a52fa64044f876538921158ce7b6509a39462f6c47790e0c44e368c376eca7ec"
+    },
+    {
+      "path": "art/roadster/reference-images/turnaround-v2.png",
+      "sha256": "ce0f4bd4610bff77d2e8c20c43b1ec0942480552e1119cb82289e37cc2e25fb0"
+    },
+    {
+      "path": "art/roadster/reference-images/front-v2.png",
+      "sha256": "6c878ede93cf3db988b3f9e16e97c1fb8153ac486f94a298a201ccc86f14077a"
+    },
+    {
+      "path": "art/roadster/reference-images/left-v2.png",
+      "sha256": "9012ba004ff1733adc0bc04539bc08308cf79283d08130968464dc18263c41e4"
+    },
+    {
+      "path": "art/roadster/reference-images/back-v2.png",
+      "sha256": "c82f8b942e7a32abbd317afa473734c362dcc25d781dfead6c82e91a95b01e15"
+    },
+    {
+      "path": "art/roadster/reference-images/right-v2.png",
+      "sha256": "f7d9357ecd8832c0a29da4517976c7150ac5c087862e9227b96bd64f96854e12"
+    }
+  ],
+  "inspection": {
+    "frozen_visuals": "Viewed all18 individual clay/material renders including low front/quarter and underside, all10 exact-GLB round-trip renders,8-view same-camera generated-reference comparison, section overlays, actual c7 Car capture, and official material/clay preview sheets.",
+    "actual_source": "Reopened D01 side, D02 front-quarter, event-803 closed-door rear-quarter, D03 rear/nozzles and A04 inverted aero-disc/underbody frames; compared with the approved v2 sheet and reference views.",
+    "supplemental_visual": "Viewed artifacts/final-validation/xr-car.png separately from the frozen bundle; recorded its hash. It provides an additional actual-runtime front-quarter angle. I did not operate XR or verify the controller sequence myself.",
+    "read": "Frozen validation, capture metadata, form-continuity diagnostics, shared glass plane/ownership diagnostics, sliver cleanup and material-sidedness audit. Technical metadata was treated as supporting evidence, not a visual score.",
+    "independence": "No other judge report was consulted. No model/app/source image/frozen file was edited; only this report was written. No browser automation was used.",
+    "score_basis": "The same category weights as v1-v3 were used. The score reflects the final forms and absence of the concrete previous defects, not iteration count, a desired number or unrelated app-test scores."
+  },
+  "source_fidelity_evidence": [
+    {
+      "feature": "Low wedge, declining nose and controlled shoulder",
+      "source": [
+        "references/roadster/frames/D01_event_09-38.000.jpg",
+        "references/roadster/frames/D02_event_11-01.000.jpg"
+      ],
+      "model": [
+        "art/roadster/model/review-input-v4/renders/clay-left.png",
+        "art/roadster/model/review-input-v4/renders/clay-quarter.png",
+        "art/roadster/model/review-input-v4/renders/clay-low-quarter.png"
+      ],
+      "judgement": "The former upturned nose lip/horns are gone. The nose declines into the front opening; front crown, hood and shoulder now form a coherent wedge. The wrong door-center shoulder sag and visible vertical fitting ripples are gone. Broad planar side surfaces are consistent with the source angular body rather than a smooth inflated proxy."
+    },
+    {
+      "feature": "Canopy, pointed side aperture and thin front frame",
+      "source": [
+        "references/roadster/frames/D01_event_09-38.000.jpg",
+        "references/roadster/frames/D02_event_11-01.000.jpg",
+        "art/roadster/source-inspection/event-803.jpg"
+      ],
+      "model": [
+        "art/roadster/model/review-input-v4/renders/material-left.png",
+        "art/roadster/model/review-input-v4/renders/material-quarter.png",
+        "art/roadster/model/review-input-v4/renders/material-rear-quarter.png",
+        "art/roadster/model/review-input-v4/runtime-captures/car.png"
+      ],
+      "judgement": "Straight source-related windscreen base, controlled roof/hatch profile and pointed rear side glass are retained. The overly broad white A-pillar has been replaced by a thin continuous white frame and dark structural trim. Glass no longer has the large spurious gray triangle, depth speckles, nicks or abrupt white-border-width jumps observed earlier."
+    },
+    {
+      "feature": "Front identity and low-view junctions",
+      "source": [
+        "references/roadster/frames/D02_event_11-01.000.jpg",
+        "art/roadster/reference-images/front-v2.png"
+      ],
+      "model": [
+        "art/roadster/model/review-input-v4/renders/material-front.png",
+        "art/roadster/model/review-input-v4/runtime-glb-renders/material-low-front.png",
+        "art/roadster/model/review-input-v4/runtime-glb-renders/material-low-quarter.png",
+        "artifacts/final-validation/xr-car.png"
+      ],
+      "judgement": "Both corner lenses now read as deliberately placed triangular lamp shapes, and the full-width white bar is distinct against its dark recess. The black opening, cheeks and short integrated splitter remain clean from low angles. No broken overlapping fascia strip or serrated far-intake edge is visible. Lens/cheek sculpting is simplified relative to the real car and remains the weakest category, but the previous blank-front identity loss is resolved."
+    },
+    {
+      "feature": "Wheels, plate, rear lamps and four nozzles",
+      "source": [
+        "references/roadster/frames/D01_event_09-38.000.jpg",
+        "references/roadster/frames/A04_event_06-46.000.jpg",
+        "art/roadster/source-inspection/event-803.jpg",
+        "references/roadster/frames/D03_event_13-30.000.jpg"
+      ],
+      "model": [
+        "art/roadster/model/review-input-v4/renders/material-left.png",
+        "art/roadster/model/review-input-v4/renders/material-back.png",
+        "art/roadster/model/review-input-v4/renders/clay-rear-quarter.png"
+      ],
+      "judgement": "Aero discs with segmented perimeters, small hubs and separate tire silhouettes match the stunt configuration without mixing in show-car spokes. Wheelbase/tire diameter remains about4.0. Blank raised rear plate, continuous red bar with brighter center segment and exactly four brass circular nozzle mouths are present. Curved lower channels are now contained by a coherent diffuser envelope instead of hanging loose-looking scoops."
+    }
+  ],
+  "previous_blocker_recheck": [
+    {
+      "issue": "Rounded U windscreen, abrupt rectangular side glass and hourglass rear hatch",
+      "status": "resolved in final controlled apertures and canopy."
+    },
+    {
+      "issue": "Upturned nose cap, front horns and disconnected fascia layers",
+      "status": "resolved; monotonic declining nose and clean short splitter visible in clay/low views."
+    },
+    {
+      "issue": "Shoulder sag, body surface waves and local highlight ripples",
+      "status": "resolved to acceptance level by coherent rising shoulder/planar door surfaces."
+    },
+    {
+      "issue": "Dense windshield/side-glass depth speckling",
+      "status": "absent in frozen actual runtime capture and supplemental XR view."
+    },
+    {
+      "issue": "Gray triangular side-glass reflection/facet break",
+      "status": "absent after coherent shared glass plane repair."
+    },
+    {
+      "issue": "Excessively broad white A-frame",
+      "status": "resolved to source-related thin white frame with dark trim."
+    },
+    {
+      "issue": "Jagged white rocker run and far-intake serrated fringe",
+      "status": "absent in the exact current runtime capture."
+    },
+    {
+      "issue": "Effective-zero cut slivers under official preview threshold",
+      "status": "zero in my independent frozen-GLB scan; source shape visually preserved."
+    }
+  ],
+  "priority_visible_fixes": [],
+  "optional_refinements": [
+    {
+      "id": "V4-N1",
+      "severity": "minor",
+      "feature": "Cheek/lens finish",
+      "evidence": [
+        "art/roadster/model/review-input-v4/runtime-glb-renders/material-low-front.png",
+        "artifacts/final-validation/xr-car.png",
+        "references/roadster/frames/D02_event_11-01.000.jpg"
+      ],
+      "note": "The corner lenses and outer cheeks remain simplified and less sculpted than the event car. Actual source glare obscures exact lens housing geometry. A later close-up asset pass could refine these without changing the accepted wedge, frame or intake ownership. This is not an acceptance blocker."
+    },
+    {
+      "id": "V4-N2",
+      "severity": "minor",
+      "feature": "Rear relief/channel detail",
+      "evidence": [
+        "art/roadster/model/review-input-v4/renders/material-back.png",
+        "art/roadster/source-inspection/event-803.jpg"
+      ],
+      "note": "The white recess and dark channels are regularized relative to the curved carbon source surfaces. Their main silhouette, depth, nozzle count and containment are now correct enough; exact unseen channel internals/count should not be invented."
+    },
+    {
+      "id": "V4-N3",
+      "severity": "minor",
+      "feature": "Close wheel material finish",
+      "evidence": [
+        "art/roadster/model/review-input-v4/runtime-captures/car.png",
+        "references/roadster/frames/A04_event_06-46.000.jpg"
+      ],
+      "note": "At close runtime scale the dark aero discs show some radial specular segmentation. It is modest and does not change the disc identity; a future normal/material polish could make the broad reflection quieter."
+    }
+  ],
+  "hidden_geometry_assumptions": {
+    "assessment": "Bounded and acceptable for this authored asset.",
+    "basis": "A04 supports low sill/rail silhouette but not exact mechanical internals. Underside views show a simple tray and wheel clearances. Opaque smoked glazing avoids an invented detailed interior; nozzle interiors and occluded tire widths are documented assumptions.",
+    "limits": "Approval does not certify exact hidden underbody/suspension or inside-lens geometry. No penalty was imposed merely for refusing to invent those unobserved details."
+  },
+  "technical_evidence_limits": [
+    "Section distances are one-sided comparisons to generated Tripo geometry, not calibrated real-car dimensions. Their relatively large wheel-side/shoulder differences include deliberate fairing and hidden geometry; they were not treated as automatic pass/fail metrics.",
+    "Double-sided materials are documented for shared skins, open cavities and thin sheets. They can incur optional rendering cost; this judge did not find a visible defect caused by those flags and did not certify native-device performance.",
+    "Exact GLB round-trip parity and clean actual runtime views address the earlier mismatch between offline cleanliness and runtime corruption.",
+    "The supplemental XR screenshot demonstrates the car appearance from that additional runtime view only. Playback, controller interaction, native headset performance and the overall application require their own evidence."
+  ]
+}

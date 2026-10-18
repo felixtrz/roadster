@@ -1,0 +1,38 @@
+{
+  "results": [
+    {
+      "name": "04-reorient",
+      "time": 9.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final4/04-reorient.png",
+      "state": {
+        "time": 9.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "04b-flip",
+      "time": 9,
+      "view": 0,
+      "file": "artifacts/overhaul/final4/04b-flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.33408127648965,
+  "info": {
+    "frame": 14094,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

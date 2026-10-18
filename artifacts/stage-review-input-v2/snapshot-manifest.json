@@ -1,0 +1,130 @@
+{
+  "version": 2,
+  "files": [
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-ready.png",
+      "bytes": 482027,
+      "sha256": "221cae9e1e37fbbced01cd070a5e495d2fe66836b479b41facfbd0e6919e8076"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-climb.png",
+      "bytes": 488252,
+      "sha256": "0ebf209cfab3e512e3feeaca55023ef9ddb62735a5ae406573b80221dc4c5356"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-release.png",
+      "bytes": 489994,
+      "sha256": "a27740acbaa749567664f0400349bc821c4201e64635b8cdbe39acd7a1347496"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-flip.png",
+      "bytes": 498274,
+      "sha256": "761d16aa2e6bc6e3f22ce5562f64cf7d498af011eedb22777a7b098fbf9035d0"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-jets.png",
+      "bytes": 484303,
+      "sha256": "05d3983df97c06b747d944f9580f216276fd1e724fdec7315890051604bfb170"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-descent.png",
+      "bytes": 447703,
+      "sha256": "4155a67c4284914bb44d56280e98ae4455310cdc332695862e1ad8f24782c80f"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-landing.png",
+      "bytes": 437159,
+      "sha256": "da22a5820db598457743ce600c4d377310f01551f660aed972f28c0c3dcfb7e3"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-clearance.png",
+      "bytes": 428369,
+      "sha256": "457e02066d18431c5749b556f25fad8ce7191379aec36af3d23ebb5fe5a05fa1"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-end.png",
+      "bytes": 357769,
+      "sha256": "98cdf73463963ece11c7c083c92188e861dbe63dc820f4c135858fdff4e8fba8"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-car.png",
+      "bytes": 564251,
+      "sha256": "a3da69aff0ceef49a04f78b4ce64f80597b06c9d594573878b9f964ccdaf678a"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-wide.png",
+      "bytes": 569450,
+      "sha256": "adba08e5930bf055c2f39106a119649c554684a8807c3db0984ab1d725cc7d0e"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-wide-end.png",
+      "bytes": 464988,
+      "sha256": "b0438ec70ec9652e4215f277cd83d228a947939a314f79f5ed4da8b9586fd809"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/landscape-overhead.png",
+      "bytes": 1071551,
+      "sha256": "605b97078b30685304c03d138b3148063b4e27c92bef31cd9d488a9df7ea8e6a"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/portrait-release.png",
+      "bytes": 379175,
+      "sha256": "f12dabc41ae391e599e91365990ce41d13fb3eda32c1f2692ad90d9cae1ad81d"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/portrait-descent.png",
+      "bytes": 318201,
+      "sha256": "b813fee4107316431ba4dfa8240eb283f91d82dab434bcb345cecd879b5fed86"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/portrait-landing.png",
+      "bytes": 319081,
+      "sha256": "8d45fcfef280de2cb1cbca393fcbad1d2006ecfd060c3aeeebadeee6210f8e27"
+    },
+    {
+      "path": "artifacts/stage-review-input-v2/portrait-wide-end.png",
+      "bytes": 145603,
+      "sha256": "bc7ef2894bb1695fa3a8b86c0dfa0aa4df6ffe0122c3634649f34ef15fb9f1d0"
+    },
+    {
+      "path": "src/replay-system.ts",
+      "bytes": 6335,
+      "sha256": "b1c87428cc108657caec54f450d16e824123acf21bb161fd1571c9734f33e7b0"
+    },
+    {
+      "path": "src/replay-effects.ts",
+      "bytes": 4909,
+      "sha256": "ab80775b1fc2dad9b29859b614a4e833a8d985546a13b0b6754c40598c39bba5"
+    },
+    {
+      "path": "src/scene-assets/stage.scene-asset.ts",
+      "bytes": 7716,
+      "sha256": "e6675fec5fbe3bad71730cee081dcd6bcda8fa42fdfe243664a5ee4ac2ee26fe"
+    },
+    {
+      "path": "src/scene-assets/effects.scene-asset.ts",
+      "bytes": 4382,
+      "sha256": "a4d688fb7c1e7512a94fd929912147b2ec56f30c17ab405cb73d3a7178bde190"
+    },
+    {
+      "path": "public/scenes/main.iwsdk.scene.json",
+      "bytes": 7519,
+      "sha256": "0b54536bae3aee1e112bca51c1d2465075c99bac70984ea207b809ec3b48f683"
+    },
+    {
+      "path": "public/models/roadster.glb",
+      "bytes": 1172272,
+      "sha256": "ad823e98eebb6b9c69de0423215cba17f135f86f754638eb8f0413b31b3212ac"
+    },
+    {
+      "path": "public/ui/replay.uikitml",
+      "bytes": 1657,
+      "sha256": "b078498a0d1ed94a19eccd1931a90527827fdd058097ff4893feb7871e14e8db"
+    },
+    {
+      "path": "references/roadster/reconstruction/reconstruction.json",
+      "bytes": 382400,
+      "sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+    }
+  ]
+}

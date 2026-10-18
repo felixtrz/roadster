@@ -1,0 +1,51 @@
+{
+  "results": [
+    {
+      "name": "cv0",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/verification/carview/cv0.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "cv13",
+      "time": 13.5,
+      "view": 2,
+      "file": "artifacts/verification/carview/cv13.png",
+      "state": {
+        "time": 13.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "show0",
+      "time": 0.5,
+      "view": 0,
+      "file": "artifacts/verification/carview/show0.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 54.27205735933342,
+  "info": {
+    "frame": 12122,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

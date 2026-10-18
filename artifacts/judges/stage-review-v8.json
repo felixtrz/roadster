@@ -1,0 +1,281 @@
+{
+  "judge_id": "image_geometry_judge",
+  "reviewed_at_utc": "2026-10-17T21:12:45.700836+00:00",
+  "target_score": 9,
+  "approved": false,
+  "scope_exclusions": [
+    "Car hero form/geometry/material quality",
+    "CV metric accuracy or uniquely measured 6DoF",
+    "Native XR performance"
+  ],
+  "evidence": {
+    "stage_manifest": {
+      "path": "artifacts/stage-review-input-v8/snapshot-manifest.json",
+      "bytes": 4903,
+      "sha256": "5ce1229de3a1def88252f389cf3835f863d1e78e70a9f9b791d7ca5f635a17ed"
+    },
+    "initial_manifest_verification": {
+      "matched": 27,
+      "total": 27,
+      "mismatches": []
+    },
+    "final_frozen_still_hash_recheck": {
+      "matched": 17,
+      "total": 17,
+      "mismatches": []
+    },
+    "reviewed_manifest_entries": [
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-ready.png",
+        "bytes": 448411,
+        "sha256": "e6fc680cda0d3809d1f4c36487b3422d879db2497414fcbed833d50bd8190daa"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-climb.png",
+        "bytes": 448061,
+        "sha256": "da6ccbadbae1d1c7e04023cdb3bbc5ebb8121c3ac2585c04ff1cacc2779b7f60"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-release.png",
+        "bytes": 452146,
+        "sha256": "001c3afd9d2e39150d2036032bd6e96cc41e300573e0c2edf5b36f55d0b8b87e"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-flip.png",
+        "bytes": 458545,
+        "sha256": "6329be430961baa9fda5dd1603d09348261d6b0a80279ed5da541bc34715d345"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-jets.png",
+        "bytes": 445927,
+        "sha256": "eaa27e082df6dc9ee02b25837367001bb3f45962db5f4bdb1887576c3accdb93"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-descent.png",
+        "bytes": 430191,
+        "sha256": "70a8838ae7f8af171a29c02e0872e1dde91a679b7446c0ba200ab8fd56155f4d"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-landing.png",
+        "bytes": 471218,
+        "sha256": "ff9f3cbfd8ff82ebc104aae30b89ce9e5c7e3914fe320f390b1dd889681709e1"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-clearance.png",
+        "bytes": 444520,
+        "sha256": "ebd043ba72122476cb892072514f8b1888f7575ba13d1b513fdd8d9477972eba"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-end.png",
+        "bytes": 281946,
+        "sha256": "e9179cf30e76ab523818e69a83fabb22a14735999188f30b3859e1706129d1c0"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-car.png",
+        "bytes": 320113,
+        "sha256": "687d367263e643a2f57b1a8334d32632c64bde9de28bf6b469bc157151abc851"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-wide.png",
+        "bytes": 492095,
+        "sha256": "97c771e1d7a9fb062a14183c0451dd5ee4248e9bad444fba7bf0f2099687e93e"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-wide-end.png",
+        "bytes": 236125,
+        "sha256": "078076467a1aca55ceb1323dd5e67f76e8767a5e2a570aaafd3bdf36f273687a"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/landscape-overhead.png",
+        "bytes": 856333,
+        "sha256": "4b4146bbc7e24ffbb0ec3eb0b95ed6997633cfd5b1ac7883580008c72d56a529"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/portrait-release.png",
+        "bytes": 364373,
+        "sha256": "f5159d7b09353afd0ae5d032e3197dffdc67891ca81a88e5851b1878e25a6e9c"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/portrait-descent.png",
+        "bytes": 333697,
+        "sha256": "e2f6bedd502820b6c4d03ae7d0a94d7f8d56b39e14d435f9532ac80c1589eb23"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/portrait-landing.png",
+        "bytes": 369060,
+        "sha256": "074848bd3b124e16754370d1be70d3d34cd36643324f1ce3e45855f2f2055288"
+      },
+      {
+        "path": "artifacts/stage-review-input-v8/portrait-wide-end.png",
+        "bytes": 107310,
+        "sha256": "e1cf6aa1891f68e275f496e79aee07ccde651c5a5f01ce3b9f076638cc5d1db4"
+      },
+      {
+        "path": "src/replay-system.ts",
+        "bytes": 7028,
+        "sha256": "0e7453ea784874ec12cdb741ee9a96e4af422282c1c849de6d3290978086c90e"
+      },
+      {
+        "path": "src/replay-effects.ts",
+        "bytes": 6326,
+        "sha256": "4fb9c2519ca0ca6b830fa6065c2c3fc5992437e76f05adde03bb82ed83e41da8"
+      },
+      {
+        "path": "src/scene-assets/stage.scene-asset.ts",
+        "bytes": 10383,
+        "sha256": "0a44339dabf7085d12a5efa023fd96a36260d0b21c647afbb095b90cdf0f632e"
+      },
+      {
+        "path": "src/scene-assets/effects.scene-asset.ts",
+        "bytes": 6222,
+        "sha256": "be4270f324f62e34eeea134a9a7cc65feaa4378d97a66031ad05554e5184f492"
+      },
+      {
+        "path": "public/scenes/main.iwsdk.scene.json",
+        "bytes": 7622,
+        "sha256": "077bc6aeee50703b6a7036cf5722c508ff85af393f332843b80e80a30e60a1b4"
+      },
+      {
+        "path": "public/models/roadster.glb",
+        "bytes": 1381564,
+        "sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4"
+      },
+      {
+        "path": "public/ui/replay.uikitml",
+        "bytes": 1657,
+        "sha256": "b078498a0d1ed94a19eccd1931a90527827fdd058097ff4893feb7871e14e8db"
+      },
+      {
+        "path": "public/textures/vapor-atlas.png",
+        "bytes": 1602259,
+        "sha256": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153"
+      },
+      {
+        "path": "src/assets.ts",
+        "bytes": 908,
+        "sha256": "56079d0900f8988899f9c084d94b3760916c5c14130c7adebe549675e3085934"
+      },
+      {
+        "path": "references/roadster/reconstruction/reconstruction.json",
+        "bytes": 382400,
+        "sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+      }
+    ],
+    "recording": {
+      "path": "artifacts/roadster-replay-v8.mp4",
+      "bytes": 2897360,
+      "sha256": "4e921446bcaa8ffef667ded50df75372b0afd562344617b9405b6ee9a52e144a"
+    },
+    "recording_metadata": {
+      "path": "artifacts/replay-recording-v8/frames.json",
+      "bytes": 66898,
+      "sha256": "d5bd337be8b63115408612468433feb05a0afa7259a75a94940df231613181e2"
+    },
+    "contact_sheet": {
+      "path": "artifacts/replay-recording-v8/contact-2fps.jpg",
+      "bytes": 198274,
+      "sha256": "48c906453bf11fcde6648ec5711c3d7b8019735634d4e020d84a3534acc26972"
+    },
+    "frozen_reviewed_model": {
+      "path": "art/roadster/model/review-input-v3/roadster.glb",
+      "bytes": 1381564,
+      "sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4"
+    },
+    "ordered_source_frame_set_sha256": "0d796e382b685ea116814eddd9c5510bb1ebf37b6a5ce065a011cb413c041f40",
+    "source_capture_hashes": [
+      {
+        "file": "public/models/roadster.glb",
+        "bytes": 1381564,
+        "sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4"
+      },
+      {
+        "file": "public/scenes/main.iwsdk.scene.json",
+        "bytes": 7622,
+        "sha256": "077bc6aeee50703b6a7036cf5722c508ff85af393f332843b80e80a30e60a1b4"
+      },
+      {
+        "file": "src/replay-system.ts",
+        "bytes": 7028,
+        "sha256": "0e7453ea784874ec12cdb741ee9a96e4af422282c1c849de6d3290978086c90e"
+      },
+      {
+        "file": "src/replay-effects.ts",
+        "bytes": 6326,
+        "sha256": "4fb9c2519ca0ca6b830fa6065c2c3fc5992437e76f05adde03bb82ed83e41da8"
+      },
+      {
+        "file": "src/scene-assets/stage.scene-asset.ts",
+        "bytes": 10383,
+        "sha256": "0a44339dabf7085d12a5efa023fd96a36260d0b21c647afbb095b90cdf0f632e"
+      },
+      {
+        "file": "src/scene-assets/effects.scene-asset.ts",
+        "bytes": 6222,
+        "sha256": "be4270f324f62e34eeea134a9a7cc65feaa4378d97a66031ad05554e5184f492"
+      },
+      {
+        "file": "public/textures/vapor-atlas.png",
+        "bytes": 1602259,
+        "sha256": "e56cc70495dbf81c6562059bc45445f4eb3e9cfe14f1e3d2542f0d64260c8153"
+      },
+      {
+        "file": "references/roadster/reconstruction/reconstruction.json",
+        "bytes": 382400,
+        "sha256": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+      }
+    ],
+    "note": "Author subsequently began the requested V9 repair and model publication. These reports preserve and judge immutable V8 evidence and the initial V8 source hashes, not later live source."
+  },
+  "critical_functional_issues": [],
+  "required_corrections": [
+    {
+      "id": "straight_rgba_crossfade_contaminates_cloud_color",
+      "severity": "medium",
+      "priority": 1,
+      "evidence": "Fresh V8 portrait-landing shows thin cyan/blue contour lines around x280\u2013460,y570\u2013590 and dark doubled/ghost top lobes. A magnified crop of this actual image versus V7 makes the regression clear. Landscape landing/descent also show it at smaller size. Actual source vapor has broad colored shading, not thin tracing contours.",
+      "regions_px": [
+        {
+          "image": "portrait-landing.png",
+          "bbox": [
+            260,
+            545,
+            480,
+            620
+          ]
+        },
+        {
+          "image": "landscape-landing.png",
+          "bbox": [
+            550,
+            430,
+            810,
+            525
+          ]
+        }
+      ],
+      "reviewed_source_sha256": "be4270f324f62e34eeea134a9a7cc65feaa4378d97a66031ad05554e5184f492",
+      "likely_cause": "The V8 shader directly mixes two straight RGBA atlas samples. RGB stored in transparent regions of one sample leaks into opaque parts of the other sample, creating colored contours and dark halos during evolving crossfade.",
+      "fix": "Interpolate premultiplied RGB (sample.rgb * sample.a) and alpha independently; divide mixed RGB by mixed alpha with a small guard before normal straight-alpha framebuffer blending. Keep the mixed alpha and retain current rolling/opacity decay.",
+      "verification": "Fresh landing/portrait-landing and dense 10.5\u201313.5s sequence should show no cyan contour or dark ghost silhouette, while retaining cloud shading/occlusion."
+    }
+  ],
+  "review_type": "independent frozen stage regression review",
+  "version": 8,
+  "overall_score": 8.8,
+  "readiness_decision": "V8 does not retain the 9/10 still-stage approval because the evolving cloud introduces visible cyan contours and dark crossfade ghosts. The underlying V7 ramp/apron/camera improvements remain sound.",
+  "method": "Fresh view_image inspection of all 17 V8 stills, magnified V7/V8 actual landing crops, actual source frame_24, read-only effects code and manifest checks. No app/browser automation or edits.",
+  "confirmed_preserved": [
+    "Ramp/apron, continuous paint, grazing light and frame coverage",
+    "No high-ramp or airborne-car shadow regression",
+    "Landing remains heavily occluded and the car remains clearly visible at 13s",
+    "No source cloud was erased"
+  ],
+  "category_scores": {
+    "ramp_structure_and_deck": 8.6,
+    "apron_and_lighting": 8.8,
+    "camera_coverage": 9.0,
+    "shadow_finish": 9.0,
+    "vapor_still_rendering": 8.2
+  },
+  "conclusion": "8.8/10, not approved for V8. Earlier V7 approval remains scoped to V7; V8 requires the alpha-correct cloud crossfade repair."
+}

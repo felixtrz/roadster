@@ -1,0 +1,4831 @@
+{
+  "advisory_id": "front-raycast-advisory-v3",
+  "reviewed_at_utc": "2026-10-17T20:56:32.415103+00:00",
+  "scope": "Read-only held final GLB geometry check; no score. Separate from runtime approval.",
+  "GLB_sha256": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4",
+  "triangles": 47378,
+  "summary": {
+    "old_vertical_cap_resolved": true,
+    "old_horizontal_carbon_floor_and_broad_splitter_tray_resolved_in_tested_rays": true,
+    "remaining_oblique_carbon_hit": "1/40 rays hits the outer undercarriage side at [2.1690,.2784,.9408], not a horizontal mouth floor.",
+    "LED_visibility": "At current low car-view eye[6,1.5,7],near11/49,far49/49 luminous centroids visible; old high view and straight front each see98/98. This is geometric self-occlusion/view dependence, not emissive export failure."
+  },
+  "full_ray_evidence": {
+    "hash": "8df713206bd220d8a03de6acf0536d19d1af0f952eadd23b4720f4b7bb62cbb4",
+    "front": [
+      {
+        "height": 0.18,
+        "z": -0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422052549742,
+            0.18,
+            -0.8
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422065985624,
+            0.18,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220794215098,
+            0.18,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573935,
+            0.18,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.18,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291612,
+            0.18,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.18,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422146600929,
+            0.18,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.18,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.18,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085806,
+            0.18,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.18,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422213780348,
+            0.18,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222272162302,
+            0.18,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222406521157,
+            0.18,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.18,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.18,
+        "z": 0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222675238817,
+            0.18,
+            0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422052549742,
+            0.2,
+            -0.8
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422065985624,
+            0.2,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220794215098,
+            0.2,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573935,
+            0.2,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.2,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291612,
+            0.2,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.2,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422146600929,
+            0.2,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.2,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.2,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085806,
+            0.2,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.2,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422213780348,
+            0.2,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222272162302,
+            0.2,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422240652114,
+            0.2,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.2,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.2,
+        "z": 0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222675238817,
+            0.2,
+            0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422052549742,
+            0.25,
+            -0.8
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422065985624,
+            0.25,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220794215098,
+            0.25,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573935,
+            0.25,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.25,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291612,
+            0.25,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.25,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422146600929,
+            0.25,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.25,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.25,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085806,
+            0.25,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.25,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222137803463,
+            0.25,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422227216232,
+            0.25,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422240652114,
+            0.25,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.25,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.25,
+        "z": 0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222675238817,
+            0.25,
+            0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422052549742,
+            0.3,
+            -0.8
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422065985624,
+            0.3,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220794215098,
+            0.3,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573935,
+            0.3,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.3,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291612,
+            0.3,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.3,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422146600929,
+            0.3,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.3,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.3,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085788,
+            0.3,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.3,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222137803463,
+            0.3,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422227216232,
+            0.3,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422240652114,
+            0.3,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.3,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.3,
+        "z": 0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222675238817,
+            0.3,
+            0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422052549742,
+            0.35,
+            -0.8
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422065985624,
+            0.35,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220794215098,
+            0.35,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573935,
+            0.35,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.35,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291612,
+            0.35,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.35,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422146600929,
+            0.35,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.35,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.35,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085788,
+            0.35,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.35,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222137803463,
+            0.35,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422227216232,
+            0.35,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422240652114,
+            0.35,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.35,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.35,
+        "z": 0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222675238817,
+            0.35,
+            0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422052549742,
+            0.4,
+            -0.8
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422065985624,
+            0.4,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220794215098,
+            0.4,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573935,
+            0.4,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.4,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291612,
+            0.4,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.4,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221466009271,
+            0.4,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.4,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.4,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085788,
+            0.4,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.4,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222137803463,
+            0.4,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422227216232,
+            0.4,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422240652114,
+            0.4,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.4,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.4,
+        "z": 0.8,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222675238817,
+            0.4,
+            0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.8,
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9343431997258145,
+            0.45,
+            -0.8
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422065985624,
+            0.45,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220794215098,
+            0.45,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573935,
+            0.45,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.45,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291594,
+            0.45,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.45,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221466009271,
+            0.45,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.45,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.45,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085788,
+            0.45,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.45,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222137803463,
+            0.45,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422227216232,
+            0.45,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422240652114,
+            0.45,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.45,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.45,
+        "z": 0.8,
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9343447410998014,
+            0.45,
+            0.8
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.8,
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9793848642113068,
+            0.5,
+            -0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220659856258,
+            0.5,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422079421508,
+            0.5,
+            -0.5999999999999999
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220928573917,
+            0.5,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221062932757,
+            0.5,
+            -0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221197291594,
+            0.5,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221331650434,
+            0.5,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": -0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221466009271,
+            0.5,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221600368129,
+            0.5,
+            -4.764560328305439e-22
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.1,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221734726948,
+            0.5,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.2,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221869085788,
+            0.5,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.3,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222003444625,
+            0.5,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.4,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014222137803463,
+            0.5,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.5,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422227216232,
+            0.5,
+            0.5000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.6,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422240652114,
+            0.5,
+            0.6000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.7,
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422254087998,
+            0.5,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.5,
+        "z": 0.8,
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9793867402141492,
+            0.5,
+            0.8
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.8,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2491438115632265,
+            0.55,
+            -0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.7,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2642137087977243,
+            0.55,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.6,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.275437477321275,
+            0.55,
+            -0.6
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.5,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.283713541514485,
+            0.55,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.4,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2890194906890335,
+            0.55,
+            -0.4
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.3,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2923652769972294,
+            0.55,
+            -0.3
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.2,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2940857562587786,
+            0.55,
+            -0.2
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": -0.1,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2947132646169974,
+            0.55,
+            -0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2948362662235127,
+            0.55,
+            -1.5881867761018131e-22
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.1,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.294713289540931,
+            0.55,
+            0.1
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.2,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2940858047123203,
+            0.55,
+            0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.3,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.292365340646203,
+            0.55,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.4,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.289019572902696,
+            0.55,
+            0.4000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.5,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2837136290475333,
+            0.55,
+            0.5
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.6,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.275437578643537,
+            0.55,
+            0.6
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.7,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2642138224515067,
+            0.55,
+            0.7000000000000001
+          ]
+        }
+      },
+      {
+        "height": 0.55,
+        "z": 0.8,
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2491439182096515,
+            0.55,
+            0.8
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.8,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0898416936253157,
+            0.6,
+            -0.8000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.7,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0871085264590765,
+            0.6,
+            -0.7
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.6,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0886588788642784,
+            0.6,
+            -0.6
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.5,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0909997029355045,
+            0.6,
+            -0.5
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.4,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.092562947338068,
+            0.6,
+            -0.4
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.3,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0935117636037157,
+            0.6,
+            -0.30000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.2,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0939962988050502,
+            0.6,
+            -0.20000000000000004
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": -0.1,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.094175367210467,
+            0.6,
+            -0.1
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0942016604954437,
+            0.6,
+            -2.6469779601696886e-22
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.1,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0941753937938405,
+            0.6,
+            0.10000000000000002
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.2,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0939963511707753,
+            0.6,
+            0.2
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.3,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0935118409209807,
+            0.6,
+            0.3
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.4,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0925630487567326,
+            0.6,
+            0.4
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.5,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.09099982325674,
+            0.6,
+            0.5
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.6,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0886590194355388,
+            0.6,
+            0.6
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.7,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.087108731575684,
+            0.6,
+            0.7
+          ]
+        }
+      },
+      {
+        "height": 0.6,
+        "z": 0.8,
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.0898419341454715,
+            0.6,
+            0.8
+          ]
+        }
+      }
+    ],
+    "counts": {
+      "0.18:FrontRecessBack:IntakeAbsorbent": 17,
+      "0.2:FrontRecessBack:IntakeAbsorbent": 17,
+      "0.25:FrontRecessBack:IntakeAbsorbent": 17,
+      "0.3:FrontRecessBack:IntakeAbsorbent": 17,
+      "0.35:FrontRecessBack:IntakeAbsorbent": 17,
+      "0.4:FrontRecessBack:IntakeAbsorbent": 17,
+      "0.45:FrontOpeningJambs:IntakeAbsorbent": 2,
+      "0.45:FrontRecessBack:IntakeAbsorbent": 15,
+      "0.5:FrontOpeningJambs:IntakeAbsorbent": 2,
+      "0.5:FrontRecessBack:IntakeAbsorbent": 15,
+      "0.55:FrontLightBar:WhiteLED": 17,
+      "0.6:BodyShellGeometry:PearlWhite": 17
+    },
+    "targets": [
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          -0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.024636392583422,
+            0.16135715260462136,
+            -0.9101622800636008
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          -0.4
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9361495473242198,
+            0.1315605618540734,
+            -0.6715544259695901
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          0
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9361495387438519,
+            0.13156055896476593,
+            -0.25687582367169565
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          0.4
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.936149530163486,
+            0.1315605560754589,
+            0.15780278037729525
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.177198168146502,
+            0.21272999539627024,
+            0.9537317965582403
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          -0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.0326356565788393,
+            0.23489657416417042,
+            -0.894245377215577
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          -0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220609993775,
+            0.19305550414520933,
+            -0.737111415460362
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          0
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221171912442,
+            0.19305552206353416,
+            -0.31888907644420844
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221733831111,
+            0.19305553998185943,
+            0.09933325110421813
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          0.8
+        ],
+        "first": {
+          "object": "Undercarriage",
+          "parent": "Roadster",
+          "material": "CarbonUndercarriage",
+          "color": [
+            0.019999999552965164,
+            0.02500000037252903,
+            0.029999999329447746
+          ],
+          "metalness": 0.2199999988079071,
+          "roughness": 0.3799999952316284,
+          "point": [
+            2.169015399651895,
+            0.27838501264409876,
+            0.9407896627147313
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          -0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.0441900640789696,
+            0.33949453410479946,
+            -0.871254464332665
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          -0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220609993775,
+            0.2976110638135929,
+            -0.7371114154603602
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          0
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422117191245,
+            0.29761108029845174,
+            -0.3188890764442058
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221733831111,
+            0.2976110967833103,
+            0.09933325110421636
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          0.8
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.2001011493751608,
+            0.3852337555564884,
+            0.989955899521937
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          -0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.0584559411777184,
+            0.444229269958317,
+            -0.8428682803096451
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          -0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220609993775,
+            0.4021666234819756,
+            -0.7371114154603611
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          0
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.901422117191245,
+            0.4021666385333691,
+            -0.31888907644420666
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221733831111,
+            0.40216665358476167,
+            0.09933325110421813
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          0.8
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.200101149375161,
+            0.48216995072548907,
+            0.9899558995219352
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          -0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.0223100252631427,
+            0.13997022161116002,
+            -0.9147912762621153
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          -0.4
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.0153173565203404,
+            0.13511816574880697,
+            -0.5221049902422181
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          0
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.0153173527373225,
+            0.1351181631238556,
+            -0.11550472725478314
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          0.4
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.015317348954305,
+            0.13511816049890468,
+            0.29109553650469483
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.18,
+          0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.1698167800193184,
+            0.2423218473603428,
+            0.9420571520713691
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          -0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.030649589381971,
+            0.21663811527097465,
+            -0.8981972456175085
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          -0.4
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9025666434959432,
+            0.13005142991434848,
+            -0.7349507240127628
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          0
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.902566639495807,
+            0.13005142721017515,
+            -0.31684528661463257
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          0.4
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9025666354956712,
+            0.13005142450600138,
+            0.10126015159985371
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          0.8
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.2001011493751608,
+            0.3311908280214726,
+            0.9899558995219361
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          -0.8
+        ],
+        "first": {
+          "object": "FrontOpeningJambs",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            2.042502772685736,
+            0.3256076710073028,
+            -0.874611829860014
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          -0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014220609993775,
+            0.23383322845622745,
+            -0.7371114154603602
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          0
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221171912442,
+            0.23383326500961,
+            -0.31888907644420755
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          0.4
+        ],
+        "first": {
+          "object": "FrontRecessBack",
+          "parent": "Roadster",
+          "material": "IntakeAbsorbent",
+          "color": [
+            0.003000000026077032,
+            0.004000000189989805,
+            0.004999999888241291
+          ],
+          "metalness": 0.949999988079071,
+          "roughness": 0.800000011920929,
+          "point": [
+            1.9014221733831103,
+            0.2338333015629921,
+            0.09933325110421547
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.35,
+          0.8
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.200101149375161,
+            0.4281270231904739,
+            0.9899558995219379
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          -0.8
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.258382819604189,
+            0.5614892622526182,
+            -0.44505459364472555
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          -0.4
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.258843346862239,
+            0.5617770917888985,
+            -0.06238755949475627
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          0
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.2586849060045013,
+            0.5616780662528127,
+            0.31908018929374876
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          0.4
+        ],
+        "first": {
+          "object": "FrontLightBar",
+          "parent": "Roadster",
+          "material": "WhiteLED",
+          "color": [
+            0.800000011920929,
+            0.9399999976158142,
+            1
+          ],
+          "metalness": 0,
+          "roughness": 0.23000000417232513,
+          "point": [
+            2.2645309303987826,
+            0.5653318314992393,
+            0.710689831793868
+          ]
+        }
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "target": [
+          2.08,
+          0.45,
+          0.8
+        ],
+        "first": {
+          "object": "BodyShellGeometry",
+          "parent": "BodyShell",
+          "material": "PearlWhite",
+          "color": [
+            0.8399999737739563,
+            0.8700000047683716,
+            0.8999999761581421
+          ],
+          "metalness": 0.23999999463558197,
+          "roughness": 0.23999999463558197,
+          "point": [
+            2.2001011493751608,
+            0.5250632183594752,
+            0.989955899521937
+          ]
+        }
+      }
+    ],
+    "carbonInOblique": [
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "target": [
+          2.08,
+          0.25,
+          0.8
+        ],
+        "first": {
+          "object": "Undercarriage",
+          "parent": "Roadster",
+          "material": "CarbonUndercarriage",
+          "color": [
+            0.019999999552965164,
+            0.02500000037252903,
+            0.029999999329447746
+          ],
+          "metalness": 0.2199999988079071,
+          "roughness": 0.3799999952316284,
+          "point": [
+            2.169015399651895,
+            0.27838501264409876,
+            0.9407896627147313
+          ]
+        }
+      }
+    ],
+    "LEDangles": [
+      {
+        "eye": [
+          6,
+          1.5,
+          7
+        ],
+        "nearVisible": 11,
+        "farVisible": 49,
+        "nearTotal": 49,
+        "farTotal": 49
+      },
+      {
+        "eye": [
+          6,
+          2.9,
+          7
+        ],
+        "nearVisible": 49,
+        "farVisible": 49,
+        "nearTotal": 49,
+        "farTotal": 49
+      },
+      {
+        "eye": [
+          10,
+          1.5,
+          0
+        ],
+        "nearVisible": 49,
+        "farVisible": 49,
+        "nearTotal": 49,
+        "farTotal": 49
+      }
+    ]
+  },
+  "no_model_or_app_edits": true
+}

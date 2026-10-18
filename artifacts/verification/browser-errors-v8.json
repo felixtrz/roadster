@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "data": {
+    "workspaceRoot": ".",
+    "operation": "browser.logs",
+    "result": [
+      {
+        "timestamp": 1792269472730,
+        "level": "error",
+        "message": "THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshStandardMaterial\n\nProgram Info Log: Fragment shader is not compiled.\n\nFRAGMENT\n\nERROR: 0:1496: 'patch' : Illegal use of reserved word\nERROR: 0:1496: 'patch' : syntax error\n\n  1491: \tdiffuseColor *= vColor;\n  1492: #elif defined( USE_COLOR )\n  1493: \tdiffuseColor.rgb *= vColor;\n  1494: #endif\n  1495:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\n> 1496:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\n  1497:     diffuseColor.rgb*=.78+patch*.34;\n  1498: #ifdef USE_ALPHAMAP\n  1499: \tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\n  1500: #endif\n  1501: #ifdef USE_ALPHATEST\n  1502: \t#ifdef ALPHA_TO_COVERAGE",
+        "args": [
+          "\"THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\\n\\nMaterial Name: \\nMaterial Type: MeshStandardMaterial\\n\\nProgram Info Log: Fragment shader is not compiled.\\n\\nFRAGMENT\\n\\nERROR: 0:1496: 'patch' : Illegal use of reserved word\\nERROR: 0:1496: 'patch' : syntax error\\n\\n  1491: \\tdiffuseColor *= vColor;\\n  1492: #elif defined( USE_COLOR )\\n  1493: \\tdiffuseColor.rgb *= vColor;\\n  1494: #endif\\n  1495:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\\n> 1496:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\\n  1497:     diffuseColor.rgb*=.78+patch*.34;\\n  1498: #ifdef USE_ALPHAMAP\\n  1499: \\tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\\n  1500: #endif\\n  1501: #ifdef USE_ALPHATEST\\n  1502: \\t#ifdef ALPHA_TO_COVERAGE\""
+        ],
+        "columnNumber": 12,
+        "frameUrl": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845",
+        "kind": "console",
+        "lineNumber": 272,
+        "url": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845"
+      },
+      {
+        "timestamp": 1792269488143,
+        "level": "error",
+        "message": "THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshStandardMaterial\n\nProgram Info Log: Fragment shader is not compiled.\n\nFRAGMENT\n\nERROR: 0:1496: 'patch' : Illegal use of reserved word\nERROR: 0:1496: 'patch' : syntax error\n\n  1491: \tdiffuseColor *= vColor;\n  1492: #elif defined( USE_COLOR )\n  1493: \tdiffuseColor.rgb *= vColor;\n  1494: #endif\n  1495:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\n> 1496:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\n  1497:     diffuseColor.rgb*=.78+patch*.34;\n  1498: #ifdef USE_ALPHAMAP\n  1499: \tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\n  1500: #endif\n  1501: #ifdef USE_ALPHATEST\n  1502: \t#ifdef ALPHA_TO_COVERAGE",
+        "args": [
+          "\"THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\\n\\nMaterial Name: \\nMaterial Type: MeshStandardMaterial\\n\\nProgram Info Log: Fragment shader is not compiled.\\n\\nFRAGMENT\\n\\nERROR: 0:1496: 'patch' : Illegal use of reserved word\\nERROR: 0:1496: 'patch' : syntax error\\n\\n  1491: \\tdiffuseColor *= vColor;\\n  1492: #elif defined( USE_COLOR )\\n  1493: \\tdiffuseColor.rgb *= vColor;\\n  1494: #endif\\n  1495:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\\n> 1496:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\\n  1497:     diffuseColor.rgb*=.78+patch*.34;\\n  1498: #ifdef USE_ALPHAMAP\\n  1499: \\tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\\n  1500: #endif\\n  1501: #ifdef USE_ALPHATEST\\n  1502: \\t#ifdef ALPHA_TO_COVERAGE\""
+        ],
+        "columnNumber": 12,
+        "frameUrl": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845",
+        "kind": "console",
+        "lineNumber": 272,
+        "url": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845"
+      },
+      {
+        "timestamp": 1792269517501,
+        "level": "error",
+        "message": "THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshStandardMaterial\n\nProgram Info Log: Fragment shader is not compiled.\n\nFRAGMENT\n\nERROR: 0:1596: 'patch' : Illegal use of reserved word\nERROR: 0:1596: 'patch' : syntax error\n\n  1591: \tdiffuseColor *= vColor;\n  1592: #elif defined( USE_COLOR )\n  1593: \tdiffuseColor.rgb *= vColor;\n  1594: #endif\n  1595:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\n> 1596:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\n  1597:     diffuseColor.rgb*=.78+patch*.34;\n  1598: #ifdef USE_ALPHAMAP\n  1599: \tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\n  1600: #endif\n  1601: #ifdef USE_ALPHATEST\n  1602: \t#ifdef ALPHA_TO_COVERAGE",
+        "args": [
+          "\"THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\\n\\nMaterial Name: \\nMaterial Type: MeshStandardMaterial\\n\\nProgram Info Log: Fragment shader is not compiled.\\n\\nFRAGMENT\\n\\nERROR: 0:1596: 'patch' : Illegal use of reserved word\\nERROR: 0:1596: 'patch' : syntax error\\n\\n  1591: \\tdiffuseColor *= vColor;\\n  1592: #elif defined( USE_COLOR )\\n  1593: \\tdiffuseColor.rgb *= vColor;\\n  1594: #endif\\n  1595:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\\n> 1596:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\\n  1597:     diffuseColor.rgb*=.78+patch*.34;\\n  1598: #ifdef USE_ALPHAMAP\\n  1599: \\tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\\n  1600: #endif\\n  1601: #ifdef USE_ALPHATEST\\n  1602: \\t#ifdef ALPHA_TO_COVERAGE\""
+        ],
+        "columnNumber": 12,
+        "frameUrl": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845",
+        "kind": "console",
+        "lineNumber": 272,
+        "url": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845"
+      },
+      {
+        "timestamp": 1792269542666,
+        "level": "error",
+        "message": "THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\n\nMaterial Name: \nMaterial Type: MeshStandardMaterial\n\nProgram Info Log: Fragment shader is not compiled.\n\nFRAGMENT\n\nERROR: 0:1596: 'patch' : Illegal use of reserved word\nERROR: 0:1596: 'patch' : syntax error\n\n  1591: \tdiffuseColor *= vColor;\n  1592: #elif defined( USE_COLOR )\n  1593: \tdiffuseColor.rgb *= vColor;\n  1594: #endif\n  1595:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\n> 1596:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\n  1597:     diffuseColor.rgb*=.78+patch*.34;\n  1598: #ifdef USE_ALPHAMAP\n  1599: \tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\n  1600: #endif\n  1601: #ifdef USE_ALPHATEST\n  1602: \t#ifdef ALPHA_TO_COVERAGE",
+        "args": [
+          "\"THREE.THREE.WebGLProgram: Shader Error 0 - VALIDATE_STATUS false\\n\\nMaterial Name: \\nMaterial Type: MeshStandardMaterial\\n\\nProgram Info Log: Fragment shader is not compiled.\\n\\nFRAGMENT\\n\\nERROR: 0:1596: 'patch' : Illegal use of reserved word\\nERROR: 0:1596: 'patch' : syntax error\\n\\n  1591: \\tdiffuseColor *= vColor;\\n  1592: #elif defined( USE_COLOR )\\n  1593: \\tdiffuseColor.rgb *= vColor;\\n  1594: #endif\\n  1595:     vec2 p=vec2(deckPosition.x+deckPosition.y,deckPosition.z);\\n> 1596:     float patch=.65*deckNoise(p*2.)+.35*deckNoise(p*13.);\\n  1597:     diffuseColor.rgb*=.78+patch*.34;\\n  1598: #ifdef USE_ALPHAMAP\\n  1599: \\tdiffuseColor.a *= texture2D( alphaMap, vAlphaMapUv ).g;\\n  1600: #endif\\n  1601: #ifdef USE_ALPHATEST\\n  1602: \\t#ifdef ALPHA_TO_COVERAGE\""
+        ],
+        "columnNumber": 12,
+        "frameUrl": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845",
+        "kind": "console",
+        "lineNumber": 272,
+        "url": "https://localhost:8084/node_modules/.vite/deps/chunk-VSFG4GNZ.js?v=01640845"
+      },
+      {
+        "timestamp": 1792269655084,
+        "level": "error",
+        "message": "GET https://localhost:8084/?__iwsdk_preview_reload=mvcv2skq: net::ERR_ABORTED",
+        "args": [
+          "GET https://localhost:8084/?__iwsdk_preview_reload=mvcv2skq: net::ERR_ABORTED"
+        ],
+        "failure": "net::ERR_ABORTED",
+        "frameUrl": "https://localhost:8084/?__iwsdk_preview_reload=mvcv1cn3",
+        "kind": "requestfailed",
+        "method": "GET",
+        "resourceType": "document",
+        "url": "https://localhost:8084/?__iwsdk_preview_reload=mvcv2skq"
+      },
+      {
+        "timestamp": 1792269812588,
+        "level": "error",
+        "message": "GET https://localhost:8084/?__iwsdk_preview_reload=mvcv663u: net::ERR_ABORTED",
+        "args": [
+          "GET https://localhost:8084/?__iwsdk_preview_reload=mvcv663u: net::ERR_ABORTED"
+        ],
+        "failure": "net::ERR_ABORTED",
+        "frameUrl": "https://localhost:8084/?__iwsdk_preview_reload=mvcv2zn2",
+        "kind": "requestfailed",
+        "method": "GET",
+        "resourceType": "document",
+        "url": "https://localhost:8084/?__iwsdk_preview_reload=mvcv663u"
+      },
+      {
+        "timestamp": 1792270361141,
+        "level": "error",
+        "message": "GET https://localhost:8084/?__iwsdk_preview_reload=mvcvhxdf: net::ERR_ABORTED",
+        "args": [
+          "GET https://localhost:8084/?__iwsdk_preview_reload=mvcvhxdf: net::ERR_ABORTED"
+        ],
+        "failure": "net::ERR_ABORTED",
+        "frameUrl": "https://localhost:8084/?__iwsdk_preview_reload=mvcvfagm",
+        "kind": "requestfailed",
+        "method": "GET",
+        "resourceType": "document",
+        "url": "https://localhost:8084/?__iwsdk_preview_reload=mvcvhxdf"
+      }
+    ]
+  }
+}

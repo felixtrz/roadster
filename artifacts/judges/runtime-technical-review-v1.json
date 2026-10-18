@@ -1,0 +1,564 @@
+{
+  "judge_id": "motion_reconstruction_independent_runtime_audit",
+  "review_type": "Read-only integrated runtime algorithm review with direct offline execution",
+  "reviewed_at_utc": "2026-10-17T20:34:51.472636+00:00",
+  "overall_technical_score": 9.1,
+  "target_score": 9.0,
+  "approved": true,
+  "decision": "Approved for the reviewed runtime algorithm scope after the root agent repaired five initial findings. No open P1/P2 correctness finding remains in this scope.",
+  "scope": {
+    "included": [
+      "TrackPlayer interpolation and arbitrary seeking",
+      "canonical axes, GLB root and wheel contact integration",
+      "replay state transitions and cleanup",
+      "wheel rolling direction",
+      "deterministic jets and vapor reset",
+      "XR visibility gating and desktop camera parent transforms"
+    ],
+    "excluded": [
+      "unique or measured physical 6DoF accuracy",
+      "visual similarity and car mesh quality",
+      "native headset rendering/performance",
+      "live managed-browser operation"
+    ],
+    "live_app_untouched": true,
+    "app_source_edited_by_judge": false,
+    "method": "Bundled actual TypeScript modules to in-memory Node modules with esbuild; replaced only the @iwsdk/core boundary by its installed Three math/render-object exports and lightweight ECS/visibility/UI stubs. No browser or GL renderer was invoked. Parsed the actual GLB through the installed GLTFLoader. The state harness therefore checks actual app methods, while excluding framework scheduling, ray delivery and GPU compilation.",
+    "independence": "The judge identified the initial defects and supplied reproductions; the root agent alone changed implementation. This judge reran the corrected implementation."
+  },
+  "category_scores": {
+    "track_interpolation": 9.6,
+    "axes_model_origin_contact": 9.5,
+    "lifecycle_and_visibility": 9.2,
+    "controls_state_transitions": 9.3,
+    "effects_determinism_and_ownership": 9.0,
+    "wheel_animation": 8.4
+  },
+  "reviewed_file_sha256": {
+    "src/replay-track.ts": "237a66e687d38b952a58e75c14c3aa323054db274e761e98c7d5e8b71311180b",
+    "src/replay-system.ts": "b1c87428cc108657caec54f450d16e824123acf21bb161fd1571c9734f33e7b0",
+    "src/replay-controls.ts": "9b2cccd138436c853a4e02470065628f6a197868de44d5b93877121be0643c4e",
+    "src/replay-effects.ts": "ab80775b1fc2dad9b29859b614a4e833a8d985546a13b0b6754c40598c39bba5",
+    "src/scene-assets/stage.scene-asset.ts": "e6675fec5fbe3bad71730cee081dcd6bcda8fa42fdfe243664a5ee4ac2ee26fe",
+    "src/scene-assets/effects.scene-asset.ts": "a4d688fb7c1e7512a94fd929912147b2ec56f30c17ab405cb73d3a7178bde190",
+    "public/models/roadster.glb": "ad823e98eebb6b9c69de0423215cba17f135f86f754638eb8f0413b31b3212ac",
+    "public/scenes/main.iwsdk.scene.json": "0b54536bae3aee1e112bca51c1d2465075c99bac70984ea207b809ec3b48f683",
+    "iwsdk.config.json": "259ec6a8ab0c26137bd1e624cfbe47e710743342a30f04e1fb2b48afe894fa0f",
+    "references/roadster/reconstruction/reconstruction.json": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3",
+    "artifacts/verification/controls.json": "75096264573e9a9c725a25fa908d23ed3d26b3e9028e76deb224a4d8a2d40760"
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "technical_score": 7.8,
+      "approved": false,
+      "source_sha256": {
+        "src/replay-system.ts": "12fe33424d73ef620c95f9fd55624583eacad267240cb23bd5d7b14fb1883873",
+        "src/scene-assets/stage.scene-asset.ts": "33a08d59b53862a79d2ac498322ba88b4376436240aa6149ca4bd43c99529b64",
+        "src/scene-assets/effects.scene-asset.ts": "50435e4d32d9375ec72f7146ccb6d46a6533a6ced416100bcf21a24013a3a4c0"
+      },
+      "findings": [
+        "RT-001",
+        "RT-002",
+        "RT-003",
+        "RT-004",
+        "RT-005"
+      ]
+    },
+    {
+      "iteration": 2,
+      "technical_score": 9.1,
+      "approved": true,
+      "all_initial_findings_rechecked": true,
+      "open_priorities": [
+        "P3"
+      ],
+      "reviewed_camera_revision": "Adaptive wide/overhead framing with far=500; checked after this change, including .9 portrait aspect at 18 s."
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "RT-001",
+      "priority": "P2",
+      "title": "Wheel rolling direction was reversed by the exported root transform",
+      "original_location": "src/replay-system.ts:61 (initial reviewed version)",
+      "evidence": {
+        "wheel_local_axle": [
+          1,
+          0,
+          0
+        ],
+        "GLB_root_quaternion": [
+          0,
+          0.7071068286895752,
+          0,
+          0.7071068286895752
+        ],
+        "axle_in_car_coordinates": [
+          -1.3435883849943764e-07,
+          0,
+          -0.9999999999999911
+        ],
+        "original_contact_slip_for_center_velocity_1mps": [
+          2.0000001343588565,
+          0,
+          -1.3435885648505064e-07
+        ]
+      },
+      "reason": "No-slip requires v_center + omega cross r_contact = 0. With forward +X and r_contact=-r*Y, omega must point -Z. The GLB maps wheel local +X to car -Z, so positive local spin is required. Original negative distance/r gave +Z and doubled contact velocity.",
+      "repair": "The root agent changed spin to positive distance/r.",
+      "verification": "Direct system execution on the actual parsed GLB produced positive local-X wheel delta quaternion [0.1345314555836878,0,0,0.9909093235299252] from t=5 to 5.02. After landing the body quaternion points forward world -X and the path moves world -X, preserving this sign."
+    },
+    {
+      "id": "RT-002",
+      "priority": "P2",
+      "title": "Drive-away car left the finite ground before replay end",
+      "original_location": "src/scene-assets/stage.scene-asset.ts:86 (initial reviewed version)",
+      "evidence": {
+        "initial_ground_x": [
+          -120,
+          120
+        ],
+        "first_root_outside_seconds": 16.5,
+        "final_car_root_x": -138.971557
+      },
+      "repair": "The root agent enlarged the ground to 360 by 180 m.",
+      "verification": {
+        "current_ground_x": [
+          -180,
+          180
+        ],
+        "final_body_ground_margin_metres": 38.68844300000001,
+        "passed": true
+      }
+    },
+    {
+      "id": "RT-003",
+      "priority": "P2",
+      "title": "Particle shader smoothstep used reversed edges",
+      "original_location": "src/scene-assets/effects.scene-asset.ts (jet and vapor fragment shaders)",
+      "evidence": [
+        "smoothstep(1.,.25,r)",
+        "smoothstep(1.,.65,d)"
+      ],
+      "reason": "GLSL defines smoothstep results as undefined when edge0 >= edge1; an inverted fade should invert the result of increasing edges.",
+      "primary_source": "https://github.com/KhronosGroup/OpenGL-Refpages/blob/main/gl4/smoothstep.xml",
+      "repair": "The root agent replaced both by 1.-smoothstep(low,high,value).",
+      "verification": "Reviewed the current source: vapor uses (1.-smoothstep(.25,1.,r)); pressure jets use (1.-smoothstep(.65,1.,d)). GPU execution was outside this offline review."
+    },
+    {
+      "id": "RT-004",
+      "priority": "P2",
+      "title": "Replay visibility gating omitted hidden XR sessions",
+      "original_location": "src/replay-system.ts:51 (initial reviewed version)",
+      "evidence": "The initial condition excluded only VisibleBlurred and therefore admitted Hidden when an update occurred.",
+      "repair": "The root agent now advances only in Visible or NonImmersive.",
+      "verification": {
+        "delta_seconds": 0.016,
+        "time_advanced_by_state": {
+          "non-immersive": 0.016000000000000014,
+          "visible": 0.016000000000000014,
+          "visible-blurred": 0,
+          "hidden": 0
+        }
+      }
+    },
+    {
+      "id": "RT-005",
+      "priority": "P2",
+      "title": "Desktop camera positions inherited the XR player transform after locomotion",
+      "original_location": "src/replay-system.ts:updateCamera (initial reviewed version)",
+      "evidence": "IWSDK attachCameraToPlayer parents the camera to xrOrigin; authored camera positions were expressed in world coordinates but assigned as local coordinates.",
+      "repair": "The root agent now converts desired positions through camera.parent.worldToLocal before lookAt.",
+      "verification": {
+        "views_checked": 4,
+        "times_seconds": [
+          0,
+          6,
+          9,
+          11.6,
+          18
+        ],
+        "player_transform_test": {
+          "translation": [
+            10,
+            1,
+            -4
+          ],
+          "yaw_radians": 0.9
+        },
+        "max_world_position_difference_metres": 3.1776437161565096e-14,
+        "max_world_angle_difference_radians": 2.9802322387695312e-08,
+        "immersive_camera_local_pose_untouched": true
+      }
+    }
+  ],
+  "open_findings": [
+    {
+      "id": "RT-006",
+      "priority": "P3",
+      "title": "Wheel spin is an approximate cosmetic track",
+      "location": "src/replay-system.ts:35-42,67-69",
+      "evidence": "Distance advances for ready/approach/climb/landing/drive-away, freezes during release and airborne phases, and is selected by floor(time*60). All wheels use radius .353 m although actual front/rear tire radii are .34831/.35769 m.",
+      "impact": "The car pose and tire geometry remain correct. The wheel texture/spoke animation can pause during the 7.9-8.15 s last-contact interval, appear stepped in slow motion, and differ from exact no-slip speed by about 1.3%.",
+      "suggestion": "For additional polish, interpolate signed per-wheel angular phase, using the model radii and an explicit authored airborne angular velocity.",
+      "blocks_technical_approval": false
+    }
+  ],
+  "verification": {
+    "typecheck": {
+      "command": "npm run typecheck",
+      "exit_code": 0
+    },
+    "interpolation": {
+      "actual_TrackPlayer_evaluations": 20000,
+      "random_seed": 71,
+      "time_range_seconds": [
+        -2,
+        20
+      ],
+      "seek_order": "LCG-generated nonmonotonic order",
+      "max_position_difference_metres": 0,
+      "max_quaternion_norm_error": 2.220446049250313e-16,
+      "phase_mismatches": 0,
+      "reference": "independent brute-force bracket search followed by lerp/slerp"
+    },
+    "ramp_geometry": {
+      "actual_createRamp_driving_surface_centerline_max_error_metres": 9.58558627652841e-07,
+      "deck_thickness_is_below_contact_surface": true
+    },
+    "integrated_model_contact": {
+      "GLB_ground_min_y_metres": 0,
+      "GLB_bounds_size_metres": [
+        4.674000952106269,
+        1.3227221965789795,
+        2.3938762916303693
+      ],
+      "four_wheel_pivots_found": true,
+      "root_axes_verified": true,
+      "full_contact_interval_end_seconds": 7.9,
+      "actual_radial_tire_to_ramp_max_error_metres": 0.008354773273662297,
+      "worst_case": {
+        "time": 7.9,
+        "wheel": "Wheel_FR",
+        "signed_radial_clearance_metres": 0.008354773273662297
+      },
+      "method": "Transform each actual GLB wheel center by the sampled car pose. Find its closest XY distance to the generated ramp polyline, extended along the approach ground; subtract that wheel pivot radius. Lateral centers stay within the deck. This checks rendered circular-tire geometry rather than only nominal floor contact points. Discrete mesh/curve approximation remains."
+    },
+    "effects": {
+      "times_seconds": [
+        0,
+        6,
+        8.15,
+        9,
+        10.5,
+        11.6,
+        14,
+        18
+      ],
+      "actual_ReplayEffects_tested": true,
+      "repeated_evaluation_after_seek_to_0_and_18_is_identical": true,
+      "all_instance_matrices_finite": true,
+      "visible_billboards_at_restart": 0,
+      "material_ownership": "ReplayEffects clones vapor and jet shader materials for the placed instance, disposes those owned clones, and leaves shared prototype geometry/materials intact.",
+      "latest_custom_particle_attribute_checked": "The current factory includes the cloudSeed InstancedBufferAttribute. Actual constructors/update ran without stubbing this attribute; all resulting instance matrices are finite and deterministic."
+    },
+    "controls_and_lifecycle": {
+      "actual_methods_tested": [
+        "seek high clamp to 18",
+        "seek low clamp to 0",
+        "restart to time 0 playing true",
+        "advance to 18 sets playing false",
+        "visibility unsubscribe on cleanup",
+        "debug globals removed on cleanup"
+      ],
+      "state_after_end": {
+        "elapsed": 18,
+        "playing": false,
+        "phase": "drive-away"
+      },
+      "cleanup_functions_invoked": 3,
+      "remaining_visibility_subscriptions": 0,
+      "debug_globals_removed": true,
+      "existing_browser_control_evidence": "artifacts/verification/controls.json",
+      "existing_browser_evidence_passed": true,
+      "existing_browser_evidence_caveat": "Read existing evidence from the parent-run managed-browser controls test; this judge did not rerun browser interaction and does not treat it as proof of a newer GPU render."
+    },
+    "XR_camera": {
+      "visible_session_camera_not_overwritten": true,
+      "desktop_camera_world_pose_invariant_under_translated_rotated_player": true,
+      "native_headset_tested": false,
+      "max_world_position_difference_metres": 3.1776437161565096e-14,
+      "max_world_angle_difference_radians": 2.9802322387695312e-08,
+      "late_replay_framing": [
+        {
+          "aspect": 0.9,
+          "view": 1,
+          "carNDC": [
+            -0.8680786139852384,
+            -0.11599704171441469,
+            0.9999958378207179
+          ],
+          "maxAbsRampNDCX": 0.8906815229606666,
+          "maxAbsRampNDCY": 0.11636895543979836,
+          "maxRampNDCZ": 0.9999958378207179,
+          "far": 500
+        },
+        {
+          "aspect": 0.9,
+          "view": 3,
+          "carNDC": [
+            -0.8802190448282005,
+            -6.127878725403551e-16,
+            0.9999957236692244
+          ],
+          "maxAbsRampNDCX": 0.9450481518127268,
+          "maxAbsRampNDCY": 0.00010748573338634821,
+          "maxRampNDCZ": 0.9999957236692244,
+          "far": 500
+        },
+        {
+          "aspect": 1,
+          "view": 1,
+          "carNDC": [
+            -0.8673888754304087,
+            -0.12876819833314962,
+            0.9999949381169406
+          ],
+          "maxAbsRampNDCX": 0.8905611463099379,
+          "maxAbsRampNDCY": 0.12935679733680977,
+          "maxRampNDCZ": 0.9999949381169406,
+          "far": 500
+        },
+        {
+          "aspect": 1,
+          "view": 3,
+          "carNDC": [
+            -0.8802190271497531,
+            4.2554712516182935e-16,
+            0.9999948040762118
+          ],
+          "maxAbsRampNDCX": 0.9514446277845504,
+          "maxAbsRampNDCY": 0.00013418498967142356,
+          "maxRampNDCZ": 0.9999948040762118,
+          "far": 500
+        },
+        {
+          "aspect": 1.44,
+          "view": 1,
+          "carNDC": [
+            -0.8642674151629002,
+            -0.18466250524490113,
+            0.9999909978445722
+          ],
+          "maxAbsRampNDCX": 0.8900511508883625,
+          "maxAbsRampNDCY": 0.18665847199494265,
+          "maxRampNDCZ": 0.9999909978445722,
+          "far": 500
+        },
+        {
+          "aspect": 1.44,
+          "view": 3,
+          "carNDC": [
+            -0.8802189272572397,
+            4.902302325521659e-16,
+            0.9999907578677277
+          ],
+          "maxAbsRampNDCX": 0.9827934089362911,
+          "maxAbsRampNDCY": 0.0002926720690204373,
+          "maxRampNDCZ": 0.9999907578677277,
+          "far": 500
+        }
+      ],
+      "late_replay_framing_caveat": "At t=18, car root and ramp centerline remain inside all six clip planes at tested aspect ratios .9/1/1.44. This checks clipping/framing numerically; it is not a saved-image visual-quality judgment. Configured far=500 m was read from the same project revision."
+    },
+    "reproduction_command": "node artifacts/judges/runtime-technical-harness-v1.mjs",
+    "reproduction_source_sha256": "d7bedfe66f7b06c6569a63f8799694bba3c774f967d9e354a12723fa4d8d8c3b",
+    "direct_harness_results": {
+      "track": {
+        "count": 20000,
+        "maxPositionError": 0,
+        "maxQuaternionNormError": 2.220446049250313e-16,
+        "phaseMismatches": 0
+      },
+      "geometry": {
+        "deckError": 9.58558627652841e-07,
+        "groundMin": [
+          -180,
+          -0.23999999940395356,
+          -90
+        ],
+        "groundMax": [
+          180,
+          -0.020000000596046452,
+          90
+        ],
+        "modelSize": [
+          4.674000952106269,
+          1.3227221965789795,
+          2.3938762916303693
+        ],
+        "maxContactError": 0.008354773273662297,
+        "worstContact": {
+          "time": 7.9,
+          "wheel": "Wheel_FR",
+          "signedError": 0.008354773273662297
+        }
+      },
+      "effects": {
+        "effectsDeterministic": true,
+        "effectsFinite": true,
+        "visibleBillboardsAtReset": 0
+      },
+      "runtime": {
+        "visibilityGates": [
+          {
+            "state": "non-immersive",
+            "advance": 0.016000000000000014
+          },
+          {
+            "state": "visible",
+            "advance": 0.016000000000000014
+          },
+          {
+            "state": "visible-blurred",
+            "advance": 0
+          },
+          {
+            "state": "hidden",
+            "advance": 0
+          }
+        ],
+        "cameraPositionError": 3.1776437161565096e-14,
+        "cameraAngleError": 2.9802322387695312e-08,
+        "immersiveCameraUntouched": true,
+        "wheelDelta": [
+          0.1345314555836878,
+          0,
+          0,
+          0.9909093235299252
+        ],
+        "framing": [
+          {
+            "aspect": 0.9,
+            "view": 1,
+            "carNDC": [
+              -0.8680786139852384,
+              -0.11599704171441469,
+              0.9999958378207179
+            ],
+            "maxAbsRampNDCX": 0.8906815229606666,
+            "maxAbsRampNDCY": 0.11636895543979836,
+            "maxRampNDCZ": 0.9999958378207179,
+            "far": 500
+          },
+          {
+            "aspect": 0.9,
+            "view": 3,
+            "carNDC": [
+              -0.8802190448282005,
+              -6.127878725403551e-16,
+              0.9999957236692244
+            ],
+            "maxAbsRampNDCX": 0.9450481518127268,
+            "maxAbsRampNDCY": 0.00010748573338634821,
+            "maxRampNDCZ": 0.9999957236692244,
+            "far": 500
+          },
+          {
+            "aspect": 1,
+            "view": 1,
+            "carNDC": [
+              -0.8673888754304087,
+              -0.12876819833314962,
+              0.9999949381169406
+            ],
+            "maxAbsRampNDCX": 0.8905611463099379,
+            "maxAbsRampNDCY": 0.12935679733680977,
+            "maxRampNDCZ": 0.9999949381169406,
+            "far": 500
+          },
+          {
+            "aspect": 1,
+            "view": 3,
+            "carNDC": [
+              -0.8802190271497531,
+              4.2554712516182935e-16,
+              0.9999948040762118
+            ],
+            "maxAbsRampNDCX": 0.9514446277845504,
+            "maxAbsRampNDCY": 0.00013418498967142356,
+            "maxRampNDCZ": 0.9999948040762118,
+            "far": 500
+          },
+          {
+            "aspect": 1.44,
+            "view": 1,
+            "carNDC": [
+              -0.8642674151629002,
+              -0.18466250524490113,
+              0.9999909978445722
+            ],
+            "maxAbsRampNDCX": 0.8900511508883625,
+            "maxAbsRampNDCY": 0.18665847199494265,
+            "maxRampNDCZ": 0.9999909978445722,
+            "far": 500
+          },
+          {
+            "aspect": 1.44,
+            "view": 3,
+            "carNDC": [
+              -0.8802189272572397,
+              4.902302325521659e-16,
+              0.9999907578677277
+            ],
+            "maxAbsRampNDCX": 0.9827934089362911,
+            "maxAbsRampNDCY": 0.0002926720690204373,
+            "maxRampNDCZ": 0.9999907578677277,
+            "far": 500
+          }
+        ],
+        "seekHigh": 18,
+        "seekLow": 0,
+        "restarted": {
+          "elapsed": 0,
+          "playing": true,
+          "speed": 1,
+          "phase": "climb"
+        },
+        "end": {
+          "elapsed": 18,
+          "playing": false,
+          "speed": 1,
+          "phase": "drive-away"
+        },
+        "cleanupCount": 3,
+        "debugRemoved": true,
+        "subscriptions": 0
+      },
+      "hashes": {
+        "src/replay-track.ts": "237a66e687d38b952a58e75c14c3aa323054db274e761e98c7d5e8b71311180b",
+        "src/replay-system.ts": "b1c87428cc108657caec54f450d16e824123acf21bb161fd1571c9734f33e7b0",
+        "src/replay-controls.ts": "9b2cccd138436c853a4e02470065628f6a197868de44d5b93877121be0643c4e",
+        "src/replay-effects.ts": "ab80775b1fc2dad9b29859b614a4e833a8d985546a13b0b6754c40598c39bba5",
+        "src/scene-assets/stage.scene-asset.ts": "e6675fec5fbe3bad71730cee081dcd6bcda8fa42fdfe243664a5ee4ac2ee26fe",
+        "src/scene-assets/effects.scene-asset.ts": "a4d688fb7c1e7512a94fd929912147b2ec56f30c17ab405cb73d3a7178bde190",
+        "public/models/roadster.glb": "ad823e98eebb6b9c69de0423215cba17f135f86f754638eb8f0413b31b3212ac",
+        "public/scenes/main.iwsdk.scene.json": "0b54536bae3aee1e112bca51c1d2465075c99bac70984ea207b809ec3b48f683",
+        "iwsdk.config.json": "259ec6a8ab0c26137bd1e624cfbe47e710743342a30f04e1fb2b48afe894fa0f",
+        "references/roadster/reconstruction/reconstruction.json": "b2178634f70cb15bfc19b7b1a4e802a8b76cccaa9b3aea1dbeff07bba7a028a3"
+      }
+    }
+  },
+  "score_limits": [
+    "This is runtime correctness approval, not a score for source fidelity, visual design, metric reconstruction accuracy, or native headset frame rate.",
+    "The remaining cosmetic wheel approximation lowers the wheel-animation category.",
+    "A lightweight offline framework boundary cannot verify browser event delivery, native XR reference-space behavior or GPU shader compilation; the root agent owns those live tests."
+  ],
+  "resources": {
+    "browser_automation_started": false,
+    "dev_server_started": false,
+    "persistent_worker_started": false,
+    "app_source_modified": false
+  }
+}

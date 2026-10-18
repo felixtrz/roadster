@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "name": "08-driveaway",
+      "time": 13.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final7/08-driveaway.png",
+      "state": {
+        "time": 13.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "09-car-ready",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/overhaul/final7/09-car-ready.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "10-car-landing",
+      "time": 11.7,
+      "view": 2,
+      "file": "artifacts/overhaul/final7/10-car-landing.png",
+      "state": {
+        "time": 11.699999809265137,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "11-car-driveout",
+      "time": 12.5,
+      "view": 2,
+      "file": "artifacts/overhaul/final7/11-car-driveout.png",
+      "state": {
+        "time": 12.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "12-wide",
+      "time": 11.8,
+      "view": 1,
+      "file": "artifacts/overhaul/final7/12-wide.png",
+      "state": {
+        "time": 11.800000190734863,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 1
+      }
+    }
+  ],
+  "fps": 60.343107919319856,
+  "info": {
+    "frame": 39628,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

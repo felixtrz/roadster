@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "runtime": "IWER Meta Quest 3 emulator",
+  "scope": "spatial controller-ray select at final panel scale 1",
+  "action": "controller-right aimed at live PlayPause center, trigger press/release .2s",
+  "result": "Play label changed to Pause",
+  "trigger": {
+    "device": "controller-right",
+    "value": 0
+  },
+  "physicalHeadsetTested": false
+}

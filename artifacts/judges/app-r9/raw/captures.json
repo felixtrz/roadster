@@ -1,0 +1,103 @@
+{
+  "results": [
+    {
+      "name": "07-landing",
+      "time": 11.6,
+      "view": 0,
+      "file": "artifacts/judges/app-r9/raw/07-landing.png",
+      "state": {
+        "time": 11.600000381469727,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "07b-emerge",
+      "time": 12.2,
+      "view": 0,
+      "file": "artifacts/judges/app-r9/raw/07b-emerge.png",
+      "state": {
+        "time": 12.199999809265137,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "08-driveaway",
+      "time": 13.5,
+      "view": 0,
+      "file": "artifacts/judges/app-r9/raw/08-driveaway.png",
+      "state": {
+        "time": 13.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "09-car-ready",
+      "time": 0.5,
+      "view": 2,
+      "file": "artifacts/judges/app-r9/raw/09-car-ready.png",
+      "state": {
+        "time": 0.5,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "10-car-flip",
+      "time": 8.9,
+      "view": 2,
+      "file": "artifacts/judges/app-r9/raw/10-car-flip.png",
+      "state": {
+        "time": 8.899999618530273,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "11-car-driveout",
+      "time": 12.5,
+      "view": 2,
+      "file": "artifacts/judges/app-r9/raw/11-car-driveout.png",
+      "state": {
+        "time": 12.5,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 2
+      }
+    },
+    {
+      "name": "12-wide",
+      "time": 11.8,
+      "view": 1,
+      "file": "artifacts/judges/app-r9/raw/12-wide.png",
+      "state": {
+        "time": 11.800000190734863,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 1
+      }
+    }
+  ],
+  "fps": 60.30401196112634,
+  "info": {
+    "frame": 65111,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

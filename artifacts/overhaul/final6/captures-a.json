@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "name": "03-release",
+      "time": 8.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final6/03-release.png",
+      "state": {
+        "time": 8.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "04-reorient",
+      "time": 9.5,
+      "view": 0,
+      "file": "artifacts/overhaul/final6/04-reorient.png",
+      "state": {
+        "time": 9.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "04b-flip",
+      "time": 9,
+      "view": 0,
+      "file": "artifacts/overhaul/final6/04b-flip.png",
+      "state": {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "05-descent",
+      "time": 10.8,
+      "view": 0,
+      "file": "artifacts/overhaul/final6/05-descent.png",
+      "state": {
+        "time": 10.800000190734863,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    },
+    {
+      "name": "06-hover",
+      "time": 11.2,
+      "view": 0,
+      "file": "artifacts/overhaul/final6/06-hover.png",
+      "state": {
+        "time": 11.199999809265137,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    }
+  ],
+  "fps": 60.02877412348841,
+  "info": {
+    "frame": 17851,
+    "calls": 1,
+    "triangles": 1,
+    "points": 0,
+    "lines": 0
+  }
+}

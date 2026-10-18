@@ -1,0 +1,682 @@
+[
+  {
+    "filename": "landscape-ready.png",
+    "time": 0,
+    "view": 0,
+    "state": [
+      {
+        "time": 0,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 375,
+        "calls": 87,
+        "triangles": 48412,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -7,
+          13.01500129699707,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-climb.png",
+    "time": 6,
+    "view": 0,
+    "state": [
+      {
+        "time": 6,
+        "playing": false,
+        "phase": "climb",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 416,
+        "calls": 87,
+        "triangles": 48412,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -7,
+          13.01500129699707,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-release.png",
+    "time": 8.1,
+    "view": 0,
+    "state": [
+      {
+        "time": 8.100000381469727,
+        "playing": false,
+        "phase": "release",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 458,
+        "calls": 87,
+        "triangles": 48412,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -7,
+          13.01500129699707,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-flip.png",
+    "time": 8.8,
+    "view": 0,
+    "state": [
+      {
+        "time": 8.800000190734863,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 500,
+        "calls": 89,
+        "triangles": 48454,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -13.675246238708496,
+          13.01500129699707,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-jets.png",
+    "time": 9.5,
+    "view": 0,
+    "state": [
+      {
+        "time": 9.5,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 541,
+        "calls": 100,
+        "triangles": 48650,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -32.712432861328125,
+          11.963160514831543,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-descent.png",
+    "time": 10.5,
+    "view": 0,
+    "state": [
+      {
+        "time": 10.5,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 582,
+        "calls": 95,
+        "triangles": 48572,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -45.85859680175781,
+          6.929350852966309,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-landing.png",
+    "time": 11.6,
+    "view": 0,
+    "state": [
+      {
+        "time": 11.600000381469727,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 623,
+        "calls": 95,
+        "triangles": 48572,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -60.330360412597656,
+          5.015000820159912,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-clearance.png",
+    "time": 13,
+    "view": 0,
+    "state": [
+      {
+        "time": 13,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 664,
+        "calls": 82,
+        "triangles": 35414,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -77.25740814208984,
+          5.015000820159912,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-end.png",
+    "time": 18,
+    "view": 0,
+    "state": [
+      {
+        "time": 18,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 701,
+        "calls": 74,
+        "triangles": 35318,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -139.9715576171875,
+          5.015000820159912,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-car.png",
+    "time": 0,
+    "view": 2,
+    "state": [
+      {
+        "time": 0,
+        "playing": false,
+        "phase": "ready",
+        "speed": 1,
+        "view": 2
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 744,
+        "calls": 81,
+        "triangles": 48346,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          12,
+          2.915001153945923,
+          -27
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-wide.png",
+    "time": 8.2,
+    "view": 1,
+    "state": [
+      {
+        "time": 8.199999809265137,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 1
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 788,
+        "calls": 87,
+        "triangles": 48418,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          9.238883018493652,
+          19.615001678466797,
+          21
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-wide-end.png",
+    "time": 18,
+    "view": 1,
+    "state": [
+      {
+        "time": 18,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 1
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 823,
+        "calls": 93,
+        "triangles": 48492,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -53.48577880859375,
+          31.138992309570312,
+          117.03325653076172
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "landscape-overhead.png",
+    "time": 9,
+    "view": 3,
+    "state": [
+      {
+        "time": 9,
+        "playing": false,
+        "phase": "reorient",
+        "speed": 1,
+        "view": 3
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 881,
+        "calls": 90,
+        "triangles": 48472,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          3.189387083053589,
+          70.01499938964844,
+          -33.900001525878906
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "portrait-release.png",
+    "time": 8.1,
+    "view": 0,
+    "state": [
+      {
+        "time": 8.100000381469727,
+        "playing": false,
+        "phase": "release",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 955,
+        "calls": 84,
+        "triangles": 48382,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -7,
+          13.01500129699707,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "portrait-descent.png",
+    "time": 10.5,
+    "view": 0,
+    "state": [
+      {
+        "time": 10.5,
+        "playing": false,
+        "phase": "descent",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 993,
+        "calls": 88,
+        "triangles": 35546,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -45.85859680175781,
+          6.929350852966309,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "portrait-landing.png",
+    "time": 11.6,
+    "view": 0,
+    "state": [
+      {
+        "time": 11.600000381469727,
+        "playing": false,
+        "phase": "landing",
+        "speed": 1,
+        "view": 0
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 1031,
+        "calls": 85,
+        "triangles": 35510,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -60.330360412597656,
+          5.015000820159912,
+          16
+        ],
+        "fov": 42
+      }
+    }
+  },
+  {
+    "filename": "portrait-wide-end.png",
+    "time": 18,
+    "view": 1,
+    "state": [
+      {
+        "time": 18,
+        "playing": false,
+        "phase": "drive-away",
+        "speed": 1,
+        "view": 1
+      }
+    ],
+    "render": {
+      "ground": {
+        "color": "07090d",
+        "roughness": 1,
+        "envMapIntensity": 0.04
+      },
+      "fog": null,
+      "toneMapping": 4,
+      "exposure": 1,
+      "shadows": true,
+      "render": {
+        "frame": 1064,
+        "calls": 93,
+        "triangles": 48492,
+        "points": 0,
+        "lines": 0
+      },
+      "camera": {
+        "position": [
+          -53.48577880859375,
+          47.81306076049805,
+          255.98385620117188
+        ],
+        "fov": 42
+      }
+    }
+  }
+]
