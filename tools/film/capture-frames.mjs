@@ -56,6 +56,9 @@ export default async function ({ page, frame, workspaceRoot }) {
       }
     });
   }
+  // 2D shots render at 2x device pixels; the screenshot is taken at 1x, so every edge is supersampled.
+  const supersample = plan.mode === 'xr' ? null : Number(process.env.FILM_SUPERSAMPLE || plan.supersample || 2);
+  if (supersample) await frame.evaluate((r) => window.roadsterSupersample?.(r), supersample);
   const raf = () => frame.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(() => r(0)))));
   let done = 0;
   for (let i = start; i < Math.min(plan.frames.length, start + count); i++) {
@@ -88,7 +91,7 @@ export default async function ({ page, frame, workspaceRoot }) {
     done++;
   }
   // hand the camera and HUD back to the app
-  await frame.evaluate(() => { window.roadsterFilmCamera?.(null); const sh = document.getElementById('shell'); if (sh) sh.style.opacity = ''; });
+  await frame.evaluate(() => { window.roadsterFilmCamera?.(null); window.roadsterSupersample?.(null); const sh = document.getElementById('shell'); if (sh) sh.style.opacity = ''; });
   if (plan.mode === 'xr' && !process.env.FILM_KEEP_XR) {
     // never leave the shared managed browser stuck in an XR session
     await frame.evaluate(async () => { const s = window.IWER_DEVICE?.activeSession; if (s) await s.end(); });

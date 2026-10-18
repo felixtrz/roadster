@@ -127,10 +127,22 @@ export class CinematicRenderer {
     this.reflector.visible = !xr && this.enabled && this.reflection;
   }
 
+  /** Film capture: render at `ratio` device pixels (uncapped) so the browser's downscale supersamples
+   *  every edge; null returns to the normal device ratio and the post-chain cap. */
+  setSupersample(ratio: number | null): void {
+    if (this.deviceRatio < 0) this.deviceRatio = this.world.renderer.getPixelRatio();
+    this.supersample = ratio;
+    this.world.renderer.setPixelRatio(ratio ?? this.deviceRatio);
+    this.resize();
+  }
+
+  private supersample: number | null = null;
+  private deviceRatio = -1;
+
   private resize(): void {
     const renderer = this.world.renderer;
     const size = renderer.getSize(new Vector2());
-    this.composer.setPixelRatio(postPixelRatio(renderer.getPixelRatio()));
+    this.composer.setPixelRatio(this.supersample ?? postPixelRatio(renderer.getPixelRatio()));
     this.composer.setSize(size.x, size.y);
     this.reflector.getRenderTarget().setSize(Math.max(256, Math.floor(size.x * renderer.getPixelRatio() * 0.5)), Math.max(256, Math.floor(size.y * renderer.getPixelRatio() * 0.5)));
   }

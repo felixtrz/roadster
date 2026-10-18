@@ -21,7 +21,7 @@
     },
     "render": {
       "near": 0.05,
-      "far": 500,
+      "far": 1500,
       "camera": {
         "position": [
           -4,

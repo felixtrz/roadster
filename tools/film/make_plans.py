@@ -1,12 +1,13 @@
-"""Shot plans for the Roadster film (30 fps).
+"""Shot plans for the Roadster film (30 fps, all real time, no slow motion).
 
-Everything plays at real time (no slow motion). 2D: the title card, then the whole run in the
-browser app's Show camera. XR: a shorter first-person headset shot driven through the IWER
-emulator: standing just outside the lane down-range of the ramp, watching the flip and descent with
-lagging head motion while taking a few steps in, then the car drives straight at the viewer and
-passes about 3 m in front.
+2D run: one orbit around the parked car and a crane out to the ground vantage (scripted camera), then,
+once the car is on the ramp, the app's Drone view through the flip, the side-thruster pulses, the landing
+and the drive-away. Onboard replay: the climb to the landing again on the app's Mounted view. XR: a short
+first-person headset shot through the IWER emulator, standing just outside the lane down-range of the
+ramp, watching the flip and descent while taking a few steps in, then the car drives straight at the
+viewer and passes about 3 m in front.
 
-    python3 tools/film/make_plans.py   -> tools/film/out/plan-2d.json, plan-xr.json
+    python3 tools/film/make_plans.py   -> tools/film/out/plan-2d.json, plan-mounted.json, plan-xr.json
 """
 import json
 import math
@@ -58,6 +59,7 @@ def damped(series, omega):
 
 
 ORBIT = 7.5          # video seconds circling the parked car before the run starts
+SWITCH = 4.0         # replay time the run cuts from the ground camera to the app's Drone view (car on the ramp)
 RUN_END = 14.0       # replay time where the 2D part ends (car driving away)
 TRIPOD = np.array([-38.0, 3.2, 2.0])   # fixed vantage on the key-light side of the lane, ~40-60 m off
 
@@ -99,10 +101,23 @@ def plan_2d():
     exposure = 0.55 + 0.45 * w[:, 0]
     frames = []
     for i in range(n):
+        shell = round(float(smoother((v[i] - ORBIT - 0.6) / 1.2)), 3)
+        if v[i] > ORBIT and t[i] >= SWITCH:
+            # the car is on the ramp: cut to the app's own Drone view and follow it through to the drive-away
+            frames.append({'t': round(float(t[i]), 4), 'view': 2, 'intro': False, 'camera': None, 'shellOpacity': shell})
+            continue
         frames.append({'t': round(float(t[i]), 4), 'view': 0, 'intro': False,
                        'camera': {'position': np.round(pos[i], 4).tolist(), 'target': np.round(tgt[i], 4).tolist(), 'fov': round(float(fov[i]), 3),
                                   'exposure': round(float(exposure[i]), 3)},
-                       'shellOpacity': round(float(smoother((v[i] - ORBIT - 0.6) / 1.2)), 3)})
+                       'shellOpacity': shell})
+    return {'mode': '2d', 'width': 1920, 'height': 1080, 'fps': FPS, 'frames': frames}
+
+
+def plan_mounted():
+    """Onboard replay: from the climb through the flip, the side-thruster pulses and the landing, on the
+    app's Mounted view (the rig behind the car, rolling with it)."""
+    t = realtime(3.0, 12.6)
+    frames = [{'t': round(float(tt), 4), 'view': 1, 'intro': False, 'camera': None, 'shellOpacity': 1} for tt in t]
     return {'mode': '2d', 'width': 1920, 'height': 1080, 'fps': FPS, 'frames': frames}
 
 
@@ -184,7 +199,7 @@ def plan_xr():
 
 
 if __name__ == '__main__':
-    for name, plan in (('plan-2d.json', plan_2d()), ('plan-xr.json', plan_xr())):
+    for name, plan in (('plan-2d.json', plan_2d()), ('plan-mounted.json', plan_mounted()), ('plan-xr.json', plan_xr())):
         json.dump(plan, open(os.path.join(OUT, name), 'w'))
         ts = [f['t'] for f in plan['frames']]
         print(name, len(plan['frames']), 'frames', round(len(ts) / FPS, 2), 's video, replay', ts[0], '->', ts[-1])

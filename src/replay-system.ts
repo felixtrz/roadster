@@ -82,13 +82,14 @@ export class RoadsterSystem extends createSystem({ cars: { required: [RoadsterRe
       shadows: this.world.renderer.shadowMap.enabled, post: this.cinematic?.enabled ?? false, render: this.world.renderer.info.render,
       camera: { position: this.world.camera.position.toArray(), fov: (this.world.camera as PerspectiveCamera).fov },
     }), roadsterCinematic: () => this.cinematic, roadsterScene: () => this.world.scene,
+      roadsterSupersample: (ratio: number | null) => this.cinematic?.setSupersample(ratio),
       roadsterFilmCamera: (pose: ReplayCamera['override']) => {
         // exposure is relative to the app's own tone-mapping exposure, restored when the override ends
         if (this.baseExposure < 0) this.baseExposure = this.world.renderer.toneMappingExposure;
         this.world.renderer.toneMappingExposure = this.baseExposure * (pose?.exposure ?? 1);
         this.director.override = pose;
       }, roadsterPost: (on: boolean, reflection = true) => { if (this.cinematic) { this.cinematic.enabled = on; this.cinematic.reflection = reflection; } } });
-    this.cleanupFuncs.push(() => { for (const key of ['roadsterRenderInfo', 'roadsterCinematic', 'roadsterScene', 'roadsterFilmCamera', 'roadsterPost']) Reflect.deleteProperty(window, key); });
+    this.cleanupFuncs.push(() => { for (const key of ['roadsterRenderInfo', 'roadsterCinematic', 'roadsterScene', 'roadsterSupersample', 'roadsterFilmCamera', 'roadsterPost']) Reflect.deleteProperty(window, key); });
   }
 
   private makeLight(color: number, distance: number): PointLight {

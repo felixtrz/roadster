@@ -1,6 +1,6 @@
 """Draws the film's title cards as transparent 1920x1080 PNGs (ffmpeg here has no drawtext).
 
-    python3 tools/film/title_cards.py <out_dir>   -> title-open.png, title-xr.png, title-end.png
+    python3 tools/film/title_cards.py <out_dir>   -> title-open.png, title-onboard.png, title-xr.png, title-end.png
 """
 import os
 import sys
@@ -47,8 +47,10 @@ def card(path, lines, y0=0.40, band=False):
 if __name__ == '__main__':
     out = sys.argv[1] if len(sys.argv) > 1 else '.'
     card(os.path.join(out, 'title-open.png'), [('ROADSTER', 84, 'bold', (255, 255, 255, 255), 26),
-         ('THE RAMP  ·  McGREGOR, TEXAS  ·  RECREATED IN WEBXR', 26, 'regular', (214, 220, 228, 235), 4)], y0=0.70, band=True)
+         ('THE RAMP  ·  McGREGOR, TEXAS  ·  RECREATED WITH IWSDK', 26, 'regular', (214, 220, 228, 235), 4)], y0=0.70, band=True)
+    card(os.path.join(out, 'title-onboard.png'), [('ONBOARD REPLAY', 54, 'bold', (255, 255, 255, 255), 14),
+         ('Camera rig on the rear deck  ·  real time', 26, 'regular', (214, 220, 228, 235), 3)], y0=0.72, band=True)
     card(os.path.join(out, 'title-xr.png'), [('STEP INSIDE', 68, 'bold', (255, 255, 255, 255), 18),
          ('WebXR  ·  emulated Meta Quest 3', 28, 'regular', (208, 214, 222, 235), 2)])
     card(os.path.join(out, 'title-end.png'), [('ROADSTER', 72, 'bold', (255, 255, 255, 255), 22),
-         ('THE RAMP  ·  recreated in WebXR', 28, 'regular', (208, 214, 222, 235), 3)])
+         ('THE RAMP  ·  recreated with IWSDK', 28, 'regular', (208, 214, 222, 235), 3)])

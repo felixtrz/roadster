@@ -59,7 +59,14 @@ In XR, the control panel stays in the world, your head controls the camera, and 
 
 **Thrusters.** A frame-by-frame study of the broadcast, its replay angle and the overhead edit shows the car leaving the lip inverted and rolling about its long axis. Four floor nozzles fire one side to start the roll and the other to stop it, then all four arrest the fall, while two side thrusters at the front bumper corners pulse alternately to hold the car's heading. `tools/thrusters/solve_thrusters.py` turns this into per-nozzle thrust with an inverse-dynamics solve and writes `src/data/thrusters.json`. See [tools/thrusters/README.md](tools/thrusters/README.md).
 
-**Film.** `tools/film/` renders a 1080p30 film, all at real time. It opens with one continuous shot and no cuts: an orbit around the parked car, a crane out to a fixed vantage point, then the whole run from there with a smooth pan and zoom (`make_plans.py` drives the app's camera through `window.roadsterFilmCamera`). Next come a few seconds of the broadcast with the reconstruction reprojected over it frame by frame (`annotate_cv.py`): SIFT/RANSAC camera registration, the fitted ramp, the solved car path, and the posed car box with its body axes, rolling through the flip with the physics-solved attitude, plus the firing nozzles, a roll dial and per-nozzle thrust. It ends with a first-person VR walk-up in which the car passes a few metres away. Frame capture (`capture-frames.mjs`, `capture-all.sh`) steps the replay clock exactly and recovers on its own from browser failures; `assemble.sh` does the edit and needs ffmpeg. The film is not in the repository because its middle segment shows Tesla footage. `annotate_cv.py` needs the local footage excerpt, and `assemble.sh` skips that segment without it.
+**Film.** `tools/film/` renders a 1080p30 film, all at real time and under a minute, in four parts:
+
+1. **The run.** An orbit around the parked car and a crane out to a ground vantage, driven through `window.roadsterFilmCamera` by `make_plans.py`. Once the car is on the ramp, the film switches to the app's Drone view through the flip, the side-thruster pulses and the landing.
+2. **Onboard replay.** The climb to the landing again on the Mounted view.
+3. **Computer-vision pass.** A few seconds of the broadcast with the reconstruction reprojected over it frame by frame (`annotate_cv.py`): SIFT/RANSAC camera registration, the fitted ramp, the solved car path, and the posed car box rolling through the flip with its firing nozzles.
+4. **VR walk-up.** A first-person shot in which the car passes a few metres away.
+
+Frame capture (`capture-frames.mjs`, `capture-all.sh`) steps the replay clock exactly, supersamples the 2D shots at 2× (`window.roadsterSupersample`), and recovers on its own from browser failures. `assemble.sh` does the edit with ffmpeg and appends an optional studio outro (`FILM_OUTRO`). The film is not in the repository because its third part shows Tesla footage. `annotate_cv.py` needs the local footage excerpt, and `assemble.sh` skips that segment without it.
 
 ## Project structure
 
@@ -117,7 +124,7 @@ Quest itself has not been measured. The expected costs there are fragment shadin
 
 ## Automation hooks
 
-The film and verification tools drive the app through `window.roadster` (seek, play, view, intro), `window.roadsterFilmCamera` (a scripted camera pose, lens and exposure), `window.roadsterScene` and `window.roadsterRenderInfo`. They are installed on the dev server, or in a production build only when the URL carries `?automation`. Otherwise a deployed page exposes nothing (`src/automation.ts`).
+The film and verification tools drive the app through `window.roadster` (seek, play, view, intro), `window.roadsterFilmCamera` (a scripted camera pose, lens and exposure), `window.roadsterSupersample` (render at a higher pixel ratio for capture), `window.roadsterScene` and `window.roadsterRenderInfo`. They are installed on the dev server, or in a production build only when the URL carries `?automation`. Otherwise a deployed page exposes nothing (`src/automation.ts`).
 
 ## Licence and notice
 
